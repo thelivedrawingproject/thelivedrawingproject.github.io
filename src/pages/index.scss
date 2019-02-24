@@ -1,0 +1,185 @@
+@import './../components/common';
+
+
+.CenteredLogo {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  background: url("./../images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.homePosts {
+
+  margin-top: 4rem;
+  .postGrid {
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 90rem;
+    width: 100%;
+    padding: 0;
+
+  }
+
+  .moreProjects {
+    font-size: 1.5rem;
+    display: grid;
+    justify-self: center;
+    justify-items: center;
+
+
+    a {
+      text-align: center;
+      margin: 1rem;
+      margin-top: 4rem;
+      @include themedTagA();
+    }
+  }
+
+  .spotlight {
+
+    margin-top: 2em;
+    text-align: center;
+
+    .title {
+      font-size: 2em;
+      padding-bottom: 0.2em;
+      padding-top: 0.2em;
+    }
+
+    .description {
+      font-size: 1em;
+      margin: 1em;
+    }
+
+  }
+
+  .post {
+    @include breakpoint(small) {
+      margin: 0;
+      width: 100%;
+      border-bottom: solid 4px black;
+
+      &:first-child {
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+      }
+
+      &:last-child {
+       border: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      }
+      &:hover {
+        transform: none;
+        cursor: pointer;
+        &:last-child {
+          border: none;
+        }
+      }
+
+    }
+    @include breakpoint(normal) {
+      margin: 1em;
+      width: 40%;
+      max-width: 35em;
+
+      background-color: rgb(252, 252, 252);
+      box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+      transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        border: none;
+        transition: border 0.5s ease-out;
+        cursor: pointer;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+
+  }
+
+  $backgroundText: rgba(0, 0, 0, 0.7);
+
+  .postTitle {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+    padding: 0.5em;
+    background-color: $backgroundText;
+    box-decoration-break: clone;
+    margin-bottom: 0.3em;
+  }
+
+  .postDate {
+    font-size: 0.6em;
+    color: white;
+    background-color: $backgroundText;
+    box-decoration-break: clone;
+    padding: 1em;
+  }
+
+  .postTag {
+    font-size: 0.8em;
+    color: white;
+    font-weight: 600;
+    background-color: $backgroundText;
+    box-decoration-break: clone;
+    padding: 0.5em;
+  }
+
+  .postHeader {
+
+    @include breakpoint(normal) {
+      min-height: 15em;
+    }
+    @include breakpoint(small) {
+      min-height: 10em;
+    }
+
+    padding: 2em;
+    margin: 0;
+    background-color: #cbcbcb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: grid;
+    align-content: start;
+    justify-content: start;
+
+    .inside {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: center;
+
+      opacity: 0.7;
+      @include basicTransition();
+      @include breakpoint(small) {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      .inside {
+        @include basicTransition();
+        opacity: 1;
+      }
+
+      @include breakpoint(small) {
+        box-shadow: inset 0 0 0px 10000px rgba(0,0,0,0.3); // easy way to get a black overlay
+        transition: box-shadow 130ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+
+  .postContent {
+    padding: 1em;
+  }
+}
