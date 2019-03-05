@@ -16,7 +16,7 @@ export default function Template({ data }) {
   return (
     <MainLayout>
       <MetaTags title={post.frontmatter.title}
-                description={post.frontmatter.description || post.subtitle || ''}
+                description={post.frontmatter.description || post.frontmatter.subtitle || ''}
                 pathname={post.frontmatter.path}
                 article/>
       <div className="coverBand" id="content">

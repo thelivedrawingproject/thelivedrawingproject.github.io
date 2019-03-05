@@ -5,7 +5,7 @@ module.exports = {
     title: `The Live Drawing Project`,
     author: 'The Live Drawing Project',
     titleTemplate: "%s · The Live Drawing Project",
-    description: "The Live Drawing Project · Real-time collaborative drawing show · Welcome to our website",
+    description: "The Live Drawing Project · Digital art project of Real-time collaborative drawing · Welcome to our website",
     url: "https://thelivedrawingproject.com", // No trailing slash allowed!
     image: "/static/favicon.png", // Path to your image you placed in the 'static' folder
     keywords: "live drawing, drawing, digital arts, the live drawing project, collaborative art, art", // separated by comas

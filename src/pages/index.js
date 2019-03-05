@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link, graphql, navigate } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../components/MetaTags'
 import './index.scss'
@@ -9,22 +9,50 @@ export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
     <MainLayout>
-    <MetaTags title={'Home'}/>
+      <MetaTags title={'Home'}/>
 
       <div className="CenteredLogo">
       </div>
+
       <div className="home homePosts">
+
         <div className="moreProjects">
           <p>Realtime collaborative drawing</p>
-          <p>Installations and Performances</p>
+          <p>Digital Art Installations and Performances</p>
 
 
+          <h2>Our Events</h2>
+        </div>
+          <div className="postGrid">
+            {posts
+              .filter(post => post.node.frontmatter.title.length > 0)
+              .map(({ node: post }) => {
+                return (
+
+                  <div className="post" onClick={() => {
+                    navigate(post.frontmatter.path + '#content')
+                  }} key={post.id}>
+                    <div className="postHeader" style={{
+                      backgroundImage: 'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')',
+                    }}>
+                      <div className="inside">
+                        <span className="postTitle">{post.frontmatter.title}</span>
+                        <span className="post-meta postTag">{post.frontmatter.subtitle}</span>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+
+          </div>
+
+        <div className="moreProjects">
           <Link to="/contact">Contact Us</Link>
-
+          <Link to="/gallery">Our Gallery</Link>
           <a href={flyer}>Our Brochure (in French)</a>
         </div>
       </div>
-          </MainLayout>
+    </MainLayout>
   )
 }
 
@@ -65,26 +93,5 @@ export const portfolioPostsQuery = graphql`
 /*
 
 
-        <div className="postGrid">
-          {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .map(({ node: post }) => {
-              return (
 
-                <div className="post" onClick={() => {
-                  navigate(post.frontmatter.path + '#content')
-                }} key={post.id}>
-                  <div className="postHeader" style={{
-                    backgroundImage: 'url(' + post.frontmatter.cover.childImageSharp.fixed.src + ')',
-                  }}>
-                    <div className="inside">
-                      <span className="postTitle">{post.frontmatter.title}</span>
-                      <span className="post-meta postTag">{post.frontmatter.subtitle}</span>
-                    </div>
-                  </div>
-                </div>
-              )
-            })}
-
-        </div>
  */

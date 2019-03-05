@@ -8,6 +8,7 @@ export class Navbar extends Component {
     return (<>
         <Link activeClassName="active" to="/">HOME</Link>
         <Link activeClassName="active" to="/gallery">GALLERY</Link>
+        <Link activeClassName="active" to="/contact">CONTACT</Link>
       </>
     )
   }

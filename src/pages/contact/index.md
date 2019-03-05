@@ -1,7 +1,7 @@
 ---
 path: /contact
 layout: page
-title: CONTACT
+title: Contact
 ---
 
 
