@@ -12,8 +12,8 @@ const path = require("path")
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const articleLayoutTemplate = path.resolve(`src/layout/blog-post.js`)
-  const pageLayoutTemplate = path.resolve(`src/layout/page.js`)
+  const articleLayoutTemplate = path.resolve(`src/layout/BlogPost.js`)
+  const pageLayoutTemplate = path.resolve(`src/layout/BasicPage.js`)
   return graphql(`
     {
       allMarkdownRemark(

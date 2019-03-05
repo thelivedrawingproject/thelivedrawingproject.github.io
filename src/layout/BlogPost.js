@@ -1,10 +1,11 @@
 import React from 'react'
-import Layout from './layout'
-import './page.scss'
+import MainLayout from './MainLayout'
+import './BasicPage.scss'
 import 'moment'
 import rehypeReact from "rehype-react"
-import PhotoGrid from '../components/photo-grid';
-import ImageCompare from '../components/gatsby-image-compare';
+import PhotoGrid from '../components/PhotoGrid';
+import ImageCompare from '../components/GatsbyImageCompare';
+import MetaTags from '../components/MetaTags';
 import { graphql } from 'gatsby'
 
 const renderAst = new rehypeReact({
@@ -17,7 +18,14 @@ const renderAst = new rehypeReact({
 export default function Template({ data }) {
   const { markdownRemark: post } = data // data.markdownRemark holds our post data
   return (
-    <Layout>
+    <MainLayout>
+      <MetaTags
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.frontmatter.subtitle}
+        image={post.frontmatter.image.childImageSharp.sizes.src}
+        pathname={post.frontmatter.path}
+        article
+      />
       <div className="coverBand"
            id="content">
         <div className="overlay">
@@ -37,7 +45,7 @@ export default function Template({ data }) {
           </div>
         </article>
       </div>
-    </Layout>
+    </MainLayout>
   )
 }
 
@@ -53,13 +61,16 @@ export const pageQuery = graphql`
                 path
                 title
                 subtitle
-                cover {
+                image {
                     childImageSharp {
                         # Other options include height (set both width and height to crop),
                         # grayscale, duotone, rotate, etc.
                         fixed(width: 700) {
                             # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
                             ...GatsbyImageSharpFixed
+                            src
+                        }
+                        sizes {
                             src
                         }
 

@@ -4,10 +4,8 @@ layout: page
 title: GALLERY
 ---
 
-
-# Check out our brochure !
-
 [The Live Drawing Project Brochure (FR)](./flyer.pdf)
+
 
 
 

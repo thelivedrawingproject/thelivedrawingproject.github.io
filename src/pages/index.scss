@@ -1,11 +1,11 @@
-@import './../components/common';
+@import './../components/styles';
 
 
 .CenteredLogo {
   display: flex;
   justify-content: center;
   height: 70vh;
-  background: url("./../images/logo.svg");
+  background: url("../static/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

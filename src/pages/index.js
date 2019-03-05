@@ -1,30 +1,35 @@
 import React from 'react'
-import { Link, graphql, navigate } from 'gatsby'
-import Layout from '../layout/layout'
+import { Link, graphql } from 'gatsby'
+import MainLayout from '../layout/MainLayout'
+import MetaTags from '../components/MetaTags'
 import './index.scss'
 import flyer from './../pages/gallery/flyer.pdf';
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <Layout>
+    <MainLayout>
+    <MetaTags title={'Home'}/>
+
       <div className="CenteredLogo">
       </div>
       <div className="home homePosts">
         <div className="moreProjects">
+          <p>Realtime collaborative drawing</p>
+          <p>Installations and Performances</p>
+
+
           <Link to="/contact">Contact Us</Link>
 
           <a href={flyer}>Our Brochure (in French)</a>
         </div>
       </div>
-    </Layout>
+          </MainLayout>
   )
 }
 
-
-  export const portfolioPostsQuery = graphql`
+export const portfolioPostsQuery = graphql`
       query IndexQuery {
-     
           allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }
               filter: { frontmatter:  { category: { eq:"video"}}}
           ) {
@@ -38,7 +43,7 @@ export default function Index({ data }) {
                           path
                           category
                           subtitle
-                          cover {
+                          image {
                               childImageSharp {
                                   # Other options include height (set both width and height to crop),
                                   # grayscale, duotone, rotate, etc.

@@ -1,4 +1,4 @@
-@import '../components/common';
+@import '../components/styles';
 
 .roundGatsbyPicture {
 
@@ -114,6 +114,8 @@
   .content {
     text-align: justify;
 
+
+
     p {
       @include breakpoint(small) {
         padding: 0.4em;
@@ -156,6 +158,10 @@
   ul {
    // padding: 0;
 
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: start;
   }
 
   h1 {

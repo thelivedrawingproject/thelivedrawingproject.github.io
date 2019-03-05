@@ -50,7 +50,7 @@ class ReactCompareImage extends React.Component {
   componentDidMount = () => {
     const containerElement = this.containerRef.current
 
-    // Re-set images size when container size is changed
+    // Re-set static size when container size is changed
     new ResizeSensor(containerElement, () => {
       this.setImagesSize()
     })
@@ -75,7 +75,7 @@ class ReactCompareImage extends React.Component {
   }
 
   componentDidUpdate = (prevProps, prevState) => {
-    // do initial setup if loading images and DOM constructing are fully done
+    // do initial setup if loading static and DOM constructing are fully done
     if (
       prevState.isImgFullyLoaded === false &&
       this.state.isImgFullyLoaded === true
@@ -83,7 +83,7 @@ class ReactCompareImage extends React.Component {
       this.setImagesSize()
     }
 
-    // show skeleton again if given images are changed
+    // show skeleton again if given static are changed
     if (
       this.props.leftImage !== prevProps.leftImage ||
       this.props.rightImage !== prevProps.rightImage

@@ -2,14 +2,14 @@ import React from 'react';
 import Lightbox from 'react-image-lightbox'
 import 'react-image-lightbox/style.css' // This only needs to be imported once in your app
 import PropTypes from 'prop-types'
-import './photo-grid.scss';
+import './PhotoGrid.scss';
 
 // DIRTY test for custom component.
 /*
 
 The problem here :
 
-We want to fetch the images from the markdown folder but graphql queries runned here cannot take any variable and doesnt have access to gatsby context
+We want to fetch the static from the markdown folder but graphql queries runned here cannot take any variable and doesnt have access to gatsby context
 The only way I found to keep a clean syntax is to insert img tags directly in the markdown, they will be transformed by gatsby image (so responsive stuff and all)
 and then those urls can be used (props.href)
  */

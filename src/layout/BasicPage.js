@@ -1,8 +1,9 @@
 import React from 'react'
-import Layout from './layout'
-import './page.scss'
+import MainLayout from './MainLayout'
+import './BasicPage.scss'
 import rehypeReact from 'rehype-react'
-import PhotoGrid from '../components/photo-grid'
+import PhotoGrid from '../components/PhotoGrid'
+import MetaTags from '../components/MetaTags'
 
 
 const renderAst = new rehypeReact({
@@ -13,7 +14,11 @@ const renderAst = new rehypeReact({
 export default function Template({ data }) {
   const { markdownRemark: post } = data
   return (
-    <Layout>
+    <MainLayout>
+      <MetaTags title={post.frontmatter.title}
+                description={post.frontmatter.description || post.subtitle || ''}
+                pathname={post.frontmatter.path}
+                article/>
       <div className="coverBand" id="content">
         <div className="overlay overlaySmaller">
           <div className="punchline">{post.frontmatter.title}</div>
@@ -31,7 +36,7 @@ export default function Template({ data }) {
       </div>
 
 
-    </Layout>
+    </MainLayout>
 
 
   )
