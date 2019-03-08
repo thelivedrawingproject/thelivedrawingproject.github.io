@@ -1,0 +1,1 @@
+{"errors":[{"message":"Variable \"$path\" is not defined by operation \"myQuery\".","locations":[{"line":4,"column":87},{"line":1,"column":1}]}]}
