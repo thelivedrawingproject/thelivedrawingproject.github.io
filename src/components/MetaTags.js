@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import favicon from '../static/favicon.png'
+import favicon from '../res/favicon.png'
 
 const MetaTags = ({ title, description, image, pathname, author, article }) => (
   <StaticQuery
@@ -36,6 +36,7 @@ const MetaTags = ({ title, description, image, pathname, author, article }) => (
                     { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
                   ]}
           >
+            {seo.title && <title>{seo.title}</title>}
             <meta name="robots" content="all"/>
             <meta name="viewport" content="user-scalable=no, width=device-width"/>
             {seo.keywords && (<meta name="keywords" content={seo.keywords} />)}

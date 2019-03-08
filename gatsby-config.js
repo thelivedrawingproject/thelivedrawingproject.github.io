@@ -6,8 +6,9 @@ module.exports = {
     author: 'The Live Drawing Project',
     titleTemplate: "%s · The Live Drawing Project",
     description: "The Live Drawing Project · Digital art project of Real-time collaborative drawing · Welcome to our website",
+    siteUrl: "https://thelivedrawingproject.com", // for robots plugin
     url: "https://thelivedrawingproject.com", // No trailing slash allowed!
-    image: "/static/favicon.png", // Path to your image you placed in the 'static' folder
+    image: "/res/favicon.png", // Path to your image you placed in the 'res' folder
     keywords: "live drawing, drawing, digital arts, the live drawing project, collaborative art, art", // separated by comas
 
     /* to hide the icon, put an empty string instead of a link */
@@ -69,7 +70,7 @@ module.exports = {
       },
     },
 
-    `gatsby-plugin-sharp`, // For static processing
+    `gatsby-plugin-sharp`, // For res processing
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -80,9 +81,19 @@ module.exports = {
         background_color: `#d6d0cd`,
         theme_color: `#363636`,
         display: `minimal-ui`,
-        icon: `src/static/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/res/favicon.png`, // This path is relative to the root of the site.
       },
     },
+
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://thelivedrawingproject.com',
+        sitemap: 'https://thelivedrawingproject.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    `gatsby-plugin-sitemap`
 
   ],
 }

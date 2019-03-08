@@ -6,7 +6,7 @@ $darkColor: black;
   display: flex;
   justify-content: center;
   height: 50vh;
-  background: url("../static/logo.svg");
+  background: url("../res/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -167,7 +167,7 @@ $darkColor: black;
       margin-top: 1em;
 
       .Phone {
-        background: url("./../static/baseline-touch_app-24px.svg");
+        background: url("../res/baseline-touch_app-24px.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -176,7 +176,7 @@ $darkColor: black;
       }
 
       .Replay {
-        background: url("./../static/baseline-replay-24px.svg");
+        background: url("../res/baseline-replay-24px.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -185,7 +185,7 @@ $darkColor: black;
       }
 
       .Send {
-        background: url("./../static/baseline-send-24px.svg");
+        background: url("../res/baseline-send-24px.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -194,7 +194,7 @@ $darkColor: black;
       }
 
       .Drawings {
-        background: url("./../static/baseline-blur_on-24px.svg");
+        background: url("../res/baseline-blur_on-24px.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

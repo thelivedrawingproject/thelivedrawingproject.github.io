@@ -13,7 +13,8 @@ export default function Index({ data }) {
 
       <div className="FullPage">
         <div className="CenteredLogo"/>
-        <div className="Subtitle"><strong>Realtime Collaborative Drawing</strong></div>
+        <h1 style={{opacity:0}}>The Live Drawing Project</h1>
+        <h2 className="Subtitle"><strong>Realtime Collaborative Drawing</strong></h2>
       </div>
 
       <div className="ResponsiveIframe">
@@ -96,31 +97,31 @@ export default function Index({ data }) {
       </div>
 
       <div className="FullPageContainer">
-      <p className="Punchline Accent">Features</p>
+      <h2 className="Punchline Accent">Features</h2>
       </div>
 
 
       <div className="FullPageContainer">
-        <h2 className="Punchline White">100% Customizable</h2>
+        <h3 className="Punchline White">100% Customizable</h3>
         <p className="Subtext">From the physical installation to the visual style of the artpiece,
           everything can be customised prior to the event to meet your needs.<br/>
           <strong>We design custom experiences for every event we make.</strong></p>
       </div>
 
       <div className="FullPageContainer">
-        <h2 className="Punchline White">Up to 100+ Users at the same time</h2>
+        <h3 className="Punchline White">Up to 100+ Users at the same time</h3>
         <p className="Subtext">With our <strong>cutting edge realtime technology</strong> we can handle hundreds of drawers simultaneously with no lag of any sort.</p>
       </div>
 
       <div className="FullPageContainer">
-        <h2 className="Punchline White">User Friendly</h2>
+        <h3 className="Punchline White">User Friendly</h3>
         <p className="Subtext">Our tool has been designed with <strong>ease of use</strong> from the start.<br/>
           No need to install a dedicated app. It <strong>works for everyone</strong> seamlessly, on every Android and Apple devices, through the web browser.
         </p>
       </div>
 
       <div className="FullPageContainer">
-        <h2 className="Punchline White">No cellular network ? No problem.</h2>
+        <h3 className="Punchline White">No cellular network ? No problem.</h3>
         <p className="Subtext">The Live Drawing Project can run through Internet or on a local Wi-Fi, depending on your needs.
         </p>
       </div>

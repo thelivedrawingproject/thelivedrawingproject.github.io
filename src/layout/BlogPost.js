@@ -29,11 +29,11 @@ export default function Template({ data }) {
       <div className="coverBand"
            id="content">
         <div className="overlay">
-          <div className="punchline">{post.frontmatter.title}</div>
-          <div className="subtext">
+          <h1 className="punchline">{post.frontmatter.title}</h1>
+          <h2 className="subtext">
             <p><strong>{post.frontmatter.subtitle} </strong></p>
             <p><em>{new Date(post.frontmatter.date).getFullYear()}</em></p>
-          </div>
+          </h2>
         </div>
       </div>
 
