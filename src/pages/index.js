@@ -114,7 +114,7 @@ export default function Index({ data }) {
 
       <div className="FullPageContainer">
         <h2 className="Punchline White">User Friendly</h2>
-        <p className="Subtext">Our tool has been designed <strong>ease of use</strong> from the start.<br/>
+        <p className="Subtext">Our tool has been designed with <strong>ease of use</strong> from the start.<br/>
           No need to install a dedicated app. It <strong>works for everyone</strong> seamlessly, on every Android and Apple devices, through the web browser.
         </p>
       </div>
