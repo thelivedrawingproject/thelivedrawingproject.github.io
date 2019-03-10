@@ -42,19 +42,12 @@ const MetaTags = ({ title, description, image, pathname, author, article }) => (
             {seo.keywords && (<meta name="keywords" content={seo.keywords} />)}
             {seo.description && (<meta name="description" content={seo.description} />)}
             {seo.url && <meta property="og:url" content={seo.url} />}
-            {() => {
-              if(article) {
-                return (<meta property="og:type" content="article"/>)
-              } else {
-                return (<meta property="og:type" content="website"/>)
-              }
-            }}
+            <meta property="og:type" content={article ? "article" : "website"}/>
             {( (article && seo.author) ? true : null) && ( <meta property="og:article:author" content={seo.author}/>)}
             {seo.title && <meta property="og:title" content={seo.title} />}
             {seo.description && (<meta property="og:description" content={seo.description} />)}
             {seo.image && <meta property="og:image" content={seo.image} />}
             {seo.title && <meta property="og:site_name" content={seo.siteName} />}
-            {seo.title && <meta property="og:title" content={seo.title} />}
           </Helmet>
         </>
       )
