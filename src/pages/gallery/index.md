@@ -59,6 +59,4 @@ At the Malting Pot pub.
 </photo-grid>
 
 
-
 [The Live Drawing Project Brochure (FR)](./flyer.pdf)
-
