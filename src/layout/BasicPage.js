@@ -19,11 +19,11 @@ export default function Template({ data }) {
                 description={post.frontmatter.description || post.frontmatter.subtitle || ''}
                 pathname={post.frontmatter.path}
                 article/>
-      <h1 className="coverBand" id="content">
-        <h2 className="overlay overlaySmaller">
-          <div className="punchline">{post.frontmatter.title}</div>
-        </h2>
-      </h1>
+      <div className="coverBand" id="content">
+        <div className="overlay overlaySmaller">
+          <h1 className="punchline">{post.frontmatter.title}</h1>
+        </div>
+      </div>
 
       <div className="Page">
         <article className="card article" id="content">
