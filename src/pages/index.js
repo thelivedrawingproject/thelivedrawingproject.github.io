@@ -32,8 +32,8 @@ export default function Index({ data }) {
             Draw on your phone
           </div>
           <div className="SubText">
-            With your finger or with a stylus<br/>
-            Following instructions... or your creativity !
+            With your finger or with a stylus,<br/>
+            following instructions... or your inspiration !
           </div>
         </div>
 
@@ -45,7 +45,7 @@ export default function Index({ data }) {
             Share your drawing
           </div>
           <div className="SubText">
-            At anytime, when you're ready, by the click of a button
+            At anytime, when you're ready, by the click of a button.
           </div>
         </div>
 
