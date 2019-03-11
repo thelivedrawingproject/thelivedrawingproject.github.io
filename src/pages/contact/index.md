@@ -5,6 +5,8 @@ title: Contact
 ---
 
 
-<div style="text-align:center">You can reach us at <br/>livedrawingproject@protonmail.com</div>
+
+<div style="text-align:center">For booking, press, and any other inquiries<br/><hr/><br/><br/>
+<a href="mailto:livedrawingproject@protonmail.com">livedrawingproject@protonmail.com</a> </div>
 
 <br/><br/>

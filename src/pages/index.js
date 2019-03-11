@@ -159,7 +159,7 @@ export default function Index({ data }) {
         <div className="moreProjects">
           <Link to="/contact">Contact</Link>
           <Link to="/gallery">Gallery</Link>
-          <a href={flyer}>Our Brochure (in French)</a>
+          <a href={flyer}>Download the brochure (FR)</a>
         </div>
       </div>
     </MainLayout>

@@ -1,7 +1,8 @@
 ---
 path: /gallery
 layout: page
-title: GALLERY
+title: Gallery
+description: Photos and videos of the live drawing project events, installations and workshpops.
 ---
 
 
@@ -59,4 +60,12 @@ At the Malting Pot pub.
 </photo-grid>
 
 
-[The Live Drawing Project Brochure (FR)](./flyer.pdf)
+[Download the brochure (FR)](./flyer.pdf)
+
+
+### Find even more content on social medias
+
+[Access our Facebook Page](//facebook.com/TheLiveDrawingProject)  
+  
+  
+[Access our Instagram Page](//instagram.com/livedrawingproject)
