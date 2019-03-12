@@ -8,10 +8,10 @@ import {indexPageStrings} from '../locales/strings';
 
 export default function Index({ data, pathContext: { locale }, location }) {
   const { edges: posts } = data.allMarkdownRemark;
-  const LOCAL = indexPageStrings[locale.key];
+  const LOCAL = indexPageStrings[locale];
 
   return (
-    <MainLayout language={locale.key} location={location}>
+    <MainLayout language={locale} location={location}>
       <MetaTags title={'Home'}/>
 
       <div className="FullPage">
@@ -123,7 +123,7 @@ export default function Index({ data, pathContext: { locale }, location }) {
         <div className="postGrid">
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)
-            .filter(post => post.node.frontmatter.language === locale.key)
+            .filter(post => post.node.frontmatter.language === locale)
             .map(({ node: post }) => {
               return (
 

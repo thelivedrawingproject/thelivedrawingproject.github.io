@@ -66,7 +66,7 @@ exports.onCreatePage = ({ page, actions }) => {
         component: page.component,
         path: localizedPath,
         context: {
-          locale: locales[languageKey]
+          locale: languageKey
         }
       })
     })
