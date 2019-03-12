@@ -11,7 +11,10 @@ export default function MainLayout({ children, language, location }) {
     <>
       <div className="CssGridNavContentFooter">
         <nav className="gridNavBar">
-          <Navbar/>
+          <Navbar home={"HOME"} links={[
+            {path: '/gallery', name: 'GALLERY'},
+            {path: '/contact', name: 'CONTACT'},
+          ]}/>
         </nav>
         <div className="gridContent styleContent">
           {children}

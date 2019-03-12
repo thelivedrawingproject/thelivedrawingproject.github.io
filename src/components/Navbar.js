@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import './Navbar.scss'
+import PropTypes from 'prop-types'
 
 export class Navbar extends Component {
 
   menuItems() {
     return (<>
-        <Link activeClassName="active" to="/">HOME</Link>
-        <Link activeClassName="active" to="/gallery">GALLERY</Link>
-        <Link activeClassName="active" to="/contact">CONTACT</Link>
+        <Link activeClassName="active" to="/">{this.props.home}</Link>
+        {this.props.links.map(link => {
+          return  <Link activeClassName="active" to={link.path}>{link.name}</Link>
+        })}
       </>
     )
   }
@@ -23,3 +25,8 @@ export class Navbar extends Component {
     )
   }
 }
+
+Navbar.propTypes = {
+  home: PropTypes.string.isRequired,
+  links: PropTypes.array.isRequired,
+};
