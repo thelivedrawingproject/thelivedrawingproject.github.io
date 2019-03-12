@@ -14,7 +14,9 @@ class LanguageSwitcher extends React.Component {
     return (<>
         {this.props.availableLanguages.map(availableLanguage => {
 
-          const baseUrl = this.props.currentUrl.replace(locales[this.props.currentLanguage].urlPrefix, '');
+          const baseUrl = this.props.currentUrl
+            .replace(locales[this.props.currentLanguage].urlPrefix, '') // Remove language prefix
+            .replace('//', '/'); // Avoid possible double slash
           return <Link to={locales[availableLanguage].urlPrefix + baseUrl}>{locales[availableLanguage].name}</Link>
         })
         }
