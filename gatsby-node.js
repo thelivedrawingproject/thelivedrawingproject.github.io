@@ -9,7 +9,38 @@
 const path = require("path")
 
 
+
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+
+  if (node.internal.type === `MarkdownRemark`)
+  {
+    const language = node.frontmatter.language;
+    let languageUrlPrefix = ""
+    if(language === void 0 || language === null || language === 'EN')
+    {
+    }
+    else if (language === "FR")
+    {
+      languageUrlPrefix = '/fr';
+    }
+    else
+    {
+      console.warn('Unhandled language for markdown:' + node.frontmatter.language);
+      return;
+    }
+
+    node.frontmatter.path = `${languageUrlPrefix}${node.frontmatter.path}`;
+  }
+};
+
+
+
+
+
 exports.createPages = ({ actions, graphql }) => {
+
+  /// ---------------- Custom generation for markdown files
+
   const { createPage } = actions
 
   const articleLayoutTemplate = path.resolve(`src/layout/BlogPost.js`)
