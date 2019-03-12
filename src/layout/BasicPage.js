@@ -11,10 +11,11 @@ const renderAst = new rehypeReact({
   components: { "photo-grid": PhotoGrid },
 }).Compiler
 
-export default function Template({ data }) {
+export default function Template({ data, location }) {
   const { markdownRemark: post } = data
+  console.log(post.frontmatter.language);
   return (
-    <MainLayout>
+    <MainLayout language={post.frontmatter.language} location={location}>
       <MetaTags title={post.frontmatter.title}
                 description={post.frontmatter.description || post.frontmatter.subtitle || ''}
                 pathname={post.frontmatter.path}
@@ -49,6 +50,7 @@ export const pageQuery = graphql`
             frontmatter {
                 path
                 title
+                language
             }
         }
     }`

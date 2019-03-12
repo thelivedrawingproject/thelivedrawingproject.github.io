@@ -6,12 +6,12 @@ import './index.scss'
 import flyer from './../pages/gallery/flyer.pdf';
 import {indexPageStrings} from '../locales/strings';
 
-export default function Index({ data, pathContext: { locale } }) {
+export default function Index({ data, pathContext: { locale }, location }) {
   const { edges: posts } = data.allMarkdownRemark;
   const LOCAL = indexPageStrings[locale.key];
 
   return (
-    <MainLayout>
+    <MainLayout language={locale.key} location={location}>
       <MetaTags title={'Home'}/>
 
       <div className="FullPage">

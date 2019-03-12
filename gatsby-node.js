@@ -19,6 +19,9 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     if(language === void 0 || language === null)
     {
       console.info('No language field in markdown, select default language');
+
+      node.frontmatter.language = 'EN'; // Default language
+      // TODO: fix default language in gatsby config or somewhere watever
     }
     else
     {
@@ -41,10 +44,12 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
         return;
       }
     }
+
     node.frontmatter.path = `${languageUrlPrefix}${node.frontmatter.path}`;
   }
 };
 
+// ------------------ Custom pages such as index.js
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions
@@ -62,7 +67,6 @@ exports.onCreatePage = ({ page, actions }) => {
         path: localizedPath,
         context: {
           locale: locales[languageKey]
-
         }
       })
     })
@@ -91,6 +95,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               path
               layout
+              language
             }
           } 
         }

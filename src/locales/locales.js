@@ -1,7 +1,7 @@
 module.exports = {
     EN: {
       key: 'EN',
-      urlPrefix: 'en',
+      urlPrefix: '',
       name: 'English',
       locale: 'EN_US',
       default: true,

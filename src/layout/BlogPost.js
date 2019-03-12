@@ -15,10 +15,10 @@ const renderAst = new rehypeReact({
 
 
 /* style={{ backgroundImage: 'url(' + post.frontmatter.cover.childImageSharp.fixed.src + ')' }}*/
-export default function Template({ data }) {
-  const { markdownRemark: post } = data // data.markdownRemark holds our post data
+export default function Template({ data, location }) {
+  const { markdownRemark: post } = data
   return (
-    <MainLayout>
+    <MainLayout language={post.frontmatter.language} location={location}>
       <MetaTags
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.frontmatter.subtitle}
@@ -61,6 +61,7 @@ export const pageQuery = graphql`
                 path
                 title
                 subtitle
+                language
                 image {
                     childImageSharp {
                         # Other options include height (set both width and height to crop),
