@@ -4,9 +4,12 @@ import MainLayout from '../layout/MainLayout'
 import MetaTags from '../components/MetaTags'
 import './index.scss'
 import flyer from './../pages/gallery/flyer.pdf';
+import {indexPageStrings} from '../locales/strings';
 
-export default function Index({ data }) {
+export default function Index({ data, pathContext: { locale } }) {
   const { edges: posts } = data.allMarkdownRemark;
+  const LOCAL = indexPageStrings[locale.key];
+
   return (
     <MainLayout>
       <MetaTags title={'Home'}/>
@@ -14,7 +17,7 @@ export default function Index({ data }) {
       <div className="FullPage">
         <div className="CenteredLogo"/>
         <h1 style={{opacity:0}}>The Live Drawing Project</h1>
-        <h2 className="Subtitle"><strong>Realtime Collaborative Drawing</strong></h2>
+        <h2 className="Subtitle"><strong>{LOCAL.realtimeCollaborativeDrawing}</strong></h2>
       </div>
 
       <div className="ResponsiveIframe">
@@ -29,11 +32,10 @@ export default function Index({ data }) {
             <div className="Phone"/>
           </div>
           <div className="Title">
-            Draw on your phone
+            {LOCAL.drawOnYourPhone}
           </div>
           <div className="SubText">
-            With your finger or with a stylus,<br/>
-            following instructions... or your inspiration !
+            {LOCAL.drawOnYourPhoneSubtext}
           </div>
         </div>
 
@@ -42,10 +44,10 @@ export default function Index({ data }) {
             <div className="Send"/>
           </div>
           <div className="Title">
-            Share your drawing
+            {LOCAL.shareYourDrawing}
           </div>
           <div className="SubText">
-            At anytime, when you're ready, by the click of a button.
+            {LOCAL.shareYourDrawingSubtext}
           </div>
         </div>
 
@@ -54,10 +56,10 @@ export default function Index({ data }) {
             <div className="Drawings"/>
           </div>
           <div className="Title">
-            Join a collaborative artwork
+            {LOCAL.joinArtwork}
           </div>
           <div className="SubText">
-            Drawings from all users appear in realtime on a wide canvas.<br/>
+            {LOCAL.joinArtworkSubtext}
           </div>
         </div>
 
@@ -66,11 +68,10 @@ export default function Index({ data }) {
             <div className="Replay"/>
           </div>
           <div className="Title">
-            Iterate
+            {LOCAL.iterate}
           </div>
           <div className="SubText">
-            The artpiece keeps evolving all the time.
-            You can draw as much as you want.<br/>Express yourself !
+            {LOCAL.iterateSubtext}
           </div>
         </div>
       </div>
@@ -82,54 +83,39 @@ export default function Index({ data }) {
       <div className="FullPageContainer">
         <h2 className="Punchline Accent">Use cases</h2>
         <div className="WordsCloud">
-          <p>Art Exhibitions</p>
-          <p>Event Animations</p>
-          <p>Live Performances</p>
-          <p>Drawing Battles</p>
-          <p>Drawing Contests</p>
-          <p>Free Expression</p>
-          <p>Team Building</p>
-          <p>Collective Thinking</p>
-          <p>Creative Polls</p>
-          <p>And much more !</p>
+          <>{LOCAL.wordClouds.map(wordCloud => {return <p key={wordCloud}>{wordCloud}</p>})}</>
         </div>
-
       </div>
 
       <div className="FullPageContainer">
-      <h2 className="Punchline Accent">Features</h2>
+      <h2 className="Punchline Accent">{LOCAL.features}</h2>
       </div>
 
 
       <div className="FullPageContainer">
-        <h3 className="Punchline White">100% Customizable</h3>
-        <p className="Subtext">From the physical installation to the visual style of the artpiece,
-          everything can be customised prior to the event to meet your needs.<br/>
-          <strong>We design custom experiences for every event we make.</strong></p>
+        <h3 className="Punchline White">{LOCAL.customizableTitle}</h3>
+        <p className="Subtext">{LOCAL.customisableSubtext}</p>
       </div>
 
       <div className="FullPageContainer">
-        <h3 className="Punchline White">Up to 100+ Users at the same time</h3>
-        <p className="Subtext">With our <strong>cutting edge realtime technology</strong> we can handle hundreds of drawers simultaneously with no lag of any sort.</p>
+        <h3 className="Punchline White">{LOCAL.usersTitle}</h3>
+        <p className="Subtext">{LOCAL.usersSubtext}</p>
       </div>
 
       <div className="FullPageContainer">
-        <h3 className="Punchline White">User Friendly</h3>
-        <p className="Subtext">Our tool has been designed with <strong>ease of use</strong> from the start.<br/>
-          No need to install a dedicated app. It <strong>works for everyone</strong> seamlessly, on every Android and Apple devices, through the web browser.
-        </p>
+        <h3 className="Punchline White">{LOCAL.userFriendlyTitle}</h3>
+        <p className="Subtext">{LOCAL.userFriendlySubtext}</p>
       </div>
 
       <div className="FullPageContainer">
-        <h3 className="Punchline White">No cellular network ? No problem.</h3>
-        <p className="Subtext">The Live Drawing Project can run through Internet or on a local Wi-Fi, depending on your needs.
-        </p>
+        <h3 className="Punchline White">{LOCAL.cellularNetworkTitle}</h3>
+        <p className="Subtext">{LOCAL.cellularNetworkSubtext}</p>
       </div>
 
 
 
       <div className="FullPageContainer">
-        <h2 className="Punchline Accent">Events</h2>
+        <h2 className="Punchline Accent">{LOCAL.events}</h2>
       </div>
 
       <div className="home homePosts">

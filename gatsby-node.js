@@ -7,7 +7,7 @@
 // You can delete this file if you're not using it
 
 const path = require("path")
-
+const locales = require('./src/locales/locales');
 
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
@@ -16,25 +16,60 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   {
     const language = node.frontmatter.language;
     let languageUrlPrefix = ""
-    if(language === void 0 || language === null || language === 'EN')
+    if(language === void 0 || language === null)
     {
-    }
-    else if (language === "FR")
-    {
-      languageUrlPrefix = '/fr';
+      console.info('No language field in markdown, select default language');
     }
     else
     {
-      console.warn('Unhandled language for markdown:' + node.frontmatter.language);
-      return;
-    }
+      const supportedLanguages = locales;
+      let foundALanguage = false;
+      // Loop through locales, find a prefix if needed.
+      for( let key of Object.keys(supportedLanguages) ) {
+        console.log(`key ${key} language ${language}`);
+        if(language === key && !supportedLanguages[key].default)
+        {
+          languageUrlPrefix = '/' + supportedLanguages[key].urlPrefix;
+          foundALanguage = true;
+          break;
+        }
+      }
 
+      if(!foundALanguage)
+      {
+        console.warn('Unhandled language for markdown:' + node.frontmatter.language);
+        return;
+      }
+    }
     node.frontmatter.path = `${languageUrlPrefix}${node.frontmatter.path}`;
   }
 };
 
 
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions
 
+  return new Promise(resolve => {
+    deletePage(page)
+
+    Object.keys(locales).map(languageKey => {
+      const localizedPath = locales[languageKey].default
+        ? page.path
+        : locales[languageKey].urlPrefix + page.path
+
+      return createPage({
+        component: page.component,
+        path: localizedPath,
+        context: {
+          locale: locales[languageKey]
+
+        }
+      })
+    })
+
+    resolve()
+  })
+}
 
 
 exports.createPages = ({ actions, graphql }) => {
@@ -70,7 +105,6 @@ exports.createPages = ({ actions, graphql }) => {
 
     // Actually creating the page
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-
 
       let templateToUse
       if( node.frontmatter.layout === 'page' )
