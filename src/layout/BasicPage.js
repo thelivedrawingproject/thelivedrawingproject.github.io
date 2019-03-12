@@ -14,7 +14,7 @@ const renderAst = new rehypeReact({
 export default function Template({ data, location }) {
   const { markdownRemark: post } = data
   return (
-    <MainLayout language={post.frontmatter.language} location={location}>
+    <MainLayout language={post.frontmatter.language} location={{ ...location }}>
       <MetaTags title={post.frontmatter.title}
                 description={post.frontmatter.description || post.frontmatter.subtitle || ''}
                 pathname={post.frontmatter.path}

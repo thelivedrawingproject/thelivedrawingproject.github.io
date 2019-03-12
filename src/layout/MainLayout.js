@@ -5,23 +5,28 @@ import { Navbar } from '../components/Navbar'
 import './MainLayout.scss'
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import locales from '../locales/locales';
+import { NavbarData } from './NavbarData'
+
 
 export default function MainLayout({ children, language, location }) {
+
+  if(language !== 'FR' && language !== 'EN') {
+    language = 'EN'; // TODO: proper default language stored somewhere
+  }
+
+
   return (
     <>
       <div className="CssGridNavContentFooter">
         <nav className="gridNavBar">
-          <Navbar home={"HOME"} links={[
-            {path: '/gallery', name: 'GALLERY'},
-            {path: '/contact', name: 'CONTACT'},
-          ]}/>
+          <Navbar links={NavbarData[language].links}/>
         </nav>
         <div className="gridContent styleContent">
           {children}
         </div>
         <div className="gridFooter">
           <Footer/>
-          <LanguageSwitcher currentLanguage={language} availableLanguages={Object.keys(locales)} currentUrl={location.pathname}/>
+          {location && <LanguageSwitcher currentLanguage={language} availableLanguages={Object.keys(locales)} currentUrl={location.pathname}/>}
         </div>
       </div>
     </>
@@ -31,5 +36,5 @@ export default function MainLayout({ children, language, location }) {
 MainLayout.propTypes = {
   children: PropTypes.node.isRequired,
   language: PropTypes.string,
-  location: PropTypes.object.isRequired
+  location: PropTypes.object
 }

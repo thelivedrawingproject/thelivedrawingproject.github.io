@@ -11,7 +11,7 @@ export default function Index({ data, pathContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale];
 
   return (
-    <MainLayout language={locale} location={location}>
+    <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'}/>
 
       <div className="FullPage">
