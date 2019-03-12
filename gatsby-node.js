@@ -26,7 +26,7 @@ exports.createPages = ({ actions, graphql }) => {
               path
               layout
             }
-          }
+          } 
         }
       }
     }
@@ -35,15 +35,23 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-// Actually creating the page
+
+
+    // Actually creating the page
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
 
+
       let templateToUse
-      if( node.frontmatter.layout === 'page' ) {
+      if( node.frontmatter.layout === 'page' )
+      {
         templateToUse = pageLayoutTemplate;
-      } else if ( node.frontmatter.layout === 'article' ) {
+      }
+      else if ( node.frontmatter.layout === 'article' )
+      {
         templateToUse = articleLayoutTemplate;
-      } else {
+      }
+      else
+      {
         console.warn ('Unhandled layout:' + node.frontmatter.layout);
         return;
       }
