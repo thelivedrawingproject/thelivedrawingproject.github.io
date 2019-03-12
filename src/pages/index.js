@@ -145,8 +145,8 @@ export default function Index({ data, pathContext: { locale }, location }) {
 
         <div className="moreProjects">
           <Link to="/contact">Contact</Link>
-          <Link to="/gallery">Gallery</Link>
-          <a href={flyer}>Download the brochure (FR)</a>
+          <Link to="/gallery">{LOCAL.gallery}</Link>
+          <a href={flyer}>{LOCAL.downloadBrochure}</a>
         </div>
       </div>
     </MainLayout>

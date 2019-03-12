@@ -41,8 +41,9 @@ export const indexPageStrings = {
       No need to install a dedicated app. It <strong>works for everyone</strong> seamlessly, on every Android and Apple devices, through the web browser.</>,
 
     cellularNetworkTitle: "No cellular network ? No problem.",
-    cellularNetworkSubtext: <>The Live Drawing Project can run through Internet or on a local Wi-Fi, depending on your needs.</>
-
+    cellularNetworkSubtext: <>The Live Drawing Project can run through Internet or on a local Wi-Fi, depending on your needs.</>,
+    downloadBrochure: "Download brochure (FR)",
+    gallery: "Gallery"
   },
 
   FR: {
@@ -83,7 +84,10 @@ export const indexPageStrings = {
       Pas besoin d'installer d'application. The Live Drawing Project <strong>marche pour tout le monde</strong> sans effort, sur tous les appareils Android et Apple, via le navigateur internet.</>,
 
     cellularNetworkTitle: "Pas de réseau ? Pas de problème.",
-    cellularNetworkSubtext: <>The Live Drawing Project peut fonctionner via Internet ou en local, en fonction de vos besoins.</>
+    cellularNetworkSubtext: <>The Live Drawing Project peut fonctionner via Internet ou en local, en fonction de vos besoins.</>,
+
+    downloadBrochure: "Télécharger la brochure (FR)",
+    gallery: "Galerie"
   }
 
 }

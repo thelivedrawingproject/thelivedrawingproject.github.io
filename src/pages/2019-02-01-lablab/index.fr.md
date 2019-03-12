@@ -1,7 +1,7 @@
 ---
 path: /art-residency-lablab
 layout: article
-title: Spectacle Performance au LabLab
+title: Performance au LabLab
 subtitle: Résidence Artistique
 description: Résidence artistique à Lyon en partenariat avec l'AADN
 date: "2019-02-01"
