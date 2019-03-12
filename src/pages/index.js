@@ -123,6 +123,7 @@ export default function Index({ data, pathContext: { locale }, location }) {
         <div className="postGrid">
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)
+            .filter(post => post.node.frontmatter.language === locale.key)
             .map(({ node: post }) => {
               return (
 
@@ -167,6 +168,7 @@ export const portfolioPostsQuery = graphql`
                           path
                           category
                           subtitle
+                          language
                           image {
                               childImageSharp {
                                   # Other options include height (set both width and height to crop),
