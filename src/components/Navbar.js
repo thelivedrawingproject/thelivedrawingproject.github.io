@@ -8,7 +8,7 @@ export class Navbar extends Component {
   menuItems() {
     return (<>
         {this.props.links.map(link => {
-          return  <Link activeClassName="active" to={link.path}>{link.name}</Link>
+          return  <Link key={link.name} activeClassName="active" to={link.path}>{link.name}</Link>
         })}
       </>
     )
