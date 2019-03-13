@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://thelivedrawingproject.com/sitemap.xml
+Host: https://thelivedrawingproject.com
