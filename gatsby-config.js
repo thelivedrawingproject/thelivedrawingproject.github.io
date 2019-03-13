@@ -8,7 +8,7 @@ module.exports = {
     description: "The Live Drawing Project · Digital art project of Real-time collaborative drawing · Live performances, Events, Workshops & Art installations · Welcome to our website",
     siteUrl: "https://thelivedrawingproject.com", // for robots plugin
     url: "https://thelivedrawingproject.com", // No trailing slash allowed!
-    image: "/res/logo.jpg", // Path to your image you placed in the 'res' folder
+    image: "/static/logo.jpg", // Path to your image you placed in the 'res' folder
     keywords: "live drawing, drawing, digital arts, the live drawing project, collaborative art, art", // separated by comas
 
     /* to hide the icon, put an empty string instead of a link */

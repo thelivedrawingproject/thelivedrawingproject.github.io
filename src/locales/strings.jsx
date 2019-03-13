@@ -52,7 +52,7 @@ export const bookingPageStrings = {
   fr: {
 
     bookingPunchline: <em>Créons quelque chose <strong>ensemble</strong></em>,
-    bookingSubtext: <>Le dessin est un outil pour <strong>nous exprimer</strong> sans barrières.<br/>
+    bookingSubtext: <>Le dessin est un moyen de <strong>nous exprimer</strong> sans barrières.<br/>
       Nous sommes une équipe de scénographes, ingénieurs et artistes, et nous créons des outils pour <strong>dessiner ensemble</strong>.
       <br/>
       <br/>Pour le <strong>Fun</strong>. Pour <strong>l'Art</strong>. Et pour <strong>Réflechir</strong>.</>,
