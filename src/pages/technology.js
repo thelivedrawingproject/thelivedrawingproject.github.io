@@ -7,7 +7,7 @@ import flyer from './../pages/gallery/flyer.pdf';
 import {indexPageStrings} from '../locales/strings';
 import { localLink } from '../locales/localeUtils'
 
-export default function TechnologyPage({ data, pathContext: { locale }, location }) {
+export default function TechnologyPage({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale];
 
   return (

@@ -6,10 +6,6 @@ import './LanguageSwitcher.scss';
 
 class LanguageSwitcher extends React.Component {
 
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     // Compute current language from URL directly
     return (<div className={"Container"}>

@@ -8,7 +8,7 @@ import {indexPageStrings} from '../locales/strings';
 import {localLink} from '../locales/localeUtils'
 
 
-export default function Index({ data, pathContext: { locale }, location }) {
+export default function Index({ data, pageContext: { locale }, location }) {
   const { edges: posts } = data.allMarkdownRemark;
   const LOCAL = indexPageStrings[locale];
 

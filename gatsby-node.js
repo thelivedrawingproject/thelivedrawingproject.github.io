@@ -10,7 +10,7 @@ const path = require("path")
 const locales = require('./src/locales/locales');
 
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+exports.onCreateNode = ({ node }) => {
 
   if (node.internal.type === `MarkdownRemark`)
   {
