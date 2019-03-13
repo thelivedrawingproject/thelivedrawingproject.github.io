@@ -1,21 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import locales from '../locales/locales';
 import './LanguageSwitcher.scss';
+import { supportedLanguages } from '../locales/locales';
 
 class LanguageSwitcher extends React.Component {
+
+  updateDefaultLanguage(defaultLanguage) {
+    window.localStorage.setItem('language', defaultLanguage)
+  }
 
   render() {
     // Compute current language from URL directly
     return (<div className={"Container"}>
         {this.props.availableLanguages.map(availableLanguage => {
-
-          const baseUrl = this.props.currentUrl
-            .replace(locales[this.props.currentLanguage].urlPrefix, '') // Remove language prefix
-            .replace('//', '/'); // Avoid possible double slash
-          return <Link to={locales[availableLanguage].urlPrefix + baseUrl}>{locales[availableLanguage].name}</Link>
-        })
+            const baseUrl = this.props.currentUrl
+              .replace(supportedLanguages[this.props.currentLanguage].urlPrefix, '') // Remove language prefix
+              .replace('//', '/'); // Avoid possible double slash
+            return <Link to={supportedLanguages[availableLanguage].urlPrefix + baseUrl}
+                         onClick={() => {this.updateDefaultLanguage(availableLanguage)}
+            }>{supportedLanguages[availableLanguage].name}</Link>
+          })
         }
       </div>
     )

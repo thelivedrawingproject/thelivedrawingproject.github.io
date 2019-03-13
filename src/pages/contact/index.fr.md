@@ -1,7 +1,7 @@
 ---
 path: /contact
 layout: page
-language: FR
+language: fr
 title: Contact
 ---
 

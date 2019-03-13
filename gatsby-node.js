@@ -7,8 +7,8 @@
 // You can delete this file if you're not using it
 
 const path = require("path")
-const locales = require('./src/locales/locales');
-
+const supportedLanguages = require('./src/locales/locales').supportedLanguages;
+const defaultLanguage = require('./src/locales/locales').defaultLanguage;
 
 exports.onCreateNode = ({ node }) => {
 
@@ -19,20 +19,16 @@ exports.onCreateNode = ({ node }) => {
     if(language === void 0 || language === null)
     {
       console.info('No language field in markdown, select default language');
-
-      node.frontmatter.language = 'EN'; // Default language
-      // TODO: fix default language in gatsby config or somewhere watever
+      node.frontmatter.language = defaultLanguage;
     }
     else
     {
-      const supportedLanguages = locales;
       let foundALanguage = false;
       // Loop through locales, find a prefix if needed.
       for( let key of Object.keys(supportedLanguages) ) {
-        console.log(`key ${key} language ${language}`);
-        if(language === key && !supportedLanguages[key].default)
+        if(language === key && language !== defaultLanguage)
         {
-          languageUrlPrefix = '/' + supportedLanguages[key].urlPrefix;
+          languageUrlPrefix = `/${supportedLanguages[key].urlPrefix}`;
           foundALanguage = true;
           break;
         }
@@ -40,7 +36,7 @@ exports.onCreateNode = ({ node }) => {
 
       if(!foundALanguage)
       {
-        console.warn('Unhandled language for markdown:' + node.frontmatter.language);
+        console.warn(`Unhandled language for markdown: ${node.frontmatter.language}`);
         return;
       }
     }
@@ -57,10 +53,10 @@ exports.onCreatePage = ({ page, actions }) => {
   return new Promise(resolve => {
     deletePage(page)
 
-    Object.keys(locales).map(languageKey => {
-      const localizedPath = locales[languageKey].default
+    Object.keys(supportedLanguages).map(languageKey => {
+      const localizedPath = (languageKey === defaultLanguage)
         ? page.path
-        : locales[languageKey].urlPrefix + page.path
+        : supportedLanguages[languageKey].urlPrefix + page.path
 
       return createPage({
         component: page.component,
@@ -70,7 +66,6 @@ exports.onCreatePage = ({ page, actions }) => {
         }
       })
     })
-
     resolve()
   })
 }

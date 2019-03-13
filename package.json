@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "author": "Maxime Touroute",
   "dependencies": {
+    "browser-lang": "0.0.1",
     "css-element-queries": "^1.1.1",
     "gatsby": "^2.0.91",
     "gatsby-image": "^2.0.26",

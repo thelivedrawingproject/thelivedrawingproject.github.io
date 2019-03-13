@@ -4,16 +4,13 @@ import Footer from '../components/Footer'
 import { Navbar } from '../components/Navbar'
 import './MainLayout.scss'
 import LanguageSwitcher from '../components/LanguageSwitcher';
-import locales from '../locales/locales';
+import { supportedLanguages }  from '../locales/locales'
 import { NavbarData } from './NavbarData'
-
+import { languageAutoRedirect } from '../locales/localeUtils'
 
 export default function MainLayout({ children, language, location }) {
 
-  if(language !== 'FR' && language !== 'EN') {
-    language = 'EN'; // TODO: proper default language stored somewhere
-  }
-
+  languageAutoRedirect(language, location.pathname);
 
   return (
     <>
@@ -26,7 +23,7 @@ export default function MainLayout({ children, language, location }) {
         </div>
         <div className="gridFooter">
           <Footer/>
-          {location && <LanguageSwitcher currentLanguage={language} availableLanguages={Object.keys(locales)} currentUrl={location.pathname}/>}
+          {location && <LanguageSwitcher currentLanguage={language} availableLanguages={Object.keys(supportedLanguages)} currentUrl={location.pathname}/>}
         </div>
       </div>
     </>

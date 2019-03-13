@@ -3,7 +3,7 @@ import React from 'react'
 export const indexPageStrings = {
 
 
-  EN: {
+  en: {
     realtimeCollaborativeDrawing: "Realtime Collaborative Drawing",
     drawOnYourPhone: "Draw on your phone",
     drawOnYourPhoneSubtext: "With your finger or with a stylus, following instructions... or your inspiration !",
@@ -54,7 +54,7 @@ export const indexPageStrings = {
     howDoesItWork: "How does it work ?"
   },
 
-  FR: {
+  fr: {
     realtimeCollaborativeDrawing: `Dessin collaboratif en live`,
     drawOnYourPhone: `Dessine sur ton téléphone`,
     drawOnYourPhoneSubtext: "Avec ton doigt ou un stylet, suis les instructions... ou ton inspiration !",

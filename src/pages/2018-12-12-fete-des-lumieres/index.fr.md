@@ -4,7 +4,7 @@ layout: article
 title:  Fête des Lumières 2018
 subtitle: Installation Live
 description: Installation artistique du Live Drawing Project pour la Fête des Lumières 2018 de Lyon France au bar le Malting Pot
-language: FR
+language: fr
 date: "2018-12-12"
 category: event
 image: "cover.jpg"

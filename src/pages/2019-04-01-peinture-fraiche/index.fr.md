@@ -5,7 +5,7 @@ title: Festival Peinture Fraiche
 subtitle: Oeuvre collaborative
 date: "2019-04-01"
 category: event
-language: FR
+language: fr
 image: "cover.jpg"
 ---
 

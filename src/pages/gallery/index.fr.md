@@ -2,7 +2,7 @@
 path: /gallery
 layout: page
 title: Galerie
-language: FR
+language: fr
 description: Photos et videos des évenements du Live Drawing Project, installations et workshpops.
 ---
 

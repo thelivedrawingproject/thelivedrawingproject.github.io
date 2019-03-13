@@ -1,6 +1,6 @@
 export const NavbarData =
 {
-  "EN": {
+  "en": {
     "links": [
       {"path": "/", "name": "HOME"},
       {"path": "/technology", "name": "TECHNOLOGY"},
@@ -9,7 +9,7 @@ export const NavbarData =
     ]
   },
 
-  "FR": {
+  "fr": {
     "links": [
       {"path": "/fr", "name": "ACCUEIL"},
       {"path": "/fr/technology", "name": "TECHNOLOGIE"},

@@ -6,7 +6,7 @@ subtitle: Résidence Artistique
 description: Résidence artistique à Lyon en partenariat avec l'AADN
 date: "2019-02-01"
 category: event
-language: FR
+language: fr
 image: "1.jpg"
 ---
 

@@ -1,15 +1,17 @@
 module.exports = {
-    EN: {
-      key: 'EN',
+
+  defaultLanguage: 'en',
+
+  supportedLanguages: {
+    en: {
       urlPrefix: '',
       name: 'English',
-      locale: 'EN_US',
       default: true,
     },
-    FR: {
-      key: 'FR',
+    fr: {
       urlPrefix: 'fr',
-      locale: 'FR',
       name: 'Français',
     }
+  }
+
 };
