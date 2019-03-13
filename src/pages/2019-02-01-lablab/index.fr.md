@@ -15,8 +15,10 @@ image: "1.jpg"
 
 En février, nous avons réalisé une résidence artistique au LabLab, un studio d'expérimentation en Art Numérique sur Lyon.
 Pendant trois jours, nous avons approfondi les possibilités offertes par notre outil de dessin collaboratif pour les performances live et la narration.
-Nous avonx aussi exploré l'incorporation d'ambiances sonores et musicales à nos installations.
-La résidence s'est conclue par une restitution sous forme de spectacle ouverte au public.
+Nous avons aussi exploré l'incorporation d'ambiances sonores et musicales à nos installations.  
+  
+  
+La résidence s'est conclue par une restitution sous forme de spectacle accessible au public.
 
 <photo-grid>
 <img src="1.jpg"/>
@@ -28,7 +30,7 @@ La résidence s'est conclue par une restitution sous forme de spectacle ouverte 
 <img src="aadn.jpg"/>
 </photo-grid>
 
-### Partners
+### Partenaires
 
 [AADN](http://aadn.org/)  
   

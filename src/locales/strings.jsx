@@ -42,8 +42,16 @@ export const indexPageStrings = {
 
     cellularNetworkTitle: "No cellular network ? No problem.",
     cellularNetworkSubtext: <>The Live Drawing Project can run through Internet or on a local Wi-Fi, depending on your needs.</>,
+
+    moderationTitle: "Keep control",
+    moderationSubtext: <>Collaborative creation can lead to inappropriate behaviours.<br/>
+      Our moderation tools gives us the capacity to remove any inappropriate drawing can be instantly, and if needed to blacklist users entirely.</>,
+
+
     downloadBrochure: "Download brochure (FR)",
-    gallery: "Gallery"
+    gallery: "Gallery",
+    letsDrawTogether: "Let's draw together !",
+    howDoesItWork: "How does it work ?"
   },
 
   FR: {
@@ -56,7 +64,7 @@ export const indexPageStrings = {
     joinArtworkSubtext: "Les dessins de tous les utilisateurs apparraissent en temps réel sur un grand tableau",
     iterate: "Recommence",
     iterateSubtext: (<>L'oeure évolue en permanence. Dessine autant que tu veux.<br/> Exprime toi !</>),
-    events: "Evenements",
+    events: "Événements",
     useCases: "Scénarios d'utilisation",
     features: "Fonctionnalités",
     wordClouds: [
@@ -68,7 +76,7 @@ export const indexPageStrings = {
       "Expression Libre",
       "Team Building",
       "Intelligence Collective",
-      "Sondages Créatfs",
+      "Sondages Créatifs",
       "Et bien plus !"
     ],
     customizableTitle: "100% Personnalisable",
@@ -86,8 +94,16 @@ export const indexPageStrings = {
     cellularNetworkTitle: "Pas de réseau ? Pas de problème.",
     cellularNetworkSubtext: <>The Live Drawing Project peut fonctionner via Internet ou en local, en fonction de vos besoins.</>,
 
+
+    moderationTitle: "Gardez le contrôle",
+    moderationSubtext: <>La création collaborative peut pousser certains à des comportement inappropriés.<br/>
+      Nos outils de modération nous permettent de supprimer instantanément tout dessin inapproprié, et si nécessaire, de bloquer des utilisateurs de façon permanente.</>,
+
+
     downloadBrochure: "Télécharger la brochure (FR)",
-    gallery: "Galerie"
+    gallery: "Galerie",
+    letsDrawTogether: "Dessinons ensemble !",
+    howDoesItWork: "Comment ça marche ?"
   }
 
 }

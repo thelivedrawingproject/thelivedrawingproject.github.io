@@ -26,6 +26,5 @@ export class Navbar extends Component {
 }
 
 Navbar.propTypes = {
-  home: PropTypes.string.isRequired,
-  links: PropTypes.array.isRequired,
+  links: PropTypes.array.isRequired
 };

@@ -52,7 +52,6 @@ At the Malting Pot pub.
 <img src="drawings/11.png"/>
 <img src="drawings/12.png"/>
 <img src="drawings/13.png"/>
-<img src="drawings/1.png"/>
 <img src="drawings/14.png"/>
 <img src="drawings/15.png"/>
 <img src="drawings/16.png"/>
