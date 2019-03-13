@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import favicon from '../res/favicon.png'
+import openGraphLogo from '../res/logo.jpg';
 
 const MetaTags = ({ title, description, image, pathname, author, article }) => (
   <StaticQuery
@@ -46,9 +47,9 @@ const MetaTags = ({ title, description, image, pathname, author, article }) => (
             {( (article && seo.author) ? true : null) && ( <meta property="og:article:author" content={seo.author}/>)}
             {seo.title && <meta property="og:title" content={seo.title} />}
             {seo.description && (<meta property="og:description" content={seo.description} />)}
-            {seo.image && <meta property="og:image" content={seo.image} />}
-            {seo.image && <meta property="og:image:secure_url" content={seo.image} />}
-            {seo.image && <meta property="og:image:type" content="image/jpeg" />}
+            <meta property="og:image" content={openGraphLogo} />
+            <meta property="og:image:secure_url" content={openGraphLogo} />
+            <meta property="og:image:type" content="image/jpeg" />
             {seo.title && <meta property="og:site_name" content={seo.siteName} />}
           </Helmet>
         </>

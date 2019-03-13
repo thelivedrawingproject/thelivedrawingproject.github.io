@@ -1,5 +1,20 @@
 import React from 'react'
 
+
+
+export const notFoundPage = {
+
+  en: {
+    title:`NOT FOUND`,
+    subtext:`There is nothing here !`
+  },
+
+  fr: {
+    title:`PAGE NON TROUVÉE`,
+    subtext:`Il n'y a rien ici !`
+  }
+}
+
 export const bookingPageStrings = {
 
   en: {

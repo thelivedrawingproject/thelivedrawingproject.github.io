@@ -1,19 +1,22 @@
 import React from 'react'
 import MainLayout from '../layout/MainLayout'
+import { notFoundPage } from '../locales/strings'
 
-const NotFoundPage = () => (
-  <MainLayout>
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      paddingTop: '4rem',
-    }}>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist...</p>
-    </div>
-  </MainLayout>
-)
+export default function NotFoundPage({ data, pageContext: { locale }, location }) {
+  const LOCAL = notFoundPage[locale];
 
-export default NotFoundPage
+  return (
+    <MainLayout language={locale} location={{ ...location }}>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: '4rem',
+      }}>
+        <h1>{LOCAL.title}</h1>
+        <p>{LOCAL.subtext}</p>
+      </div>
+    </MainLayout>
+  )
+}
