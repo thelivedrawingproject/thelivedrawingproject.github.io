@@ -4,13 +4,19 @@ import Footer from '../components/Footer'
 import { Navbar } from '../components/Navbar'
 import './MainLayout.scss'
 import LanguageSwitcher from '../components/LanguageSwitcher';
-import { supportedLanguages }  from '../locales/locales'
-import { NavbarData } from './NavbarData'
+import { defaultLanguage, supportedLanguages } from '../locales/locales'
 import { languageAutoRedirect } from '../locales/localeUtils'
+import {NavbarData} from './NavbarData'
 
 export default function MainLayout({ children, language, location }) {
 
-  languageAutoRedirect(language, location.pathname);
+  if(language !== 'fr' && language !== 'en') {
+    language = defaultLanguage;
+  }
+  // Skip build, Browsers only
+  if (typeof window !== 'undefined') {
+    languageAutoRedirect(language, location.pathname);
+  }
 
   return (
     <>

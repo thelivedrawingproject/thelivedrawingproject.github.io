@@ -8,10 +8,6 @@ export const localLink = (locale, bareboneLink) => {
 
 export const languageAutoRedirect = (language, pathname) => {
 
-  if(language !== 'fr' && language !== 'en') {
-    language = defaultLanguage;
-  }
-
   const supportedLanguagesKeys = Object.keys(supportedLanguages);
 
   // Skip build, Browsers only
