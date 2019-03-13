@@ -47,6 +47,8 @@ const MetaTags = ({ title, description, image, pathname, author, article }) => (
             {seo.title && <meta property="og:title" content={seo.title} />}
             {seo.description && (<meta property="og:description" content={seo.description} />)}
             {seo.image && <meta property="og:image" content={seo.image} />}
+            {seo.image && <meta property="og:image:secure_url" content={seo.image} />}
+            {seo.image && <meta property="og:image:type" content="image/jpeg" />}
             {seo.title && <meta property="og:site_name" content={seo.siteName} />}
           </Helmet>
         </>
