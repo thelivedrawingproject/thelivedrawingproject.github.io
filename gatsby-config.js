@@ -5,7 +5,7 @@ module.exports = {
     title: `The Live Drawing Project`,
     author: 'The Live Drawing Project',
     titleTemplate: "%s · The Live Drawing Project",
-    description: "The Live Drawing Project · Digital art project of Real-time collaborative drawing · Welcome to our website",
+    description: "The Live Drawing Project · Digital art project of Real-time collaborative drawing · Live performances, Events, Workshops & Art installations · Welcome to our website",
     siteUrl: "https://thelivedrawingproject.com", // for robots plugin
     url: "https://thelivedrawingproject.com", // No trailing slash allowed!
     image: "/res/favicon.png", // Path to your image you placed in the 'res' folder
