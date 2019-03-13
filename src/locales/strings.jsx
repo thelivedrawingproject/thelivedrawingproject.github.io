@@ -57,9 +57,10 @@ export const bookingPageStrings = {
     bookingSubtext: <>Drawing is a way to <strong>express ourselves</strong> without barriers.<br/>
       We're a team of scenographers, engineers and artists willing to make people <strong>draw together</strong>.
       <br/>
-      <br/>For <strong>Fun</strong>. For <strong>Art</strong>. And for <strong>Reflection</strong>.</>,
+      <br/>For <strong>Fun</strong>. For <strong>Art</strong>. And for <strong>Reflection</strong>.
+    </>,
 
-    bookingReachUs: 'Make it happen with us',
+    bookingReachUs: 'Reach Us',
     bookingContactUs: 'Contact Us',
     downloadBrochure: "Download brochure (FR)",
   },
@@ -70,9 +71,9 @@ export const bookingPageStrings = {
     bookingSubtext: <>Le dessin est un moyen de <strong>nous exprimer</strong> sans barrières.<br/>
       Nous sommes une équipe de scénographes, ingénieurs et artistes, et nous créons des outils pour <strong>dessiner ensemble</strong>.
       <br/>
-      <br/>Pour le <strong>Fun</strong>. Pour <strong>l'Art</strong>. Et pour <strong>Réflechir</strong>.</>,
+      <br/>Pour le <strong>Fun</strong>. Pour <strong>l'Art</strong>. Et pour <strong>Réflechir.</strong></>,
 
-    bookingReachUs: 'Faites le avec nous',
+    bookingReachUs: 'Contactez Nous',
 
     useCases: "Un outil, plein de possibilités",
     features: "Fonctionnalités",
@@ -146,7 +147,7 @@ export const indexPageStrings = {
     downloadBrochure: "Download brochure (FR)",
     gallery: "Gallery",
     letsDrawTogether: "Let's draw together !",
-    bookUs: "Book an event",
+    bookUs: "Bookings",
   },
 
   fr: {
@@ -163,6 +164,6 @@ export const indexPageStrings = {
     downloadBrochure: "Télécharger la brochure (FR)",
     gallery: "Galerie",
     letsDrawTogether: "Dessinons ensemble !",
-    bookUs: "Réserver un événement",
+    bookUs: "Réservations",
   }
 }
