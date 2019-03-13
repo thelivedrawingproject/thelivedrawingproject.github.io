@@ -49,8 +49,16 @@ $darkColor: black;
   margin-bottom: 1em;
   margin-top: 1em;
 
+  @include breakpoint(small) {
+    font-size: 1.8em;
+  }
+
   &.White {
     font-size: 2em;
+
+    @include breakpoint(small) {
+      font-size: 1.8em;
+    }
     font-weight: 400;
     background-color: transparent;
     border-bottom: solid 2px black;
@@ -87,7 +95,7 @@ $darkColor: black;
     font-weight: 900;
     padding: 0.5em;
     @include breakpoint(small) {
-      font-size: 1em;
+      font-size: 1.2em;
       margin: 0.5em;
     }
 
@@ -130,6 +138,9 @@ $darkColor: black;
 
 .FullPageContainer {
   padding: 2em;
+  @include breakpoint(small) {
+    padding: 0.2em;
+  }
   display: flex;
   flex-direction: column;
 }
