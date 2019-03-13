@@ -1,1 +1,0 @@
-{"errors":[{"message":"Variable \"$path\" is never used in operation \"myQuery\".","locations":[{"line":2,"column":3}]}]}
