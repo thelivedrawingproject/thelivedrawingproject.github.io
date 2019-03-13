@@ -62,6 +62,7 @@ export const pageQuery = graphql`
                 title
                 subtitle
                 language
+                description
                 image {
                     childImageSharp {
                         # Other options include height (set both width and height to crop),

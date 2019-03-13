@@ -16,7 +16,7 @@ export default function Template({ data, location }) {
   return (
     <MainLayout language={post.frontmatter.language} location={{ ...location }}>
       <MetaTags title={post.frontmatter.title}
-                description={post.frontmatter.description || post.frontmatter.subtitle || ''}
+                description={post.frontmatter.description || post.frontmatter.subtitle || null}
                 pathname={post.frontmatter.path}
                 article/>
       <div className="coverBand" id="content">
@@ -50,6 +50,8 @@ export const pageQuery = graphql`
                 path
                 title
                 language
+                subtitle
+                description
             }
         }
     }`

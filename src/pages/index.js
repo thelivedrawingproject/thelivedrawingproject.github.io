@@ -112,9 +112,9 @@ export default function Index({ data, pageContext: { locale }, location }) {
 
       <div className="home homePosts">
         <div className="moreProjects">
-          <Link to={localLink(locale, '/contact')}>Contact</Link>
-          <Link to={localLink(locale, '/technology')}>{LOCAL.howDoesItWork}</Link>
           <Link to={localLink(locale, '/gallery')}>{LOCAL.gallery}</Link>
+          <Link to={localLink(locale, '/bookings')}>{LOCAL.bookUs}</Link>
+          <Link to={localLink(locale, '/contact')}>Contact</Link>
           <a href={flyer}>{LOCAL.downloadBrochure}</a>
         </div>
       </div>

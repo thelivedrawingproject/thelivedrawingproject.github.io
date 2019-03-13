@@ -287,6 +287,16 @@ $darkColor: black;
 
 }
 
+.Quote {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 2em;
+  color: #404040;
+  font-weight: 400;
+  padding: 0.5em;
+}
+
 .ArrowDown {
   border: solid $darkColor;
   border-width: 0 3px 3px 0;

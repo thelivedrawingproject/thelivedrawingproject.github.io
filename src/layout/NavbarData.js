@@ -3,7 +3,7 @@ export const NavbarData =
   "en": {
     "links": [
       {"path": "/", "name": "HOME"},
-      {"path": "/technology", "name": "TECHNOLOGY"},
+      {"path": "/bookings", "name": "BOOKING"},
       {"path": "/gallery", "name": "GALLERY"},
       {"path": "/contact", "name": "CONTACT"}
     ]
@@ -12,7 +12,7 @@ export const NavbarData =
   "fr": {
     "links": [
       {"path": "/fr", "name": "ACCUEIL"},
-      {"path": "/fr/technology", "name": "TECHNOLOGIE"},
+      {"path": "/fr/bookings", "name": "RÉSERVATION"},
       {"path": "/fr/gallery", "name": "GALERIE"},
       {"path": "/fr/contact", "name": "CONTACT"}
     ]
