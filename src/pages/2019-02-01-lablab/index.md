@@ -3,7 +3,7 @@ path: /art-residency-lablab
 layout: article
 title: Live Performance at the LabLab
 subtitle: Art residency
-description: Art residency at the Lablab in Lyon in partnership with AADN
+description: Art residency of the Live Drawing Project team at the Lablab in Lyon in partnership with AADN
 date: "2019-02-01"
 category: event
 image: "1.jpg"
@@ -12,9 +12,9 @@ image: "1.jpg"
 
 #### Description
 
-In February, we did an Art residency at the LabLab, a well known studio for digital art experimentations in Lyon.
+In February, we did an Art residency at the __LabLab__, a well known studio for digital art experimentations in Lyon.  
 During three days, we further explored the possibilities of our collaborative drawing technologies for live performance and storytelling. We also explored sound design for our installations.
-The residecy was conclyded by a public live performance.
+The residency was concluded by a public live performance.
 
 
 <photo-grid>

@@ -3,7 +3,7 @@ path: /art-residency-lablab
 layout: article
 title: Performance au LabLab
 subtitle: Résidence Artistique
-description: Résidence artistique à Lyon en partenariat avec l'AADN
+description: Résidence artistique de l'équipe du Live Drawing Project au LabLab à Lyon en partenariat avec l'AADN
 date: "2019-02-01"
 category: event
 language: fr
@@ -13,8 +13,8 @@ image: "1.jpg"
 
 #### Description
 
-En février, nous avons réalisé une résidence artistique au LabLab, un studio d'expérimentation en Art Numérique sur Lyon.
-Pendant trois jours, nous avons approfondi les possibilités offertes par notre outil de dessin collaboratif pour les performances live et la narration.
+En février, nous avons réalisé une résidence artistique au __LabLab__, un studio d'expérimentation en Art Numérique sur Lyon.  
+Pendant trois jours, nous avons approfondi les possibilités offertes par notre outil de dessin collaboratif pour les performances live, et nous avons construit une narration.
 Nous avons aussi exploré l'incorporation d'ambiances sonores et musicales à nos installations.  
   
   

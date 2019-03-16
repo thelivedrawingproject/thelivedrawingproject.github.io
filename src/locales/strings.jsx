@@ -33,7 +33,7 @@ export const bookingPageStrings = {
       "And much more !"
     ],
     features: "Features",
-    customizableTitle: "100% Customizable",
+    customizableTitle: "100% Customisable",
     customisableSubtext: <>From the physical installation to the visual style of the artpiece,
       everything can be customised prior to the event to meet your needs.<br/>
       <strong>We design custom experiences for every event we make.</strong></>,
@@ -46,7 +46,7 @@ export const bookingPageStrings = {
       No need to install a dedicated app. It <strong>works for everyone</strong> seamlessly, on every Android and Apple devices, through the web browser.</>,
 
     cellularNetworkTitle: "No cellular network ? No problem.",
-    cellularNetworkSubtext: <>The Live Drawing Project can run through Internet or on a local Wi-Fi, depending on your needs.</>,
+    cellularNetworkSubtext: <>The Live Drawing Project can run online or offline, depending on your needs.</>,
 
     moderationTitle: "Keep control",
     moderationSubtext: <>Collaborative creation can lead to inappropriate behaviours.<br/>
@@ -69,9 +69,11 @@ export const bookingPageStrings = {
 
     bookingPunchline: <em>Créons quelque chose <strong>ensemble</strong></em>,
     bookingSubtext: <>Le dessin est un moyen de <strong>nous exprimer</strong> sans barrières.<br/>
-      Nous sommes une équipe de scénographes, ingénieurs et artistes, et nous créons des outils pour <strong>dessiner ensemble</strong>.
+      Nous sommes une équipe de scénographes, ingénieurs et artistes. Nous développons des outils pour <strong>dessiner ensemble</strong>.
       <br/>
-      <br/>Pour le <strong>Fun</strong>. Pour <strong>l'Art</strong>. Et pour <strong>Réflechir.</strong></>,
+      <br/>Pour le <strong>Fun</strong>. Pour <strong>l'Art</strong>. Et pour <strong>faire réflechir.</strong>
+      <br/>
+    </>,
 
     bookingReachUs: 'Contactez Nous',
 
@@ -90,7 +92,7 @@ export const bookingPageStrings = {
       "Et bien plus !"
     ],
     customizableTitle: "100% Personnalisable",
-    customisableSubtext: <>De l'installation physique au style visuel de l'oeuvre collaorative,
+    customisableSubtext: <>De l'installation physique au style visuel de l'oeuvre collaborative,
       tout peut être personnalisé en amont pour répondre à vos besoins.<br/>
       <strong>Nous créons des expériences personnalisées pour chacun de nos événements.</strong></>,
 
@@ -102,7 +104,7 @@ export const bookingPageStrings = {
       Pas besoin d'installer d'application. The Live Drawing Project <strong>marche pour tout le monde</strong> sans effort, sur tous les appareils Android et Apple, via le navigateur internet.</>,
 
     cellularNetworkTitle: "Pas de réseau ? Pas de problème.",
-    cellularNetworkSubtext: <>The Live Drawing Project peut fonctionner via Internet ou en local, en fonction de vos besoins.</>,
+    cellularNetworkSubtext: <>The Live Drawing Project peut fonctionner via Internet ou hors ligne, en fonction de vos besoins.</>,
 
 
     moderationTitle: "Gardez le contrôle",
@@ -138,7 +140,7 @@ export const indexPageStrings = {
     drawOnYourPhone: "Draw on your phone",
     drawOnYourPhoneSubtext: "With your finger or with a stylus, following instructions... or your inspiration !",
     shareYourDrawing: "Share your drawing",
-    shareYourDrawingSubtext: "At anytime, when you're ready, by the click of a button.",
+    shareYourDrawingSubtext: "At anytime, when you're ready, in a single click.",
     joinArtwork: "Join a collaborative artwork",
     joinArtworkSubtext: "Drawings from all users appear in realtime on a wide canvas.",
     iterate: "Iterate",

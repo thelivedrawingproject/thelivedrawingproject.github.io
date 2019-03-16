@@ -12,7 +12,7 @@ export default function BookingPage({ data, pageContext: { locale }, location })
 
   return (
     <MainLayout language={locale} location={{ ...location }}>
-      <MetaTags title={'Technology'}/>
+      <MetaTags title={'Bookings'}/>
 
       <div className="FullPageContainer" style={{marginBottom: '2em'}}>
         <h1 style={{opacity:0}}>Booking</h1>
