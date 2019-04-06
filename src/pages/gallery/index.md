@@ -13,10 +13,12 @@ Lyon, France, February 2019
 <img src="lablab/1.jpg"/>
 <img src="lablab/2.jpg"/>
 <img src="lablab/3.jpg"/>
-<img src="lablab/4.jpg"/>
 <img src="lablab/0.jpg"/>
+<img src="lablab/7.jpg"/>
+<img src="lablab/6.jpg"/>
 <img src="lablab/5.jpg"/>
-
+<img src="lablab/00.jpg"/>
+<img src="lablab/aadn.jpg"/>
 </photo-grid>
 
 
@@ -28,13 +30,14 @@ At the Malting Pot pub.
 
 [Direct Link](https://vimeo.com/311653956)
 
-
 <photo-grid>
+<img src="maltingpot/3.jpg"/>
+<img src="maltingpot/screenshot1.jpg"/>
 <img src="maltingpot/1.jpg"/>
 <img src="maltingpot/2.jpg"/>
-<img src="maltingpot/3.jpg"/>
-<img src="maltingpot/4.jpg"/>
+<img src="maltingpot/cover.jpg"/>
 <img src="maltingpot/5.jpg"/>
+<img src="maltingpot/affiche.jpg"/>
 </photo-grid>
 
 ### Some of the best and funniest drawings we've seen

@@ -21,13 +21,11 @@ En décembre 2018, Nous avons exposé une installation live pour la [Fête des L
 
 
 <photo-grid>
+<img src="3.jpg"/>
+<img src="screenshot1.jpg"/>
 <img src="1.jpg"/>
 <img src="2.jpg"/>
-<img src="3.jpg"/>
 <img src="cover.jpg"/>
 <img src="5.jpg"/>
-<img src="maltingpot.png"/>
+<img src="affiche.jpg"/>
 </photo-grid>
-
-
-

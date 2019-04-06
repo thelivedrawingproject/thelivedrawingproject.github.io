@@ -85,6 +85,8 @@ export default function Index({ data, pageContext: { locale }, location }) {
         <h2 className="Punchline Accent">{LOCAL.events}</h2>
       </div>
 
+
+
       <div className="home homePosts">
         <div className="postGrid">
           {posts

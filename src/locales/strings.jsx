@@ -161,7 +161,7 @@ export const indexPageStrings = {
     joinArtwork: "Rejoins une oeuvre collaborative",
     joinArtworkSubtext: "Les dessins de tous les utilisateurs apparaissent en temps réel sur un grand tableau",
     iterate: "Recommence",
-    iterateSubtext: (<>L'oeure évolue en permanence. Dessine autant que tu veux.<br/> Exprime toi !</>),
+    iterateSubtext: (<>L'oeuvre évolue en permanence. Dessine autant que tu veux.<br/> Exprime toi !</>),
     events: "Événements",
     downloadBrochure: "Télécharger la brochure (FR)",
     gallery: "Galerie",

@@ -25,6 +25,8 @@ We will present a collaborative drawing installation entirely based on Shab's vi
 18th APRIL
 
 
+[Facebook Event](//www.facebook.com/events/592231084520436/)
+
 
 ### Partners
 

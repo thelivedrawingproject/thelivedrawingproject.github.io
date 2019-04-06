@@ -20,13 +20,11 @@ In December 2018, we exhibited a live installation for the [Lyon Light Festival]
 
 
 <photo-grid>
+<img src="3.jpg"/>
+<img src="screenshot1.jpg"/>
 <img src="1.jpg"/>
 <img src="2.jpg"/>
-<img src="3.jpg"/>
 <img src="cover.jpg"/>
 <img src="5.jpg"/>
-<img src="maltingpot.png"/>
+<img src="affiche.jpg"/>
 </photo-grid>
-
-
-

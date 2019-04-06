@@ -26,6 +26,7 @@ Nous présenterons une installation de dessin collaboratif entièrement construi
 
 18th AVRIL
 
+[Evenement Facebook](//www.facebook.com/events/592231084520436/)
 
 
 ### Partenaires
