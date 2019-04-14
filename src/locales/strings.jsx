@@ -150,6 +150,7 @@ export const indexPageStrings = {
     gallery: "Gallery",
     letsDrawTogether: "Let's draw together !",
     bookUs: "Bookings",
+    pastEvents: "Past Events"
   },
 
   fr: {
@@ -167,5 +168,6 @@ export const indexPageStrings = {
     gallery: "Galerie",
     letsDrawTogether: "Dessinons ensemble !",
     bookUs: "Réservations",
+    pastEvents: "Évenements passés"
   }
 }

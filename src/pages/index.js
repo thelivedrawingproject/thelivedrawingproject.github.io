@@ -12,6 +12,25 @@ export default function Index({ data, pageContext: { locale }, location }) {
   const { edges: posts } = data.allMarkdownRemark;
   const LOCAL = indexPageStrings[locale];
 
+  const localesOptions = {  year: 'numeric', month: 'long', day: 'numeric' };
+  const postGrid = ({node : post}) => {
+    return (
+      <div className="post" onClick={() => {
+        navigate(post.frontmatter.path + '#content')
+      }} key={post.id}>
+        <div className="postHeader" style={{
+          backgroundImage: 'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')',
+        }}>
+          <div className="inside">
+            <span className="postTitle">{post.frontmatter.title}</span>
+            <span className="post-meta postTag">{post.frontmatter.subtitle}</span>
+            <span className="post-meta postTag">{new Date(post.frontmatter.date).toLocaleDateString(locale, localesOptions)}</span>
+          </div>
+        </div>
+      </div>
+    )
+  };
+
   return (
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'}/>
@@ -86,29 +105,27 @@ export default function Index({ data, pageContext: { locale }, location }) {
       </div>
 
 
-
       <div className="home homePosts">
         <div className="postGrid">
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)
             .filter(post => post.node.frontmatter.language === locale)
-            .map(({ node: post }) => {
-              return (
-                <div className="post" onClick={() => {
-                  navigate(post.frontmatter.path + '#content')
-                }} key={post.id}>
-                  <div className="postHeader" style={{
-                    backgroundImage: 'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')',
-                  }}>
-                    <div className="inside">
-                      <span className="postTitle">{post.frontmatter.title}</span>
-                      <span className="post-meta postTag">{post.frontmatter.subtitle}</span>
-                    </div>
-                  </div>
-                </div>
-              )
-            })}
+            .filter(post => {return new Date() <= new Date(post.node.frontmatter.date)})
+            .map(postGrid)
+          }
         </div>
+
+
+        <h2 className={"Punchline"}>{LOCAL.pastEvents}</h2>
+        <div className="postGrid">
+          {posts
+            .filter(post => post.node.frontmatter.title.length > 0)
+            .filter(post => post.node.frontmatter.language === locale)
+            .filter(post => {return new Date(post.node.frontmatter.date) < new Date()})
+            .map(postGrid)
+          }
+        </div>
+
       </div>
 
 

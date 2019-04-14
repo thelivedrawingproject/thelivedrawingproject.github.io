@@ -2,9 +2,9 @@
 path: /collaboration-shab
 layout: article
 title: Shab x Live Drawing Project
-subtitle: Art Collaboration
+subtitle: Performance
 description: Art Collaboration of the Live Drawing Project with Shab, a French street artist, at the Sitio by Superposition, Lyon, France
-date: "2019-04-01"
+date: "2019-04-18"
 category: event
 image: "cover.jpg"
 ---
@@ -19,10 +19,6 @@ image: "cover.jpg"
 In April, we're making an Art Collaboration with the French street artist __Shab__ for his last exhibition at the __Superposition Gallery__.  
 
 We will present a collaborative drawing installation entirely based on Shab's visual style. Shab will perform alone and in collaboration with the public using our collaborative tools.
-
-#### Dates
-
-18th APRIL
 
 
 [Facebook Event](//www.facebook.com/events/592231084520436/)

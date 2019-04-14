@@ -2,9 +2,9 @@
 path: /collaboration-shab
 layout: article
 title: Shab x Live Drawing Project
-subtitle: Collaboration Artistique
+subtitle: Performance
 description: Collaboration artistique du Live Drawing Project avec Shab, un Street Artist Français, à la gallerie SITIO by Superposition, Lyon, France
-date: "2019-04-01"
+date: "2019-04-18"
 category: event
 language: fr
 image: "cover.jpg"
@@ -21,10 +21,6 @@ En avril, nous collaborons avec le street artist __Shab__ pour sa dernière expo
 
 Nous présenterons une installation de dessin collaboratif entièrement construite autour du style visuel de Shab. Shab livrera une performance en solo ainsi qu'en collaboration avec le public, à l'aise de nos outils.
 
-
-#### Dates
-
-18th AVRIL
 
 [Evenement Facebook](//www.facebook.com/events/592231084520436/)
 

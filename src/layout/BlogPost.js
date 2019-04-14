@@ -13,6 +13,7 @@ const renderAst = new rehypeReact({
   components: { "photo-grid": PhotoGrid, "image-compare": ImageCompare },
 }).Compiler
 
+const localesOptions = {  year: 'numeric', month: 'long', day: 'numeric' };
 
 /* style={{ backgroundImage: 'url(' + post.frontmatter.cover.childImageSharp.fixed.src + ')' }}*/
 export default function Template({ data, location }) {
@@ -32,7 +33,9 @@ export default function Template({ data, location }) {
           <h1 className="punchline">{post.frontmatter.title}</h1>
           <h2 className="subtext">
             <p><strong>{post.frontmatter.subtitle} </strong></p>
-            <p><em>{new Date(post.frontmatter.date).getFullYear()}</em></p>
+          </h2>
+          <h2 className="subtext">
+            <p><em>{new Date(post.frontmatter.date).toLocaleDateString(post.frontmatter.language, {year: 'numeric', month: 'long', day:'numeric'})}</em></p>
           </h2>
         </div>
       </div>

@@ -1,7 +1,7 @@
 ---
 path: /fete-des-lumieres-2018
 layout: article
-title:  Fête des Lumières 2018
+title:  Fête des Lumières Lyon
 subtitle: Installation Live
 description: Installation artistique du Live Drawing Project pour la Fête des Lumières 2018 de Lyon France au bar le Malting Pot
 language: fr
