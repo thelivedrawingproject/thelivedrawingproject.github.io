@@ -352,6 +352,11 @@ $darkColor: black;
 
   .post {
 
+    font-size: 1rem;
+    text-align: center;
+    @include breakpoint(small) {
+    font-size: 0.9rem;
+  }
 
     @include breakpoint(small) {
       margin: 2rem;
