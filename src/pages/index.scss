@@ -353,36 +353,25 @@ $darkColor: black;
   .post {
 
     font-size: 1rem;
-    text-align: center;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+
+    background-color: #cbcbcb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
     @include breakpoint(small) {
     font-size: 0.9rem;
   }
 
     @include breakpoint(small) {
-      margin: 2rem;
+      margin: 1em;
       width: 100%;
-      //border-bottom: solid 4px black;
-
-      &:first-child {
-
-      }
-
-      &:last-child {
-       border: none;
-
-      }
       &:hover {
         transform: none;
         cursor: pointer;
-        &:last-child {
-          border: none;
-        }
       }
-
     }
-
-    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
-
     @include breakpoint(normal) {
       margin: 1em;
       width: 40%;
@@ -402,11 +391,12 @@ $darkColor: black;
     }
   }
 
-  $backgroundText: rgba(0, 0, 0, 1);
+  $backgroundText: black;
+  $textColor: white;
 
   .postTitle {
-    font-size: 1.5em;
-    color: white;
+    font-size: 1.2em;
+    color: $textColor;
     font-weight: 600;
     padding: 0.5em;
     background-color: $backgroundText;
@@ -415,16 +405,16 @@ $darkColor: black;
   }
 
   .postDate {
-    font-size: 0.9em;
-    color: white;
+    font-size: 0.8em;
+    color: $textColor;
     background-color: $backgroundText;
     box-decoration-break: clone;
     padding: 1em;
   }
 
   .postTag {
-    font-size: 1.2em;
-    color: white;
+    font-size: 0.8em;
+    color: $textColor;
     font-weight: 600;
     background-color: $backgroundText;
     box-decoration-break: clone;
@@ -432,52 +422,44 @@ $darkColor: black;
     margin: 0.5em;
   }
 
-  .postHeader {
+  .insideArea {
 
     min-height: 10em;
-
     padding: 2em;
+    padding-left: 1em;
     margin: 0;
-    background-color: #cbcbcb;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+
 
     display: grid;
-    align-content: center;
-    justify-content: center;
+    align-content: flex-start;
+    justify-content: flex-start;
 
-    .inside {
+    .textArea {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      align-self: center;
-
-      opacity: 0;
-      transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+      align-items: flex-start;
+      align-self: flex-start;
+      @include basicTransition(opacity);
+      opacity: 0.8;
       @include breakpoint(small) {
         opacity: 1;
-      }
-
-      &:hover {
-
       }
     }
 
-    transition: box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
 
-      transition: box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: inset 0 0 0px 10000px rgba(0,0,0,0.3); // easy way to get a black overlay
-      .inside {
-        @include basicTransition();
+    box-shadow: inset 0 0 0px 1000px rgba(0,0,0,0.1); // easy way to get a black overlay
+    @include breakpoint(small) {
+      box-shadow: none;
+    }
+    @include basicTransition(box-shadow);
+    &:hover {
+      @include basicTransition(box-shadow);
+      box-shadow: inset 0 0 0px 1000px rgba(0,0,0,0); // easy way to get a black overlay
+      .textArea {
+        @include basicTransition(opacity);
         opacity: 1;
       }
 
-      @include breakpoint(small) {
-        box-shadow: inset 0 0 0px 10000px rgba(0,0,0,0.3); // easy way to get a black overlay
-        transition: box-shadow 130ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
     }
   }
 

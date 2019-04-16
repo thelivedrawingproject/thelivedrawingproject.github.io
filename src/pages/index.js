@@ -17,11 +17,9 @@ export default function Index({ data, pageContext: { locale }, location }) {
     return (
       <div className="post" onClick={() => {
         navigate(post.frontmatter.path + '#content')
-      }} key={post.id}>
-        <div className="postHeader" style={{
-          backgroundImage: 'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')',
-        }}>
-          <div className="inside">
+      }} key={post.id} style={{ backgroundImage: 'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')', }}>
+        <div className="insideArea">
+          <div className="textArea">
             <span className="postTitle">{post.frontmatter.title}</span>
             <span className="post-meta postTag">{post.frontmatter.subtitle}</span>
             <span className="post-meta postTag">{new Date(post.frontmatter.date).toLocaleDateString(locale, localesOptions)}</span>

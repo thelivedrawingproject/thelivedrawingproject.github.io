@@ -35,8 +35,9 @@ $colorHover: $accentColorIdle;
   }
 }
 
-@mixin basicTransition() {
-  transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+
+@mixin basicTransition($type: all) {
+  transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes fadein {
@@ -47,6 +48,10 @@ $colorHover: $accentColorIdle;
     opacity: 1;
   }
 }
+
+
+
+
 
 @mixin themedTagA() {
   $underlineColor: rgba($accentColor, 0.3); //rgba(150,150,150, 0.5);
