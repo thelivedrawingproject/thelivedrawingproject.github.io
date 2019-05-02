@@ -136,6 +136,8 @@ export const bookingPageStrings = {
 
 export const indexPageStrings = {
   en: {
+    comeDrawWithUs: 'Currently happening : Festival Peinture Fraiche - Draw with us now !',
+    clickHereToDraw: 'Click here to draw',
     realtimeCollaborativeDrawing: "Realtime Collaborative Drawing",
     drawOnYourPhone: "Draw on your phone",
     drawOnYourPhoneSubtext: "With your finger or with a stylus, following instructions... or your inspiration !",
@@ -154,6 +156,8 @@ export const indexPageStrings = {
   },
 
   fr: {
+    comeDrawWithUs: 'En ce moment : Festival Peinture Fraiche - Dessine avec nous !',
+    clickHereToDraw: 'Clique ici pour dessiner ',
     realtimeCollaborativeDrawing: `Dessin collaboratif en live`,
     drawOnYourPhone: `Dessine sur ton téléphone`,
     drawOnYourPhoneSubtext: "Avec ton doigt ou un stylet, suis les instructions... ou ton inspiration !",
