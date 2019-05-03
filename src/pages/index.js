@@ -3,7 +3,8 @@ import { Link, graphql, navigate } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../components/MetaTags'
 import './index.scss'
-import flyer from './../pages/gallery/flyer.pdf';
+import flyerEN from './../pages/gallery/TheLiveDrawingProject_Brochure_EN.pdf';
+import flyerFR from './../pages/gallery/TheLiveDrawingProject_Brochure_FR.pdf';
 import {indexPageStrings} from '../locales/strings';
 import {localLink} from '../locales/localeUtils'
 
@@ -138,7 +139,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           <Link to={localLink(locale, '/gallery')}>{LOCAL.gallery}</Link>
           <Link to={localLink(locale, '/bookings')}>{LOCAL.bookUs}</Link>
           <Link to={localLink(locale, '/contact')}>Contact</Link>
-          <a href={flyer}>{LOCAL.downloadBrochure}</a>
+          <a href={ locale === 'fr' ? flyerFR : flyerEN}>{LOCAL.downloadBrochure}</a>
         </div>
       </div>
     </MainLayout>

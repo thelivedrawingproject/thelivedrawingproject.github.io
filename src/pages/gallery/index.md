@@ -5,6 +5,11 @@ title: Gallery
 description: Photos and videos of the live drawing project events, installations and workshpops.
 ---
 
+[Download the brochure](./TheLiveDrawingProject_Brochure_EN.pdf)  
+  
+[Access our Facebook Page](//facebook.com/TheLiveDrawingProject)   
+  
+[Access our Instagram Page](//instagram.com/livedrawingproject)
 
 # Art residency at the LabLab
 Lyon, France, February 2019  
@@ -60,14 +65,3 @@ At the Malting Pot pub.
 <img src="drawings/16.png"/>
 <img src="drawings/17.png"/>
 </photo-grid>
-
-
-[Download the brochure (FR)](./flyer.pdf)
-
-
-### Find even more content on social medias
-
-[Access our Facebook Page](//facebook.com/TheLiveDrawingProject)  
-  
-  
-[Access our Instagram Page](//instagram.com/livedrawingproject)

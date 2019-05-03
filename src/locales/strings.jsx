@@ -62,7 +62,7 @@ export const bookingPageStrings = {
 
     bookingReachUs: 'Reach Us',
     bookingContactUs: 'Contact Us',
-    downloadBrochure: "Download brochure (FR)",
+    downloadBrochure: "Download brochure",
   },
 
   fr: {
@@ -112,7 +112,7 @@ export const bookingPageStrings = {
       Nos <strong>outils de modération</strong> nous permettent de supprimer instantanément tout dessin inapproprié, et si nécessaire, de bloquer des utilisateurs de façon permanente.</>,
 
     bookingContactUs: 'Contactez Nous',
-    downloadBrochure: "Télécharger la brochure (FR)",
+    downloadBrochure: "Télécharger la brochure",
   }
 
 }
@@ -148,7 +148,7 @@ export const indexPageStrings = {
     iterate: "Iterate",
     iterateSubtext: (<>The artpiece keeps evolving all the time. You can draw as much as you want.<br/> Express yourself !</>),
     events: "Events",
-    downloadBrochure: "Download brochure (FR)",
+    downloadBrochure: "Download brochure",
     gallery: "Gallery",
     letsDrawTogether: "Let's draw together !",
     bookUs: "Bookings",
@@ -168,7 +168,7 @@ export const indexPageStrings = {
     iterate: "Recommence",
     iterateSubtext: (<>L'oeuvre évolue en permanence. Dessine autant que tu veux.<br/> Exprime toi !</>),
     events: "Événements",
-    downloadBrochure: "Télécharger la brochure (FR)",
+    downloadBrochure: "Télécharger la brochure",
     gallery: "Galerie",
     letsDrawTogether: "Dessinons ensemble !",
     bookUs: "Réservations",

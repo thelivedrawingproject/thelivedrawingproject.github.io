@@ -3,9 +3,10 @@ import { Link } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../components/MetaTags'
 import './index.scss'
-import flyer from './../pages/gallery/flyer.pdf';
 import {bookingPageStrings} from '../locales/strings';
 import { localLink } from '../locales/localeUtils'
+import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
+import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
 
 export default function BookingPage({ data, pageContext: { locale }, location }) {
   const LOCAL = bookingPageStrings[locale];
@@ -69,7 +70,7 @@ export default function BookingPage({ data, pageContext: { locale }, location })
       <div className="home homePosts">
         <div className="moreProjects">
           <Link to={localLink(locale, '/contact')}>{LOCAL.bookingContactUs}</Link>
-          <a href={flyer}>{LOCAL.downloadBrochure}</a>
+          <a href={ locale === 'fr' ? flyerFR : flyerEN}>{LOCAL.downloadBrochure}</a>
         </div>
       </div>
     </MainLayout>

@@ -7,6 +7,12 @@ description: Photos et videos des évenements du Live Drawing Project, installat
 ---
 
 
+[Télécharger la brochure](./TheLiveDrawingProject_Brochure_FR.pdf)  
+  
+[Accéder à notre page Facebook](//facebook.com/TheLiveDrawingProject)  
+   
+[Accéder à notre page Instagram](//instagram.com/livedrawingproject) 
+
 # Résidence Artistique au LabLab
 Lyon, France, février 2019  
 
@@ -62,14 +68,3 @@ Au bar _Le Malting Pot_
 <img src="drawings/16.png"/>
 <img src="drawings/17.png"/>
 </photo-grid>
-
-
-[Télécharger la brochure](./flyer.pdf)
-
-
-### Retrouvez encore plus de contenus sur les réseaux sociaux
-
-[Accéder à notre page Facebook](//facebook.com/TheLiveDrawingProject)  
-  
-  
-[Accéder à notre page Instagram](//instagram.com/livedrawingproject)
