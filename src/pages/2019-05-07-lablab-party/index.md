@@ -14,7 +14,9 @@ image: "cover.jpg"
 
 #### Description
 
-As part of the inauguration event of the __Lablab 2.0__ (a place dedicated to digital arts) we will exhibit our collaborative drawing installation next to concerts, VJing performances, and other art installations.
+We exhibited our collaborative drawing installation next to concerts, VJing performances, and other art installations as part the inauguration of the __Lablab 2.0__ (a place dedicated to digital arts).
+During this special evening The Live Drawing Project was being exhibited in two different venues in the city.
+Audience from the two venues were able to communicate through drawings.
 
 
 ### Partners

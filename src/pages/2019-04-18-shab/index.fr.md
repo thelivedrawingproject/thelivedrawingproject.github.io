@@ -12,17 +12,24 @@ image: "cover.jpg"
 
 
 
-![Shab cover](textcover.jpg)
+![Shab cover](1.jpg)
 
 
 #### Description
 
-En avril, nous collaborons avec le street artist __Shab__ pour sa dernière exposition à la __Galerie Superposition__.  
+En avril, nous avons collaboré avec le street artist __Shab__ pour sa dernière exposition à la __Galerie Superposition__.  
 
-Nous présenterons une installation de dessin collaboratif entièrement construite autour du style visuel de Shab. Shab livrera une performance en solo ainsi qu'en collaboration avec le public, à l'aise de nos outils.
+Nous avons présenté une installation de dessin collaboratif entièrement construite autour du style visuel de Shab. Shab a livré une performance en solo ainsi qu'en collaboration avec le public à l'aide de nos outils.
 
 
-[Evenement Facebook](//www.facebook.com/events/592231084520436/)
+
+
+<photo-grid>
+<img src="1.jpg"/>
+<img src="2.jpg"/>
+<img src="3.jpg"/>
+<img src="textcover.jpg"/>
+</photo-grid>
 
 
 ### Partenaires
@@ -30,3 +37,5 @@ Nous présenterons une installation de dessin collaboratif entièrement construi
 [Shab](//www.shab-c.com/) 
 
 [Superposition](//superposition-lyon.com)  
+
+[Evenement Facebook](//www.facebook.com/events/592231084520436/)

@@ -15,8 +15,10 @@ image: "cover.jpg"
 
 #### Description
 
-Nous présenterons notre installation de dessin collaboratif dans la cadre de la soirée d'inauguration du __LaLab 2.0__, lieu culturel dédié à l'art numérique.
-L'installation prendra place dans une programmation chargée avec concerts, VJings, et installations d'art numérique.
+Nous avons présenté notre installation de dessin collaboratif dans la cadre de la soirée d'inauguration du __LaLab 2.0__, lieu culturel dédié à l'art numérique.
+L'installation a pris place dans une programmation chargée avec concerts, VJings, et installations d'art numérique.
+Lors de cette soirée spéciale, le Live Drawing Project était exposé dans deux lieux différents a travers la ville. 
+Les publics des deux lieux ont pu communiquer entre eux par l'intermédiaire des dessins.
 
 
 ### Partenaires

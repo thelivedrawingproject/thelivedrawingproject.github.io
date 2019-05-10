@@ -11,6 +11,44 @@ description: Photos and videos of the live drawing project events, installations
   
 [Access our Instagram Page](//instagram.com/livedrawingproject)
 
+
+# Installation at the Peinture Fraiche Festival
+Lyon, France, May 2019
+Street Art Festival  
+
+
+<photo-grid>
+<img src="pf/1.jpg"/>
+<img src="pf/b-12.jpg"/>
+<img src="pf/b-6.jpg"/>
+<img src="pf/b-26.jpg"/>
+<img src="pf/b-21.jpg"/>
+<img src="pf/b-22.jpg"/>
+<img src="pf/b-24.jpg"/>
+<img src="pf/b-32.jpg"/>
+<img src="pf/b-28.jpg"/>
+<img src="pf/b-14.jpg"/>
+<img src="pf/b-11.jpg"/>
+<img src="pf/b-39.jpg"/>
+<img src="pf/b-7.jpg"/>
+<img src="pf/b-13.jpg"/>
+<img src="pf/b-40.jpg"/>
+<img src="pf/b-2.jpg"/>
+</photo-grid>
+
+
+# Collaborative Performance with the Street Artist Shab
+Lyon, France, April 2019  
+
+
+<photo-grid>
+<img src="shab/1.jpg"/>
+<img src="shab/2.jpg"/>
+<img src="shab/3.jpg"/>
+<img src="shab/textcover.jpg"/>
+</photo-grid>
+
+
 # Art residency at the LabLab
 Lyon, France, February 2019  
 

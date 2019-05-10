@@ -10,9 +10,31 @@ language: fr
 image: "cover.jpg"
 ---
 
-![Bannière festival peinture fraiche](cover.jpg)
+![Bannière festival peinture fraiche](1.jpg)
 
 #### Description
-Nous présenterons une nouvelle installation exclusive lors du [Festival Peinture Fraiche](//peinturefraichefestival.fr).  
-__Plus d'informations prochainement...__  
 
+Nous avons exposé notre installation dans le cadre du [Festival Peinture Fraiche](//peinturefraichefestival.fr), le festival de Street Art de Lyon.
+
+Pendant les 10 jours d'exposition, nous avons reçu plus de 20 mille dessins de la part de milliers de participants de tous ages.
+Des Street Artistes du festival ont également utilisé nos outils pour performer entouré du public.
+  
+
+<photo-grid>
+<img src="1.jpg"/>
+<img src="b-12.jpg"/>
+<img src="b-6.jpg"/>
+<img src="b-26.jpg"/>
+<img src="b-21.jpg"/>
+<img src="b-22.jpg"/>
+<img src="b-24.jpg"/>
+<img src="b-32.jpg"/>
+<img src="b-28.jpg"/>
+<img src="b-14.jpg"/>
+<img src="b-11.jpg"/>
+<img src="b-39.jpg"/>
+<img src="b-7.jpg"/>
+<img src="b-13.jpg"/>
+<img src="b-40.jpg"/>
+<img src="b-2.jpg"/>
+</photo-grid>

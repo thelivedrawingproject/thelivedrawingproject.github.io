@@ -11,17 +11,24 @@ image: "cover.jpg"
 
 
 
-![Shab cover](textcover.jpg)
+![Shab cover](1.jpg)
 
 
 #### Description
 
-In April, we're making an Art Collaboration with the French street artist __Shab__ for his last exhibition at the __Superposition Gallery__.  
+In April, we made an Art Collaboration with the French street artist __Shab__ for his last exhibition at the __Superposition Gallery__.  
 
-We will present a collaborative drawing installation entirely based on Shab's visual style. Shab will perform alone and in collaboration with the public using our collaborative tools.
+We presented a collaborative drawing installation entirely based on Shab's visual style. Shab performed alone and in collaboration with the public using our collaborative tools.
 
 
-[Facebook Event](//www.facebook.com/events/592231084520436/)
+
+
+<photo-grid>
+<img src="1.jpg"/>
+<img src="2.jpg"/>
+<img src="3.jpg"/>
+<img src="textcover.jpg"/>
+</photo-grid>
 
 
 ### Partners
@@ -29,3 +36,5 @@ We will present a collaborative drawing installation entirely based on Shab's vi
 [Shab](//www.shab-c.com/) 
 
 [Superposition](//superposition-lyon.com)  
+
+[Facebook Event](//www.facebook.com/events/592231084520436/)
