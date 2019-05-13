@@ -16,7 +16,7 @@ image: "cover.jpg"
 
 Nous avons exposé notre installation dans le cadre du [Festival Peinture Fraiche](//peinturefraichefestival.fr), le festival de Street Art de Lyon.
 
-Pendant les 10 jours d'exposition, nous avons reçu plus de 20 mille dessins de la part de milliers de participants de tous ages.
+Pendant les 10 jours d'exposition, nous avons reçu plus de 40 mille dessins de la part de milliers de participants de tous ages.
 Des Street Artistes du festival ont également utilisé nos outils pour performer entouré du public.
   
 

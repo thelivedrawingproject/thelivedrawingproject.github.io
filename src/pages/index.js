@@ -30,15 +30,16 @@ export default function Index({ data, pageContext: { locale }, location }) {
     )
   };
 
+  /* HIGHLIGHT CURRENT EVENT :
+        <div className={"FullPage"} style={{marginBottom: '10rem'}}>
+        <h2 className="Subtitle"><strong>{LOCAL.comeDrawWithUs}</strong></h2>
+        <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
+      </div>
+   */
   return (
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'}/>
 
-
-      <div className={"FullPage"} style={{marginBottom: '10rem'}}>
-        <h2 className="Subtitle"><strong>{LOCAL.comeDrawWithUs}</strong></h2>
-        <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
-      </div>
 
       <div className="FullPage">
         <div className="CenteredLogo"/>

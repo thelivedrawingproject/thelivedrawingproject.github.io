@@ -15,7 +15,7 @@ image: "cover.jpg"
 
 We exhibited our installation as part of the [Peinture Fraiche Festival](//peinturefraichefestival.fr), the Street Art Festival of Lyon, France.
 
-During the 10 days of exhibition we received more than 20 thousand drawings from thousands of participants of all ages. 
+During the 10 days of exhibition we received more than 40 thousand drawings from thousands of participants of all ages. 
 Street Artists from the festival also used our tool for live performances alongside the public.
   
 
