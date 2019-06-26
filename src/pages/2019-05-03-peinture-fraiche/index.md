@@ -9,7 +9,10 @@ category: event
 image: "cover.jpg"
 ---
 
-![Peinture fraiche festival banner](1.jpg)
+
+<iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
+
+[Direct Link](//vimeo.com/344490536)
 
 #### Description
 
