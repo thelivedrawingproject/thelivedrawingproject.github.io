@@ -52,11 +52,6 @@ export default function Index({ data, pageContext: { locale }, location }) {
       }
 
 
-      <div className={"FullPage HighlightEvent"} style={{marginBottom: '10rem'}}>
-        <h2 className="Subtitle"><strong>{LOCAL.comeDrawWithUs}</strong></h2>
-        <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
-      </div>
-
       <div className="FullPage">
         <div className="CenteredLogo"/>
         <h1 style={{opacity:0}}>The Live Drawing Project</h1>
