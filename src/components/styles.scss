@@ -54,7 +54,7 @@ $colorHover: $accentColorIdle;
 
 
 @mixin themedTagA() {
-  $underlineColor: rgba($accentColor, 0.3); //rgba(150,150,150, 0.5);
+  $underlineColor: rgba($accentColor, 0.5); //rgba(150,150,150, 0.5);
   text-decoration: none;
   border-bottom: 4px solid $underlineColor;
   color: black;

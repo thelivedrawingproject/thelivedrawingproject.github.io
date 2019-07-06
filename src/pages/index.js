@@ -9,6 +9,8 @@ import {indexPageStrings} from '../locales/strings';
 import {localLink} from '../locales/localeUtils'
 
 
+const AreWeInPerformanceMode = false;
+
 export default function Index({ data, pageContext: { locale }, location }) {
   const { edges: posts } = data.allMarkdownRemark;
   const LOCAL = indexPageStrings[locale];
@@ -40,6 +42,20 @@ export default function Index({ data, pageContext: { locale }, location }) {
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'}/>
 
+      {AreWeInPerformanceMode && (
+        <div className={"PerformanceMode"} id={"performanceOverlay"}>
+          <div className="Logo"/>
+          <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
+          <button onClick={() => {let t = document.getElementById('performanceOverlay'); t.style.display = 'none';t.style.pointerEvents = 'none'}}>{LOCAL.goToWebsite}</button>
+        </div>
+      )
+      }
+
+
+      <div className={"FullPage HighlightEvent"} style={{marginBottom: '10rem'}}>
+        <h2 className="Subtitle"><strong>{LOCAL.comeDrawWithUs}</strong></h2>
+        <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
+      </div>
 
       <div className="FullPage">
         <div className="CenteredLogo"/>

@@ -136,7 +136,8 @@ export const bookingPageStrings = {
 
 export const indexPageStrings = {
   en: {
-    comeDrawWithUs: 'Currently happening : Festival Peinture Fraiche - Draw with us now !',
+    goToWebsite: '> Home',
+    comeDrawWithUs: 'Currently happening : Festi Lumi - Draw with us now !',
     clickHereToDraw: 'Click here to draw',
     realtimeCollaborativeDrawing: "Realtime Collaborative Drawing",
     drawOnYourPhone: "Draw on your phone",
@@ -156,7 +157,8 @@ export const indexPageStrings = {
   },
 
   fr: {
-    comeDrawWithUs: 'En ce moment : Festival Peinture Fraiche - Dessine avec nous !',
+    goToWebsite: '> Accueil',
+    comeDrawWithUs: 'En ce moment : Festi Lumi - Dessine avec nous !',
     clickHereToDraw: 'Clique ici pour dessiner ',
     realtimeCollaborativeDrawing: `Dessin collaboratif en live`,
     drawOnYourPhone: `Dessine sur ton téléphone`,
