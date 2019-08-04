@@ -14,6 +14,19 @@ description: Photos et videos des évenements du Live Drawing Project, installat
 [Accéder à notre page Instagram](//instagram.com/livedrawingproject) 
 
 
+# Installation à Festi Lumi
+Corse, Juillet 2019
+
+
+<photo-grid>
+<img src="festi/b-1-3.jpg"/>
+<img src="festi/b-1-4.jpg"/>
+<img src="festi/b-1-6.jpg"/>
+</photo-grid>
+
+
+
+
 # Installation au festival Peinture Fraiche
 Mai 2019, Lyon
 Festival de Street Art
@@ -96,23 +109,28 @@ Au bar _Le Malting Pot_
 <img src="maltingpot/affiche.jpg"/>
 </photo-grid>
 
-### Une sélection des meilleurs dessins de cet évenement (et les plus drôles)
+# Quelques dessins du public
+
+Pendant nos évenements, nous récupérons des milliers de dessins. Nous nous approchons de 100 000 dessins dans notre base de données. Voici une selection de quelques dessins faits par des personnes du public entre 4 et 90 ans.
 
 <photo-grid>
-<img src="drawings/2.png"/>
-<img src="drawings/3.png"/>
-<img src="drawings/4.png"/>
-<img src="drawings/5.png"/>
-<img src="drawings/6.png"/>
-<img src="drawings/7.png"/>
-<img src="drawings/8.png"/>
-<img src="drawings/9.png"/>
-<img src="drawings/10.png"/>
-<img src="drawings/11.png"/>
-<img src="drawings/12.png"/>
-<img src="drawings/13.png"/>
-<img src="drawings/14.png"/>
-<img src="drawings/15.png"/>
-<img src="drawings/16.png"/>
-<img src="drawings/17.png"/>
+<img src="drawings/1.jpg"/>
+<img src="drawings/2.jpg"/>
+<img src="drawings/3.jpg"/>
+<img src="drawings/4.jpg"/>
+<img src="drawings/5.jpg"/>
+<img src="drawings/7.jpg"/>
+<img src="drawings/8.jpg"/>
+<img src="drawings/9.jpg"/>
+<img src="drawings/10.jpg"/>
+<img src="drawings/11.jpg"/>
+<img src="drawings/12.jpg"/>
+<img src="drawings/13.jpg"/>
+<img src="drawings/14.jpg"/>
+<img src="drawings/15.jpg"/>
+<img src="drawings/16.jpg"/>
+<img src="drawings/17.jpg"/>
+<img src="drawings/18.jpg"/>
+<img src="drawings/19.jpg"/>
 </photo-grid>
+

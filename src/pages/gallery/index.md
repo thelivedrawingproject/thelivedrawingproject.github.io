@@ -12,6 +12,18 @@ description: Photos and videos of the live drawing project events, installations
 [Access our Instagram Page](//instagram.com/livedrawingproject)
 
 
+# Installation for Festi Lumi
+Corsica, July 2019
+
+
+<photo-grid>
+<img src="festi/b-1-3.jpg"/>
+<img src="festi/b-1-4.jpg"/>
+<img src="festi/b-1-6.jpg"/>
+</photo-grid>
+
+
+
 # Installation at the Peinture Fraiche Festival
 Lyon, France, May 2019
 Street Art Festival  
@@ -92,23 +104,28 @@ At the Malting Pot pub.
 <img src="maltingpot/affiche.jpg"/>
 </photo-grid>
 
-### Some of the best and funniest drawings we've seen
+### Some drawings from the audience
+
+During our events, we gather thousands of drawings. We're closely reaching 100,000 drawings in our database. Here's a selection of a few drawings made by people between 4 and 90 years old.
 
 <photo-grid>
-<img src="drawings/2.png"/>
-<img src="drawings/3.png"/>
-<img src="drawings/4.png"/>
-<img src="drawings/5.png"/>
-<img src="drawings/6.png"/>
-<img src="drawings/7.png"/>
-<img src="drawings/8.png"/>
-<img src="drawings/9.png"/>
-<img src="drawings/10.png"/>
-<img src="drawings/11.png"/>
-<img src="drawings/12.png"/>
-<img src="drawings/13.png"/>
-<img src="drawings/14.png"/>
-<img src="drawings/15.png"/>
-<img src="drawings/16.png"/>
-<img src="drawings/17.png"/>
+<img src="drawings/1.jpg"/>
+<img src="drawings/2.jpg"/>
+<img src="drawings/3.jpg"/>
+<img src="drawings/4.jpg"/>
+<img src="drawings/5.jpg"/>
+<img src="drawings/7.jpg"/>
+<img src="drawings/8.jpg"/>
+<img src="drawings/9.jpg"/>
+<img src="drawings/10.jpg"/>
+<img src="drawings/11.jpg"/>
+<img src="drawings/12.jpg"/>
+<img src="drawings/13.jpg"/>
+<img src="drawings/14.jpg"/>
+<img src="drawings/15.jpg"/>
+<img src="drawings/16.jpg"/>
+<img src="drawings/17.jpg"/>
+<img src="drawings/18.jpg"/>
+<img src="drawings/19.jpg"/>
 </photo-grid>
+
