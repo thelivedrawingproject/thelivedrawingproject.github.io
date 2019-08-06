@@ -102,7 +102,7 @@ $darkColor: black;
   background-size: contain;
   background-position: center;
   width: 100%;
-  height: 50vh;
+  height: 35vh;
   @include breakpoint(small) {
     height: 15em;
   }
@@ -140,8 +140,17 @@ $darkColor: black;
   }
 }
 
-.TestCover {
+.WelcomeCover {
   background-color: $accentColorIdle;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .Inside {
+   // background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .Punchline {

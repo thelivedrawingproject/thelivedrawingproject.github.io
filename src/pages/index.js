@@ -52,10 +52,13 @@ export default function Index({ data, pageContext: { locale }, location }) {
       }
 
 
-      <div className="FullPage TestCover">
-        <div className="CenteredLogo"/>
-        <h1 style={{opacity:0}}>The Live Drawing Project</h1>
-        <h2 className="Subtitle"><strong>{LOCAL.realtimeCollaborativeDrawing}</strong></h2>
+      <div className="FullPage WelcomeCover">
+        <div className={"Inside"}>
+          <div className="CenteredLogo"/>
+          <h1 style={{opacity:0}}>The Live Drawing Project</h1>
+          <h2 className="Subtitle"><strong>{LOCAL.realtimeCollaborativeDrawing}</strong></h2>
+        </div>
+
       </div>
 
       <div className="ResponsiveIframe">
