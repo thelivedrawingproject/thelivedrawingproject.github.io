@@ -3,7 +3,7 @@
 $blackLink: #4c4c4c;
 $backgroundColorForText: #fafafa;
 $backgroundColor: rgb(240, 240, 240);
-$navbarColor: rgb(240, 240, 240);
+
 
 $accentColor: #83B271;
 $accentColorIdle: #ABCB89;
@@ -12,7 +12,7 @@ $colorIdle: #919191;
 
 $colorUnselected: rgb(200,200,200);
 $colorHover: $accentColorIdle;
-
+$navbarColor: $backgroundColor;
 
 @mixin notSelectable() {
   -webkit-user-select: none; /* Safari */

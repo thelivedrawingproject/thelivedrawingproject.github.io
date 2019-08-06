@@ -1,0 +1,104 @@
+@import 'styles';
+
+
+.NavbarWithTitle {
+
+  $linkColorIdle: dimgray;
+  $linkColorActive: $accentColor;
+  $navbarColor: $backgroundColor;
+
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px 0 rgba(99, 130, 100, 0.16);
+
+  @include breakpoint(small) {
+    flex-direction: column;
+    padding: 0;
+
+  }
+
+
+  .Title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: $accentColor;
+    font-weight: 900;
+    font-size: 1.2em;
+    @include breakpoint(small) {
+      margin: auto;
+      font-size: 1em;
+      padding: 1em;
+      padding-top: 1.4em;
+      padding-bottom: 1.4em;
+    }
+  }
+
+  .Links {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    @include breakpoint(small) {
+      justify-content: space-between;
+      padding: 0;
+      border: none;
+    }
+
+    transition: all 0.1s ease-out 0s;
+
+    .active {
+      color: $linkColorActive;
+      box-shadow: inset 0 -4px 0 0 $colorActive;
+      transition: all 0.1s ease-out 0s;
+    }
+
+    a {
+      font-weight: 400;
+      padding: 0.8em;
+      margin: 0;
+      margin-right: 2em;
+      margin-left: 2em;
+      color: $linkColorIdle;
+      font-size: 1.2em;
+      box-shadow: inset 0 0px 0 0 $colorActive;
+      text-decoration: none;
+
+      transition: all 0.1s ease-out 0s;
+      &:hover {
+        color: $linkColorActive;
+        box-shadow: inset 0 -4px 0 0 $colorActive;
+        cursor: pointer;
+        text-decoration: none;
+        -webkit-transition: all 0.1s ease-out 0s;
+        transition: all 0.1s ease-out 0s;
+      }
+
+      &:active, &:focus {
+        outline: 0;
+        -moz-outline-style: none;
+
+      }
+
+      @include breakpoint(normal) {
+        text-align: right;
+      }
+      @include breakpoint(small) {
+        text-align: center;
+        margin: auto;
+        padding: 1em;
+        font-size: 0.9em;
+      }
+    }
+
+  }
+}
+

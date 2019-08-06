@@ -14,7 +14,7 @@ image: "cover.jpg"
 <img src="b-1-3.jpg"/>
 <img src="b-1-4.jpg"/>
 <img src="b-1-6.jpg"/>
-</photo-grid>np
+</photo-grid>
 
 #### Description
 

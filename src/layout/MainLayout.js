@@ -7,6 +7,7 @@ import LanguageSwitcher from '../components/LanguageSwitcher';
 import { defaultLanguage, supportedLanguages } from '../locales/locales'
 import { languageAutoRedirect } from '../locales/localeUtils'
 import {NavbarData} from './NavbarData'
+import { NavbarWithTitle } from '../components/NavbarWithTitle'
 
 export default function MainLayout({ children, language, location }) {
 
@@ -22,7 +23,7 @@ export default function MainLayout({ children, language, location }) {
     <>
       <div className="CssGridNavContentFooter">
         <nav className="gridNavBar">
-          <Navbar links={NavbarData[language].links}/>
+          <NavbarWithTitle links={NavbarData[language].links}/>
         </nav>
         <div className="gridContent styleContent">
           {children}

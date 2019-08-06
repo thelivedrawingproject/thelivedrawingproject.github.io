@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import './Navbar.scss'
+import './NavbarWithTitle.scss'
 import PropTypes from 'prop-types'
 
-export class Navbar extends Component {
+export class NavbarWithTitle extends Component {
 
   menuItems() {
     return (<>
@@ -16,8 +16,11 @@ export class Navbar extends Component {
 
   render() {
     return (
-      <div className="Navbar">
-        <div className="Links">
+      <div className="NavbarWithTitle">
+        <div className={"Title"}>
+          <div>The Live Drawing Project</div>
+        </div>
+        <div className={"Links"}>
           {this.menuItems()}
         </div>
       </div>
@@ -25,6 +28,6 @@ export class Navbar extends Component {
   }
 }
 
-Navbar.propTypes = {
+NavbarWithTitle.propTypes = {
   links: PropTypes.array.isRequired
 };

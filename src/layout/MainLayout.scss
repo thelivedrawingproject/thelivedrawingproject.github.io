@@ -11,16 +11,26 @@
     grid-template-areas: "nav nav" "content content" "content content" "footer footer";
     justify-items: stretch;
 
+
     .gridNavBar {
       justify-self: stretch;
       grid-area: nav;
       text-align: right;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      background-color: $backgroundColor;
+
+      // STUFF for responsive navbar using an overlay
+
+      // Z-index tweak allows gridNavBar to be TRULY overlaying every other element if it wants to, even if they are in position absolute/relative
+      position: sticky;
+      top: 0;
+      z-index: 1;
+
+
     }
 
     .gridContent {
       grid-area: content;
+      z-index: 0;
     }
 
     .gridFooter {
@@ -29,6 +39,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
+      z-index: 0;
     }
   }
 }
@@ -40,7 +51,7 @@
   @include breakpoint(small) {
     padding-left: 0em;
     padding-right: 0em;
-    padding-top: 1em;
+    padding-top: 0em;
     border: none;
   }
 }
