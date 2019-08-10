@@ -33,6 +33,7 @@
     font-weight: 900;
     font-size: 1.2em;
     @include breakpoint(small) {
+      display: none;
       margin: auto;
       font-size: 1em;
       padding: 1em;
