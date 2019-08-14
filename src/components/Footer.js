@@ -131,7 +131,7 @@ const Footer = () => (
 
 
           <div className={"Author"}>
-            {author && <p>Copyright 2019 {author}</p>}
+            {author && <p style={{ padding: '1em'}}>Copyright 2019 - {author}</p>}
           </div>
 
         </div>
