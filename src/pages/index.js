@@ -19,8 +19,6 @@ export default function Index({ data, pageContext: { locale }, location }) {
 
   const localesOptions = {  year: 'numeric', month: 'long', day: 'numeric' };
 
-  console.log(JSON.stringify(data));
-
   return (
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'}/>
