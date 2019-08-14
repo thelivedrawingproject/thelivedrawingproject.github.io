@@ -12,20 +12,36 @@ description: Photos and videos of the live drawing project events, installations
 [Access our Instagram Page](//instagram.com/livedrawingproject)
 
 
+# Nouvelles Passions Festival
+Art Festival  
+Scenography in a barn  
+Chevagny, France, August 2019  
+
+<photo-grid>
+<img src="./chev/b-12.jpg"/>
+<img src="./chev/b-9.jpg"/>
+<img src="./chev/b-11.jpg"/>
+<img src="./chev/b-8.jpg"/>
+<img src="./chev/b-13.jpg"/>
+<img src="./chev/b-10.jpg"/>
+</photo-grid>
+
+
 # Installation for Festi Lumi
-Corsica, July 2019
+Lights Festival  
+Corsica, July 2019  
 
 
 <photo-grid>
 <img src="festi/b-1-3.jpg"/>
-<img src="festi/b-1-4.jpg"/>
+<img src="festi/b-6.jpg"/>
 <img src="festi/b-1-6.jpg"/>
 </photo-grid>
 
 
 
 # Installation at the Peinture Fraiche Festival
-Lyon, France, May 2019
+Lyon, France, May 2019  
 Street Art Festival  
 
 <iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
@@ -55,6 +71,7 @@ Street Art Festival
 
 # Collaborative Performance with the Street Artist Shab
 Lyon, France, April 2019  
+Art gallery  
 
 
 <iframe src="https://player.vimeo.com/video/335872657" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
@@ -88,8 +105,8 @@ Lyon, France, February 2019
 
 # Exhibition for la Fête des Lumières
 Lyon, France, 2018  
+At the Malting Pot pub  
 
-At the Malting Pot pub.
 <iframe src="https://player.vimeo.com/video/311653956" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
 [Direct Link](https://vimeo.com/311653956)
@@ -104,7 +121,10 @@ At the Malting Pot pub.
 <img src="maltingpot/affiche.jpg"/>
 </photo-grid>
 
-### Some drawings from the audience
+  
+  
+  
+# Some drawings from the audience
 
 During our events, we gather thousands of drawings. We're closely reaching 100,000 drawings in our database. Here's a selection of a few drawings made by people between 4 and 90 years old.
 

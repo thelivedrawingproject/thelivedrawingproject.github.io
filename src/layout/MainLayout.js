@@ -19,6 +19,9 @@ export default function MainLayout({ children, language, location }) {
     languageAutoRedirect(language, location.pathname);
   }
 
+  /*
+
+   */
   return (
     <>
       <div className="CssGridNavContentFooter">
@@ -29,7 +32,7 @@ export default function MainLayout({ children, language, location }) {
           {children}
         </div>
         <div className="gridFooter">
-          <Footer/>
+          <Footer currentLanguage={language}/>
           {location && <LanguageSwitcher currentLanguage={language} availableLanguages={Object.keys(supportedLanguages)} currentUrl={location.pathname}/>}
         </div>
       </div>

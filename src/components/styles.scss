@@ -5,13 +5,14 @@ $backgroundColorForText: #fafafa;
 $backgroundColor: rgb(240, 240, 240);
 
 
-$accentColor: #83B271;
-$accentColorIdle: #ABCB89;
+$accentColor: #85b94f; //#aac989; //#4d9933;
+$accentLight: #aac989;
+$accentColorIdle: #2b6b15;
 $colorActive: $accentColor; //#ed9e38; // 50 50 50
 $colorIdle: #919191;
 
 $colorUnselected: rgb(200,200,200);
-$colorHover: $accentColorIdle;
+$colorHover: $accentColor;
 $navbarColor: $backgroundColor;
 
 @mixin notSelectable() {
@@ -34,6 +35,7 @@ $navbarColor: $backgroundColor;
     @warn "Breakpoint mixin supports: small, normal";
   }
 }
+
 
 
 @mixin basicTransition($type: all) {

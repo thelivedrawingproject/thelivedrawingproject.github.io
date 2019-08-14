@@ -15,59 +15,100 @@
   margin-bottom: 1rem;
 }
 
+
+
 .Footer {
-  padding-top: 3em;
-  font-size: 0.8em;
-  line-height: 1.4em;
 
-  a {
-    outline: 0;
+
+  @include breakpoint(normal) {
+    min-width: 50rem;
+    max-width: 90rem;
+
+  }
+  @include breakpoint(small) {
+    min-width: 90vw;
   }
 
-  p {
+  .Author {
     text-align: center;
-    color: dimgray;
+    color: rgb(40,40,40);
   }
 
-  .socialLinks {
-    padding-left: 1em;
-    padding-right: 1em;
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
+  .Inside {
 
-    .social-media-list {
+    padding-top: 3em;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    display: flex;
+    flex-direction: row;
+    @include breakpoint(small) {
+      flex-direction: column;
+    }
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+      outline: 0;
+    }
+
+    p {
+      text-align: center;
+      color: dimgray;
+    }
+
+    .Links {
       display: flex;
       flex-direction: row;
-      font-size: 1em;
-      justify-content: center;
+      a {
+        @include themedTagA();
+        margin: 0.5em;
+      }
 
-      .socialIcon {
 
-        .svg-icon {
-          width: 30px;
-          height: 30px;
-          margin-left: 10px;
-          margin-right: 10px;
-          margin-top: 20px;
-          margin-bottom: 20px;
 
-          path {
-            fill: $colorUnselected;
-            transition: all 0.2s ease-in;
-          }
-          transition: all 0.2s ease-in;
+    }
+    .socialLinks {
+      padding-left: 1em;
+      padding-right: 1em;
+      display: flex;
+      flex-direction: column;
 
-          &:hover {
-            transition: all 0.1s ease-in;
+      .social-media-list {
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+        justify-content: center;
+
+        .socialIcon {
+
+          .svg-icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
 
             path {
-              fill: $colorHover;
+              fill: $colorUnselected;
+              transition: all 0.2s ease-in;
+            }
+            transition: all 0.2s ease-in;
+
+            &:hover {
               transition: all 0.1s ease-in;
+
+              path {
+                fill: $colorHover;
+                transition: all 0.1s ease-in;
+              }
             }
           }
         }
       }
     }
+
   }
+
 }

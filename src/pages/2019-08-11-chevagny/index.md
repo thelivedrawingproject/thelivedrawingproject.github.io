@@ -10,10 +10,16 @@ image: "cover.jpg"
 ---
 
 
-
-![Cover](cover.jpg)
+<photo-grid>
+<img src="./b-12.jpg"/>
+<img src="./b-9.jpg"/>
+<img src="./b-11.jpg"/>
+<img src="./b-8.jpg"/>
+<img src="./b-13.jpg"/>
+<img src="./b-10.jpg"/>
+</photo-grid>
 
 
 #### Description
-
-We will be attending the _Nouvelles Passions_ Festival of Chevagny to exhibit a collaborative drawing installation. We will also conduct workshops on various drawing thematics.
+We exhibited our installation in a barn during the _Nouvelles Passions_ Festival of Chevagny.
+We conducted a workshop for children during the day, and grown-ups during the evening.

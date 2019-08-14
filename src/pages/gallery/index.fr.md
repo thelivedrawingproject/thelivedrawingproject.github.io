@@ -14,22 +14,38 @@ description: Photos et videos des évenements du Live Drawing Project, installat
 [Accéder à notre page Instagram](//instagram.com/livedrawingproject) 
 
 
-# Installation à Festi Lumi
-Corse, Juillet 2019
+
+
+
+# Festival Nouvelles Passions
+Chevagny, France, August 2019  
+Festival artistique  
+Installation dans une grange  
+
+<photo-grid>
+<img src="./chev/b-12.jpg"/>
+<img src="./chev/b-9.jpg"/>
+<img src="./chev/b-11.jpg"/>
+<img src="./chev/b-8.jpg"/>
+<img src="./chev/b-13.jpg"/>
+<img src="./chev/b-10.jpg"/>
+</photo-grid>
+
+# Festi Lumi
+Corse, Juillet 2019  
+Fête des Lumières  
 
 
 <photo-grid>
 <img src="festi/b-1-3.jpg"/>
-<img src="festi/b-1-4.jpg"/>
+<img src="festi/b-6.jpg"/>
 <img src="festi/b-1-6.jpg"/>
 </photo-grid>
 
 
-
-
 # Installation au festival Peinture Fraiche
-Mai 2019, Lyon
-Festival de Street Art
+Mai 2019, Lyon  
+Festival de Street Art  
 
 
 <iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
@@ -58,8 +74,8 @@ Festival de Street Art
 
 
 # Performance collaborative avec le Street Artiste Shab
-Avril 2019, Lyon
-
+Avril 2019, Lyon  
+Galerie d'art  
 
 <iframe src="https://player.vimeo.com/video/335872657" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
@@ -92,8 +108,8 @@ Lyon, France, février 2019
 
 # Exposition pour la Fête des Lumières
 Lyon, France, 2018  
+Au bar _Le Malting Pot_  
 
-Au bar _Le Malting Pot_
 <iframe src="https://player.vimeo.com/video/311653956" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
 [Lien Direct](https://vimeo.com/311653956)
@@ -108,7 +124,10 @@ Au bar _Le Malting Pot_
 <img src="maltingpot/5.jpg"/>
 <img src="maltingpot/affiche.jpg"/>
 </photo-grid>
-
+  
+   
+  
+  
 # Quelques dessins du public
 
 Pendant nos évenements, nous récupérons des milliers de dessins. Nous nous approchons de 100 000 dessins dans notre base de données. Voici une selection de quelques dessins faits par des personnes du public entre 4 et 90 ans.

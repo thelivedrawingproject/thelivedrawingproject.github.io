@@ -227,7 +227,7 @@
 
   .overlay {
 
-    background-color: $accentColorIdle;
+    background-color: $accentLight;
     @include breakpoint(normal) {
       padding: 7rem;
     }

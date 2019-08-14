@@ -12,9 +12,16 @@ image: "cover.jpg"
 
 
 
-![Cover](cover.jpg)
+<photo-grid>
+<img src="./b-12.jpg"/>
+<img src="./b-9.jpg"/>
+<img src="./b-11.jpg"/>
+<img src="./b-8.jpg"/>
+<img src="./b-13.jpg"/>
+<img src="./b-10.jpg"/>
+</photo-grid>
 
 
 #### Description
 
-Nous serons présent pour le festival _Nouvelles Passions_ de Chevagny pour présenter un dispositif de dessin collaboratif, ainsi que pour animer des ateliers autour du dessin.
+Nous avons exposé notre installation dans une grange lors du festival _Nouvelles Passions_ de Chevagny. Nous avons animé un atelier de dessin pour petits la journée et pour les grands le soir. 

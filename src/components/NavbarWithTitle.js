@@ -14,13 +14,15 @@ export class NavbarWithTitle extends Component {
     )
   }
 
+  /*
+            <Link activeClassName="active" className={"Title"} to={'/'} style={{marginRight: 'auto'}}>
+          </Link>
+   */
   render() {
     return (
       <div className="NavbarWithTitle">
-        <div className={"Title"}>
-          <div>The Live Drawing Project</div>
-        </div>
         <div className={"Links"}>
+
           {this.menuItems()}
         </div>
       </div>

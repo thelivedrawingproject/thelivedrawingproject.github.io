@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.scss'
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql, Link, StaticQuery } from 'gatsby'
+import { indexPageStrings } from '../locales/strings'
 
 
 const Footer = () => (
@@ -34,10 +35,16 @@ const Footer = () => (
         youtube: (youtube === '') ? undefined : youtube,
       }
 
+
+
       return (
         <div className="Footer">
+
+
+
+        <div className={"Inside"}>
           <div className="socialLinks">
-            <hr className="Separator"/>
+
             <div className="social-media-list">
 
               {links.github && (
@@ -113,7 +120,20 @@ const Footer = () => (
 
             </div>
           </div>
-          {author && <p>{author}</p>}
+
+          <div className={"Links"}>
+            <Link to={'/'}>HOME</Link>
+            <Link to={'/gallery'}>GALLERY</Link>
+            <a href={"mailto:livedrawingproject@protonmail.com"}>CONTACT</a>
+            <Link to={'/jobs'}>JOBS</Link>
+          </div>
+        </div>
+
+
+          <div className={"Author"}>
+            {author && <p>Copyright 2019 {author}</p>}
+          </div>
+
         </div>
       )
     }}

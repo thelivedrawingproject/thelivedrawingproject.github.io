@@ -21,7 +21,7 @@ function styleBackgroundPhoto(src) {
 }
 
 const photoGridProptypes = { gatsbyImages: PropTypes.array.isRequired }
-class PhotoGrid extends React.Component {
+export class PhotoGrid extends React.Component {
 
   constructor(props) {
     super(props)

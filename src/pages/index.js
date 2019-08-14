@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql, navigate } from 'gatsby'
+import { Link, graphql, navigate, Img } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../components/MetaTags'
 import './index.scss'
@@ -7,6 +7,17 @@ import flyerEN from './../pages/gallery/TheLiveDrawingProject_Brochure_EN.pdf';
 import flyerFR from './../pages/gallery/TheLiveDrawingProject_Brochure_FR.pdf';
 import {indexPageStrings} from '../locales/strings';
 import {localLink} from '../locales/localeUtils'
+
+import phonePic from './../res/showcase/phone.jpg'
+import gridFl1 from './gallery/festi/b-1-3.jpg'
+import goodiesPic from './../res/showcase/permanent.jpg'
+import gridPf1 from './gallery/pf/1.jpg'
+import gridFl2 from './../res/showcase/b-6.jpg'
+import gridCh1 from './../res/showcase/b-8.jpg'
+import gridPf2 from './gallery/pf/b-12.jpg'
+import gridCh2 from './../res/showcase/a2.jpg'
+
+import {PhotoGrid} from './../components/PhotoGrid';
 
 
 const AreWeInPerformanceMode = false;
@@ -16,146 +27,131 @@ export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale];
 
   const localesOptions = {  year: 'numeric', month: 'long', day: 'numeric' };
-  const postGrid = ({node : post}) => {
-    return (
-      <div className="post" onClick={() => {
-        navigate(post.frontmatter.path + '#content')
-      }} key={post.id} style={{ backgroundImage: 'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')', }}>
-        <div className="insideArea">
-          <div className="textArea">
-            <span className="postTitle">{post.frontmatter.title}</span>
-            <span className="post-meta postTag">{post.frontmatter.subtitle}</span>
-            <span className="post-meta postTag">{new Date(post.frontmatter.date).toLocaleDateString(locale, localesOptions)}</span>
-          </div>
-        </div>
-      </div>
-    )
-  };
 
-  /* HIGHLIGHT CURRENT EVENT :
-        <div className={"FullPage"} style={{marginBottom: '10rem'}}>
-        <h2 className="Subtitle"><strong>{LOCAL.comeDrawWithUs}</strong></h2>
-        <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
-      </div>
-   */
+
+
   return (
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'}/>
 
-      {AreWeInPerformanceMode && (
-        <div className={"PerformanceMode"} id={"performanceOverlay"}>
-          <div className="Logo"/>
-          <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
-          <button onClick={() => {let t = document.getElementById('performanceOverlay'); t.style.display = 'none';t.style.pointerEvents = 'none'}}>{LOCAL.goToWebsite}</button>
-        </div>
-      )
-      }
-
-
-      <div className="FullPage WelcomeCover">
-        <div className={"Inside"}>
-          <div className="CenteredLogo"/>
-          <h1 style={{opacity:0}}>The Live Drawing Project</h1>
-          <h2 className="Subtitle"><strong>{LOCAL.realtimeCollaborativeDrawing}</strong></h2>
-        </div>
-
-      </div>
-
-      <div className="ResponsiveIframe">
-      <iframe title="showcasevideo" src="https://player.vimeo.com/video/311653956"frameBorder="0" allowFullScreen={true}/>
-      </div>
-
-      <div className="FullPageContainer">
-        <h2 className="Punchline Accent">{LOCAL.letsDrawTogether}</h2>
-      </div>
-
-      <div className="Squares">
-
-        <div className="Square">
-          <div className="Icon">
-            <div className="Phone"/>
+      <div className={"ShowcasePage"}>
+        <h1 style={{display: 'none'}}>{LOCAL.title}</h1>
+        {AreWeInPerformanceMode && (
+          <div className={"PerformanceMode"} id={"performanceOverlay"}>
+            <div className="Logo"/>
+            <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
+            <button onClick={() => {let t = document.getElementById('performanceOverlay'); t.style.display = 'none';t.style.pointerEvents = 'none'}}>{LOCAL.goToWebsite}</button>
           </div>
-          <div className="Title">
-            {LOCAL.drawOnYourPhone}
+        )
+        }
+
+        <div className={"RollbackBackground"}>
+        <div className={"ResponsiveContainer WelcomerCoverPhoto"}>
+          <div className={"Inside"}>
+            <div className="WelcomeCover">
+              <div className={"Inside"}>
+                <h2>{LOCAL.letsDrawTogether}</h2>
+                <p>{LOCAL.mainDescription}</p>
+              </div>
+            </div>
           </div>
-          <div className="SubText">
-            {LOCAL.drawOnYourPhoneSubtext}
+        </div>
+        </div>
+
+        <div className={"ResponsiveContainer"} style={{backgroundColor: '#aac989'}}>
+          <div className={"Inside"}>
+            <div className="ShowcasePart">
+              <div className={"Text"}>
+                <h2 style={{color: 'white'}}>{LOCAL.yourPhoneYourCanvasTitle}</h2>
+                <p  style={{color: 'white'}}>{LOCAL.yourPhoneYourCanvasDescription}</p>
+              </div>
+              <div className={"ImageContainer"}>
+                <img src={phonePic}/>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="Square">
-          <div className="Icon">
-            <div className="Send"/>
-          </div>
-          <div className="Title">
-            {LOCAL.shareYourDrawing}
-          </div>
-          <div className="SubText">
-            {LOCAL.shareYourDrawingSubtext}
-          </div>
-        </div>
 
-        <div className="Square">
-          <div className="Icon">
-            <div className="Drawings"/>
-          </div>
-          <div className="Title">
-            {LOCAL.joinArtwork}
-          </div>
-          <div className="SubText">
-            {LOCAL.joinArtworkSubtext}
+
+        <div className={"ResponsiveContainer"} style={{backgroundColor: '#f4f4f4'}}>
+          <div className={"Inside"}>
+            <div className="ShowcasePart Column">
+
+              <div className={"Text Centered"}>
+                <h2>{LOCAL.joinCollabTitle}</h2>
+                <p>{LOCAL.joinCollabDescription}</p>
+              </div>
+
+              <div className={"PhotogridContainer"}>
+                <PhotoGrid gatsbyImages={[gridFl1, gridFl2, gridCh1, gridCh2, gridPf1, gridPf2]} className={"PaddingForNormalSize"}/>
+              </div>
+
+            </div>
           </div>
         </div>
 
-        <div className="Square">
-          <div className="Icon">
-            <div className="Replay"/>
+        <div className={"ResponsiveContainer"}>
+          <div className={"Inside"}>
+            <div className="ShowcasePart">
+              <div className={"Text"}>
+                <h2 style={{color: "rgb(40,40,40)"}}>{LOCAL.permanentArtTitle}</h2>
+                <p>{LOCAL.permanentArtDescription}</p>
+              </div>
+              <div className={"ImageContainer"}>
+                <img src={goodiesPic}/>
+              </div>
+            </div>
           </div>
-          <div className="Title">
-            {LOCAL.iterate}
+        </div>
+
+        <div className={"ResponsiveContainer"} style={{backgroundColor: '#aac989'}}>
+          <div className={"Inside"}>
+            <div className="ShowcasePart Column">
+              <div className={"Text Centered"}>
+                <h2 style={{color: 'white'}}>{LOCAL.useCasesTitle}</h2>
+              </div>
+              <div className={"ImageContainer"}>
+                <div className="WordsCloud">
+                  <>{LOCAL.useCases.map(wordCloud => {return <p key={wordCloud}>{wordCloud}</p>})}</>
+                </div>
+              </div>
+
+            </div>
           </div>
-          <div className="SubText">
-            {LOCAL.iterateSubtext}
+        </div>
+
+
+        <div className={"ResponsiveContainer"}>
+          <div className={"Inside"}>
+            <div className="ShowcasePart Column">
+              <div className={"Text Centered"}>
+                <h2 className="Punchline White" style={{color: "black"}}>{LOCAL.clientsTitle}</h2>
+              </div>
+              <div className={"ImageContainer"}>
+                <div className={"ClientsLogo"}>
+                  <div className={"Aadn"}/>
+                  <div className={"Bonifacio"}/>
+                  <div className={"Pf"}/>
+                  <div className={"MaltingPot"}/>
+                  <div className={"Chevagny"}/>
+                  <div className={"Superposition"}/>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="FullPageContainer">
-        <h2 className="Punchline Accent">{LOCAL.events}</h2>
-      </div>
+        <div className="home homePosts">
+          <div className="moreProjects">
+            <Link to={'/about'}>{LOCAL.moreInfos}</Link>
+            <Link to={'/gallery'}>{LOCAL.watchPhotos}</Link>
 
-
-      <div className="home homePosts">
-        <div className="postGrid">
-          {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .filter(post => post.node.frontmatter.language === locale)
-            .filter(post => {return new Date() <= new Date(post.node.frontmatter.date)})
-            .map(postGrid)
-          }
+            <a href={"mailto:livedrawingproject@protonmail.com"}>{LOCAL.contactUs}</a>
+            <a href={ locale === 'fr' ? flyerFR : flyerEN}>{LOCAL.downloadBrochure}</a>
+          </div>
         </div>
 
-
-        <h2 className={"Punchline"}>{LOCAL.pastEvents}</h2>
-        <div className="postGrid">
-          {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .filter(post => post.node.frontmatter.language === locale)
-            .filter(post => {return new Date(post.node.frontmatter.date) < new Date()})
-            .map(postGrid)
-          }
-        </div>
-
-      </div>
-
-
-      <div className="home homePosts">
-        <div className="moreProjects">
-          <Link to={localLink(locale, '/gallery')}>{LOCAL.gallery}</Link>
-          <Link to={localLink(locale, '/bookings')}>{LOCAL.bookUs}</Link>
-          <Link to={localLink(locale, '/contact')}>Contact</Link>
-          <a href={ locale === 'fr' ? flyerFR : flyerEN}>{LOCAL.downloadBrochure}</a>
-        </div>
       </div>
     </MainLayout>
   )

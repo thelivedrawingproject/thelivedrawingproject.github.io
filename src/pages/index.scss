@@ -4,6 +4,23 @@
 $darkColor: black;
 
 
+.ResponsiveContainer {
+
+display: flex;
+justify-content: center;
+
+.Inside {
+  @include breakpoint(normal) {
+    min-width: 50rem;
+    max-width: 90rem;
+
+  }
+  @include breakpoint(small) {
+    min-width: 90vw;
+  }
+}
+}
+
 
 .PerformanceMode {
   position: fixed;
@@ -94,26 +111,11 @@ $darkColor: black;
 
 }
 
-.CenteredLogo {
-  display: flex;
-  justify-content: center;
-  background: url("../res/tldp_white.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 100%;
-  height: 35vh;
-  @include breakpoint(small) {
-    height: 15em;
-  }
-}
-
 .ResponsiveIframe {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
   z-index: -1; // useful to hide videos when overlaying all page
-
   iframe {
     position: absolute;
     top: 5%;
@@ -124,34 +126,217 @@ $darkColor: black;
   }
 }
 
-.FullPage {
-  //border: 10px solid black;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.ShowcasePage {
 
-  a {
-    font-size: 3em;
-    text-align: center;
-    margin: 1rem;
-    margin-top: 4rem;
-    @include themedTagA();
+
+  .RollbackBackground {
+    background-color: $accentLight;
   }
+
+  .WelcomerCoverPhoto {
+
+    background: url('./../res/showcase/a2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .WelcomeCover {
+    $height: 80vh;
+    min-height: $height;
+    line-height: 2;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+
+    .Inside {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+      @include breakpoint(normal) {
+        justify-content: center;
+      }
+      @include breakpoint(small) {
+        justify-content: flex-start;
+      }
+
+      h2 {
+        font-size: 4rem;
+        font-weight: 900;
+      }
+      p {
+        line-height: 1.3;
+        font-size: 1.7em;
+        max-width: 30em;
+        margin: 0 auto;
+
+        @include breakpoint(small) {
+          font-size: 1.3em;
+          margin-top: auto;
+          padding-bottom: 3em;
+          padding-top: 3em;
+        }
+      }
+    }
+  }
+
+  .ShowcasePart {
+
+    $almostBlack: #111111;
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    @include breakpoint(normal) {
+      flex-direction: row;
+      padding-top: 4em;
+      padding-bottom: 4em;
+    }
+    @include breakpoint(small) {
+      flex-direction: column;
+      padding: 0;
+      padding-top: 4em;
+      padding-bottom: 4em;
+      align-items: center;
+    }
+
+
+    &.Column {
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .Text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.3em;
+
+      @include breakpoint(small) {
+        padding: 0.5em;
+      }
+      @include breakpoint(normal) {
+        padding: 2em;
+        max-width: 50em;
+      }
+
+      h2 {
+        font-size: 2.5em;
+        font-weight: 600;
+        color: $accentColor;
+
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      &.Centered {
+        text-align: center;
+      }
+    }
+
+    .PhotogridContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      @include breakpoint(normal) {
+        max-width: 70rem;
+      }
+
+      .PaddingForNormalSize {
+        @include breakpoint(normal) {
+          padding: 2em;
+        }
+      }
+    }
+
+    .ImageContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+
+  }
+
+  .ClientsLogo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 90vw;
+
+    div {
+      margin: 3em;
+      @include breakpoint(small) {
+        min-width: 12em;
+        min-height: 7em;
+      }
+      @include breakpoint(normal) {
+        min-width: 20em;
+        min-height: 10em;
+      }
+    }
+
+    @mixin imageBackground() {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    .Superposition {
+      background: url("./../res/clients/sup.jpg");
+      @include imageBackground();
+    }
+
+    .Aadn {
+      background: url("./../res/clients/aadn.svg");
+      @include imageBackground();
+    }
+
+    .MaltingPot {
+      background: url("./../res/clients/maltingpot.jpg");
+      @include imageBackground();
+    }
+
+    .Chevagny {
+      background: url("./2019-08-11-chevagny/cover.jpg");
+      @include imageBackground();
+    }
+
+
+    .Bonifacio {
+      background: url("./../res/clients/bonifacio.png");
+      @include imageBackground();
+    }
+
+    .Pf {
+      background: url("./../res/clients/pf.png");
+      @include imageBackground();
+    }
+  }
+
+
 }
 
-.WelcomeCover {
-  background-color: $accentColorIdle;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
-  .Inside {
-   // background-color: rgba(0,0,0,0.2);
-    width: 100%;
-    height: 100%;
-  }
-}
+
+
+
+
 
 .Punchline {
   font-size: 3em;
@@ -184,7 +369,6 @@ $darkColor: black;
     background-color: #abcb89;
     border-radius: 5px;
     color: white;
-
   }
 }
 
@@ -195,6 +379,7 @@ $darkColor: black;
 }
 
 .WordsCloud {
+  $shadowColor: #799d59; // Darker green (more sat, less bright)
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -224,10 +409,10 @@ $darkColor: black;
 
     &:hover {
       color: black;
-      box-shadow: 10px 10px rgba(0,0,0,0.5);
+      box-shadow: 10px 10px $shadowColor;
       transform: translateY(-5px) translateX(-5px);
       @include breakpoint(small) {
-        box-shadow: 4px 4px rgba(0,0,0,0.5);
+        box-shadow: 4px 4px $shadowColor;
         transform: translateY(-2px) translateX(-2px);
       }
 
