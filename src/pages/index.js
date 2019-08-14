@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, graphql, navigate, Img } from 'gatsby'
+import { Link, graphql, navigate } from 'gatsby'
+import Img from "gatsby-image";
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../components/MetaTags'
 import './index.scss'
@@ -7,28 +8,18 @@ import flyerEN from './../pages/gallery/TheLiveDrawingProject_Brochure_EN.pdf';
 import flyerFR from './../pages/gallery/TheLiveDrawingProject_Brochure_FR.pdf';
 import {indexPageStrings} from '../locales/strings';
 import {localLink} from '../locales/localeUtils'
-
-import phonePic from './../res/showcase/phone.jpg'
-import gridFl1 from './gallery/festi/b-1-3.jpg'
-import goodiesPic from './../res/showcase/permanent.jpg'
-import gridPf1 from './gallery/pf/1.jpg'
-import gridFl2 from './../res/showcase/b-6.jpg'
-import gridCh1 from './../res/showcase/b-8.jpg'
-import gridPf2 from './gallery/pf/b-12.jpg'
-import gridCh2 from './../res/showcase/a2.jpg'
-
 import {PhotoGrid} from './../components/PhotoGrid';
 
 
 const AreWeInPerformanceMode = false;
 
 export default function Index({ data, pageContext: { locale }, location }) {
-  const { edges: posts } = data.allMarkdownRemark;
+
   const LOCAL = indexPageStrings[locale];
 
   const localesOptions = {  year: 'numeric', month: 'long', day: 'numeric' };
 
-
+  console.log(JSON.stringify(data));
 
   return (
     <MainLayout language={locale} location={{ ...location }}>
@@ -37,7 +28,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
       <div className={"ShowcasePage"}>
         <h1 style={{display: 'none'}}>{LOCAL.title}</h1>
         {AreWeInPerformanceMode && (
-          <div className={"PerformanceMode"} id={"performanceOverlay"}>
+          <div className={"PerformanceMode"} id={"performanceOverlay"} >
             <div className="Logo"/>
             <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
             <button onClick={() => {let t = document.getElementById('performanceOverlay'); t.style.display = 'none';t.style.pointerEvents = 'none'}}>{LOCAL.goToWebsite}</button>
@@ -46,7 +37,8 @@ export default function Index({ data, pageContext: { locale }, location }) {
         }
 
         <div className={"RollbackBackground"}>
-        <div className={"ResponsiveContainer WelcomerCoverPhoto"}>
+        <div className={"ResponsiveContainer WelcomerCoverPhoto"} style={{background: `url(${data.imageChevagny.childImageSharp.fluid.src})`,
+        backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}}>
           <div className={"Inside"}>
             <div className="WelcomeCover">
               <div className={"Inside"}>
@@ -66,7 +58,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
                 <p  style={{color: 'white'}}>{LOCAL.yourPhoneYourCanvasDescription}</p>
               </div>
               <div className={"ImageContainer"}>
-                <img src={phonePic}/>
+                <Img fluid={data.imagePhone.childImageSharp.fluid} alt="" />
               </div>
             </div>
           </div>
@@ -84,7 +76,13 @@ export default function Index({ data, pageContext: { locale }, location }) {
               </div>
 
               <div className={"PhotogridContainer"}>
-                <PhotoGrid gatsbyImages={[gridFl1, gridFl2, gridCh1, gridCh2, gridPf1, gridPf2]} className={"PaddingForNormalSize"}/>
+                <PhotoGrid gatsbyImages={[ data.gridA.childImageSharp.fluid.src,
+                  data.gridB.childImageSharp.fluid.src,
+                  data.gridC.childImageSharp.fluid.src,
+                  data.gridD.childImageSharp.fluid.src,
+                  data.gridE.childImageSharp.fluid.src,
+                  data.gridF.childImageSharp.fluid.src,
+                  ]} className={"PaddingForNormalSize"}/>
               </div>
 
             </div>
@@ -99,7 +97,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
                 <p>{LOCAL.permanentArtDescription}</p>
               </div>
               <div className={"ImageContainer"}>
-                <img src={goodiesPic}/>
+                <Img fluid={data.imageArt.childImageSharp.fluid} alt="" />
               </div>
             </div>
           </div>
@@ -157,43 +155,46 @@ export default function Index({ data, pageContext: { locale }, location }) {
   )
 }
 
-export const portfolioPostsQuery = graphql`
+
+export const gatImage = graphql`
+  fragment gatImage on File {
+    childImageSharp {
+      fluid(maxHeight: 1400) {
+        ...GatsbyImageSharpFluid
+        src
+      }
+    }
+  }`
+
+
+
+export const indexPageQuery = graphql`
       query IndexQuery {
-          allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }
-              filter: { frontmatter:  { category: { eq:"event"}}}
-          ) {
-              edges {
-                  node {
-                      excerpt(pruneLength: 250)
-                      id
-                      frontmatter {
-                          title
-                          date(formatString: "MMMM DD, YYYY")
-                          path
-                          category
-                          subtitle
-                          language
-                          image {
-                              childImageSharp {
-                                  # Other options include height (set both width and height to crop),
-                                  # grayscale, duotone, rotate, etc.
-                                  fixed(width: 700) {
-                                      # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-                                      ...GatsbyImageSharpFixed
-                                      src
-                                  }
-
-                              }
-                          }
-                      }
-                  }
-              }
-          }
-      }`
-
-
-/*
-
-
-
- */
+  imagePhone: file(relativePath: { eq: "gallery/showcase/phone.jpg" }) {
+      ...gatImage
+  }
+    imageChevagny: file(relativePath: { eq: "gallery/showcase/chev.jpg" }) {
+      ...gatImage
+  }
+    imageArt: file(relativePath: { eq: "gallery/showcase/permanent.jpg" }) {
+      ...gatImage
+  }
+    gridA: file(relativePath: { eq: "gallery/showcase/fl0.jpg" }) {
+      ...gatImage
+  }  gridB: file(relativePath: { eq: "gallery/showcase/fl1.jpg" }) {
+      ...gatImage
+  }
+    gridC: file(relativePath: { eq: "gallery/showcase/chev0.jpg" }) {
+      ...gatImage
+  }  
+  gridD: file(relativePath: { eq: "gallery/showcase/chev.jpg" }) {
+      ...gatImage
+  }
+    gridE: file(relativePath: { eq: "gallery/pf/1.jpg" }) {
+      ...gatImage
+  }  
+    gridF: file(relativePath: { eq: "gallery/pf/b-12.jpg" }) {
+      ...gatImage
+  } 
+  
+}`

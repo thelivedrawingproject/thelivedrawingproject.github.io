@@ -12,7 +12,7 @@ justify-content: center;
 .Inside {
   @include breakpoint(normal) {
     min-width: 50rem;
-    max-width: 90rem;
+    max-width: 110rem;
 
   }
   @include breakpoint(small) {
@@ -134,8 +134,6 @@ justify-content: center;
   }
 
   .WelcomerCoverPhoto {
-
-    background: url('./../res/showcase/a2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -227,7 +225,7 @@ justify-content: center;
       }
 
       h2 {
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 600;
         color: $accentColor;
 
@@ -262,6 +260,17 @@ justify-content: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include breakpoint(normal) {
+        min-width: 70%;
+      }
+
+      @include breakpoint(small) {
+        min-width: 90%;
+      }
+
+      div {
+
+      }
 
       img {
         width: 100%;
@@ -298,17 +307,17 @@ justify-content: center;
     }
 
     .Superposition {
-      background: url("./../res/clients/sup.jpg");
+      background: url("gallery/clients/sup.jpg");
       @include imageBackground();
     }
 
     .Aadn {
-      background: url("./../res/clients/aadn.svg");
+      background: url("gallery/clients/aadn.svg");
       @include imageBackground();
     }
 
     .MaltingPot {
-      background: url("./../res/clients/maltingpot.jpg");
+      background: url("gallery/clients/maltingpot.jpg");
       @include imageBackground();
     }
 
@@ -319,12 +328,12 @@ justify-content: center;
 
 
     .Bonifacio {
-      background: url("./../res/clients/bonifacio.png");
+      background: url("gallery/clients/bonifacio.png");
       @include imageBackground();
     }
 
     .Pf {
-      background: url("./../res/clients/pf.png");
+      background: url("gallery/clients/pf.png");
       @include imageBackground();
     }
   }
