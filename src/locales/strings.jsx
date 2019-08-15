@@ -38,7 +38,7 @@ export const indexPageStrings = stringBuilderEnFr(
     StringEnFr('mainDescription',
 
       <>The Live Drawing Project is a collaborative drawing installation where everyone can draw <strong>together</strong> at the same time <strong>
-        for Fun, for Art to share and discover</strong>.</>,
+        for Fun, for Art, to share and discover</strong>.</>,
 
       <>Le Live Drawing Project est une installation de dessin collaborative où l'on peut dessiner <strong>tous ensemble</strong> en même temps
         pour <strong>s'amuser, créer, partager et découvrir</strong>.</>),
