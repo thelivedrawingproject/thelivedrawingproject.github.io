@@ -83,7 +83,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
         <p className="Subtext">{LOCAL.moderationSubtext}</p>
       </div>
 
-          <h2 className={"Punchline"}>{LOCAL.pastEvents}</h2>
+          <h2 className={"Punchline"}>{LOCAL.events}</h2>
           <div className="home homePosts">
           <div className="postGrid">
             {posts
@@ -98,6 +98,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
         <div className="moreProjects">
           <a href={"mailto:livedrawingproject@protonmail.com"}>{LOCAL.bookingContactUs}</a>
           <a href={ locale === 'fr' ? flyerFR : flyerEN}>{LOCAL.downloadBrochure}</a>
+          <a href={ locale === 'fr' ? flyerEN : flyerFR}>{LOCAL.downloadBrochureOtherLanguage}</a>
         </div>
       </div>
 

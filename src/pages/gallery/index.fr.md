@@ -7,7 +7,9 @@ description: Photos et videos des évenements du Live Drawing Project, installat
 ---
 
 
-[Télécharger la brochure](./TheLiveDrawingProject_Brochure_FR.pdf)  
+[Télécharger la brochure (Français)](./TheLiveDrawingProject_Brochure_FR.pdf)  
+ 
+[Télécharger la brochure (Anglais)](./TheLiveDrawingProject_Brochure_EN.pdf)  
   
 [Accéder à notre page Facebook](//facebook.com/TheLiveDrawingProject)  
    

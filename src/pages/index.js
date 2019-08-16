@@ -145,6 +145,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
 
             <a href={"mailto:livedrawingproject@protonmail.com"}>{LOCAL.contactUs}</a>
             <a href={ locale === 'fr' ? flyerFR : flyerEN}>{LOCAL.downloadBrochure}</a>
+            <a href={ locale === 'fr' ? flyerEN : flyerFR}>{LOCAL.downloadBrochureOtherLanguage}</a>
           </div>
         </div>
 

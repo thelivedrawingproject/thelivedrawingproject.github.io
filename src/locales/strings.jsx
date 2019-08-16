@@ -38,7 +38,7 @@ export const indexPageStrings = stringBuilderEnFr(
     StringEnFr('mainDescription',
 
       <>The Live Drawing Project is a collaborative drawing installation where everyone can draw <strong>together</strong> at the same time <strong>
-        for Fun, for Art, to share and discover</strong>.</>,
+        for Fun, for art, to share and discover</strong>.</>,
 
       <>Le Live Drawing Project est une installation de dessin collaborative où l'on peut dessiner <strong>tous ensemble</strong> en même temps
         pour <strong>s'amuser, créer, partager et découvrir</strong>.</>),
@@ -73,7 +73,8 @@ export const indexPageStrings = stringBuilderEnFr(
 
     StringEnFr('goToWebsite', '> Home', '> Accueil'),
     StringEnFr('clickHereToDraw', 'Click here to draw', 'Clique ici pour dessiner'),
-    StringEnFr('downloadBrochure', 'Download brochure', 'Télécharger la Brochure'),
+    StringEnFr('downloadBrochure', 'Download brochure (English)', "Télécharger la brochure (Français)"),
+    StringEnFr('downloadBrochureOtherLanguage', 'Download brochure (French)', "Télécharger la brochure (Anglais)"),
     StringEnFr('letsDrawTogether', "Let's Draw Together", "Dessinons ensemble"),
     StringEnFr('goToWebsite', "Go to website", "Aller au site web"),
 
@@ -152,7 +153,7 @@ export const bookingPageStrings = stringBuilderEnFr(
         Our <strong>moderation tools</strong> gives us the capacity to remove any inappropriate drawing instantly, and if needed to blacklist users entirely.</>,
       <>La création collaborative peut pousser certains à des comportement inappropriés.<br/>
         Nos <strong>outils de modération</strong> nous permettent de supprimer instantanément tout dessin inapproprié, et si nécessaire, de bloquer des utilisateurs de façon permanente.</>,),
-
+    
     StringEnFr("bookingPunchline", <em>Let's create something <strong>together</strong></em>,<em>Créons quelque chose <strong>ensemble</strong></em>),
 
     StringEnFr('bookingSubtext', <>Drawing is a way to <strong>express ourselves</strong> without barriers.<br/>
@@ -161,9 +162,10 @@ export const bookingPageStrings = stringBuilderEnFr(
       Nous sommes une équipe de scénographes, ingénieurs et artistes. Nous développons des outils pour <strong>dessiner ensemble</strong>.
     </> ),
 
-    StringEnFr("pastEvents", "Past Events", "Évenements passés"),
+    StringEnFr("pastEvents", "Events", "Évenements"),
     StringEnFr("reachUs", "Reach Us", "Contactez Nous"),
     StringEnFr('bookingContactUs', 'Contact Us', 'Nous contacter'),
-    StringEnFr('downloadBrochure', 'Download brochure', "Télécharger la brochure")
+    StringEnFr('downloadBrochure', 'Download brochure (English)', "Télécharger la brochure (Français)"),
+    StringEnFr('downloadBrochureOtherLanguage', 'Download brochure (French)', "Télécharger la brochure (Anglais)")
   ]
 );
