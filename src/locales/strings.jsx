@@ -38,7 +38,7 @@ export const indexPageStrings = stringBuilderEnFr(
     StringEnFr('mainDescription',
 
       <>The Live Drawing Project is a collaborative drawing installation where everyone can draw <strong>together</strong> at the same time <strong>
-        for Fun, for art, to share and discover</strong>.</>,
+        for fun, for art, to share and discover</strong>.</>,
 
       <>Le Live Drawing Project est une installation de dessin collaborative où l'on peut dessiner <strong>tous ensemble</strong> en même temps
         pour <strong>s'amuser, créer, partager et découvrir</strong>.</>),
@@ -162,7 +162,7 @@ export const bookingPageStrings = stringBuilderEnFr(
       Nous sommes une équipe de scénographes, ingénieurs et artistes. Nous développons des outils pour <strong>dessiner ensemble</strong>.
     </> ),
 
-    StringEnFr("pastEvents", "Events", "Évenements"),
+    StringEnFr("events", "Events", "Évenements"),
     StringEnFr("reachUs", "Reach Us", "Contactez Nous"),
     StringEnFr('bookingContactUs', 'Contact Us', 'Nous contacter'),
     StringEnFr('downloadBrochure', 'Download brochure (English)', "Télécharger la brochure (Français)"),

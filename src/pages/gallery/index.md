@@ -5,9 +5,9 @@ title: Gallery
 description: Photos and videos of the live drawing project events, installations and workshpops.
 ---
 
-[Download the brochure (English)](./TheLiveDrawingProject_Brochure_EN.pdf)  
+[Download brochure (English)](./TheLiveDrawingProject_Brochure_EN.pdf)  
 
-[Download the brochure (French)](./TheLiveDrawingProject_Brochure_FR.pdf)  
+[Download brochure (French)](./TheLiveDrawingProject_Brochure_FR.pdf)  
    
 [Access our Facebook Page](//facebook.com/TheLiveDrawingProject)   
   
@@ -43,8 +43,9 @@ Corsica, July 2019
 
 
 # Installation at the Peinture Fraiche Festival
-Lyon, France, May 2019  
 Street Art Festival  
+Lyon, France, May 2019  
+
 
 <iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 

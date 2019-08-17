@@ -46,8 +46,9 @@ Fête des Lumières
 
 
 # Installation au festival Peinture Fraiche
-Mai 2019, Lyon  
 Festival de Street Art  
+Mai 2019, Lyon  
+
 
 
 <iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
@@ -76,8 +77,9 @@ Festival de Street Art
 
 
 # Performance collaborative avec le Street Artiste Shab
-Avril 2019, Lyon  
 Galerie d'art  
+Avril 2019, Lyon  
+
 
 <iframe src="https://player.vimeo.com/video/335872657" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
