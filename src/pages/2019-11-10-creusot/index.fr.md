@@ -16,4 +16,4 @@ image: "cover.jpg"
 
 #### Description
 
-Nous avons exposé notre installation dans la salle communale _L'alto_ lors du festival du Jeu Vidéo du Creusot, un évenement familial ouvert à tous. Nous avons également exposé le premier prototype de notre prochaine installation... Plus d'informations prochainement.
+Nous avons exposé notre installation dans la salle communale _L'alto_ lors du festival du Jeu Vidéo du Creusot, un évenement familial ouvert à tous. Nous avons également exposé le premier prototype de notre prochaine installation... Plus d'informations sur cette nouvelle oeuvre prochainement !

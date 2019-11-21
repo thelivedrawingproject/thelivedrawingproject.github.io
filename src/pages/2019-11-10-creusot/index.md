@@ -16,4 +16,4 @@ image: "cover.jpg"
 
 #### Description
 
-We exhibited our installation at the _Alto_ for the Creusot Video Game Festival, a familial event accessible to everyone. We also exhibited the fist prototype of our latest installation... more informations coming soon.
+We exhibited our installation at the _Alto_ for the Creusot Video Game Festival, a familial event accessible to everyone. We also exhibited the first prototype of our latest installation... More informations about this new artwork in a few weeks !
