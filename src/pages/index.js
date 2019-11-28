@@ -28,7 +28,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
         {AreWeInPerformanceMode && (
           <div className={"PerformanceMode"} id={"performanceOverlay"} >
             <div className="Logo"/>
-            <a href="http://peinture.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
+            <a href="//berthom.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
             <button onClick={() => {let t = document.getElementById('performanceOverlay'); t.style.display = 'none';t.style.pointerEvents = 'none'}}>{LOCAL.goToWebsite}</button>
           </div>
         )
