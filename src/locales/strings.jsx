@@ -106,7 +106,8 @@ export const indexPageStrings = stringBuilderEnFr(
     StringEnFr('clientsTitle', 'They trust us', 'Ils nous font confiance'),
     StringEnFr('contactUs', 'Contact us', 'Nous contacter'),
     StringEnFr('watchPhotos', "Photo & Video gallery", "Gallerie de photos et vidéos"),
-      StringEnFr('moreInfos', "More about the project", "Plus d'informations")
+      StringEnFr('moreInfos', "More about the project", "Plus d'informations"),
+      StringEnFr('currentlyHappening', 'Curently Happening', 'En ce moment')
   ]
 )
 

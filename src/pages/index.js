@@ -11,8 +11,8 @@ import {localLink} from '../locales/localeUtils'
 import {PhotoGrid} from './../components/PhotoGrid';
 
 
-const AreWeInPerformanceMode = false;
-
+const AreWeInPerformanceMode = true;
+const eventName = 'SoliBARités';
 export default function Index({ data, pageContext: { locale }, location }) {
 
   const LOCAL = indexPageStrings[locale];
@@ -28,7 +28,8 @@ export default function Index({ data, pageContext: { locale }, location }) {
         {AreWeInPerformanceMode && (
           <div className={"PerformanceMode"} id={"performanceOverlay"} >
             <div className="Logo"/>
-            <a href="http://berthom.thelivedrawingproject.com">{LOCAL.clickHereToDraw}</a>
+            <div style={{textAlign:'center', fontSize:'1.5em'}}>{LOCAL.currentlyHappening}<br/><br/><strong style={{fontSize:'2.5em', color:'#85b94f'}}>{eventName}</strong></div>
+            <a href="http://solibarites.thelivedrawingproject.com" onClick={()=>{}}>{LOCAL.clickHereToDraw}</a>
             <button onClick={() => {let t = document.getElementById('performanceOverlay'); t.style.display = 'none';t.style.pointerEvents = 'none'}}>{LOCAL.goToWebsite}</button>
           </div>
         )
