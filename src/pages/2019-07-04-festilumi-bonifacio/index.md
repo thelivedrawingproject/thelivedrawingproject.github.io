@@ -6,7 +6,6 @@ subtitle: Live Installation
 description: The Live Drawing Project Installation for Festi Lumi, the Lights Festival of Bonifacio, France
 date: "2019-07-04"
 category: event
-language: en
 image: "b-4.jpg"
 ---
 
