@@ -53,6 +53,18 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
         </div>
       </div>
 
+      <h2 className={"Punchline"}>{LOCAL.events}</h2>
+          <div className="home homePosts">
+          <div className="postGrid">
+            {posts
+              .filter(post => post.node.frontmatter.title.length > 0)
+              .filter(post => post.node.frontmatter.language === locale)
+              .map(postGrid)
+            }
+          </div>
+          </div>
+
+
       <div className="FullPageContainer">
         <h2 className="Punchline Accent">{LOCAL.features}</h2>
       </div>
@@ -83,16 +95,6 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
         <p className="Subtext">{LOCAL.moderationSubtext}</p>
       </div>
 
-          <h2 className={"Punchline"}>{LOCAL.events}</h2>
-          <div className="home homePosts">
-          <div className="postGrid">
-            {posts
-              .filter(post => post.node.frontmatter.title.length > 0)
-              .filter(post => post.node.frontmatter.language === locale)
-              .map(postGrid)
-            }
-          </div>
-          </div>
 
       <div className="home homePosts">
         <div className="moreProjects">

@@ -7,14 +7,17 @@ description: Installation du Live Drawing Project pour Festi Lumi, Fête des Lum
 date: "2019-07-04"
 category: event
 language: fr
-image: "cover.jpg"
+image: "b-4.jpg"
 ---
 
 
 <photo-grid>
-<img src="b-1-3.jpg"/>
-<img src="b-1-4.jpg"/>
-<img src="b-1-6.jpg"/>
+<img src="b-5.jpg"/>
+<img src="b-1.jpg"/>
+<img src="b-6.jpg"/>
+<img src="b-2.jpg"/>
+<img src="b-3.jpg"/>
+<img src="b-4.jpg"/>
 </photo-grid>
 
 #### Description

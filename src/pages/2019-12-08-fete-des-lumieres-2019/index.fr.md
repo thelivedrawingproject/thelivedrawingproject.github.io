@@ -15,4 +15,12 @@ image: "cover.jpg"
 
 #### Description
 
-Retrouvez nous pour la Fête des Lumières de Lyon 2019 dans différents lieux... Plus d'informations à venir.
+Nous avons présenté deux installations au bar _Le Malting Pot_ à l'occasion de la [Fête des Lumières](//www.fetedeslumieres.lyon.fr) de Lyon (France). Une en intérieur et une en extérieur.
+
+
+<photo-grid>
+<img src="b-1.jpg"/>
+<img src="b-2.jpg"/>
+<img src="b-3.jpg"/>
+<img src="b-6.jpg"/>
+</photo-grid>

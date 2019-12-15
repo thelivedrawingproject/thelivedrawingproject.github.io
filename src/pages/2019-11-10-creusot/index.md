@@ -6,7 +6,6 @@ subtitle: Installation & Workshop
 description: Installation and Workshops of the Live Drawing Project for the Video Game Festival, Creusot 2019, France
 date: "2019-11-10"
 category: event
-language: en
 image: "cover.jpg"
 ---
 

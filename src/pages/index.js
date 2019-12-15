@@ -11,7 +11,7 @@ import {localLink} from '../locales/localeUtils'
 import {PhotoGrid} from './../components/PhotoGrid';
 
 
-const AreWeInPerformanceMode = true;
+const AreWeInPerformanceMode = false;
 const eventName = 'SoliBARités';
 export default function Index({ data, pageContext: { locale }, location }) {
 

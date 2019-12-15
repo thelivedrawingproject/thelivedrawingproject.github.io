@@ -7,7 +7,7 @@ description: Installation et Workshops du Live Drawing Project pour le festival 
 date: "2019-08-11"
 category: event
 language: fr
-image: "cover.jpg"
+image: "b-10.jpg"
 ---
 
 
@@ -19,6 +19,7 @@ image: "cover.jpg"
 <img src="./b-8.jpg"/>
 <img src="./b-13.jpg"/>
 <img src="./b-10.jpg"/>
+<img src="./cover.jpg"/>
 </photo-grid>
 
 

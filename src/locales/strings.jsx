@@ -107,7 +107,8 @@ export const indexPageStrings = stringBuilderEnFr(
     StringEnFr('contactUs', 'Contact us', 'Nous contacter'),
     StringEnFr('watchPhotos', "Photo & Video gallery", "Gallerie de photos et vidéos"),
       StringEnFr('moreInfos', "More about the project", "Plus d'informations"),
-      StringEnFr('currentlyHappening', 'Curently Happening', 'En ce moment')
+      StringEnFr('currentlyHappening', 'Curently Happening', 'En ce moment'),
+      StringEnFr('callUs', 'Call us', 'Appelez nous')
   ]
 )
 
@@ -167,6 +168,7 @@ export const bookingPageStrings = stringBuilderEnFr(
     StringEnFr("reachUs", "Reach Us", "Contactez Nous"),
     StringEnFr('bookingContactUs', 'Contact Us', 'Nous contacter'),
     StringEnFr('downloadBrochure', 'Download brochure (English)', "Télécharger la brochure (Français)"),
-    StringEnFr('downloadBrochureOtherLanguage', 'Download brochure (French)', "Télécharger la brochure (Anglais)")
+    StringEnFr('downloadBrochureOtherLanguage', 'Download brochure (French)', "Télécharger la brochure (Anglais)"),
+    StringEnFr('bookingCallUs', 'Call us', 'Appelez nous')
   ]
 );

@@ -6,13 +6,21 @@ subtitle: Live Installation
 description: Live Installations during the Light Festival of Lyon 21019
 date: "2019-12-08"
 category: event
-language: en
 image: "cover.jpg"
 ---
+
 
 
 ![Cover](cover.jpg)
 
 #### Description
 
-We will be exhibiting our live installation for the audience of the Light Festival of Lyon in numerous places... More infos coming soon.
+We exhibited two installations at the bar _Le Malting Pot_ as part of the [Fête des Lumières](//www.fetedeslumieres.lyon.fr) of Lyon (France). One inside and one outside.
+
+
+<photo-grid>
+<img src="b-1.jpg"/>
+<img src="b-2.jpg"/>
+<img src="b-3.jpg"/>
+<img src="b-6.jpg"/>
+</photo-grid>

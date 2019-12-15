@@ -17,6 +17,19 @@ description: Photos et videos des évenements du Live Drawing Project, installat
 
 
 
+# Dans les rues lyonnaises
+Lyon, France, 2019  
+The Live Drawing Project est un project 100% lyonnais. Notre ville est notre lieu d'experimentation privilégié pour tester de nouvelles façons d'inspirer le public.
+
+<photo-grid>
+<img src="lyon2019/b-2.jpg"/>
+<img src="lyon2019/b-3.jpg"/>
+<img src="lyon2019/b-10.jpg"/>
+<img src="lyon2019/b-6.jpg"/>
+<img src="lyon2019/b-13.jpg"/>
+<img src="lyon2019/b-63.jpg"/>
+<img src="lyon2019/b-1.jpg"/>
+</photo-grid>
 
 
 # Festival Nouvelles Passions
@@ -37,11 +50,13 @@ Installation dans une grange
 Corse, Juillet 2019  
 Fête des Lumières  
 
-
 <photo-grid>
-<img src="festi/b-1-3.jpg"/>
+<img src="festi/b-5.jpg"/>
+<img src="festi/b-1.jpg"/>
 <img src="festi/b-6.jpg"/>
-<img src="festi/b-1-6.jpg"/>
+<img src="festi/b-2.jpg"/>
+<img src="festi/b-3.jpg"/>
+<img src="festi/b-4.jpg"/>
 </photo-grid>
 
 

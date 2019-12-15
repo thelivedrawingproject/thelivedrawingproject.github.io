@@ -14,6 +14,20 @@ description: Photos and videos of the live drawing project events, installations
 [Access our Instagram Page](//instagram.com/livedrawingproject)
 
 
+# Multiple events in the Streets of Lyon
+Lyon, France, 2019  
+Our hometown is our place of experimentation to test new ways to inspire people.
+
+<photo-grid>
+<img src="lyon2019/b-2.jpg"/>
+<img src="lyon2019/b-3.jpg"/>
+<img src="lyon2019/b-10.jpg"/>
+<img src="lyon2019/b-6.jpg"/>
+<img src="lyon2019/b-13.jpg"/>
+<img src="lyon2019/b-63.jpg"/>
+<img src="lyon2019/b-1.jpg"/>
+</photo-grid>
+
 # Nouvelles Passions Festival
 Art Festival  
 Scenography in a barn  
@@ -35,9 +49,12 @@ Corsica, July 2019
 
 
 <photo-grid>
-<img src="festi/b-1-3.jpg"/>
+<img src="festi/b-5.jpg"/>
+<img src="festi/b-1.jpg"/>
 <img src="festi/b-6.jpg"/>
-<img src="festi/b-1-6.jpg"/>
+<img src="festi/b-2.jpg"/>
+<img src="festi/b-3.jpg"/>
+<img src="festi/b-4.jpg"/>
 </photo-grid>
 
 

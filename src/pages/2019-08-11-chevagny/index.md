@@ -6,7 +6,7 @@ subtitle: Installation & Workshop
 description: Installation and Workshops of The Live Drawing Project For Nouvelles Passions Festival 2019 in Chevagny, France
 date: "2019-08-11"
 category: event
-image: "cover.jpg"
+image: "b-10.jpg"
 ---
 
 
@@ -17,6 +17,7 @@ image: "cover.jpg"
 <img src="./b-8.jpg"/>
 <img src="./b-13.jpg"/>
 <img src="./b-10.jpg"/>
+<img src="./cover.jpg"/>
 </photo-grid>
 
 
