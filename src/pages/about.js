@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link, navigate } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
-import MetaTags from '../components/MetaTags'
+import MetaTags from '../bits/MetaTags/MetaTags'
 import './index.scss'
 import { bookingPageStrings, indexPageStrings } from '../locales/strings'
 import { localLink } from '../locales/localeUtils'

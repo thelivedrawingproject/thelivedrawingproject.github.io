@@ -2,13 +2,13 @@ import React from 'react'
 import { Link, graphql, navigate } from 'gatsby'
 import Img from "gatsby-image";
 import MainLayout from '../layout/MainLayout'
-import MetaTags from '../components/MetaTags'
+import MetaTags from '../bits/MetaTags/MetaTags'
 import './index.scss'
 import flyerEN from './../pages/gallery/TheLiveDrawingProject_Brochure_EN.pdf';
 import flyerFR from './../pages/gallery/TheLiveDrawingProject_Brochure_FR.pdf';
 import {indexPageStrings} from '../locales/strings';
 import {localLink} from '../locales/localeUtils'
-import {PhotoGrid} from './../components/PhotoGrid';
+import {PhotoGrid} from './../bits/PhotoGrid/PhotoGrid';
 
 
 const AreWeInPerformanceMode = false;
@@ -74,15 +74,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
                 <p>{LOCAL.joinCollabDescription}</p>
               </div>
 
-              <div className={"PhotogridContainer"}>
-                <PhotoGrid gatsbyImages={[ data.gridA.childImageSharp.fluid.src,
-                  data.gridB.childImageSharp.fluid.src,
-                  data.gridC.childImageSharp.fluid.src,
-                  data.gridD.childImageSharp.fluid.src,
-                  data.gridE.childImageSharp.fluid.src,
-                  data.gridF.childImageSharp.fluid.src,
-                  ]} className={"PaddingForNormalSize"}/>
-              </div>
+
 
             </div>
           </div>
@@ -198,3 +190,16 @@ export const indexPageQuery = graphql`
   } 
   
 }`
+
+
+/*
+              <div className={"PhotogridContainer"}>
+                <PhotoGrid gatsbyImages={[ data.gridA.childImageSharp.fluid.src,
+                  data.gridB.childImageSharp.fluid.src,
+                  data.gridC.childImageSharp.fluid.src,
+                  data.gridD.childImageSharp.fluid.src,
+                  data.gridE.childImageSharp.fluid.src,
+                  data.gridF.childImageSharp.fluid.src,
+                  ]} className={"PaddingForNormalSize"}/>
+              </div>
+              */

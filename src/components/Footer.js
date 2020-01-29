@@ -143,7 +143,7 @@ const Footer = () => (
 export default Footer
 
 const query = graphql`
-  query Footer {
+  query TldpFooter {
     site {
       siteMetadata {
         author
@@ -159,41 +159,3 @@ const query = graphql`
       }
     }
   }`
-
-/*
-const Footer = () => (
-  <div className="Footer">
-    <div className="socialLinks">
-      <hr className="Separator"/>
-      <div className="social-media-list">
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-    </div>
-    <p>Maxime Touroute<br/>Website generated with GatsbyJS</p>
-  </div>
-)
-
-
-`
-
-/*
-
--->
-
-<!--
-
--->
-
-<!--
-
-*/

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Footer from '../components/Footer'
 import { Navbar } from '../components/Navbar'
 import './MainLayout.scss'
-import LanguageSwitcher from '../components/LanguageSwitcher';
+import LanguageSwitcher from '../bits/LanguageSwitcher/LanguageSwitcher';
 import { defaultLanguage, supportedLanguages } from '../locales/locales'
 import { languageAutoRedirect } from '../locales/localeUtils'
 import {NavbarData} from './NavbarData'

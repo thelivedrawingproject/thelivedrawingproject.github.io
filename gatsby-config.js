@@ -4,11 +4,13 @@ module.exports = {
     siteName: `The Live Drawing Project`,
     title: `The Live Drawing Project`,
     author: 'The Live Drawing Project',
+    authorMail: 'maxime.touroute@gmail.com',
     titleTemplate: "%s · The Live Drawing Project",
     description: "The Live Drawing Project · Digital art project of Real-time collaborative drawing · Live performances, Events, Workshops & Art installations · Welcome to our website",
     siteUrl: "https://thelivedrawingproject.com", // for robots plugin
     url: "https://thelivedrawingproject.com", // No trailing slash allowed!
-    image: "/static/logo.jpg", // Path to your image you placed in the 'res' folder
+    favicon: "/res/favicon.png",
+    thumbImage: "/res/logo.jpg", // Path to your image you placed in the 'res' folder
     keywords: "live drawing, drawing, digital arts, the live drawing project, collaborative art, art", // separated by comas
 
     /* to hide the icon, put an empty string instead of a link */
