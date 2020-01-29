@@ -1,35 +1,36 @@
 import React from 'react'
-import MainLayout from '../layout/MainLayout'
 import { notFoundPage } from '../locales/strings'
-import { Navbar } from '../components/Navbar'
+import { NavbarSlim } from '../bits/NavbarSlim/NavbarSlim'
 import { NavbarData } from '../layout/NavbarData'
-import Footer from '../components/Footer'
+import Footer from '../bits/TldpFooter/Footer'
 
-// TODO: dirty copy paste of MainLayout to avoid crazy language switcher (because URL doesnt exist)
+// TODO: dirty copy paste of MainLayout content to avoid crazy language switcher (because URL doesnt exist)
 
 export default function NotFoundPage({ data, pageContext: { locale } }) {
-  const LOCAL = notFoundPage[locale];
+  const LOCAL = notFoundPage[locale]
 
   return (
     <>
       <div className="CssGridNavContentFooter">
         <nav className="gridNavBar">
-          <Navbar links={NavbarData[locale].links}/>
+          <NavbarSlim links={NavbarData[locale].links} />
         </nav>
         <div className="gridContent styleContent">
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            paddingTop: '4rem',
-          }}>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              paddingTop: '4rem',
+            }}
+          >
             <h1>{LOCAL.title}</h1>
             <p>{LOCAL.subtext}</p>
           </div>
         </div>
         <div className="gridFooter">
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </>

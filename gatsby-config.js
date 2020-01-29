@@ -1,17 +1,18 @@
 module.exports = {
-
   siteMetadata: {
     siteName: `The Live Drawing Project`,
     title: `The Live Drawing Project`,
     author: 'The Live Drawing Project',
     authorMail: 'maxime.touroute@gmail.com',
-    titleTemplate: "%s · The Live Drawing Project",
-    description: "The Live Drawing Project · Digital art project of Real-time collaborative drawing · Live performances, Events, Workshops & Art installations · Welcome to our website",
-    siteUrl: "https://thelivedrawingproject.com", // for robots plugin
-    url: "https://thelivedrawingproject.com", // No trailing slash allowed!
-    favicon: "/res/favicon.png",
-    thumbImage: "/res/logo.jpg", // Path to your image you placed in the 'res' folder
-    keywords: "live drawing, drawing, digital arts, the live drawing project, collaborative art, art", // separated by comas
+    titleTemplate: '%s · The Live Drawing Project',
+    description:
+      'The Live Drawing Project · Digital art project of Real-time collaborative drawing · Live performances, Events, Workshops & Art installations · Welcome to our website',
+    siteUrl: 'https://thelivedrawingproject.com', // for robots plugin
+    url: 'https://thelivedrawingproject.com', // No trailing slash allowed!
+    favicon: '/res/favicon.png',
+    thumbImage: '/res/logo.jpg', // Path to your image you placed in the 'res' folder
+    keywords:
+      'live drawing, drawing, digital arts, the live drawing project, collaborative art, art', // separated by comas
 
     /* to hide the icon, put an empty string instead of a link */
     socialLinks: {
@@ -21,7 +22,7 @@ module.exports = {
       instagram: '//instagram.com/livedrawingproject',
       vimeo: '',
       youtube: '',
-      soundcloud: ''
+      soundcloud: '',
     },
   },
 
@@ -65,9 +66,8 @@ module.exports = {
           },
 
           {
-            resolve: "gatsby-remark-copy-linked-files",
+            resolve: 'gatsby-remark-copy-linked-files',
           },
-
         ], // just in case those previously mentioned remark plugins sound cool :)
       },
     },
@@ -92,10 +92,20 @@ module.exports = {
       options: {
         host: 'https://thelivedrawingproject.com',
         sitemap: 'https://thelivedrawingproject.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
 
+    // Amazing loading progress bar on top of website
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#85b94f`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
   ],
 }

@@ -1,6 +1,6 @@
 @import 'styles';
 
-$linkColorIdle: rgba(240,240,240,1);
+$linkColorIdle: rgba(240, 240, 240, 1);
 $linkColorActive: white;
 $smallTopbarHeight: 4.5em;
 
@@ -12,7 +12,6 @@ $smallTopbarHeight: 4.5em;
     padding: 0;
   }
 
-
   text-align: center;
 
   .MiniBar {
@@ -21,12 +20,10 @@ $smallTopbarHeight: 4.5em;
     padding-right: 1em;
     background-color: $navbarColor;
 
-
     @include breakpoint(small) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
     }
 
     min-height: $smallTopbarHeight;
@@ -34,16 +31,14 @@ $smallTopbarHeight: 4.5em;
     .Title {
       font-weight: 900;
       color: $linkColorActive;
-
     }
-
   }
 
   .Overlay {
     position: fixed;
     top: $smallTopbarHeight;
     left: 0;
-    height: calc( 100vh - #{$smallTopbarHeight} );
+    height: calc(100vh - #{$smallTopbarHeight});
     width: 100vw;
     z-index: 101;
     background-color: $navbarColor;
@@ -56,7 +51,6 @@ $smallTopbarHeight: 4.5em;
     @include breakpoint(normal) {
       display: none;
     }
-
 
     .SmallLinks {
       flex-grow: 1;
@@ -73,19 +67,16 @@ $smallTopbarHeight: 4.5em;
         &:visited {
           text-decoration: none;
         }
-        &:active, &:focus {
+        &:active,
+        &:focus {
           outline: 0;
           -moz-outline-style: none;
         }
-
-
       }
-
     }
 
-
     button {
-      align-self:center;
+      align-self: center;
       border: none;
       background-color: transparent;
 
@@ -94,17 +85,14 @@ $smallTopbarHeight: 4.5em;
       font-size: 1.3em;
       margin-bottom: 1em;
     }
-
   }
 
   .headerLinksCommon {
-
     .active {
       color: $linkColorActive;
       /*background-color: #4e4e4e;*/
       font-weight: 900;
     }
-
 
     a {
       color: $linkColorIdle;
@@ -119,7 +107,8 @@ $smallTopbarHeight: 4.5em;
         transition: all 0.1s ease-in-out 0s;
       }
 
-      &:active, &:focus {
+      &:active,
+      &:focus {
         outline: 0;
         -moz-outline-style: none;
       }
@@ -127,7 +116,6 @@ $smallTopbarHeight: 4.5em;
   }
 
   .BigLinks {
-
     font-size: 1.2em;
     display: none;
     @include breakpoint(small) {
@@ -148,7 +136,8 @@ $smallTopbarHeight: 4.5em;
       margin-right: 2em;
       margin-left: 2em;
 
-      &:active, &:focus {
+      &:active,
+      &:focus {
         outline: 0;
         -moz-outline-style: none;
       }
