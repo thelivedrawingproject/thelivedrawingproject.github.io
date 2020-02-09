@@ -14,8 +14,40 @@ const AreWeInPerformanceMode = false
 const eventName = 'SoliBARités'
 export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale]
-
+  const { edges: posts } = data.allMarkdownRemark
   const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+
+  const postGrid = ({ node: post }) => {
+    const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+    return (
+      <div
+        className="post"
+        onClick={() => {
+          navigate(post.frontmatter.path)
+        }}
+        key={post.id}
+        style={{
+          backgroundImage:
+            'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')',
+        }}
+      >
+        <div className="insideArea">
+          <div className="textArea">
+            <span className="postTitle">{post.frontmatter.title}</span>
+            <span className="post-meta postTag">
+              {post.frontmatter.subtitle}
+            </span>
+            <span className="post-meta postTag">
+              {new Date(post.frontmatter.date).toLocaleDateString(
+                locale,
+                localesOptions
+              )}
+            </span>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <MainLayout language={locale} location={{ ...location }}>
@@ -160,25 +192,13 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-        <div className={'ResponsiveContainer'}>
-          <div className={'Inside'}>
-            <div className="ShowcasePart Column">
-              <div className={'Text Centered'}>
-                <h2 className="Punchline White" style={{ color: 'black' }}>
-                  {LOCAL.clientsTitle}
-                </h2>
-              </div>
-              <div className={'ImageContainer'}>
-                <div className={'ClientsLogo'}>
-                  <div className={'Aadn'} />
-                  <div className={'Bonifacio'} />
-                  <div className={'Pf'} />
-                  <div className={'MaltingPot'} />
-                  <div className={'Chevagny'} />
-                  <div className={'Superposition'} />
-                </div>
-              </div>
-            </div>
+        <h2 className={'Punchline'}>{LOCAL.events}</h2>
+        <div className="home homePosts">
+          <div className="postGrid">
+            {posts
+              .filter(post => post.node.frontmatter.title.length > 0)
+              .filter(post => post.node.frontmatter.language === locale)
+              .map(postGrid)}
           </div>
         </div>
 
@@ -186,9 +206,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           <div className="moreProjects">
             <Link to={'/about'}>{LOCAL.moreInfos}</Link>
             <Link to={'/gallery'}>{LOCAL.watchPhotos}</Link>
-            <a href={'mailto:livedrawingproject@protonmail.com'}>
-              {LOCAL.contactUs}
-            </a>
+            <Link to={'/contact'}>{LOCAL.contactUs}</Link>
             <a href={locale === 'fr' ? flyerFR : flyerEN}>
               {LOCAL.downloadBrochure}
             </a>
@@ -241,6 +259,36 @@ export const indexPageQuery = graphql`
     }
     gridF: file(relativePath: { eq: "gallery/pf/b-12.jpg" }) {
       ...gatImage
+    }
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { category: { eq: "event" } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            category
+            subtitle
+            language
+            image {
+              childImageSharp {
+                # Other options include height (set both width and height to crop),
+                # grayscale, duotone, rotate, etc.
+                fixed(width: 700) {
+                  # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
+                  ...GatsbyImageSharpFixed
+                  src
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 `

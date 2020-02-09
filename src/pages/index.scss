@@ -1,26 +1,21 @@
 @import './../components/styles';
 
-
 $darkColor: black;
 
-
 .ResponsiveContainer {
+  display: flex;
+  justify-content: center;
 
-display: flex;
-justify-content: center;
-
-.Inside {
-  @include breakpoint(normal) {
-    min-width: 50rem;
-    max-width: 90rem;
-
-  }
-  @include breakpoint(small) {
-    min-width: 90vw;
+  .Inside {
+    @include breakpoint(normal) {
+      min-width: 50rem;
+      max-width: 90rem;
+    }
+    @include breakpoint(small) {
+      min-width: 90vw;
+    }
   }
 }
-}
-
 
 .PerformanceMode {
   position: fixed;
@@ -45,12 +40,11 @@ justify-content: center;
     justify-content: center;
     width: 100%;
     height: 20vh;
-    background: url("../res/tldp_white.svg");
+    background: url('../res/tldp_white.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     margin-top: 4rem;
-
   }
 
   a {
@@ -77,29 +71,26 @@ justify-content: center;
       color: inherit;
     }
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
       outline: 0;
       -moz-outline-style: none;
     }
 
-
-    @keyframes shadow-pulse
-    {
+    @keyframes shadow-pulse {
       0% {
-        box-shadow: 0 0 0 0px rgba($accentColor, 1.0);
+        box-shadow: 0 0 0 0px rgba($accentColor, 1);
       }
       100% {
-        box-shadow: 0 0 0 35px rgba($accentColor, 0.0);
+        box-shadow: 0 0 0 35px rgba($accentColor, 0);
       }
     }
 
     animation: shadow-pulse 1s infinite linear;
-
   }
 
-
   button {
-    align-self:center;
+    align-self: center;
     border: none;
     background-color: transparent;
 
@@ -108,7 +99,6 @@ justify-content: center;
     font-size: 1.3em;
     margin-bottom: 1em;
   }
-
 }
 
 .ResponsiveIframe {
@@ -127,8 +117,6 @@ justify-content: center;
 }
 
 .ShowcasePage {
-
-
   .RollbackBackground {
     background-color: $accentLight;
   }
@@ -138,7 +126,6 @@ justify-content: center;
     background-size: cover;
     background-position: center;
   }
-
 
   .WelcomeCover {
     $height: 90vh;
@@ -185,9 +172,8 @@ justify-content: center;
   }
 
   .ShowcasePart {
-
     $almostBlack: #111111;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: stretch;
 
@@ -204,12 +190,10 @@ justify-content: center;
       align-items: center;
     }
 
-
     &.Column {
       flex-direction: column;
       align-items: center;
     }
-
 
     .Text {
       display: flex;
@@ -229,7 +213,6 @@ justify-content: center;
         font-size: 2em;
         font-weight: 600;
         color: $accentColor;
-
       }
 
       p {
@@ -270,7 +253,6 @@ justify-content: center;
       }
 
       div {
-
       }
 
       img {
@@ -278,8 +260,6 @@ justify-content: center;
         height: auto;
       }
     }
-
-
   }
 
   .ClientsLogo {
@@ -289,15 +269,16 @@ justify-content: center;
     justify-content: space-around;
     max-width: 90vw;
 
-    div {
-      margin: 3em;
+    a {
       @include breakpoint(small) {
-        min-width: 12em;
-        min-height: 7em;
+        min-width: 8em;
+        min-height: 8em;
+        margin: 1em;
       }
       @include breakpoint(normal) {
         min-width: 20em;
         min-height: 10em;
+        margin: 3em;
       }
     }
 
@@ -308,45 +289,56 @@ justify-content: center;
     }
 
     .Superposition {
-      background: url("gallery/clients/sup.jpg");
+      background: url('gallery/clients/sup.jpg');
       @include imageBackground();
     }
 
     .Aadn {
-      background: url("gallery/clients/aadn.svg");
+      background: url('gallery/clients/aadn.svg');
       @include imageBackground();
     }
 
     .MaltingPot {
-      background: url("gallery/clients/maltingpot.jpg");
+      background: url('gallery/clients/maltingpot.jpg');
       @include imageBackground();
     }
 
     .Chevagny {
-      background: url("./2019-08-11-chevagny/cover.jpg");
+      background: url('./2019-08-11-chevagny/cover.jpg');
       @include imageBackground();
     }
 
-
     .Bonifacio {
-      background: url("gallery/clients/bonifacio.png");
+      background: url('gallery/clients/bonifacio.png');
       @include imageBackground();
     }
 
     .Pf {
-      background: url("gallery/clients/pf.png");
+      background: url('gallery/clients/pf.png');
+      @include imageBackground();
+    }
+
+    .Chrd {
+      background: url('gallery/clients/chrd.jpg');
+      @include imageBackground();
+    }
+
+    .Cda {
+      background: url('gallery/clients/cda.jpg');
+      @include imageBackground();
+    }
+
+    .Cpl {
+      background: url('gallery/clients/cpl.png');
+      @include imageBackground();
+    }
+
+    .Osterbro {
+      background: url('gallery/clients/osterbro.png');
       @include imageBackground();
     }
   }
-
-
 }
-
-
-
-
-
-
 
 .Punchline {
   font-size: 3em;
@@ -354,7 +346,7 @@ justify-content: center;
   text-align: center;
   @include notSelectable();
   padding: 0.5em;
-  margin:auto;
+  margin: auto;
   margin-bottom: 1em;
   margin-top: 1em;
   @include breakpoint(small) {
@@ -371,7 +363,7 @@ justify-content: center;
     background-color: transparent;
     border-bottom: solid 2px black;
     color: black;
-    margin:auto;
+    margin: auto;
     margin-bottom: 0.5em;
   }
 
@@ -412,10 +404,10 @@ justify-content: center;
     @include notSelectable();
 
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       color: black;
@@ -426,14 +418,11 @@ justify-content: center;
         transform: translateY(-2px) translateX(-2px);
       }
 
-
-
       transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
@@ -444,7 +433,6 @@ justify-content: center;
   align-content: center;
   justify-content: center;
 }
-
 
 .FullPageContainer {
   padding: 2em;
@@ -460,10 +448,8 @@ justify-content: center;
   min-height: 80vh;
 
   a {
-
   }
 }
-
 
 .MainTitle {
   color: white;
@@ -491,7 +477,6 @@ justify-content: center;
     // background-color: #83b271;
     border: 7px solid #83b271;
   }
-
 }
 
 .BackgroundWhite {
@@ -514,7 +499,6 @@ justify-content: center;
   border-radius: 6px;
   padding: 0.5em;
   text-transform: uppercase;
-
 }
 
 .Quote {
@@ -536,7 +520,6 @@ justify-content: center;
   -webkit-transform: rotate(45deg);
 }
 
-
 .CircleNumber {
   $size: 50px;
   margin-left: 2em;
@@ -545,7 +528,7 @@ justify-content: center;
   height: $size;
   border: 2px solid black;
   border-radius: $size;
-  font-size: calc(#{$size}/2);
+  font-size: calc(#{$size}/ 2);
   text-align: center;
   line-height: $size;
 }
@@ -556,7 +539,6 @@ justify-content: center;
   justify-self: center;
   justify-items: center;
 
-
   a {
     text-align: center;
     margin: 1rem;
@@ -566,11 +548,10 @@ justify-content: center;
 }
 
 .homePosts {
-
   margin-top: 4rem;
 
   .postGrid {
-    margin:auto;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -578,20 +559,20 @@ justify-content: center;
     max-width: 90rem;
     width: 100%;
     padding: 0;
-
   }
 
   .post {
     border-radius: 5px;
     background-color: rgb(252, 252, 252);
-    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
-    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 1rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
-
 
     @include breakpoint(small) {
       width: 95%;
@@ -614,8 +595,11 @@ justify-content: center;
         transition: border 0.5s ease-out;
         cursor: pointer;
         transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+          transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+          padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
 
@@ -654,12 +638,10 @@ justify-content: center;
     }
 
     .insideArea {
-
       min-height: 10em;
       padding: 2em;
       padding-left: 1em;
       margin: 0;
-
 
       display: grid;
       align-content: flex-start;
@@ -677,20 +659,18 @@ justify-content: center;
         }
       }
 
-
-      box-shadow: inset 0 0 0px 1000px rgba(0,0,0,0.1); // easy way to get a black overlay
+      box-shadow: inset 0 0 0px 1000px rgba(0, 0, 0, 0.1); // easy way to get a black overlay
       @include breakpoint(small) {
         box-shadow: none;
       }
       @include basicTransition(box-shadow);
       &:hover {
         @include basicTransition(box-shadow);
-        box-shadow: inset 0 0 0px 1000px rgba(0,0,0,0); // easy way to get a black overlay
+        box-shadow: inset 0 0 0px 1000px rgba(0, 0, 0, 0); // easy way to get a black overlay
         .textArea {
           @include basicTransition(opacity);
           opacity: 1;
         }
-
       }
     }
 
@@ -698,5 +678,4 @@ justify-content: center;
       padding: 1em;
     }
   }
-
 }

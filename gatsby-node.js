@@ -6,44 +6,47 @@
 
 // You can delete this file if you're not using it
 
-const path = require("path")
-const supportedLanguages = require('./src/locales/locales').supportedLanguages;
-const defaultLanguage = require('./src/locales/locales').defaultLanguage;
+const path = require('path')
+const supportedLanguages = require('./src/locales/locales').supportedLanguages
+const defaultLanguage = require('./src/locales/locales').defaultLanguage
+
+const pageLayouts = {
+  article: 'article',
+  page: 'page',
+}
 
 exports.onCreateNode = ({ node }) => {
-
-  if (node.internal.type === `MarkdownRemark`)
-  {
-    const language = node.frontmatter.language;
-    let languageUrlPrefix = ""
-    if(language === void 0 || language === null)
-    {
-      console.info('No language field in markdown, select default language');
-      node.frontmatter.language = defaultLanguage;
-    }
-    else
-    {
-      let foundALanguage = false;
+  if (node.internal.type === `MarkdownRemark`) {
+    const language = node.frontmatter.language
+    let languageUrlPrefix = ''
+    if (language === void 0 || language === null) {
+      console.info(
+        'No language field in markdown, select default language:' +
+          defaultLanguage
+      )
+      node.frontmatter.language = defaultLanguage
+    } else {
+      let foundALanguage = false
       // Loop through locales, find a prefix if needed.
-      for( let key of Object.keys(supportedLanguages) ) {
-        if(language === key && language !== defaultLanguage)
-        {
-          languageUrlPrefix = `/${supportedLanguages[key].urlPrefix}`;
-          foundALanguage = true;
-          break;
+      for (let key of Object.keys(supportedLanguages)) {
+        if (language === key && language !== defaultLanguage) {
+          languageUrlPrefix = `/${supportedLanguages[key].urlPrefix}`
+          foundALanguage = true
+          break
         }
       }
 
-      if(!foundALanguage)
-      {
-        console.warn(`Unhandled language for markdown: ${node.frontmatter.language}`);
-        return;
+      if (!foundALanguage) {
+        console.warn(
+          `Unhandled language for markdown: ${node.frontmatter.language}`
+        )
+        return
       }
     }
 
-    node.frontmatter.path = `${languageUrlPrefix}${node.frontmatter.path}`;
+    node.frontmatter.path = `${languageUrlPrefix}${node.frontmatter.path}`
   }
-};
+}
 
 // ------------------ Custom pages such as index.js
 
@@ -54,25 +57,24 @@ exports.onCreatePage = ({ page, actions }) => {
     deletePage(page)
 
     Object.keys(supportedLanguages).map(languageKey => {
-      const localizedPath = (languageKey === defaultLanguage)
-        ? page.path
-        : supportedLanguages[languageKey].urlPrefix + page.path
+      const localizedPath =
+        languageKey === defaultLanguage
+          ? page.path
+          : supportedLanguages[languageKey].urlPrefix + page.path
 
       return createPage({
         component: page.component,
         path: localizedPath,
         context: {
-          locale: languageKey
-        }
+          locale: languageKey,
+        },
       })
     })
     resolve()
   })
 }
 
-
 exports.createPages = ({ actions, graphql }) => {
-
   /// ---------------- Custom generation for markdown files
 
   const { createPage } = actions
@@ -84,15 +86,17 @@ exports.createPages = ({ actions, graphql }) => {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
+        filter: { frontmatter: { category: { ne: "hidden" } } }
       ) {
         edges {
           node {
             frontmatter {
               path
               layout
+              title
               language
             }
-          } 
+          }
         }
       }
     }
@@ -101,39 +105,79 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-
-
     // Actually creating the page
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const allPages = result.data.allMarkdownRemark.edges
+    const pages = allPages.filter(
+      edge => edge.node.frontmatter.layout === pageLayouts.page
+    )
+    const articles = allPages.filter(
+      edge => edge.node.frontmatter.layout === pageLayouts.article
+    )
+    const others = allPages.filter(
+      edge =>
+        edge.node.frontmatter.layout !== pageLayouts.article &&
+        edge.node.frontmatter.layout !== pageLayouts.page
+    )
 
-      let templateToUse
-      if( node.frontmatter.layout === 'page' )
-      {
-        templateToUse = pageLayoutTemplate;
-      }
-      else if ( node.frontmatter.layout === 'article' )
-      {
-        templateToUse = articleLayoutTemplate;
-      }
-      else
-      {
-        console.warn ('Unhandled layout:' + node.frontmatter.layout);
-        return;
+    if (0 < others.length) {
+      console.warn('found pages with unhandled layouts. Will ignore them:')
+      console.log(others)
+    }
+
+    articles.forEach(({ node }, index) => {
+      // false if no previous or no next
+      const previousPostLooker = () => {
+        let indexToLook = index - 1
+        while (0 <= indexToLook) {
+          if (
+            articles[indexToLook].node.frontmatter.language ==
+            node.frontmatter.language
+          ) {
+            return articles[indexToLook].node
+          }
+          indexToLook--
+        }
+        return false
       }
 
+      const nextPostLooker = () => {
+        let indexToLook = index + 1
+        while (indexToLook < articles.length - 1) {
+          if (
+            articles[indexToLook].node.frontmatter.language ==
+            node.frontmatter.language
+          ) {
+            return articles[indexToLook].node
+          }
+          indexToLook++
+        }
+        return false
+      }
+
+      const previousPost = previousPostLooker()
+      const nextPost = nextPostLooker()
       createPage({
         path: node.frontmatter.path,
-        component: templateToUse,
+        component: articleLayoutTemplate,
+        context: {
+          previousPost,
+          nextPost,
+        }, // additional data can be passed via context
+      })
+    })
+
+    pages.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: pageLayoutTemplate,
         context: {}, // additional data can be passed via context
       })
     })
   })
 }
 
-
-
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === "build-html") {
+  if (stage === 'build-html') {
     actions.setWebpackConfig({
       module: {
         rules: [

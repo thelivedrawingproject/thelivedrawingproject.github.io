@@ -9,41 +9,7 @@ import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
 
 export default function AboutPage({ data, pageContext: { locale }, location }) {
-  const { edges: posts } = data.allMarkdownRemark
-
   const LOCAL = bookingPageStrings[locale]
-
-  const postGrid = ({ node: post }) => {
-    const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' }
-    return (
-      <div
-        className="post"
-        onClick={() => {
-          navigate(post.frontmatter.path)
-        }}
-        key={post.id}
-        style={{
-          backgroundImage:
-            'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')',
-        }}
-      >
-        <div className="insideArea">
-          <div className="textArea">
-            <span className="postTitle">{post.frontmatter.title}</span>
-            <span className="post-meta postTag">
-              {post.frontmatter.subtitle}
-            </span>
-            <span className="post-meta postTag">
-              {new Date(post.frontmatter.date).toLocaleDateString(
-                locale,
-                localesOptions
-              )}
-            </span>
-          </div>
-        </div>
-      </div>
-    )
-  }
 
   return (
     <MainLayout language={locale} location={{ ...location }}>
@@ -54,27 +20,23 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           <div className="FullPageContainer" style={{ marginBottom: '2em' }}>
             <h1 style={{ opacity: 0 }}>About</h1>
             <h2 className="Quote">{LOCAL.bookingPunchline}</h2>
-            <div style={{ textAlign: 'center', fontSize: '1.2em' }}>
+            <div
+              style={{
+                textAlign: 'center',
+                fontSize: '1.5em',
+                lineHeight: 1.4,
+              }}
+            >
               <p>{LOCAL.bookingSubtext}</p>
             </div>
             <div className="moreProjects" style={{ marginBottom: '5em' }}>
-              <a
-                href={'mailto:livedrawingproject@pm.me'}
+              <Link
+                to={'/contact'}
                 className={'Quote'}
                 style={{ fontSize: '1.5em' }}
               >
                 {LOCAL.reachUs}
-              </a>
-            </div>
-          </div>
-
-          <h2 className={'Punchline'}>{LOCAL.events}</h2>
-          <div className="home homePosts">
-            <div className="postGrid">
-              {posts
-                .filter(post => post.node.frontmatter.title.length > 0)
-                .filter(post => post.node.frontmatter.language === locale)
-                .map(postGrid)}
+              </Link>
             </div>
           </div>
 
@@ -107,11 +69,89 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
             <p className="Subtext">{LOCAL.moderationSubtext}</p>
           </div>
 
+          <div className={'ShowcasePage'}>
+            <div className={'ResponsiveContainer'}>
+              <div className={'Inside'}>
+                <div className="ShowcasePart Column">
+                  <div className={'Text Centered'}>
+                    <h2 className="Punchline White" style={{ color: 'black' }}>
+                      {LOCAL.clientsTitle}
+                    </h2>
+                  </div>
+                  <div className={'ImageContainer'}>
+                    <div className={'ClientsLogo'}>
+                      <a
+                        className={'Chrd'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'http://www.chrd.lyon.fr/chrd/sections/fr/musee/'}
+                      />
+                      <a
+                        className={'Cpl'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://copenhagenlightfestival.org'}
+                      />
+                      <a
+                        className={'Osterbro'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://oesterbrolokaludvalg.kk.dk/'}
+                      />
+                      <a
+                        className={'Cda'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://calgarydowntown.com/'}
+                      />
+                      <a
+                        className={'Aadn'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://aadn.org/'}
+                      />
+                      <a
+                        className={'Bonifacio'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={
+                          'https://www.bonifacio.fr/agenda-manifestation/festi-lumi/'
+                        }
+                      />
+                      <a
+                        className={'Pf'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'http://www.peinturefraichefestival.fr/'}
+                      />
+                      <a
+                        className={'MaltingPot'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://www.facebook.com/LeMaltingPot/'}
+                      />
+                      <a
+                        className={'Chevagny'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'http://chevagny-labelvie.fr/'}
+                      />
+                      <a
+                        className={'Superposition'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://superposition-lyon.com/'}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="home homePosts">
             <div className="moreProjects">
-              <a href={'mailto:livedrawingproject@protonmail.com'}>
-                {LOCAL.bookingContactUs}
-              </a>
+              <Link to={'/contact'}>{LOCAL.bookingContactUs}</Link>
               <a href={locale === 'fr' ? flyerFR : flyerEN}>
                 {LOCAL.downloadBrochure}
               </a>
@@ -125,37 +165,3 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
     </MainLayout>
   )
 }
-export const aboutPageQuery = graphql`
-  query aboutPageQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { category: { eq: "event" } } }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-            category
-            subtitle
-            language
-            image {
-              childImageSharp {
-                # Other options include height (set both width and height to crop),
-                # grayscale, duotone, rotate, etc.
-                fixed(width: 700) {
-                  # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-                  ...GatsbyImageSharpFixed
-                  src
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
