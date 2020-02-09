@@ -129,6 +129,7 @@ exports.createPages = ({ actions, graphql }) => {
       const previousPostLooker = () => {
         let indexToLook = index - 1
         while (0 <= indexToLook) {
+          // Only lists articles in same language
           if (
             articles[indexToLook].node.frontmatter.language ==
             node.frontmatter.language
@@ -142,7 +143,8 @@ exports.createPages = ({ actions, graphql }) => {
 
       const nextPostLooker = () => {
         let indexToLook = index + 1
-        while (indexToLook < articles.length - 1) {
+        while (indexToLook <= articles.length - 1) {
+          // Only lists articles in same language
           if (
             articles[indexToLook].node.frontmatter.language ==
             node.frontmatter.language
