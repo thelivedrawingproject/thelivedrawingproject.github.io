@@ -5,16 +5,16 @@ title: Gallery
 description: Photos and videos of the live drawing project events, installations and workshpops.
 ---
 
-[Download brochure (English)](./TheLiveDrawingProject_Brochure_EN.pdf)  
+[Download brochure (English)](./TheLiveDrawingProject_Brochure_EN.pdf)
 
-[Download brochure (French)](./TheLiveDrawingProject_Brochure_FR.pdf)  
-   
-[Access our Facebook Page](//facebook.com/TheLiveDrawingProject)   
-  
+[Download brochure (French)](./TheLiveDrawingProject_Brochure_FR.pdf)
+
+[Access our Facebook Page](//facebook.com/TheLiveDrawingProject)
+
 [Access our Instagram Page](//instagram.com/livedrawingproject)
 
-
 # Multiple events in the Streets of Lyon
+
 Lyon, France, 2019  
 Our hometown is our place of experimentation to test new ways to inspire people.
 
@@ -26,12 +26,15 @@ Our hometown is our place of experimentation to test new ways to inspire people.
 <img src="lyon2019/b-13.jpg"/>
 <img src="lyon2019/b-63.jpg"/>
 <img src="lyon2019/b-1.jpg"/>
+<img src="chrd/CHRD-1.jpg"/>
+<img src="chrd/CHRD-3.jpg"/>
 </photo-grid>
 
 # Nouvelles Passions Festival
+
 Art Festival  
 Scenography in a barn  
-Chevagny, France, August 2019  
+Chevagny, France, August 2019
 
 <photo-grid>
 <img src="./chev/b-12.jpg"/>
@@ -42,11 +45,10 @@ Chevagny, France, August 2019
 <img src="./chev/b-10.jpg"/>
 </photo-grid>
 
-
 # Installation for Festi Lumi
-Lights Festival  
-Corsica, July 2019  
 
+Lights Festival  
+Corsica, July 2019
 
 <photo-grid>
 <img src="festi/b-5.jpg"/>
@@ -57,17 +59,14 @@ Corsica, July 2019
 <img src="festi/b-4.jpg"/>
 </photo-grid>
 
-
-
 # Installation at the Peinture Fraiche Festival
-Street Art Festival  
-Lyon, France, May 2019  
 
+Street Art Festival  
+Lyon, France, May 2019
 
 <iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
 [Direct Link](//vimeo.com/344490536)
-
 
 <photo-grid>
 <img src="pf/1.jpg"/>
@@ -88,16 +87,14 @@ Lyon, France, May 2019
 <img src="pf/b-2.jpg"/>
 </photo-grid>
 
-
 # Collaborative Performance with the Street Artist Shab
-Lyon, France, April 2019  
-Art gallery  
 
+Lyon, France, April 2019  
+Art gallery
 
 <iframe src="https://player.vimeo.com/video/335872657" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
 [Direct Link](//vimeo.com/335872657)
-
 
 <photo-grid>
 <img src="shab/1.jpg"/>
@@ -106,9 +103,9 @@ Art gallery
 <img src="shab/textcover.jpg"/>
 </photo-grid>
 
-
 # Art residency at the LabLab
-Lyon, France, February 2019  
+
+Lyon, France, February 2019
 
 <photo-grid>
 <img src="lablab/1.jpg"/>
@@ -122,10 +119,10 @@ Lyon, France, February 2019
 <img src="lablab/aadn.jpg"/>
 </photo-grid>
 
-
 # Exhibition for la Fête des Lumières
+
 Lyon, France, 2018  
-At the Malting Pot pub  
+At the Malting Pot pub
 
 <iframe src="https://player.vimeo.com/video/311653956" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
@@ -141,9 +138,6 @@ At the Malting Pot pub
 <img src="maltingpot/affiche.jpg"/>
 </photo-grid>
 
-  
-  
-  
 # Some drawings from the audience
 
 During our events, we gather thousands of drawings. We're closely reaching 100,000 drawings in our database. Here's a selection of a few drawings made by people between 4 and 90 years old.
@@ -168,4 +162,3 @@ During our events, we gather thousands of drawings. We're closely reaching 100,0
 <img src="drawings/18.jpg"/>
 <img src="drawings/19.jpg"/>
 </photo-grid>
-

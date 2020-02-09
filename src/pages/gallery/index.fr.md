@@ -6,18 +6,16 @@ language: fr
 description: Photos et videos des évenements du Live Drawing Project, installations et workshpops.
 ---
 
+[Télécharger la brochure (Français)](./TheLiveDrawingProject_Brochure_FR.pdf)
 
-[Télécharger la brochure (Français)](./TheLiveDrawingProject_Brochure_FR.pdf)  
- 
-[Télécharger la brochure (Anglais)](./TheLiveDrawingProject_Brochure_EN.pdf)  
-  
-[Accéder à notre page Facebook](//facebook.com/TheLiveDrawingProject)  
-   
-[Accéder à notre page Instagram](//instagram.com/livedrawingproject) 
+[Télécharger la brochure (Anglais)](./TheLiveDrawingProject_Brochure_EN.pdf)
 
+[Accéder à notre page Facebook](//facebook.com/TheLiveDrawingProject)
 
+[Accéder à notre page Instagram](//instagram.com/livedrawingproject)
 
 # Dans les rues lyonnaises
+
 Lyon, France, 2019  
 The Live Drawing Project est un project 100% lyonnais. Notre ville est notre lieu d'experimentation privilégié pour tester de nouvelles façons d'inspirer le public.
 
@@ -29,13 +27,15 @@ The Live Drawing Project est un project 100% lyonnais. Notre ville est notre lie
 <img src="lyon2019/b-13.jpg"/>
 <img src="lyon2019/b-63.jpg"/>
 <img src="lyon2019/b-1.jpg"/>
+<img src="chrd/CHRD-1.jpg"/>
+<img src="chrd/CHRD-3.jpg"/>
 </photo-grid>
 
-
 # Festival Nouvelles Passions
+
 Chevagny, France, August 2019  
 Festival artistique  
-Installation dans une grange  
+Installation dans une grange
 
 <photo-grid>
 <img src="./chev/b-12.jpg"/>
@@ -47,8 +47,9 @@ Installation dans une grange
 </photo-grid>
 
 # Festi Lumi
+
 Corse, Juillet 2019  
-Fête des Lumières  
+Fête des Lumières
 
 <photo-grid>
 <img src="festi/b-5.jpg"/>
@@ -59,17 +60,14 @@ Fête des Lumières
 <img src="festi/b-4.jpg"/>
 </photo-grid>
 
-
 # Installation au festival Peinture Fraiche
+
 Festival de Street Art  
-Mai 2019, Lyon  
-
-
+Mai 2019, Lyon
 
 <iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
 [Lien Direct](//vimeo.com/344490536)
-
 
 <photo-grid>
 <img src="pf/1.jpg"/>
@@ -90,16 +88,14 @@ Mai 2019, Lyon
 <img src="pf/b-2.jpg"/>
 </photo-grid>
 
-
 # Performance collaborative avec le Street Artiste Shab
-Galerie d'art  
-Avril 2019, Lyon  
 
+Galerie d'art  
+Avril 2019, Lyon
 
 <iframe src="https://player.vimeo.com/video/335872657" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
 [Lien Direct](//vimeo.com/335872657)
-
 
 <photo-grid>
 <img src="shab/1.jpg"/>
@@ -108,9 +104,9 @@ Avril 2019, Lyon
 <img src="shab/textcover.jpg"/>
 </photo-grid>
 
-
 # Résidence Artistique au LabLab
-Lyon, France, février 2019  
+
+Lyon, France, février 2019
 
 <photo-grid>
 <img src="lablab/1.jpg"/>
@@ -124,15 +120,14 @@ Lyon, France, février 2019
 <img src="lablab/aadn.jpg"/>
 </photo-grid>
 
-
 # Exposition pour la Fête des Lumières
+
 Lyon, France, 2018  
-Au bar _Le Malting Pot_  
+Au bar _Le Malting Pot_
 
 <iframe src="https://player.vimeo.com/video/311653956" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
 [Lien Direct](https://vimeo.com/311653956)
-
 
 <photo-grid>
 <img src="maltingpot/3.jpg"/>
@@ -171,4 +166,3 @@ Pendant nos évenements, nous récupérons des milliers de dessins. Nous nous ap
 <img src="drawings/18.jpg"/>
 <img src="drawings/19.jpg"/>
 </photo-grid>
-
