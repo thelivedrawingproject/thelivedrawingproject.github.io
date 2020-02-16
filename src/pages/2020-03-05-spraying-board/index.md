@@ -14,6 +14,6 @@ image: 'cover.jpg'
 
 #### Description
 
-Meet us the 5th of March at the Terreaux Galerie for a collaborative drawing session on the thematics of skate art !
+Meet us the 5th of March at the Terreaux Gallery for a collaborative drawing session on the thematics of skate art !
 
 [Event website](https://sprayingboard.thedailyboard.co/)

@@ -14,6 +14,6 @@ image: 'cover.jpg'
 
 #### Description
 
-Retrouvez-nous le 5 mars à la galerie Place des Terreaux pour une session de dessin collaboratif sur le thème du skate art !
+Retrouvez-nous le 5 mars à la galerie des Terreaux pour une session de dessin collaboratif sur le thème du skate art !
 
 [Site de l'événement](https://sprayingboard.thedailyboard.co/)

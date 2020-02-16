@@ -170,7 +170,7 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr(
     'watchPhotos',
     'Photo & Video gallery',
-    'Gallerie de photos et vidéos'
+    'Galerie de photos et vidéos'
   ),
   StringEnFr('moreInfos', 'More about the project', "Plus d'informations"),
   StringEnFr('currentlyHappening', 'Curently Happening', 'En ce moment'),
