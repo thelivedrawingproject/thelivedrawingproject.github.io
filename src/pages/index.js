@@ -10,15 +10,16 @@ import { indexPageStrings } from '../locales/strings'
 import { localLink } from '../locales/localeUtils'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 
-const AreWeInPerformanceMode = true
-const eventName = 'Glow Downtown Calgary'
+const AreWeInPerformanceMode = true;
+const eventName = 'Glow Downtown Calgary';
+const numberOfEventsToShow = 6;
 export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale]
   const { edges: posts } = data.allMarkdownRemark
   const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' }
 
   const postGrid = ({ node: post }) => {
-    const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+    const localesOptions = { year: 'numeric', month: 'long' }
     return (
       <div
         className="post"
@@ -28,17 +29,14 @@ export default function Index({ data, pageContext: { locale }, location }) {
         key={post.id}
         style={{
           backgroundImage:
-            'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')',
+            'url(' + post.frontmatter.image.childImageSharp.fluid.src + ')',
         }}
       >
         <div className="insideArea">
           <div className="textArea">
             <span className="postTitle">{post.frontmatter.title}</span>
-            <span className="post-meta postTag">
-              {post.frontmatter.subtitle}
-            </span>
-            <span className="post-meta postTag">
-              {new Date(post.frontmatter.date).toLocaleDateString(
+            <span className="postSubtitle">
+              {post.frontmatter.subtitle} // {new Date(post.frontmatter.date).toLocaleDateString(
                 locale,
                 localesOptions
               )}
@@ -195,21 +193,23 @@ export default function Index({ data, pageContext: { locale }, location }) {
             {posts
               .filter(post => post.node.frontmatter.title.length > 0)
               .filter(post => post.node.frontmatter.language === locale)
-              .map(postGrid)}
+              .map((post, index) => { if(index<numberOfEventsToShow) return postGrid(post)})
+            }
           </div>
-        </div>
-
-        <div className="home homePosts">
-          <div className="moreProjects">
-            <Link to={'/about'}>{LOCAL.moreInfos}</Link>
-            <Link to={'/gallery'}>{LOCAL.watchPhotos}</Link>
-            <Link to={'/contact'}>{LOCAL.contactUs}</Link>
-            <a href={locale === 'fr' ? flyerFR : flyerEN}>
-              {LOCAL.downloadBrochure}
-            </a>
-            <a href={locale === 'fr' ? flyerEN : flyerFR}>
-              {LOCAL.downloadBrochureOtherLanguage}
-            </a>
+          <div style={{display: 'flex', justifyContent: 'center', marginTop: '1rem'}} >
+          <button id="showAllEventsButton" onClick={()=>{
+            let t = document.getElementById('oldEvents')
+            t.style.display = ''
+            let d = document.getElementById('showAllEventsButton');
+            d.style.display = 'none';
+          }}>Show more events</button>
+          </div>
+          <div className="postGrid" id="oldEvents" style={{display:'none'}}>
+            {posts
+              .filter(post => post.node.frontmatter.title.length > 0)
+              .filter(post => post.node.frontmatter.language === locale)
+              .map((post, index) => { if(numberOfEventsToShow <= index) return postGrid(post)})
+            }
           </div>
         </div>
       </div>
@@ -276,9 +276,9 @@ export const indexPageQuery = graphql`
               childImageSharp {
                 # Other options include height (set both width and height to crop),
                 # grayscale, duotone, rotate, etc.
-                fixed(width: 700) {
+                fluid(maxHeight: 500) {
                   # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-                  ...GatsbyImageSharpFixed
+                  ...GatsbyImageSharpFluid
                   src
                 }
               }
