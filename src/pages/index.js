@@ -165,27 +165,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-        <div
-          className={'ResponsiveContainer'}
-          style={{ backgroundColor: '#aac989' }}
-        >
-          <div className={'Inside'}>
-            <div className="ShowcasePart Column">
-              <div className={'Text Centered'}>
-                <h2 style={{ color: 'white' }}>{LOCAL.useCasesTitle}</h2>
-              </div>
-              <div className={'ImageContainer'}>
-                <div className="WordsCloud">
-                  <>
-                    {LOCAL.useCases.map(wordCloud => {
-                      return <p key={wordCloud}>{wordCloud}</p>
-                    })}
-                  </>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         <h2 className={'Punchline'}>{LOCAL.events}</h2>
         <div className="home homePosts">

@@ -135,6 +135,34 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr('letsDrawTogether', "Let's Draw Together", 'Dessinons ensemble'),
   StringEnFr('goToWebsite', 'Go to website', 'Aller au site web'),
 
+
+  StringEnFr('contactUs', 'Contact us', 'Nous contacter'),
+  StringEnFr(
+    'watchPhotos',
+    'Photo & Video gallery',
+    'Galerie de photos et vidéos'
+  ),
+  StringEnFr('moreInfos', 'More about the project', "Plus d'informations"),
+  StringEnFr('currentlyHappening', 'Curently Happening', 'En ce moment'),
+  StringEnFr('callUs', 'Call us', 'Appelez nous'),
+  StringEnFr('events', 'Events', 'Évenements'),
+])
+
+export const notFoundPage = {
+  en: {
+    title: `NOT FOUND`,
+    subtext: `There is nothing here !`,
+  },
+
+  fr: {
+    title: `PAGE NON TROUVÉE`,
+    subtext: `Il n'y a rien ici !`,
+  },
+}
+
+export const bookingPageStrings = stringBuilderEnFr([
+
+
   StringEnFr(
     'useCasesTitle',
     'One tool, many possibilities',

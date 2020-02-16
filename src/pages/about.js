@@ -69,6 +69,21 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
             <p className="Subtext">{LOCAL.moderationSubtext}</p>
           </div>
 
+
+
+          <div
+          className={'FullPageContainer'}
+        >
+          <h3 className="Punchline White">{LOCAL.useCasesTitle}</h3>
+                <div className="WordsCloud">
+                  <>
+                    {LOCAL.useCases.map(wordCloud => {
+                      return <p key={wordCloud}>{wordCloud}</p>
+                    })}
+                  </>
+          </div>
+        </div>
+
           <div className={'ShowcasePage'}>
             <div className={'ResponsiveContainer'}>
               <div className={'Inside'}>
