@@ -13,28 +13,22 @@ description: Photos and videos of the live drawing project events, installations
 
 [Access our Instagram Page](//instagram.com/livedrawingproject)
 
-# Multiple events in the Streets of Lyon
+## In the Streets of Lyon
 
-Lyon, France, 2019  
-Our hometown is our place of experimentation to test new ways to inspire people.
+Our hometown is our place of experimentation where we test new ways to inspire people.
 
 <photo-grid>
 <img src="lyon2019/b-2.jpg"/>
 <img src="lyon2019/b-3.jpg"/>
 <img src="lyon2019/b-10.jpg"/>
-<img src="lyon2019/b-6.jpg"/>
-<img src="lyon2019/b-13.jpg"/>
 <img src="lyon2019/b-63.jpg"/>
 <img src="lyon2019/b-1.jpg"/>
 <img src="chrd/CHRD-1.jpg"/>
-<img src="chrd/CHRD-3.jpg"/>
 </photo-grid>
 
-# Nouvelles Passions Festival
+## Nouvelles Passions Festival
 
-Art Festival  
-Scenography in a barn  
-Chevagny, France, August 2019
+International Art Festival, scenography in a barn. Chevagny, France, August 2019
 
 <photo-grid>
 <img src="./chev/b-12.jpg"/>
@@ -45,10 +39,9 @@ Chevagny, France, August 2019
 <img src="./chev/b-10.jpg"/>
 </photo-grid>
 
-# Installation for Festi Lumi
+## Festi Lumi
 
-Lights Festival  
-Corsica, July 2019
+The Lights Festival of Bonifacio in Corsica. July 2019.
 
 <photo-grid>
 <img src="festi/b-5.jpg"/>
@@ -59,10 +52,9 @@ Corsica, July 2019
 <img src="festi/b-4.jpg"/>
 </photo-grid>
 
-# Installation at the Peinture Fraiche Festival
+## Peinture Fraiche Festival
 
-Street Art Festival  
-Lyon, France, May 2019
+International Street Art Festival. Lyon, France, May 2019
 
 <iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
@@ -71,26 +63,18 @@ Lyon, France, May 2019
 <photo-grid>
 <img src="pf/1.jpg"/>
 <img src="pf/b-12.jpg"/>
-<img src="pf/b-6.jpg"/>
-<img src="pf/b-26.jpg"/>
 <img src="pf/b-21.jpg"/>
-<img src="pf/b-22.jpg"/>
 <img src="pf/b-24.jpg"/>
 <img src="pf/b-32.jpg"/>
 <img src="pf/b-28.jpg"/>
-<img src="pf/b-14.jpg"/>
 <img src="pf/b-11.jpg"/>
-<img src="pf/b-39.jpg"/>
-<img src="pf/b-7.jpg"/>
-<img src="pf/b-13.jpg"/>
+<img src="pf/b-6.jpg"/>
 <img src="pf/b-40.jpg"/>
-<img src="pf/b-2.jpg"/>
 </photo-grid>
 
-# Collaborative Performance with the Street Artist Shab
+## Collaborative Performance with the Street Artist Shab
 
-Lyon, France, April 2019  
-Art gallery
+At the Sitio by Superposition Art Gallery. Lyon, France, April 2019.
 
 <iframe src="https://player.vimeo.com/video/335872657" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
@@ -100,65 +84,44 @@ Art gallery
 <img src="shab/1.jpg"/>
 <img src="shab/2.jpg"/>
 <img src="shab/3.jpg"/>
-<img src="shab/textcover.jpg"/>
 </photo-grid>
 
-# Art residency at the LabLab
+## Art residency at the LabLab
 
 Lyon, France, February 2019
 
 <photo-grid>
-<img src="lablab/1.jpg"/>
-<img src="lablab/2.jpg"/>
-<img src="lablab/3.jpg"/>
-<img src="lablab/0.jpg"/>
-<img src="lablab/7.jpg"/>
-<img src="lablab/6.jpg"/>
-<img src="lablab/5.jpg"/>
 <img src="lablab/00.jpg"/>
-<img src="lablab/aadn.jpg"/>
+<img src="lablab/3.jpg"/>
+<img src="lablab/6.jpg"/>
 </photo-grid>
 
-# Exhibition for la Fête des Lumières
+## Exhibition for la Fête des Lumières
 
-Lyon, France, 2018  
-At the Malting Pot pub
+Our first exhibition at the _Malting Pot_ pub. Lyon, France, 2018 
 
 <iframe src="https://player.vimeo.com/video/311653956" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
 [Direct Link](https://vimeo.com/311653956)
 
 <photo-grid>
-<img src="maltingpot/3.jpg"/>
 <img src="maltingpot/screenshot1.jpg"/>
-<img src="maltingpot/1.jpg"/>
 <img src="maltingpot/2.jpg"/>
 <img src="maltingpot/cover.jpg"/>
-<img src="maltingpot/5.jpg"/>
-<img src="maltingpot/affiche.jpg"/>
 </photo-grid>
 
-# Some drawings from the audience
+## Some drawings from the audience
 
 During our events, we gather thousands of drawings. We're closely reaching 100,000 drawings in our database. Here's a selection of a few drawings made by people between 4 and 90 years old.
 
 <photo-grid>
 <img src="drawings/1.jpg"/>
-<img src="drawings/2.jpg"/>
-<img src="drawings/3.jpg"/>
-<img src="drawings/4.jpg"/>
-<img src="drawings/5.jpg"/>
 <img src="drawings/7.jpg"/>
 <img src="drawings/8.jpg"/>
 <img src="drawings/9.jpg"/>
-<img src="drawings/10.jpg"/>
-<img src="drawings/11.jpg"/>
-<img src="drawings/12.jpg"/>
 <img src="drawings/13.jpg"/>
 <img src="drawings/14.jpg"/>
 <img src="drawings/15.jpg"/>
-<img src="drawings/16.jpg"/>
 <img src="drawings/17.jpg"/>
-<img src="drawings/18.jpg"/>
 <img src="drawings/19.jpg"/>
 </photo-grid>
