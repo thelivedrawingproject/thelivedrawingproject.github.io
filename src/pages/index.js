@@ -10,8 +10,8 @@ import { indexPageStrings } from '../locales/strings'
 import { localLink } from '../locales/localeUtils'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 
-const AreWeInPerformanceMode = false
-const eventName = 'SoliBARités'
+const AreWeInPerformanceMode = true
+const eventName = 'Glow Downtown Calgary'
 export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale]
   const { edges: posts } = data.allMarkdownRemark
@@ -62,14 +62,11 @@ export default function Index({ data, pageContext: { locale }, location }) {
               {LOCAL.currentlyHappening}
               <br />
               <br />
-              <strong style={{ fontSize: '2.5em', color: '#85b94f' }}>
+              <strong style={{ fontSize: '1.2em', color: '#85b94f' }}>
                 {eventName}
               </strong>
             </div>
-            <a
-              href="http://solibarites.thelivedrawingproject.com"
-              onClick={() => {}}
-            >
+            <a href="https://glow.thelivedrawingproject.com" onClick={() => {}}>
               {LOCAL.clickHereToDraw}
             </a>
             <button
