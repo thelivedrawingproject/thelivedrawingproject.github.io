@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Footer from '../bits/TldpFooter/Footer'
 import './MainLayout.scss'
@@ -10,24 +10,24 @@ import { NavbarSlim } from '../bits/NavbarSlim/NavbarSlim'
 import { BottomBar } from '../components/wip/BottomBar/BottomBar'
 import { indexPageStrings } from '../locales/strings'
 
-
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = true
+const AreWeInPerformanceMode = false
 const eventName = 'Glow Downtown Calgary'
 const eventUrl = 'https://glow.thelivedrawingproject.com/'
 
 export default function MainLayout({ children, language, location }) {
-
-  let showPerformanceOverlay = false;
-  const showPerformanceBottomBar = AreWeInPerformanceMode;
+  let showPerformanceOverlay = false
+  const showPerformanceBottomBar = AreWeInPerformanceMode
 
   // homepage: single slash
-  console.log('pathname:' + location.pathname)
+
   // Bad because language dependant...
-  if(AreWeInPerformanceMode && location.pathname === '/' || location.pathname === '/fr')
-   {
-    showPerformanceOverlay = true;
+  if (
+    AreWeInPerformanceMode &&
+    (location.pathname === '/' || location.pathname === '/fr')
+  ) {
+    showPerformanceOverlay = true
   }
 
   if (language !== 'fr' && language !== 'en') {
@@ -41,21 +41,18 @@ export default function MainLayout({ children, language, location }) {
 
   const performanceSplashScreen = () => (
     <>
-    <h1 style={{ display: 'none' }}>{LOCAL.title}</h1>
+      <h1 style={{ display: 'none' }}>{LOCAL.title}</h1>
       <div className={'PerformanceMode'} id={'performanceOverlay'}>
         <div className="Logo" />
         <div style={{ textAlign: 'center', fontSize: '1.5em' }}>
           {LOCAL.currentlyHappening}
-          <br/>
-          <br/>
+          <br />
+          <br />
           <strong style={{ fontSize: '2.5em', color: '#85b94f' }}>
             {eventName}
           </strong>
         </div>
-        <a
-          href={eventUrl}
-          onClick={() => {}}
-        >
+        <a href={eventUrl} onClick={() => {}}>
           {LOCAL.clickHereToDraw}
         </a>
         <button
@@ -68,20 +65,19 @@ export default function MainLayout({ children, language, location }) {
           {LOCAL.goToWebsite}
         </button>
       </div>
-      </>
-  );
+    </>
+  )
 
- 
   return (
     <>
-    { showPerformanceOverlay && performanceSplashScreen()}
+      {showPerformanceOverlay && performanceSplashScreen()}
       <div className="CssGridNavContentFooter">
         <nav className="gridNavBar">
-          <NavbarSlim links={NavbarData[language].links}/>
+          <NavbarSlim links={NavbarData[language].links} />
         </nav>
         <div className="gridContent styleContent">{children}</div>
         <div className="gridFooter">
-          <Footer links={FooterLinks[language].links} lang={language}/>
+          <Footer links={FooterLinks[language].links} lang={language} />
           {location && (
             <LanguageSwitcher
               currentLanguage={language}
@@ -90,9 +86,11 @@ export default function MainLayout({ children, language, location }) {
             />
           )}
         </div>
-          {showPerformanceBottomBar && <div className={'gridBottomBar'}>
-          <BottomBar url={eventUrl} eventName={eventName}/>
-        </div>}
+        {showPerformanceBottomBar && (
+          <div className={'gridBottomBar'}>
+            <BottomBar url={eventUrl} eventName={eventName} />
+          </div>
+        )}
       </div>
     </>
   )
