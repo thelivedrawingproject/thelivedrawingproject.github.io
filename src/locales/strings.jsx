@@ -31,6 +31,8 @@ const stringBuilderEnFr = arrayOfStrings => {
 }
 
 export const indexPageStrings = stringBuilderEnFr([
+
+  StringEnFr('showMoreEvents', `Show more events`, `Plus d'événements` ),
   StringEnFr(
     'title',
     'The Live Drawing Project - Realtime Collaborative Drawing',

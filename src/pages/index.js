@@ -153,7 +153,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
             t.style.display = ''
             let d = document.getElementById('showAllEventsButton');
             d.style.display = 'none';
-          }}>Show more events</button>
+          }}>{LOCAL.showMoreEvents}</button>
           </div>
           <div className="postGrid" id="oldEvents" style={{display:'none'}}>
             {posts
