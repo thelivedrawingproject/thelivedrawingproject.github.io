@@ -286,10 +286,17 @@ $darkColor: black;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+      opacity: 0.7;
+      @include basicTransition();
+      &:hover {
+        @include basicTransition();
+        cursor: pointer;
+        opacity: 1.0
+      }
     }
 
     .Superposition {
-      background: url('gallery/clients/sup.jpg');
+      background: url('gallery/clients/sup.png');
       @include imageBackground();
     }
 
@@ -319,12 +326,12 @@ $darkColor: black;
     }
 
     .Chrd {
-      background: url('gallery/clients/chrd.jpg');
+      background: url('gallery/clients/CHRD.png');
       @include imageBackground();
     }
 
-    .Cda {
-      background: url('gallery/clients/cda.jpg');
+    .Glow {
+      background: url('gallery/clients/glow.png');
       @include imageBackground();
     }
 
@@ -332,11 +339,7 @@ $darkColor: black;
       background: url('gallery/clients/cpl.png');
       @include imageBackground();
     }
-
-    .Osterbro {
-      background: url('gallery/clients/osterbro.png');
-      @include imageBackground();
-    }
+    
   }
 }
 

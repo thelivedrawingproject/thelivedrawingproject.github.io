@@ -10,8 +10,7 @@ import { indexPageStrings } from '../locales/strings'
 import { localLink } from '../locales/localeUtils'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 
-const AreWeInPerformanceMode = true;
-const eventName = 'Glow Downtown Calgary';
+
 const numberOfEventsToShow = 6;
 export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale]
@@ -50,35 +49,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
   return (
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'} />
-
       <div className={'ShowcasePage'}>
-        <h1 style={{ display: 'none' }}>{LOCAL.title}</h1>
-        {AreWeInPerformanceMode && (
-          <div className={'PerformanceMode'} id={'performanceOverlay'}>
-            <div className="Logo" />
-            <div style={{ textAlign: 'center', fontSize: '1.5em' }}>
-              {LOCAL.currentlyHappening}
-              <br />
-              <br />
-              <strong style={{ fontSize: '1.2em', color: '#85b94f' }}>
-                {eventName}
-              </strong>
-            </div>
-            <a href="https://glow.thelivedrawingproject.com" onClick={() => {}}>
-              {LOCAL.clickHereToDraw}
-            </a>
-            <button
-              onClick={() => {
-                let t = document.getElementById('performanceOverlay')
-                t.style.display = 'none'
-                t.style.pointerEvents = 'none'
-              }}
-            >
-              {LOCAL.goToWebsite}
-            </button>
-          </div>
-        )}
-
         <div className={'RollbackBackground'}>
           <div
             className={'ResponsiveContainer WelcomerCoverPhoto'}

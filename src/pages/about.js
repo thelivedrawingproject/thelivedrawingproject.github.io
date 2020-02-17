@@ -107,25 +107,15 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                         rel="noreferrer noopener"
                         href={'https://copenhagenlightfestival.org'}
                       />
-                      <a
-                        className={'Osterbro'}
+
+<a
+                        className={'Glow'}
                         target="_blank"
                         rel="noreferrer noopener"
-                        href={'https://oesterbrolokaludvalg.kk.dk/'}
+                        href={'https://glowyyc.com'}
                       />
-                      <a
-                        className={'Cda'}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href={'https://calgarydowntown.com/'}
-                      />
-                      <a
-                        className={'Aadn'}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href={'https://aadn.org/'}
-                      />
-                      <a
+
+                                            <a
                         className={'Bonifacio'}
                         target="_blank"
                         rel="noreferrer noopener"
@@ -134,23 +124,25 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                         }
                       />
                       <a
-                        className={'Pf'}
+                        className={'Aadn'}
                         target="_blank"
                         rel="noreferrer noopener"
-                        href={'http://www.peinturefraichefestival.fr/'}
+                        href={'https://aadn.org/'}
                       />
+
                       <a
                         className={'MaltingPot'}
                         target="_blank"
                         rel="noreferrer noopener"
                         href={'https://www.facebook.com/LeMaltingPot/'}
                       />
-                      <a
-                        className={'Chevagny'}
+                                            <a
+                        className={'Pf'}
                         target="_blank"
                         rel="noreferrer noopener"
-                        href={'http://chevagny-labelvie.fr/'}
+                        href={'http://www.peinturefraichefestival.fr/'}
                       />
+
                       <a
                         className={'Superposition'}
                         target="_blank"
