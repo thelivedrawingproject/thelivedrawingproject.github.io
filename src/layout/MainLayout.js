@@ -12,9 +12,9 @@ import { indexPageStrings } from '../locales/strings'
 
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = false
-const eventName = 'Glow Downtown Calgary'
-const eventUrl = 'https://glow.thelivedrawingproject.com/'
+const AreWeInPerformanceMode = true
+const eventName = 'Copenhagen Light Festival'
+const eventUrl = 'https://cph.thelivedrawingproject.com/'
 
 export default function MainLayout({ children, language, location }) {
   let showPerformanceOverlay = false
@@ -25,7 +25,9 @@ export default function MainLayout({ children, language, location }) {
   // Bad because language dependant...
   if (
     AreWeInPerformanceMode &&
-    (location.pathname === '/' || location.pathname === '/fr')
+    (location.pathname === '/' ||
+      location.pathname === '/fr' ||
+      location.pathname === '/fr/')
   ) {
     showPerformanceOverlay = true
   }
