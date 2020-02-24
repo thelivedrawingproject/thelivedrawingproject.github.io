@@ -46,11 +46,11 @@ export default function MainLayout({ children, language, location }) {
       <h1 style={{ display: 'none' }}>{LOCAL.title}</h1>
       <div className={'PerformanceMode'} id={'performanceOverlay'}>
         <div className="Logo" />
-        <div style={{ textAlign: 'center', fontSize: '1.5em' }}>
+        <div style={{ textAlign: 'center', fontSize: '1.2em' }}>
           {LOCAL.currentlyHappening}
           <br />
           <br />
-          <strong style={{ fontSize: '2.5em', color: '#85b94f' }}>
+          <strong style={{ fontSize: '1.5em', color: '#85b94f' }}>
             {eventName}
           </strong>
         </div>
@@ -63,6 +63,7 @@ export default function MainLayout({ children, language, location }) {
             t.style.display = 'none'
             t.style.pointerEvents = 'none'
           }}
+          style={{ marginBottom: '3rem' }}
         >
           {LOCAL.goToWebsite}
         </button>
