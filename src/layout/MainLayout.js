@@ -12,7 +12,7 @@ import { indexPageStrings } from '../locales/strings'
 
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = true
+const AreWeInPerformanceMode = false
 const eventName = 'Copenhagen Light Festival'
 const eventUrl = 'https://cph.thelivedrawingproject.com/'
 

@@ -7,13 +7,25 @@ description: Installation of The Live Drawing Project for the Copenhagen Light F
 date: '2020-02-20'
 category: event
 language: en
-image: 'cover.jpg'
+image: 'web-23.jpg'
 ---
-
-![Cover](cover.jpg)
 
 #### Description
 
-Meet us in February at Trianglen metro in Copenhagen for the Copenhagen Light Festival !
+We exhibited our installation the Copenhagen Light Festival in the Oesterbro neighborhood. We also exhibited our multi-wall format for the closing party of the festival: at the closing party and at Oesterbro at the same time.
 
-[Event website](https://copenhagenlightfestival.org/)
+#### Partners
+
+[Copenhagen light Festival](https://copenhagenlightfestival.org/)  
+[Oesterbro Commune](https://kk.dk/)
+
+<photo-grid>
+<img src="web-14.jpg"/>
+<img src="web-17.jpg"/>
+<img src="web-19.jpg"/>
+<img src="web-20.jpg"/>
+<img src="web-21.jpg"/>
+<img src="web-23.jpg"/>
+<img src="web-22.jpg"/>
+<img src="web-25.jpg"/>
+</photo-grid>

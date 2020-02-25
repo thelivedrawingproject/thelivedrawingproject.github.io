@@ -10,8 +10,7 @@ import { indexPageStrings } from '../locales/strings'
 import { localLink } from '../locales/localeUtils'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 
-
-const numberOfEventsToShow = 6;
+const numberOfEventsToShow = 6
 export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale]
   const { edges: posts } = data.allMarkdownRemark
@@ -35,7 +34,8 @@ export default function Index({ data, pageContext: { locale }, location }) {
           <div className="textArea">
             <span className="postTitle">{post.frontmatter.title}</span>
             <span className="postSubtitle">
-              {post.frontmatter.subtitle} // {new Date(post.frontmatter.date).toLocaleDateString(
+              {post.frontmatter.subtitle} //{' '}
+              {new Date(post.frontmatter.date).toLocaleDateString(
                 locale,
                 localesOptions
               )}
@@ -136,31 +136,42 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-
-
         <h2 className={'Punchline'}>{LOCAL.events}</h2>
         <div className="home homePosts">
           <div className="postGrid">
             {posts
               .filter(post => post.node.frontmatter.title.length > 0)
               .filter(post => post.node.frontmatter.language === locale)
-              .map((post, index) => { if(index<numberOfEventsToShow) return postGrid(post)})
-            }
+              .map((post, index) => {
+                if (index < numberOfEventsToShow) return postGrid(post)
+              })}
           </div>
-          <div style={{display: 'flex', justifyContent: 'center', marginTop: '1rem'}} >
-          <button id="showAllEventsButton" onClick={()=>{
-            let t = document.getElementById('oldEvents')
-            t.style.display = ''
-            let d = document.getElementById('showAllEventsButton');
-            d.style.display = 'none';
-          }}>{LOCAL.showMoreEvents}</button>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              marginTop: '1rem',
+            }}
+          >
+            <button
+              id="showAllEventsButton"
+              onClick={() => {
+                let t = document.getElementById('oldEvents')
+                t.style.display = ''
+                let d = document.getElementById('showAllEventsButton')
+                d.style.display = 'none'
+              }}
+            >
+              {LOCAL.showMoreEvents}
+            </button>
           </div>
-          <div className="postGrid" id="oldEvents" style={{display:'none'}}>
+          <div className="postGrid" id="oldEvents" style={{ display: 'none' }}>
             {posts
               .filter(post => post.node.frontmatter.title.length > 0)
               .filter(post => post.node.frontmatter.language === locale)
-              .map((post, index) => { if(numberOfEventsToShow <= index) return postGrid(post)})
-            }
+              .map((post, index) => {
+                if (numberOfEventsToShow <= index) return postGrid(post)
+              })}
           </div>
         </div>
       </div>
@@ -196,16 +207,16 @@ export const indexPageQuery = graphql`
     gridB: file(relativePath: { eq: "gallery/showcase/fl1.jpg" }) {
       ...gatImage
     }
-    gridC: file(relativePath: { eq: "gallery/showcase/chev0.jpg" }) {
+    gridC: file(relativePath: { eq: "gallery/showcase/glow1.jpg" }) {
       ...gatImage
     }
-    gridD: file(relativePath: { eq: "gallery/showcase/chev.jpg" }) {
+    gridD: file(relativePath: { eq: "gallery/showcase/glow2.jpg" }) {
       ...gatImage
     }
-    gridE: file(relativePath: { eq: "gallery/pf/1.jpg" }) {
+    gridE: file(relativePath: { eq: "gallery/showcase/chev0.jpg" }) {
       ...gatImage
     }
-    gridF: file(relativePath: { eq: "gallery/pf/b-12.jpg" }) {
+    gridF: file(relativePath: { eq: "gallery/showcase/chev.jpg" }) {
       ...gatImage
     }
     allMarkdownRemark(

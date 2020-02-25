@@ -27,6 +27,31 @@ The Live Drawing Project est un project 100% lyonnais. Notre ville est notre lie
 <img src="chrd/CHRD-1.jpg"/>
 </photo-grid>
 
+## GLOW Winter Festival
+
+Fête des Lumières de Calgary au Canada. Février 2020.
+
+<photo-grid>
+<img src="cag/web-5.jpg"/>
+<img src="cag/web-6.jpg"/>
+<img src="cag/web-11.jpg"/>
+<img src="cag/web-2.jpg"/>
+<img src="cag/web-7.jpg"/>
+<img src="cag/web-12.jpg"/>
+</photo-grid>
+
+## Copenhagen Light Festival
+
+Fête des lumières de Copenhague, Danemark. Février 2020.
+
+<photo-grid>
+<img src="cph/web-14.jpg"/>
+<img src="cph/web-17.jpg"/>
+<img src="cph/web-19.jpg"/>
+<img src="cph/web-21.jpg"/>
+<img src="cph/web-23.jpg"/>
+<img src="cph/web-22.jpg"/>
+</photo-grid>
 
 ## Festival Nouvelles Passions
 
@@ -98,11 +123,9 @@ Résidence au Lab Lab en partenariat avec l'AADN. Lyon, France, février 2019.
 <img src="lablab/6.jpg"/>
 </photo-grid>
 
-
 ## Exposition pour la Fête des Lumières
 
 Notre première exposition au bar _Le Malting Pot_ Lyon, France, 2018.
-
 
 <iframe src="https://player.vimeo.com/video/311653956" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
@@ -113,7 +136,7 @@ Notre première exposition au bar _Le Malting Pot_ Lyon, France, 2018.
 <img src="maltingpot/2.jpg"/>
 <img src="maltingpot/cover.jpg"/>
 </photo-grid>
-  
+
 
 ## Quelques dessins du public
 
