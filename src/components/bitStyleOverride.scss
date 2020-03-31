@@ -1,7 +1,7 @@
 // Theme
 $blackLink: #4c4c4c;
-$backgroundColorForText: #fafafa;
-$backgroundColor: rgb(240, 240, 240);
+$backgroundColorForText: #F2EDE9;//rgb(240, 240, 240);
+$backgroundColor: #F2EDE9;
 
 
 $accentColor: #85b94f; //#aac989; //#4d9933;
@@ -13,3 +13,9 @@ $colorIdle: #919191;
 $colorUnselected: rgb(200,200,200);
 $colorHover: $accentColor;
 $navbarColor: $backgroundColor;
+
+$modernGreen: #6d8879;
+$modernGreenAccent:#3f9264;
+$accentColor: $modernGreenAccent;
+$accentColorIdle: $modernGreen;
+$modernGreenDarkMode: #39c678;

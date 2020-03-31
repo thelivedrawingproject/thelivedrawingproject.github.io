@@ -25,6 +25,9 @@ The Live Drawing Project est un project 100% lyonnais. Notre ville est notre lie
 <img src="lyon2019/b-63.jpg"/>
 <img src="lyon2019/b-1.jpg"/>
 <img src="chrd/CHRD-1.jpg"/>
+<img src="sb/SprayingBoard_7.jpg"/>
+<img src="sb/SprayingBoard_6.jpg"/>
+<img src="sb/SprayingBoard_8.jpg"/>
 </photo-grid>
 
 ## GLOW Winter Festival

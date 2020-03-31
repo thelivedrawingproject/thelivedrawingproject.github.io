@@ -41,7 +41,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           </div>
 
           <div className="FullPageContainer">
-            <h2 className="Punchline Accent">{LOCAL.features}</h2>
+            <h2 className="Punchline White Strong">{LOCAL.features}</h2>
           </div>
 
           <div className="FullPageContainer">
@@ -74,7 +74,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           <div
           className={'FullPageContainer'}
         >
-          <h3 className="Punchline White">{LOCAL.useCasesTitle}</h3>
+          <h3 className="Punchline White Strong">{LOCAL.useCasesTitle}</h3>
                 <div className="WordsCloud">
                   <>
                     {LOCAL.useCases.map(wordCloud => {
@@ -88,8 +88,8 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
             <div className={'ResponsiveContainer'}>
               <div className={'Inside'}>
                 <div className="ShowcasePart Column">
-                  <div className={'Text Centered'}>
-                    <h2 className="Punchline White" style={{ color: 'black' }}>
+                  <div>
+                    <h2 className="Punchline White Strong">
                       {LOCAL.clientsTitle}
                     </h2>
                   </div>

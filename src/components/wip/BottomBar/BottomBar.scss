@@ -4,7 +4,7 @@
 .BottomBar {
 
   background-color: #383838;
-  color: $accentColor;
+  color: $modernGreenDarkMode;
   font-weight: 600;
   text-align: left;
   align-items: center;
@@ -39,15 +39,15 @@
   a {
     margin-right: 1rem;
     text-align: center;
-    $underlineColor: $accentColor;
+    $underlineColor: $modernGreenDarkMode;
     text-decoration: none;
     border: none;
     background-color: transparent;
-    border: solid 4px $accentColor;
+    border: solid 4px $modernGreenDarkMode;
     color: white;
     @include basicTransition();
     &:hover {
-      background-color: $accentColor;
+      background-color: $modernGreenDarkMode;
       outline: 0;
       @include basicTransition();
     }
@@ -65,10 +65,10 @@
 
     @keyframes shadow-pulse2 {
       0% {
-        box-shadow: 0 0 0 0px rgba($accentColor, 1);
+        box-shadow: 0 0 0 0px rgba($modernGreenDarkMode, 1);
       }
       100% {
-        box-shadow: 0 0 0 8px rgba($accentColor, 0);
+        box-shadow: 0 0 0 8px rgba($modernGreenDarkMode, 0);
       }
     }
 

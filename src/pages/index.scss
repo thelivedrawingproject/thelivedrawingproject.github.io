@@ -1,6 +1,17 @@
 @import './../components/styles';
 
 $darkColor: black;
+.BasicWhiteBack {
+  background-color: rgb(240, 240, 240);
+}
+
+.ModernGreenBack {
+  background-color: $modernGreen;
+}
+
+.ModernGreenText {
+  color: $modernGreen;
+}
 
 .ResponsiveContainer {
   display: flex;
@@ -212,7 +223,7 @@ $darkColor: black;
       h2 {
         font-size: 2em;
         font-weight: 600;
-        color: $accentColor;
+        color: $modernGreenAccent;
       }
 
       p {
@@ -276,8 +287,8 @@ $darkColor: black;
         margin: 1em;
       }
       @include breakpoint(normal) {
-        min-width: 20em;
-        min-height: 10em;
+        min-width: 12em;
+        min-height: 12em;
         margin: 3em;
       }
     }
@@ -357,23 +368,36 @@ $darkColor: black;
   }
 
   &.White {
-    font-size: 2em;
+    font-size: 1.5em;
 
+    @include breakpoint(small) {
+      font-size: 1.2em;
+    }
+    font-weight: 400;
+    background-color: transparent;
+    border-bottom: solid 2px $accentColorIdle;
+    color: black;
+    margin: auto;
+    margin-bottom: 0.5em;
+
+    &.Strong {
+      border-bottom: solid 4px black;
+      font-size: 2em;
+      @include breakpoint(small) {
+        font-size: 1.8em;
+      }
+      font-weight: 400;
+    }
+    
+  }
+
+  &.Accent {
+    border-bottom: solid 4px black;
+    font-size: 2em;
     @include breakpoint(small) {
       font-size: 1.8em;
     }
     font-weight: 400;
-    background-color: transparent;
-    border-bottom: solid 2px black;
-    color: black;
-    margin: auto;
-    margin-bottom: 0.5em;
-  }
-
-  &.Accent {
-    background-color: #abcb89;
-    border-radius: 5px;
-    color: white;
   }
 }
 
@@ -384,7 +408,7 @@ $darkColor: black;
 }
 
 .WordsCloud {
-  $shadowColor: #799d59; // Darker green (more sat, less bright)
+  $shadowColor: $accentColorIdle; // Darker green (more sat, less bright)
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -564,14 +588,15 @@ $darkColor: black;
     text-decoration: none;
     border: none;
     background-color: transparent;
-    background-color: $accentColor;
+    background-color: $modernGreen;
     color: white;
     @include basicTransition();
     &:hover {
       outline: 0;
       @include basicTransition();
       cursor: pointer;
-      background-color: $accentLight;
+      background-color: $modernGreenAccent;
+      // background-color: $accentLight;
     }
 
     &:visited {

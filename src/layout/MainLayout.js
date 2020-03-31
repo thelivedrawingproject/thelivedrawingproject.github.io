@@ -50,7 +50,7 @@ export default function MainLayout({ children, language, location }) {
           {LOCAL.currentlyHappening}
           <br />
           <br />
-          <strong style={{ fontSize: '1.5em', color: '#85b94f' }}>
+          <strong className={'DarkModeTextAccent'} style={{ fontSize: '2em' }}>
             {eventName}
           </strong>
         </div>

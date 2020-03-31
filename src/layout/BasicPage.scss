@@ -98,7 +98,7 @@
       margin-top: 4rem;
       display: flex;
       flex-wrap: wrap;
-      filter: grayscale(1);
+      //filter: grayscale(1);
 
       justify-content: space-between;
       @include breakpoint(small) {
@@ -209,9 +209,10 @@
     font-weight: 400;
   }
   h4 {
-    font-size: 1.3em;
+    font-size: 1.6em;
     font-weight: 600;
-    margin-bottom: 0.4em;
+    margin: 0.6;
+    margin-bottom: 1em;
   }
   h5 {
     margin: 0;
@@ -245,30 +246,30 @@
   background-position: center center;
 
   .overlay {
-    background-color: $accentLight;
+    background-color: $modernGreen;
     @include breakpoint(normal) {
-      padding: 7rem;
+      padding: 4rem;
     }
     @include breakpoint(small) {
-      padding: 4rem;
+      padding: 2rem;
       padding-left: 1rem;
       padding-right: 1rem;
     }
 
     &Smaller {
       @include breakpoint(normal) {
-        padding: 7rem;
+        padding: 4rem;
       }
       @include breakpoint(small) {
-        padding: 3rem;
+        padding: 1rem;
       }
     }
 
     .punchline {
       animation: fadein 1s;
-      font-size: 4rem;
+      font-size: 3rem;
       @include breakpoint(small) {
-        font-size: 3rem;
+        font-size: 2rem;
       }
       padding-bottom: 1rem;
       color: white;

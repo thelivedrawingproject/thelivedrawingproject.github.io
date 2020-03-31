@@ -24,6 +24,9 @@ Our hometown is our place of experimentation where we test new ways to inspire p
 <img src="lyon2019/b-63.jpg"/>
 <img src="lyon2019/b-1.jpg"/>
 <img src="chrd/CHRD-1.jpg"/>
+<img src="sb/SprayingBoard_7.jpg"/>
+<img src="sb/SprayingBoard_6.jpg"/>
+<img src="sb/SprayingBoard_8.jpg"/>
 </photo-grid>
 
 ## GLOW Winter Festival

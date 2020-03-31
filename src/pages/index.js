@@ -72,8 +72,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
         </div>
 
         <div
-          className={'ResponsiveContainer'}
-          style={{ backgroundColor: '#aac989' }}
+          className={'ResponsiveContainer ModernGreenBack'}
         >
           <div className={'Inside'}>
             <div className="ShowcasePart">
@@ -94,7 +93,6 @@ export default function Index({ data, pageContext: { locale }, location }) {
 
         <div
           className={'ResponsiveContainer'}
-          style={{ backgroundColor: '#f4f4f4' }}
         >
           <div className={'Inside'}>
             <div className="ShowcasePart Column">
@@ -120,7 +118,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-        <div className={'ResponsiveContainer'}>
+        <div className={'ResponsiveContainer BasicWhiteBack'}>
           <div className={'Inside'}>
             <div className="ShowcasePart">
               <div className={'Text'}>
