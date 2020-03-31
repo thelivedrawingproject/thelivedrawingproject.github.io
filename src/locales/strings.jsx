@@ -31,8 +31,7 @@ const stringBuilderEnFr = arrayOfStrings => {
 }
 
 export const indexPageStrings = stringBuilderEnFr([
-
-  StringEnFr('showMoreEvents', `Show more events`, `Plus d'événements` ),
+  StringEnFr('showMoreEvents', `Show more events`, `Plus d'événements`),
   StringEnFr(
     'title',
     'The Live Drawing Project - Realtime Collaborative Drawing',
@@ -137,7 +136,6 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr('letsDrawTogether', "Let's Draw Together", 'Dessinons ensemble'),
   StringEnFr('goToWebsite', 'Go to website', 'Aller au site web'),
 
-
   StringEnFr('contactUs', 'Contact us', 'Nous contacter'),
   StringEnFr(
     'watchPhotos',
@@ -145,7 +143,11 @@ export const indexPageStrings = stringBuilderEnFr([
     'Galerie de photos et vidéos'
   ),
   StringEnFr('moreInfos', 'More about the project', "Plus d'informations"),
-  StringEnFr('currentlyHappening', 'Curently Happening', 'En ce moment'),
+  StringEnFr(
+    'currentlyHappening',
+    `Let's draw together!`,
+    'Lyonnaises, Lyonnais, Dessinons ensemble !'
+  ),
   StringEnFr('callUs', 'Call us', 'Appelez nous'),
   StringEnFr('events', 'Events', 'Évenements'),
 ])
@@ -163,8 +165,6 @@ export const notFoundPage = {
 }
 
 export const bookingPageStrings = stringBuilderEnFr([
-
-
   StringEnFr(
     'useCasesTitle',
     'One tool, many possibilities',
@@ -195,7 +195,7 @@ export const bookingPageStrings = stringBuilderEnFr([
       'Et bien plus !',
     ]
   ),
-  
+
   StringEnFr('features', 'Features', 'Fonctionnalités'),
   StringEnFr('customisableTitle', '100% Customisable', '100% Personnalisable'),
   StringEnFr(

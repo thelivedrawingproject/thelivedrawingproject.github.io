@@ -13,8 +13,8 @@ import { indexPageStrings } from '../locales/strings'
 // TODO: store a cookie to enable/disable splash screen
 
 const AreWeInPerformanceMode = false
-const eventName = 'Copenhagen Light Festival'
-const eventUrl = 'https://cph.thelivedrawingproject.com/'
+const eventName = '#StayHome'
+const eventUrl = 'https://stayhome.thelivedrawingproject.com/'
 
 export default function MainLayout({ children, language, location }) {
   let showPerformanceOverlay = false
