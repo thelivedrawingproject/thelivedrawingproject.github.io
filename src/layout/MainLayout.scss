@@ -1,6 +1,5 @@
 @import '../components/styles';
 
-
 .DarkModeTextAccent {
   color: $modernGreenDarkMode;
 }
@@ -46,7 +45,7 @@
       grid-area: bottom;
       justify-self: stretch;
       text-align: right;
-      background-color: $accentColor;
+      background-color: $modernGreenDarkMode;
       color: white;
       // STUFF for responsive navbar using an overlay
 
@@ -106,15 +105,15 @@
     text-align: center;
     margin: 1rem;
     padding: 2rem;
-    $underlineColor: $accentColor;
+    $underlineColor: $modernGreenDarkMode;
     text-decoration: none;
     border: none;
     background-color: transparent;
-    border: solid 4px $accentColor;
+    border: solid 4px $modernGreenDarkMode;
     color: white;
     @include basicTransition();
     &:hover {
-      background-color: $accentColor;
+      background-color: $modernGreenDarkMode;
       outline: 0;
       @include basicTransition();
     }
@@ -132,10 +131,10 @@
 
     @keyframes shadow-pulse {
       0% {
-        box-shadow: 0 0 0 0px rgba($accentColor, 1);
+        box-shadow: 0 0 0 0px rgba($modernGreenDarkMode, 1);
       }
       100% {
-        box-shadow: 0 0 0 35px rgba($accentColor, 0);
+        box-shadow: 0 0 0 35px rgba($modernGreenDarkMode, 0);
       }
     }
 
