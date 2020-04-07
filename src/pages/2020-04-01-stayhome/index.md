@@ -18,8 +18,12 @@ In these confined times we asked the Lyonnais to display our live drawing instal
 
 Would you like to join us next Sunday? Take out your video projector and answer [our form](https://framaforms.org/stayhome-and-staycreative-1585829622).
 
+[Press release](comPresse6avril2020.pdf)
+
 <photo-grid>
 <img src="1.jpg"/>
 <img src="2.jpg"/>
-<img src="3.jpg"/>
+<img src="4.jpg"/>
 </photo-grid>
+
+Find more pictures on social networks [Instagram](https://instagram.com/livedrawingproject) et [Facebook](https://facebook.com/TheLiveDrawingProject)

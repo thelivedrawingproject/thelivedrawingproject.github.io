@@ -18,8 +18,12 @@ En ces temps confinés nous vous proposons de vidéo projeter notre animation de
 
 Vous souhaitez vous joindre à nous dimanche prochain ? Sortez votre vidéoprojecteur et répondez à [notre formulaire](https://framaforms.org/stayhome-and-staycreative-1585829622).
 
+[Telecharger le communiqué de presse](comPresse6avril2020.pdf)
+
 <photo-grid>
 <img src="1.jpg"/>
 <img src="2.jpg"/>
-<img src="3.jpg"/>
+<img src="4.jpg"/>
 </photo-grid>
+
+Retrouvez plus d'images sur nos réseaux sociaux [Instagram](https://instagram.com/livedrawingproject) et [Facebook](https://facebook.com/TheLiveDrawingProject)
