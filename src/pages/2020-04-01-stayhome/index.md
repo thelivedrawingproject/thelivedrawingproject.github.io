@@ -3,7 +3,7 @@ path: /stayhome
 layout: article
 title: Stay Home
 subtitle: Decentralised Installation
-description: Installation décentralisée The Live Drawing Project pendant le confinement
+description: Decentralised Installation The Live Drawing Project for confinment
 date: '2020-04-01'
 category: event
 language: en
