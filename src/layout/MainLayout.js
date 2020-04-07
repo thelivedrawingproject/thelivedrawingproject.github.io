@@ -47,7 +47,7 @@ export default function MainLayout({ children, language, location }) {
       <div className={'PerformanceMode'} id={'performanceOverlay'}>
         <div className="Logo" />
         <div style={{ textAlign: 'center', fontSize: '1.2em' }}>
-          {LOCAL.currentlyHappening}
+          {'Lyonnaises, Lyonnais, dessinons ensemble !'}
           <br />
           <br />
           <strong className={'DarkModeTextAccent'} style={{ fontSize: '2em' }}>
@@ -63,7 +63,7 @@ export default function MainLayout({ children, language, location }) {
             t.style.display = 'none'
             t.style.pointerEvents = 'none'
           }}
-          style={{ marginBottom: '3rem' }}
+          style={{ marginBottom: '20vh' }}
         >
           {LOCAL.goToWebsite}
         </button>
