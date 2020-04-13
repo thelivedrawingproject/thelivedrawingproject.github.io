@@ -8,11 +8,16 @@ import { indexPageStrings } from '../locales/strings'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 
 const numberOfEventsToShow = 6
+
 export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale]
   const { edges: posts } = data.allMarkdownRemark
   const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' }
 
+  const stayHomeLink = {
+    en: { path: '/stayhome', name: LOCAL.announcementLinkName },
+    fr: { path: '/fr/stayhome', name: LOCAL.announcementLinkName },
+  }
   const postGrid = ({ node: post }) => {
     const localesOptions = { year: 'numeric', month: 'long' }
     return (
@@ -31,7 +36,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           <div className="textArea">
             <span className="postTitle">{post.frontmatter.title}</span>
             <span className="postSubtitle">
-              {post.frontmatter.subtitle} //{' '}
+              {post.frontmatter.subtitle}{' '}
               {new Date(post.frontmatter.date).toLocaleDateString(
                 locale,
                 localesOptions
@@ -47,6 +52,30 @@ export default function Index({ data, pageContext: { locale }, location }) {
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'} />
       <div className={'ShowcasePage'}>
+        <div className={'ResponsiveContainer ModernGreenBack'}>
+          <div className={'Inside'}>
+            <div className="ShowcasePart Column">
+              <div className={'Text Centered SpecialAnnouncement'}>
+                <h2
+                  className={'SpecialAnnouncementTitle'}
+                  style={{ color: 'white', fontSize: '1.5rem' }}
+                >
+                  {LOCAL.announcementTitle}
+                </h2>
+                <p
+                  className={'SpecialAnnouncementSubTitle'}
+                  style={{ color: 'white' }}
+                >
+                  {LOCAL.announcemenSubtitle}
+                </p>
+                <Link to={stayHomeLink[locale].path}>
+                  {stayHomeLink[locale].name}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className={'RollbackBackground'}>
           <div
             className={'ResponsiveContainer WelcomerCoverPhoto'}

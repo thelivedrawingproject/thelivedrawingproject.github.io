@@ -49,7 +49,8 @@ export default function Template({ data, location, pageContext }) {
           <h2 className="subtext">
             <p>
               <strong>{post.frontmatter.subtitle} </strong>
-             // <em>
+              <br />{' '}
+              <em>
                 {new Date(post.frontmatter.date).toLocaleDateString(
                   post.frontmatter.language,
                   { year: 'numeric', month: 'long' }

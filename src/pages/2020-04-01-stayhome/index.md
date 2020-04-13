@@ -1,24 +1,26 @@
 ---
 path: /stayhome
 layout: article
-title: Stay Home
+title: Draw From The Window
 subtitle: Decentralised Installation
-description: Decentralised Installation The Live Drawing Project for confinment
+description: Decentralised Installation The Live Drawing Project during the 2020 lockdown
 date: '2020-04-01'
 category: event
 language: en
 image: '3.jpg'
 ---
 
-![Cover](3.jpg)
+#### Creativity and collective spirit must go on!
 
-#### Description
+We decided to adapt our installation so we can keep exhibiting during lockdown. **Join the movement** and run The Live Drawing Project from your window!
 
-In these confined times we asked the Lyonnais to display our live drawing installation from their window every Sunday evening at 9pm all over Lyon!
+We exhibit every Sunday evening at 9pm.
 
-Would you like to join us next Sunday? Take out your video projector and answer [our form](https://framaforms.org/stayhome-and-staycreative-1585829622).
+Would you like to join us next Sunday? Take out your video projector and fill this form:
 
-[Press release](comPresse6avril2020.pdf)
+## [Participation Form](https://framaforms.org/stayhome-and-staycreative-1585829622)
+
+#### Medias
 
 <photo-grid>
 <img src="1.jpg"/>
@@ -26,4 +28,8 @@ Would you like to join us next Sunday? Take out your video projector and answer 
 <img src="4.jpg"/>
 </photo-grid>
 
-Find more pictures on social networks [Instagram](https://instagram.com/livedrawingproject) et [Facebook](https://facebook.com/TheLiveDrawingProject)
+![Cover](3.jpg)
+
+Find more pictures on social networks: [Instagram](https://instagram.com/livedrawingproject) [Facebook](https://facebook.com/TheLiveDrawingProject)
+
+[Press release](comPresse6avril2020.pdf)
