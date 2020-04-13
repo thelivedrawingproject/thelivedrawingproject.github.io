@@ -12,7 +12,7 @@ import { indexPageStrings } from '../locales/strings'
 
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = false
+const AreWeInPerformanceMode = true
 const eventName = '#StayHome'
 const eventUrl = 'https://stayhome.thelivedrawingproject.com/'
 
@@ -47,7 +47,7 @@ export default function MainLayout({ children, language, location }) {
       <div className={'PerformanceMode'} id={'performanceOverlay'}>
         <div className="Logo" />
         <div style={{ textAlign: 'center', fontSize: '1.2em' }}>
-          {'Lyonnaises, Lyonnais, dessinons ensemble !'}
+          {LOCAL.currentlyHappening}
           <br />
           <br />
           <strong className={'DarkModeTextAccent'} style={{ fontSize: '2em' }}>
@@ -88,10 +88,29 @@ export default function MainLayout({ children, language, location }) {
               currentUrl={location.pathname}
             />
           )}
+
+          <div
+            style={{
+              paddingBottom: '3rem',
+              paddingTop: '2rem',
+              color: 'dimgray',
+              textAlign: 'center',
+              lineHeight: 1.4,
+            }}
+          >
+            {LOCAL.noPersonalData}
+            <br />
+            <br />
+            {LOCAL.madeInLyon}
+          </div>
         </div>
         {showPerformanceBottomBar && (
           <div className={'gridBottomBar'}>
-            <BottomBar url={eventUrl} eventName={eventName} />
+            <BottomBar
+              url={eventUrl}
+              eventName={eventName}
+              buttonMessage={LOCAL.clickToDraw}
+            />
           </div>
         )}
       </div>

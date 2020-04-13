@@ -31,6 +31,17 @@ const stringBuilderEnFr = arrayOfStrings => {
 }
 
 export const indexPageStrings = stringBuilderEnFr([
+  StringEnFr(
+    'madeInLyon',
+    'Proudly made in Lyon, France',
+    'Une installation conçue à Lyon'
+  ),
+  StringEnFr(
+    'noPersonalData',
+    'This website does not steal your personal data.',
+    'Ce site internet ne vole pas vos données personnelles.'
+  ),
+
   StringEnFr('showMoreEvents', `Show more events`, `Plus d'événements`),
   StringEnFr(
     'title',
@@ -123,6 +134,7 @@ export const indexPageStrings = stringBuilderEnFr([
     'Click here to draw',
     'Clique ici pour dessiner'
   ),
+  StringEnFr('clickToDraw', 'Click to draw', 'Clique pour dessiner'),
   StringEnFr(
     'downloadBrochure',
     'Download brochure (English)',
@@ -145,8 +157,8 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr('moreInfos', 'More about the project', "Plus d'informations"),
   StringEnFr(
     'currentlyHappening',
-    `Let's draw together!`,
-    'Lyonnaises, Lyonnais, Dessinons ensemble !'
+    `Let's draw together during confinment!`,
+    'Pendant le confinement, Dessinons ensemble !'
   ),
   StringEnFr('callUs', 'Call us', 'Appelez nous'),
   StringEnFr('events', 'Events', 'Évenements'),
