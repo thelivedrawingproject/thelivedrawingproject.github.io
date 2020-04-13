@@ -4,10 +4,7 @@ import Img from 'gatsby-image'
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../bits/MetaTags/MetaTags'
 import './index.scss'
-import flyerEN from './../pages/gallery/TheLiveDrawingProject_Brochure_EN.pdf'
-import flyerFR from './../pages/gallery/TheLiveDrawingProject_Brochure_FR.pdf'
 import { indexPageStrings } from '../locales/strings'
-import { localLink } from '../locales/localeUtils'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 
 const numberOfEventsToShow = 6
@@ -71,9 +68,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-        <div
-          className={'ResponsiveContainer ModernGreenBack'}
-        >
+        <div className={'ResponsiveContainer ModernGreenBack'}>
           <div className={'Inside'}>
             <div className="ShowcasePart">
               <div className={'Text'}>
@@ -91,9 +86,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-        <div
-          className={'ResponsiveContainer'}
-        >
+        <div className={'ResponsiveContainer'}>
           <div className={'Inside'}>
             <div className="ShowcasePart Column">
               <div className={'Text Centered'}>
