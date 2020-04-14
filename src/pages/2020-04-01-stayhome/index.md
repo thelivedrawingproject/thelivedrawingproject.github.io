@@ -22,14 +22,19 @@ Would you like to join us next Sunday? Take out your video projector and fill th
 
 #### Medias
 
+#### Contenus
+
 <photo-grid>
 <img src="1.jpg"/>
-<img src="2.jpg"/>
+<img src="2020_6_webw.jpg"/>
 <img src="4.jpg"/>
+<img src="2020_1_webw.jpg"/>
+<img src="2020_2_webw.jpg"/>
+<img src="2020_4_webw.jpg"/>
+<img src="map.jpg">
+<img src="3.jpg"/>
 </photo-grid>
-
-![Cover](3.jpg)
 
 Find more pictures on social networks: [Instagram](https://instagram.com/livedrawingproject) [Facebook](https://facebook.com/TheLiveDrawingProject)
 
-[Press release](comPresse6avril2020.pdf)
+[Press release 6th April](comPresse6avril2020.pdf)
