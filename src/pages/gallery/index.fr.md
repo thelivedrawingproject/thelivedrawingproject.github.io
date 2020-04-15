@@ -8,11 +8,9 @@ description: Photos et videos des évenements du Live Drawing Project, installat
 
 [Télécharger la brochure (Français)](./TheLiveDrawingProject_Brochure_FR.pdf)
 
-[Télécharger la brochure (Anglais)](./TheLiveDrawingProject_Brochure_EN.pdf)
+[Page Facebook](//facebook.com/TheLiveDrawingProject)
 
-[Accéder à notre page Facebook](//facebook.com/TheLiveDrawingProject)
-
-[Accéder à notre page Instagram](//instagram.com/livedrawingproject)
+[Page Instagram](//instagram.com/livedrawingproject)
 
 ## Dans les rues lyonnaises
 
@@ -139,7 +137,6 @@ Notre première exposition au bar _Le Malting Pot_ Lyon, France, 2018.
 <img src="maltingpot/2.jpg"/>
 <img src="maltingpot/cover.jpg"/>
 </photo-grid>
-
 
 ## Quelques dessins du public
 

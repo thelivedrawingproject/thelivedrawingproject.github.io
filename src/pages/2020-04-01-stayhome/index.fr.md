@@ -20,31 +20,37 @@ Vous souhaitez vous joindre à nous dimanche prochain ? Sortez votre vidéoproje
 
 ## [Formulaire de participation](https://framaforms.org/stayhome-and-staycreative-1585829622)
 
-#### Précedentes expositions
+#### AGENDA
 
-- Lundi 30 mars: premier test, **2 lieux simultanés**
-- Dimanche 4 avril: **3 lieux simultanés, 550 dessins, 80 participants**
-- Dimanche 11 avril: **12 lieux simultanés, 1800 dessins, 150 participants**
-- Dimanche 18 avril: Rejoignez le mouvement pour battre le record !
+- Lundi 30 mars: _premier test, 2 lieux simultanés_
+- Dimanche 5 avril: _5 lieux simultanés, 550 dessins, 80 participants_
+- Dimanche 12 avril: _12 lieux simultanés, 1800 dessins, 150 participants_
 
-#### Contenus
+- **Dimanche 19 avril: Rejoignez le mouvement dans toute la France !**
+
+#### PHOTOS
 
 <photo-grid>
 <img src="1.jpg"/>
 <img src="2020_6_webw.jpg"/>
+<img src="webw-1.jpg">
 <img src="4.jpg"/>
 <img src="2020_1_webw.jpg"/>
 <img src="2020_2_webw.jpg"/>
-<img src="2020_4_webw.jpg"/>
+<img src="2020_4_web.jpg"/>
 <img src="map.jpg">
 <img src="3.jpg"/>
 </photo-grid>
 
-Retrouvez plus d'images sur nos réseaux sociaux: [Instagram](https://instagram.com/livedrawingproject) [Facebook](https://facebook.com/TheLiveDrawingProject)
+Retrouvez plus d'images de cet événement sur nos réseaux sociaux: [Instagram](https://instagram.com/livedrawingproject) [Facebook](https://facebook.com/TheLiveDrawingProject)
+
+[Photos de nos autres événements](/fr/gallery)
 
 #### PRESSE
 
-[Telecharger le communiqué de presse du 06 avril](comPresse6avril2020.pdf)
+[Telecharger le communiqué de presse du 14 avril 2020](TheLiveDrawingProject_comPresse14avril2020.pdf)
+
+[Télécharger la brochure de présentation](TheLiveDrawingProject_Brochure_FR.pdf)
 
 #### L’ÉQUIPE
 
@@ -54,9 +60,11 @@ Retrouvez plus d'images sur nos réseaux sociaux: [Instagram](https://instagram.
 
 Il est diplômé de l’école Polytechnique Universitaire de Nice. Autodidacte, il se spécialise après sa formation dans le domaine de l’audiovisuel et de l’art numérique. Il est réalisateur ou technicien sur les plateaux de tournage. Il s’investit aussi sur des projets comme le projet Humanlapse, où il explore la création de timelapses de portrait; Space Dances, projet de parcours chorégraphique en Réalité Augmentée et The Live Drawing Project. Au quotidien, Maxime s’investit sur des projets à finalité artistique où il peut mêler ses compétences techniques et sa passion créative.
 
-### LOUIS CLÉMENT est régisseur général et scénographe.
+### LOUIS CLÉMENT est scénographe et régisseur général.
 
-Il est diplômé d’architecture de l’ENSA Paris Val de Seine.Depuis 2014, il est régisseur général pour l’Ensemble ALEPH et réalise des parcours avec intervention musicales en espace public à Paris 13, Cluny, Beaune. Il assure également la direction technique du festival de musique contemporaine « D’Aujourd’hui à Demain » à Cluny depuis 2017 avec 10 jours de concerts dans 5 lieux différents. Il travaille également comme régisseur vidéo pour Le MAC de Lyon, le MBA de Lyon, la biennale d’art contemporain 2020 et le Musée d’Art de Valence.
+Il est diplômé d’architecture de l’ENSA Paris Val de Seine. Il s’intéresse à la vidéoprojection et au mapping depuis 2013 et crée « For L » avec le compositeur Dominique Clément, une scénographie vidéo audio réactive qui fera le tour d’Europe. Il réalise depuis 2015 des parcours dans la ville guidé par smartphone où les spectateurs découvrent des œuvres plastiques et vidéos. Il déploie aussi des interventions musicales dans des lieux originaux et inattendus.
+
+En parallèle il est régisseur général pour l’Ensemble ALEPH, le festival « D’Aujourd’hui à Demain », et Nomos ensemble de violoncelles. Il intervient aussi comme régisseur vidéo pour des œuvres muséales au MAC au MBA de Lyon ainsi que pour la biennale d’art contemporain de Lyon.
 
 ### MAXIME HURDEQUINT est architecte et illustrateur.
 

@@ -5,13 +5,11 @@ title: Gallery
 description: Photos and videos of the live drawing project events, installations and workshpops.
 ---
 
-[Download brochure (English)](./TheLiveDrawingProject_Brochure_EN.pdf)
-
 [Download brochure (French)](./TheLiveDrawingProject_Brochure_FR.pdf)
 
-[Access our Facebook Page](//facebook.com/TheLiveDrawingProject)
+[Facebook Page](//facebook.com/TheLiveDrawingProject)
 
-[Access our Instagram Page](//instagram.com/livedrawingproject)
+[Instagram Page](//instagram.com/livedrawingproject)
 
 ## In the Streets of Lyon
 
