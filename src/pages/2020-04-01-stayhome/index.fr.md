@@ -10,22 +10,23 @@ language: fr
 image: '3.jpg'
 ---
 
-#### La créativité et le partage doivent continuer !
+#### Dessinons ensemble et projetons nos dessins sur les murs de la ville !
 
-Nous avons décidé d'adapter notre installation pour continuer à exposer pendant le confinement. **Rejoignez le mouvement** et lancez The Live Drawing Project depuis votre fenêtre pour divertir vos voisins et lutter contre la morosité !
+Nous avons décidé d'adapter notre installation pour exposer pendant le confinement. **Rejoignez le mouvement** et lancez _The Live Drawing Project_ depuis votre fenêtre pour créer avec vos voisins et lutter contre la morosité !
 
-Nous exposons tous les dimanches soirs à 21h partout en France.
+**Nous exposons tous les dimanches soirs à 21h partout en France.**
 
-Vous souhaitez vous joindre à nous dimanche prochain ? Sortez votre vidéoprojecteur et répondez à ce formulaire:
+#### COMMENT ÇA MARCHE ?
 
-## [Formulaire de participation](https://framaforms.org/stayhome-and-staycreative-1585829622)
+Chaque personne dessine avec son téléphone, les dessins apparaissent instantanément sur les murs ! Les dessins transitent entre les lieux créant une **oeuvre collective unique qui évolue à chaque nouveau dessin reçu**. Pour vidéoprojeter depuis chez vous c'est très simple, remplissez le formulaire et nous vous contacterons:
+
+# [Formulaire de participation](https://framaforms.org/stayhome-and-staycreative-1585829622)
 
 #### AGENDA
 
 - Lundi 30 mars: _premier test, 2 lieux simultanés_
 - Dimanche 5 avril: _5 lieux simultanés, 550 dessins, 80 participants_
 - Dimanche 12 avril: _12 lieux simultanés, 1800 dessins, 150 participants_
-
 - **Dimanche 19 avril: Rejoignez le mouvement dans toute la France !**
 
 #### PHOTOS
@@ -58,7 +59,7 @@ Retrouvez plus d'images de cet événement sur nos réseaux sociaux: [Instagram]
 
 ### MAXIME TOUROUTE est ingénieur en Arts Visuels.
 
-Il est diplômé de l’école Polytechnique Universitaire de Nice. Autodidacte, il se spécialise après sa formation dans le domaine de l’audiovisuel et de l’art numérique. Il est réalisateur ou technicien sur les plateaux de tournage. Il s’investit aussi sur des projets comme le projet Humanlapse, où il explore la création de timelapses de portrait; Space Dances, projet de parcours chorégraphique en Réalité Augmentée et The Live Drawing Project. Au quotidien, Maxime s’investit sur des projets à finalité artistique où il peut mêler ses compétences techniques et sa passion créative.
+Artiste diplômé de l’école Polytechnique Universitaire de Nice, il se spécialise dans le domaine de l’audiovisuel et de l’art numérique. Au fil des rencontres, il développe des projets mêlant interactivité et technologie avec une attention particulière sur la relation à l’intime. Son projet Humanlapse, où il explore la création de timelapses de portrait, lui offre une nouvelle visibilité avec le #humanlapse réapproprié par de nombreux photographes sur les réseaux sociaux. Son bagage d’ingénieur façonne son processus créatif avec Space Dances, reconstitutions de parcours chorégraphique en Réalité Augmentée et The Live Drawing Project, installation de dessin collaborative.
 
 ### LOUIS CLÉMENT est scénographe et régisseur général.
 

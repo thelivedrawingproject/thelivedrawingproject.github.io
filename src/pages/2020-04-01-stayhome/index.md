@@ -10,13 +10,17 @@ language: en
 image: '3.jpg'
 ---
 
-#### Creativity and collective spirit must go on!
+#### Let's draw together on city walls all over the world!
 
-We decided to adapt our installation so we can keep exhibiting during lockdown. **Join the movement** and run The Live Drawing Project from your window!
+We decided to adapt our installation so we can exhibit with you during lockdown. **Join the movement** and run _The Live Drawing Project_ from your window with your neigboors to tackle monotony!
 
-We exhibit every Sunday evening at 9pm. The installation works all over the world.
+**We exhibit every Sunday evening at 9PM. The installation works all over the world.**
 
 Would you like to join us next Sunday? Take out your video projector and fill this form:
+
+#### HOW DOES IT WORK?
+
+Everyone can draw on its phone. The drawings appear instantaneously on the walls! Drawings travel between locations connecting people and creating a **collective artwork**. To videoproject from your home it's very simple: fill the form and we will contact you:
 
 ## [Participation Form](https://framaforms.org/stayhome-and-staycreative-1585829622)
 
@@ -25,7 +29,7 @@ Would you like to join us next Sunday? Take out your video projector and fill th
 - Monday 30th March: _first test, 2 locations_
 - Sunday 5th April: _5 locations, 550 drawings, 80 participants_
 - Sunday 12nd April: _12 locations, 1800 drawings, 180 participants_
-- **Sunday 19th avril: Join the movement all over the world!**
+- **Sunday 19th April: Join the movement all over the world!**
 
 #### PHOTOS
 
@@ -55,8 +59,13 @@ Find more pictures of this event on social networks: [Instagram](https://instagr
 
 ![The team](bio.jpg)
 
-From left to right:
+_From left to right:_
 
-- MAXIME TOUROUTE is a Visual Arts engineer
-- LOUIS CLÉMENT is a Scenographer
-- MAXIME HURDEQUINT is an Architect and Illustrator
+- **MAXIME TOUROUTE is a Visual Arts engineer**
+
+Graduated Artist from the School Polytechnique Universitaire de Nice (France), he pecializes in the fields of audiovisual and digital art.
+He's developping projects combining interactivity, technology with a special focus on our relationship to intimacy. His _Humanlapse_ project exploring the technique of timelapses for human portraits gives him visibility with the #humanlapse reused by many photographers on social medias around the globe. His engineering education shapes his creative process with Space Dances, choregraphic explorations in Augmented Reality and The Live Drawing Project, collective drawing installation.
+
+- **LOUIS CLÉMENT is a Scenographer**
+
+- **MAXIME HURDEQUINT is an Architect and Illustrator**

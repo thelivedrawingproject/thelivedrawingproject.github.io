@@ -6,7 +6,7 @@ import './index.scss'
 import { bookingPageStrings, indexPageStrings } from '../locales/strings'
 import { localLink } from '../locales/localeUtils'
 import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
-import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
+import flyerEN from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
 
 export default function AboutPage({ data, pageContext: { locale }, location }) {
   const LOCAL = bookingPageStrings[locale]
@@ -69,20 +69,16 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
             <p className="Subtext">{LOCAL.moderationSubtext}</p>
           </div>
 
-
-
-          <div
-          className={'FullPageContainer'}
-        >
-          <h3 className="Punchline White Strong">{LOCAL.useCasesTitle}</h3>
-                <div className="WordsCloud">
-                  <>
-                    {LOCAL.useCases.map(wordCloud => {
-                      return <p key={wordCloud}>{wordCloud}</p>
-                    })}
-                  </>
+          <div className={'FullPageContainer'}>
+            <h3 className="Punchline White Strong">{LOCAL.useCasesTitle}</h3>
+            <div className="WordsCloud">
+              <>
+                {LOCAL.useCases.map(wordCloud => {
+                  return <p key={wordCloud}>{wordCloud}</p>
+                })}
+              </>
+            </div>
           </div>
-        </div>
 
           <div className={'ShowcasePage'}>
             <div className={'ResponsiveContainer'}>
@@ -108,14 +104,14 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                         href={'https://copenhagenlightfestival.org'}
                       />
 
-<a
+                      <a
                         className={'Glow'}
                         target="_blank"
                         rel="noreferrer noopener"
                         href={'https://glowyyc.com'}
                       />
 
-                                            <a
+                      <a
                         className={'Bonifacio'}
                         target="_blank"
                         rel="noreferrer noopener"
@@ -136,7 +132,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                         rel="noreferrer noopener"
                         href={'https://www.facebook.com/LeMaltingPot/'}
                       />
-                                            <a
+                      <a
                         className={'Pf'}
                         target="_blank"
                         rel="noreferrer noopener"
