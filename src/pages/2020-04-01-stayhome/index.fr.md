@@ -27,7 +27,8 @@ Chaque personne dessine avec son téléphone, les dessins apparaissent instantan
 - Lundi 30 mars: _premier test, 2 lieux simultanés_
 - Dimanche 5 avril: _5 lieux simultanés, 550 dessins, 80 participants_
 - Dimanche 12 avril: _12 lieux simultanés, 1800 dessins, 150 participants_
-- **Dimanche 19 avril: Rejoignez le mouvement dans toute la France !**
+- Dimanche 19 avril: _20 lieux simultanés, 2500 dessins, 160 participants_
+- **Dimanche 26 avril: Rejoignez le mouvement dans toute la France !**
 
 #### PHOTOS
 
@@ -49,7 +50,7 @@ Retrouvez plus d'images de cet événement sur nos réseaux sociaux: [Instagram]
 
 #### PRESSE
 
-[Telecharger le communiqué de presse du 14 avril 2020](TheLiveDrawingProject_comPresse14avril2020.pdf)
+[Telecharger le communiqué de presse du 20 avril 2020](CP_TLDP_2004.pdf)
 
 [Télécharger la brochure de présentation](TheLiveDrawingProject_Brochure_FR.pdf)
 
@@ -59,7 +60,7 @@ Retrouvez plus d'images de cet événement sur nos réseaux sociaux: [Instagram]
 
 ### MAXIME TOUROUTE est ingénieur en Arts Visuels.
 
-Artiste diplômé de l’école Polytechnique Universitaire de Nice, il se spécialise dans le domaine de l’audiovisuel et de l’art numérique. Au fil des rencontres, il développe des projets mêlant interactivité et technologie avec une attention particulière sur la relation à l’intime. Son projet Humanlapse, où il explore la création de timelapses de portrait, lui offre une nouvelle visibilité avec le #humanlapse réapproprié par de nombreux photographes sur les réseaux sociaux. Son bagage d’ingénieur façonne son processus créatif avec Space Dances, reconstitutions de parcours chorégraphique en Réalité Augmentée et The Live Drawing Project, installation de dessin collaborative.
+Diplômé de l’école Polytechnique Universitaire de Nice, il se spécialise dans le domaine de l’audiovisuel et de l’art numérique. Au fil des rencontres, il développe des projets mêlant interactivité et technologie avec une attention particulière sur la relation à l’intime. Son projet Humanlapse, où il explore la création de timelapses de portrait, lui offre une nouvelle visibilité avec le #humanlapse réapproprié par de nombreux photographes sur les réseaux sociaux. Son bagage d’ingénieur façonne son processus créatif avec Space Dances, reconstitutions de parcours chorégraphique en Réalité Augmentée et The Live Drawing Project, installation de dessin collaborative.
 
 ### LOUIS CLÉMENT est scénographe et régisseur général.
 
