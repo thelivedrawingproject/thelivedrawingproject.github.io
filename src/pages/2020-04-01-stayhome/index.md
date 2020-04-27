@@ -2,7 +2,7 @@
 path: /stayhome
 layout: article
 title: Draw From The Window
-subtitle: Decentralised Installation
+subtitle: Solidary Initiative
 description: Decentralised Installation The Live Drawing Project during the 2020 lockdown
 date: '2020-04-01'
 category: event
@@ -12,59 +12,82 @@ image: '3.jpg'
 
 #### Let's draw together on city walls all over the world!
 
-We decided to adapt our installation so we can exhibit with you during lockdown. **Join the movement** and run _The Live Drawing Project_ from your window with your neigboors to tackle monotony!
+Lockdown measures brought all social and cultural activities to a halt. To tackle this we offer to share together a drawing session every Sunday evening. **Join the movement** and videoproject on a wall drawings made by you and your neigbors on their phones. You can draw with all other participants around the world and send your supportive messages.
 
-**We exhibit every Sunday evening at 9PM. The installation works all over the world.**
+<p style="text-align:center; font-weight:900; font-size:1.2rem; margin-top:3rem; margin-bottom:3rem;">
+We exhibit every Sunday at 9PM. You can participate all over the world.
+</p>
 
-#### HOW DOES IT WORK?
+![Picture of a videoprojection on the 26th of April](26v_4_webw.jpg)
 
-Everyone can draw on its phone. The drawings appear instantaneously on the walls! Drawings travel between locations connecting people and creating a **collective artwork**. Would you like to join us next Sunday? To videoproject from your home it's very simple: fill the form and we will contact you:
+#### How does it work?
+
+Participants are invited to draw freely on their phone without downloading an app:
+
+1. They go on this website and access the drawing interface
+2. They finger draw directly on their phone screen
+3. They send their drawings. Drawings join the videoprojection instantly
+
+Drawings travel between locations connecting people and creating a **collective artwork evolving with upcoming drawings**.
+
+![How does it work](web-5.jpg)
+
+#### How to participate ?
+
+If you have a videoprojector you can join the movement. We are currently more than 25 volunteers across France. To join us, fill the form and we will reach you:
 
 ## [Participation Form](https://framaforms.org/stayhome-and-staycreative-1585829622)
 
-#### AGENDA
+<br/>
+<br/>
 
-- Monday 30th March: _first test, 2 locations_
-- Sunday 5th April: _5 locations, 550 drawings, 80 participants_
-- Sunday 12nd April: _12 locations, 1800 drawings, 150 participants_
-- Sunday 19th April: _20 locations, 2500 drawings, 160 participants_
-- **Sunday 26th April: Join us for the 4th live drawing session at 9pm (French Time).**
+#### Join us Sunday 3rd of May at 9PM
 
-#### PHOTOS
+Since the lockdown started we made more than **7500 drawings** with **460 participants** in **25 locations** across **10 cities**. Join us next Sunday for a new drawing session together!
+
+<br/>
+<br/>
 
 <photo-grid>
-<img src="1.jpg"/>
+<img src="26v_2_webw.jpg"/>
+<img src="26v_3_webw.jpg"/>
+<img src="26v_1_web.jpg"/>
+<img src="26v_6_webw.jpg"/>
+<img src="webw-1.jpg"/>
 <img src="2020_6_webw.jpg"/>
-<img src="webw-1.jpg">
+<img src="26v_5_webw.jpg">
+<img src="2020_7_web.jpg"/>
 <img src="4.jpg"/>
-<img src="2020_1_webw.jpg"/>
-<img src="2020_2_webw.jpg"/>
 <img src="2020_4_web.jpg"/>
-<img src="map.jpg">
 <img src="3.jpg"/>
 </photo-grid>
+
+_Royalty free pictures_
 
 Find more pictures of this event on social networks: [Instagram](https://instagram.com/livedrawingproject) [Facebook](https://facebook.com/TheLiveDrawingProject)
 
 [Pictures of other events](/gallery)
 
+#### Thank you to all the volunteers
+
+Thank you Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Aurélien, Marion, Harold, Yann, Anne, Théo, Julien, Vincent, Nicolas, Monsieur Nuage, Colin, Georges, Victor, Charles, Maxime, Maxime et Louis for joining this adventure!
+
+#### Thank you to our partners
+
+- [Ville de Lyon](https://www.lyon.fr/actualite/culture/dessineaveclesvoisins-le-live-drawing-participatif)
+- [Fun Station](https://funstation.fr/)
+- [The Mayor](https://www.themayor.eu/en/lyon-citizens-create-giant-paintings-together-in-real-time)
+- [City Crunch Lyon](https://lyon.citycrunch.fr/the-live-drawing-project-jouez-a-dessiner-sur-les-murs-avec-vos-voisins/2020/04/19/)
+- [Le Cube](https://www.facebook.com/lecube.digitalart/?ref=br_rs)
+- [La Brouette Saint Etienne](https://www.facebook.com/la.brouette.de.ouf/)
+- Jean-Baptiste Wallers-Bulot, journalist and light expert. Discover his work on [Scoop It](https://www.scoop.it/topic/lumieres-by-jbbulot) and [Light Zoom Lumiere](https://www.lightzoomlumiere.fr/auteur/jeanbaptiste497/)
+- [Eclairage Public](http://eclairagepublic.eu/site/confinement-the-live-drawing-project-pour-dessiner-en-lumiere-avec-ses-voisins/)
+- [Lyon Capitale](https://www.lyoncapitale.fr/actualite/confinement-participez-a-une-oeuvre-lumineuse-et-dessinee-depuis-chez-vous/)
+- [L'AADN](aadn.org/) for their precious support
+- All of you sharing this initiative across social medias
+
 #### PRESS
 
-[Download the Press Release (20th April 2020)](PR_TLDP_2004.pdf)
+All pictures on this website are loyalty free.
 
-[Download the brochure (in French)](TheLiveDrawingProject_Brochure_FR.pdf)
-
-#### THE TEAM
-
-![The team](bio.jpg)
-
-_From left to right:_
-
-- **MAXIME TOUROUTE is a Visual Arts engineer**
-
-Graduate from the School Polytechnique Universitaire de Nice (France), he specializes in the fields of audiovisual and digital art.
-He develops projects combining interactivity and technology with a special focus on our relationship to intimacy. His _Humanlapse_ project exploring the timelapse technique for human portraits gives him visibility with the #humanlapse reused by many photographers on social medias around the globe. His engineering education shapes his creative process with Space Dances, choregraphic explorations in Augmented Reality and The Live Drawing Project, collective drawing installation.
-
-- **LOUIS CLÉMENT is a Scenographer**
-
-- **MAXIME HURDEQUINT is an Architect and Illustrator**
+[Press Kit](https://drive.google.com/drive/folders/1OAtVA8CTudPPjQpv13f1FJJ6o-Of4Mwa)

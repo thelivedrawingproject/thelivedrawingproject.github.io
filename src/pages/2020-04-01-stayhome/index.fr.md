@@ -2,73 +2,92 @@
 path: /stayhome
 layout: article
 title: Dessine avec les Voisins
-subtitle: Installation Décentralisée
-description: Installation décentralisée The Live Drawing Project pendant le confinement 2020
+subtitle: Initiative Solidaire
+description: Initiative Solidaire The Live Drawing Project pendant le confinement 2020 pour lutter contre l'isolement
 date: '2020-04-01'
 category: event
 language: fr
 image: '3.jpg'
 ---
 
-#### Dessinons ensemble et projetons nos dessins sur les murs de la ville !
+#### Dessinons ensemble et projetons nos dessins sur les murs des villes !
 
-Nous avons décidé d'adapter notre installation pour exposer pendant le confinement. **Rejoignez le mouvement** et lancez _The Live Drawing Project_ depuis votre fenêtre pour créer avec vos voisins et lutter contre la morosité !
+Les mesures de confinement ont entraîné l’annulation de l’ensemble des événements culturels. Pour parer à cela nous proposons de partager un moment de dessin ensemble tous les dimanches soirs. **Rejoignez le mouvement** et vidéoprojetez sur un mur extérieur les dessins qui seront faits par vous et vos voisins sur leurs téléphones. Vous pouvez dessiner avec les autres participants dans toute la France et passer vos messages de soutien.
 
-**Nous exposons tous les dimanches soirs à 21h partout en France.**
+<p style="text-align:center; font-weight:900; font-size:1.2rem; margin-top:3rem; margin-bottom:3rem;">
+Nous exposons tous les dimanches soirs à 21h partout en France.
+</p>
 
-#### COMMENT ÇA MARCHE ?
+![Photo d'une projecton le 26 avril](26v_4_webw.jpg)
 
-Chaque personne dessine avec son téléphone, les dessins apparaissent instantanément sur les murs ! Les dessins transitent entre les lieux créant une **oeuvre collective unique qui évolue à chaque nouveau dessin reçu**. Pour vidéoprojeter depuis chez vous c'est très simple, remplissez le formulaire et nous vous contacterons:
+#### Comment ça marche ?
+
+Les participants sont invités à dessiner librement sur leurs téléphones sans rien télécharger :
+
+1. Ils vont sur la page d’accueil de notre site pour accéder à l’interface de dessin
+2. Ils dessinent avec leurs doigts directement sur l’écran du téléphone
+3. Ils envoient leur dessin qui rejoint alors la projection
+
+Les dessins transitent entre les villes connectant les participants et créant une **oeuvre collective unique qui évolue à chaque nouveau dessin reçu**.
+
+![Comment ca marche](web-5.jpg)
+
+#### Comment participer ?
+
+Si vous avez un vidéoprojecteur, vous pouvez vous aussi projeter depuis votre fenêtre. Nous sommes plus de 25 volontaires à projeter à travers la France. Pour nous rejoindre, remplissez le formulaire et nous vous contacterons :
 
 # [Formulaire de participation](https://framaforms.org/stayhome-and-staycreative-1585829622)
 
-#### AGENDA
+<br/>
+<br/>
 
-- Lundi 30 mars: _premier test, 2 lieux simultanés_
-- Dimanche 5 avril: _5 lieux simultanés, 550 dessins, 80 participants_
-- Dimanche 12 avril: _12 lieux simultanés, 1800 dessins, 150 participants_
-- Dimanche 19 avril: _20 lieux simultanés, 2500 dessins, 160 participants_
-- **Dimanche 26 avril: Rejoignez le mouvement dans toute la France !**
+#### Rendez-vous Dimanche 3 mai 21h
 
-#### PHOTOS
+Depuis le début du confinement nous avons fait ensemble plus de **7500 dessins** avec **460 participants cumulés** dans **25 lieux différents** à travers **10 villes**. Rendez-vous dimanche prochain pour une nouvelle session de dessin tous ensemble !
+
+<br/>
+<br/>
 
 <photo-grid>
-<img src="1.jpg"/>
+<img src="26v_2_webw.jpg"/>
+<img src="26v_3_webw.jpg"/>
+<img src="26v_1_web.jpg"/>
+<img src="26v_6_webw.jpg"/>
+<img src="webw-1.jpg"/>
 <img src="2020_6_webw.jpg"/>
-<img src="webw-1.jpg">
+<img src="26v_5_webw.jpg">
+<img src="2020_7_web.jpg"/>
 <img src="4.jpg"/>
-<img src="2020_1_webw.jpg"/>
-<img src="2020_2_webw.jpg"/>
 <img src="2020_4_web.jpg"/>
-<img src="map.jpg">
 <img src="3.jpg"/>
 </photo-grid>
+
+_Photos libre de droit_
 
 Retrouvez plus d'images de cet événement sur nos réseaux sociaux: [Instagram](https://instagram.com/livedrawingproject) [Facebook](https://facebook.com/TheLiveDrawingProject)
 
 [Photos de nos autres événements](/fr/gallery)
 
+#### Merci à tous les volontaires
+
+Merci à Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Aurélien, Marion, Harold, Yann, Anne, Théo, Julien, Vincent, Nicolas, Monsieur Nuage, Colin, Georges, Victor, Charles, Maxime, Maxime et Louis pour votre participation à cette aventure !
+
+#### Merci à partenaires et relais de communication
+
+- [La Ville de Lyon](https://www.lyon.fr/actualite/culture/dessineaveclesvoisins-le-live-drawing-participatif)
+- [Fun Station](https://funstation.fr/) pour leur interview
+- [The Mayor](https://www.themayor.eu/en/lyon-citizens-create-giant-paintings-together-in-real-time)
+- [City Crunch Lyon](https://lyon.citycrunch.fr/the-live-drawing-project-jouez-a-dessiner-sur-les-murs-avec-vos-voisins/2020/04/19/)
+- [Le Cube](https://www.facebook.com/lecube.digitalart/?ref=br_rs)
+- [La Brouette Saint Etienne](https://www.facebook.com/la.brouette.de.ouf/)
+- Jean-Baptiste Wallers-Bulot, rédacteur web et influenceur Lumières. Retrouvez son travail sur [Scoop It](https://www.scoop.it/topic/lumieres-by-jbbulot) et [Light Zoom Lumiere](https://www.lightzoomlumiere.fr/auteur/jeanbaptiste497/)
+- [Eclairage Public](http://eclairagepublic.eu/site/confinement-the-live-drawing-project-pour-dessiner-en-lumiere-avec-ses-voisins/)
+- [Lyon Capitale](https://www.lyoncapitale.fr/actualite/confinement-participez-a-une-oeuvre-lumineuse-et-dessinee-depuis-chez-vous/)
+- [L'AADN](aadn.org/) pour leur précieux soutien
+- Tous les participants qui partagent notre initiative sur les réseaux sociaux
+
 #### PRESSE
 
-[Telecharger le communiqué de presse du 20 avril 2020](CP_TLDP_2004.pdf)
+Toutes les photos de ce site sont libres de droit.
 
-[Télécharger la brochure de présentation](TheLiveDrawingProject_Brochure_FR.pdf)
-
-#### L’ÉQUIPE
-
-![L'equipe](bio.jpg)
-
-### MAXIME TOUROUTE est ingénieur en Arts Visuels.
-
-Diplômé de l’école Polytechnique Universitaire de Nice, il se spécialise dans le domaine de l’audiovisuel et de l’art numérique. Au fil des rencontres, il développe des projets mêlant interactivité et technologie avec une attention particulière sur la relation à l’intime. Son projet Humanlapse, où il explore la création de timelapses de portrait, lui offre une nouvelle visibilité avec le #humanlapse réapproprié par de nombreux photographes sur les réseaux sociaux. Son bagage d’ingénieur façonne son processus créatif avec Space Dances, reconstitutions de parcours chorégraphique en Réalité Augmentée et The Live Drawing Project, installation de dessin collaborative.
-
-### LOUIS CLÉMENT est scénographe et régisseur général.
-
-Il est diplômé d’architecture de l’ENSA Paris Val de Seine. Il s’intéresse à la vidéoprojection et au mapping depuis 2013 et crée « For L » avec le compositeur Dominique Clément, une scénographie vidéo audio réactive qui fera le tour d’Europe. Il réalise depuis 2015 des parcours dans la ville guidé par smartphone où les spectateurs découvrent des œuvres plastiques et vidéos. Il déploie aussi des interventions musicales dans des lieux originaux et inattendus.
-
-En parallèle il est régisseur général pour l’Ensemble ALEPH, le festival « D’Aujourd’hui à Demain », et Nomos ensemble de violoncelles. Il intervient aussi comme régisseur vidéo pour des œuvres muséales au MAC au MBA de Lyon ainsi que pour la biennale d’art contemporain de Lyon.
-
-### MAXIME HURDEQUINT est architecte et illustrateur.
-
-Après avoir complété sa formation par différentes pratiques au Danemark, Mexique puis Japon à l’agence Sou Fujimoto, il a exercé comme architecte chef de projet à Paris. Il est aussi illustrateur et depuis plusieurs années il demande à des proches ou des inconnus de
-dessiner un arbre sur chaque page de son carnet : “J’aime faire dessiner les gens pour partager un moment avec eux, j’adore leur montrer ensuite la diversité des dessins que j’ai accumulé”.
+[Accès au dossier de presse](https://drive.google.com/drive/folders/1_20QXXgqa7MkBbxbbUQoomBd6ZTk-I1r)

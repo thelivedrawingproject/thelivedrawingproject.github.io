@@ -33,28 +33,29 @@ const stringBuilderEnFr = arrayOfStrings => {
 export const indexPageStrings = stringBuilderEnFr([
   StringEnFr(
     'announcementTitle',
-    '#DrawFromTheWindow',
-    '#DessineAvecLesVoisins'
+    'Draw From The Window',
+    'Dessine Avec Les Voisins'
   ),
   StringEnFr(
     'announcemenSubtitle',
     <>
-      <strong>Let's draw together on city walls all over the world!</strong> We
-      decided to adapt our installation so we can keep exhibiting during
-      lockdown. <strong>Join the movement</strong> and run The Live Drawing
-      Project from your window to create with your neigbours!
+      <strong>
+        To tacke solitude in this period of lockdowns
+        <br />
+      </strong>{' '}
+      We offer everyone with a videoprojector to project our live drawing
+      installation.
     </>,
     <>
       <strong>
-        Dessinons ensemble et projetons nos dessins sur les murs de la ville !
+        Pour lutter contre l’isolement en cette période de confinement{' '}
       </strong>{' '}
-      Nous avons décidé d'adapter notre installation pour continuer à exposer
-      pendant le confinement. <strong>Rejoignez le mouvement</strong> et lancez
-      The Live Drawing Project depuis votre fenêtre pour créer avec vos voisins
-      !
+      nous proposons à chaque personne munie d'un vidéoprojecteur de projeter
+      sur un mur extérieur les dessins qui seront faits par lui et ses voisins
+      via leurs téléphones.
     </>
   ),
-  StringEnFr('announcementLinkName', 'Tell me more', `Plus d'informations`),
+  StringEnFr('announcementLinkName', 'Tell me more', `En savoir plus`),
   StringEnFr(
     'madeInLyon',
     'Proudly made in Lyon, France',

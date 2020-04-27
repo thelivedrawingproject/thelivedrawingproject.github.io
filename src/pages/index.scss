@@ -9,36 +9,29 @@ $darkColor: black;
   background-color: $modernGreen;
 }
 
+.SpecialAnnouncementBackground {
+  //background-color: $backgroundColorForText;
+  background-image: url('../res/drawingCouv.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $modernGreen;
+}
+
 .ModernGreenText {
   color: $modernGreen;
 }
 
 .SpecialAnnouncement {
-  background-color: #6d8879;
+  //background-color: #6d8879;
   text-align: center;
-
-  @keyframes shadow-pulse {
-    0% {
-      box-shadow: inset 0 0 0 8px rgba(white, 0);
-    }
-    20% {
-      box-shadow: inset 0 0 0 8px $accentColor;
-    }
-    60% {
-      box-shadow: inset 0 0 0 8px $accentColor;
-    }
-    80% {
-      box-shadow: inset 0 0 0 8px rgba(white, 0);
-    }
-  }
-
-  animation: shadow-pulse 2s infinite linear;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 
   .SpecialAnnouncementTitle {
-    font-size: 1rem;
+    font-size: 3rem;
     color: 'white';
     @include breakpoint(small) {
-      font-size: 0.5rem;
+      font-size: 1rem;
     }
   }
   .SpecialAnnouncementSubtitle {

@@ -6,7 +6,7 @@ import './index.scss'
 import { bookingPageStrings, indexPageStrings } from '../locales/strings'
 import { localLink } from '../locales/localeUtils'
 import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
-import flyerEN from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
+import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
 
 export default function AboutPage({ data, pageContext: { locale }, location }) {
   const LOCAL = bookingPageStrings[locale]

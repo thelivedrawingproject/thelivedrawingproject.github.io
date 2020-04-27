@@ -52,13 +52,13 @@ export default function Index({ data, pageContext: { locale }, location }) {
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'} />
       <div className={'ShowcasePage'}>
-        <div className={'ResponsiveContainer ModernGreenBack'}>
+        <div className={'ResponsiveContainer SpecialAnnouncementBackground'}>
           <div className={'Inside'}>
             <div className="ShowcasePart Column">
               <div className={'Text Centered SpecialAnnouncement'}>
                 <h2
                   className={'SpecialAnnouncementTitle'}
-                  style={{ color: 'white', fontSize: '1.5rem' }}
+                  style={{ color: 'white' }}
                 >
                   {LOCAL.announcementTitle}
                 </h2>

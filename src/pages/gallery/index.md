@@ -5,7 +5,7 @@ title: Gallery
 description: Photos and videos of the live drawing project events, installations and workshpops.
 ---
 
-[Download brochure (French)](./TheLiveDrawingProject_Brochure_FR.pdf)
+[Download brochure](./TheLiveDrawingProject_Brochure_EN.pdf)
 
 [Facebook Page](//facebook.com/TheLiveDrawingProject)
 
