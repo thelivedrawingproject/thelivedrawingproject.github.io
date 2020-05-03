@@ -15,7 +15,7 @@ image: '3.jpg'
 Lockdown measures brought all social and cultural activities to a halt. To tackle this we offer to share together a drawing session every Sunday evening. **Join the movement** and videoproject on a wall drawings made by you and your neigbors on their phones. You can draw with all other participants around the world and send your supportive messages.
 
 <p style="text-align:center; font-weight:900; font-size:1.2rem; margin-top:3rem; margin-bottom:3rem;">
-We exhibit every Sunday at 9PM. You can participate all over the world.
+We exhibit every Sunday at 9PM. You can participate all over the world!
 </p>
 
 ![Picture of a videoprojection on the 26th of April](26v_4_webw.jpg)
@@ -34,9 +34,9 @@ Drawings travel between locations connecting people and creating a **collective 
 
 #### How to participate ?
 
-If you have a videoprojector you can join the movement. We are currently more than 25 volunteers across France. To join us, fill the form and we will reach you:
+If you have a videoprojector you can join the movement. We are currently more than 25 volunteers across multiple cities. To join us, fill the form and we will reach you:
 
-## [Participation Form](https://framaforms.org/stayhome-and-staycreative-1585829622)
+## [Participation Form](https://framaforms.org/dessineaveclesvoisins-drawfromthewindow-1585829622)
 
 <br/>
 <br/>
@@ -88,6 +88,6 @@ Thank you Gilles, David, Alain, Yannick, Livia, Josselin, Aur√©lie, Romain, Aur√
 
 #### PRESS
 
-All pictures on this website are loyalty free.
+All pictures on this website are royalty free.
 
 [Press Kit](https://drive.google.com/drive/folders/1OAtVA8CTudPPjQpv13f1FJJ6o-Of4Mwa)

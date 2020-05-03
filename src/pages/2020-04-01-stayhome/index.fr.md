@@ -36,7 +36,7 @@ Les dessins transitent entre les villes connectant les participants et créant u
 
 Si vous avez un vidéoprojecteur, vous pouvez vous aussi projeter depuis votre fenêtre. Nous sommes plus de 25 volontaires à projeter à travers la France. Pour nous rejoindre, remplissez le formulaire et nous vous contacterons :
 
-# [Formulaire de participation](https://framaforms.org/stayhome-and-staycreative-1585829622)
+# [Formulaire de participation](https://framaforms.org/dessineaveclesvoisins-drawfromthewindow-1585829622)
 
 <br/>
 <br/>
@@ -72,7 +72,7 @@ Retrouvez plus d'images de cet événement sur nos réseaux sociaux: [Instagram]
 
 Merci à Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Aurélien, Marion, Harold, Yann, Anne, Théo, Julien, Vincent, Nicolas, Monsieur Nuage, Colin, Georges, Victor, Charles, Maxime, Maxime et Louis pour votre participation à cette aventure !
 
-#### Merci à partenaires et relais de communication
+#### Merci à nos partenaires et relais de communication
 
 - [La Ville de Lyon](https://www.lyon.fr/actualite/culture/dessineaveclesvoisins-le-live-drawing-participatif)
 - [Fun Station](https://funstation.fr/) pour leur interview
