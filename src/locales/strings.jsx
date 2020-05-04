@@ -40,7 +40,7 @@ export const indexPageStrings = stringBuilderEnFr([
     'announcemenSubtitle',
     <>
       <strong>
-        To tacke solitude in this period of lockdowns
+        To tackle solitude in this period of lockdowns
         <br />
       </strong>{' '}
       We offer everyone with a videoprojector to project our live drawing

@@ -41,9 +41,9 @@ If you have a videoprojector you can join the movement. We are currently more th
 <br/>
 <br/>
 
-#### Join us Sunday 3rd of May at 9PM
+#### Join us Sunday 10th of May at 9PM
 
-Since the lockdown started we made more than **7500 drawings** with **460 participants** in **25 locations** across **10 cities**. Join us next Sunday for a new drawing session together!
+Since the lockdown started we made more than **8500 drawings** with **560 participants** in **30 locations** across **10 cities**. Join us next Sunday for a new drawing session together!
 
 <br/>
 <br/>
@@ -70,9 +70,9 @@ Find more pictures of this event on social networks: [Instagram](https://instagr
 
 #### Thank you to all the volunteers
 
-Thank you Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Aurélien, Marion, Harold, Yann, Anne, Théo, Julien, Vincent, Nicolas, Monsieur Nuage, Colin, Georges, Victor, Charles, Maxime, Maxime et Louis for joining this adventure!
+Thank you Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Aurélien, Marion, Harold, Yann, Anne, Théo, Julien, Vincent, Nicolas, Monsieur Nuage, Colin, Georges, Victor, Charles, Dorian, Corentin, Lilian, Francis, Emeric, Maxime, Maxime et Louis for joining this adventure!
 
-#### Thank you to our partners
+#### Thank you to our partners and communication channels
 
 - [Ville de Lyon](https://www.lyon.fr/actualite/culture/dessineaveclesvoisins-le-live-drawing-participatif)
 - [Fun Station](https://funstation.fr/)
@@ -84,6 +84,9 @@ Thank you Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Aur�
 - [Eclairage Public](http://eclairagepublic.eu/site/confinement-the-live-drawing-project-pour-dessiner-en-lumiere-avec-ses-voisins/)
 - [Lyon Capitale](https://www.lyoncapitale.fr/actualite/confinement-participez-a-une-oeuvre-lumineuse-et-dessinee-depuis-chez-vous/)
 - [L'AADN](aadn.org/) for their precious support
+- [Reporters D'espoir](http://www.reportersdespoirs.org/)
+- [Copenhagen Light Festival](https://www.facebook.com/cphlightfest/)
+- [Østerbro Lokaludvalg](https://www.facebook.com/oesterbro.lokaludvalg/)
 - All of you sharing this initiative across social medias
 
 #### PRESS

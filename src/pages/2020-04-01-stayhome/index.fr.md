@@ -41,9 +41,9 @@ Si vous avez un vidéoprojecteur, vous pouvez vous aussi projeter depuis votre f
 <br/>
 <br/>
 
-#### Rendez-vous Dimanche 3 mai 21h
+#### Rendez-vous Dimanche 10 mai à 21h
 
-Depuis le début du confinement nous avons fait ensemble plus de **7500 dessins** avec **460 participants cumulés** dans **25 lieux différents** à travers **10 villes**. Rendez-vous dimanche prochain pour une nouvelle session de dessin tous ensemble !
+Depuis le début du confinement nous avons fait ensemble plus de **8500 dessins** avec **560 participants cumulés** dans **30 lieux différents** à travers **10 villes**. Rendez-vous dimanche prochain pour une nouvelle session de dessin tous ensemble !
 
 <br/>
 <br/>
@@ -70,7 +70,7 @@ Retrouvez plus d'images de cet événement sur nos réseaux sociaux: [Instagram]
 
 #### Merci à tous les volontaires
 
-Merci à Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Aurélien, Marion, Harold, Yann, Anne, Théo, Julien, Vincent, Nicolas, Monsieur Nuage, Colin, Georges, Victor, Charles, Maxime, Maxime et Louis pour votre participation à cette aventure !
+Merci à Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Aurélien, Marion, Harold, Yann, Anne, Théo, Julien, Vincent, Nicolas, Monsieur Nuage, Colin, Georges, Victor, Charles, Dorian, Corentin, Lilian, Francis, Emeric, Maxime, Maxime et Louis pour votre participation à cette aventure !
 
 #### Merci à nos partenaires et relais de communication
 
@@ -84,6 +84,9 @@ Merci à Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Auré
 - [Eclairage Public](http://eclairagepublic.eu/site/confinement-the-live-drawing-project-pour-dessiner-en-lumiere-avec-ses-voisins/)
 - [Lyon Capitale](https://www.lyoncapitale.fr/actualite/confinement-participez-a-une-oeuvre-lumineuse-et-dessinee-depuis-chez-vous/)
 - [L'AADN](aadn.org/) pour leur précieux soutien
+- [Reporters D'espoir](http://www.reportersdespoirs.org/)
+- [Copenhagen Light Festival](https://www.facebook.com/cphlightfest/)
+- [Østerbro Lokaludvalg](https://www.facebook.com/oesterbro.lokaludvalg/)
 - Tous les participants qui partagent notre initiative sur les réseaux sociaux
 
 #### PRESSE
