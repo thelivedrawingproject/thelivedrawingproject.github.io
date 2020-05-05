@@ -74,13 +74,15 @@ Merci à Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Auré
 
 #### Merci à nos partenaires et relais de communication
 
-- [La Ville de Lyon](https://www.lyon.fr/actualite/culture/dessineaveclesvoisins-le-live-drawing-participatif)
+- [L'AADN](https://aadn.org/) for their precious support
 - [Fun Station](https://funstation.fr/) pour leur interview
+- Jean-Baptiste Wallers-Bulot, rédacteur web et influenceur Lumières. Retrouvez son travail sur [Scoop It](https://www.scoop.it/topic/lumieres-by-jbbulot) et [Light Zoom Lumiere](https://www.lightzoomlumiere.fr/auteur/jeanbaptiste497/)
+- [Pix314](http://pix314.com/)
+- [La Ville de Lyon](https://www.lyon.fr/actualite/culture/dessineaveclesvoisins-le-live-drawing-participatif)
 - [The Mayor](https://www.themayor.eu/en/lyon-citizens-create-giant-paintings-together-in-real-time)
 - [City Crunch Lyon](https://lyon.citycrunch.fr/the-live-drawing-project-jouez-a-dessiner-sur-les-murs-avec-vos-voisins/2020/04/19/)
 - [Le Cube](https://www.facebook.com/lecube.digitalart/?ref=br_rs)
 - [La Brouette Saint Etienne](https://www.facebook.com/la.brouette.de.ouf/)
-- Jean-Baptiste Wallers-Bulot, rédacteur web et influenceur Lumières. Retrouvez son travail sur [Scoop It](https://www.scoop.it/topic/lumieres-by-jbbulot) et [Light Zoom Lumiere](https://www.lightzoomlumiere.fr/auteur/jeanbaptiste497/)
 - [Eclairage Public](http://eclairagepublic.eu/site/confinement-the-live-drawing-project-pour-dessiner-en-lumiere-avec-ses-voisins/)
 - [Lyon Capitale](https://www.lyoncapitale.fr/actualite/confinement-participez-a-une-oeuvre-lumineuse-et-dessinee-depuis-chez-vous/)
 - [L'AADN](aadn.org/) pour leur précieux soutien
