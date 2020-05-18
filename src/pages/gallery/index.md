@@ -11,6 +11,20 @@ description: Photos and videos of the live drawing project events, installations
 
 [Instagram Page](//instagram.com/livedrawingproject)
 
+## Solidary Initiative Covid 19
+
+Decentralised installation across France (30 simultaneous locations) during the pandemic lockdown. April-May 2020.  
+[More infos](/stayhome)
+
+<photo-grid>
+<img src="../2020-04-01-stayhome/26v_2_webw.jpg"/>
+<img src="../2020-04-01-stayhome/26v_3_webw.jpg"/>
+<img src="../2020-04-01-stayhome/26v_6_webw.jpg"/>
+<img src="../2020-04-01-stayhome/webw-1.jpg"/>
+<img src="../2020-04-01-stayhome/26v_5_webw.jpg">
+<img src="../2020-04-01-stayhome/2020_4_web.jpg"/>
+</photo-grid>
+
 ## In the Streets of Lyon
 
 Our hometown is our place of experimentation where we test new ways to inspire people.

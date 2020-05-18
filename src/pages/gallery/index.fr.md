@@ -12,6 +12,20 @@ description: Photos et videos des évenements du Live Drawing Project, installat
 
 [Page Instagram](//instagram.com/livedrawingproject)
 
+## Initiative Solidaire Covid 19
+
+Installation décentralisé à travers toute la France (30 lieux simultanés) pendant le confinement. Avril-Mai 2020.  
+[Plus d'infos](/stayhome)
+
+<photo-grid>
+<img src="../2020-04-01-stayhome/26v_2_webw.jpg"/>
+<img src="../2020-04-01-stayhome/26v_3_webw.jpg"/>
+<img src="../2020-04-01-stayhome/26v_6_webw.jpg"/>
+<img src="../2020-04-01-stayhome/webw-1.jpg"/>
+<img src="../2020-04-01-stayhome/26v_5_webw.jpg">
+<img src="../2020-04-01-stayhome/2020_4_web.jpg"/>
+</photo-grid>
+
 ## Dans les rues lyonnaises
 
 The Live Drawing Project est un project 100% lyonnais. Notre ville est notre lieu d'experimentation privilégié pour tester de nouvelles façons d'inspirer le public.

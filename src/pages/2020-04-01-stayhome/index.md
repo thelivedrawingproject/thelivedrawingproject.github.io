@@ -10,12 +10,21 @@ language: en
 image: '3.jpg'
 ---
 
+## This event is now over. A big thank you to all the participants!
+
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+
+## Original event article:
+
 #### Let's draw together on city walls all over the world!
 
 Lockdown measures brought all social and cultural activities to a halt. To tackle this we offer to share together a drawing session every Sunday evening. **Join the movement** and videoproject on a wall drawings made by you and your neigbors on their phones. You can draw with all other participants around the world and send your supportive messages.
 
 <p style="text-align:center; font-weight:900; font-size:1.2rem; margin-top:3rem; margin-bottom:3rem;">
-We exhibit every Sunday at 9PM. You can participate all over the world!
+We exhibited every Sunday at 9PM.
 </p>
 
 ![Picture of a videoprojection on the 26th of April](26v_4_webw.jpg)
@@ -36,14 +45,14 @@ Drawings travel between locations connecting people and creating a **collective 
 
 If you have a videoprojector you can join the movement. We are currently more than 25 volunteers across multiple cities. To join us, fill the form and we will reach you:
 
-## [Participation Form](https://framaforms.org/dessineaveclesvoisins-drawfromthewindow-1585829622)
+- The form is no longer available
 
 <br/>
 <br/>
 
-#### Join us Sunday 10th of May at 9PM
+#### 6 nights of video projections between April and May
 
-Since the lockdown started we made more than **8500 drawings** with **560 participants** in **30 locations** across **10 cities**. Join us next Sunday for a new drawing session together!
+Since the lockdown started we made more than **9500 drawings** with **560 participants** in **30 locations** across **10 cities**.
 
 <br/>
 <br/>

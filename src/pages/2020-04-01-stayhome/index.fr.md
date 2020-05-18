@@ -10,12 +10,21 @@ language: fr
 image: '3.jpg'
 ---
 
+## Cet événement est désormais terminé. Merci à tous les participants !
+
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+
+## Article original de l'événement ci-dessous:
+
 #### Dessinons ensemble et projetons nos dessins sur les murs des villes !
 
 Les mesures de confinement ont entraîné l’annulation de l’ensemble des événements culturels. Pour parer à cela nous proposons de partager un moment de dessin ensemble tous les dimanches soirs. **Rejoignez le mouvement** et vidéoprojetez sur un mur extérieur les dessins qui seront faits par vous et vos voisins sur leurs téléphones. Vous pouvez dessiner avec les autres participants dans toute la France et passer vos messages de soutien.
 
 <p style="text-align:center; font-weight:900; font-size:1.2rem; margin-top:3rem; margin-bottom:3rem;">
-Nous exposons tous les dimanches soirs à 21h partout en France.
+Nous avons exposé tous les dimanches soirs à 21h partout en France.
 </p>
 
 ![Photo d'une projecton le 26 avril](26v_4_webw.jpg)
@@ -34,16 +43,16 @@ Les dessins transitent entre les villes connectant les participants et créant u
 
 #### Comment participer ?
 
-Si vous avez un vidéoprojecteur, vous pouvez vous aussi projeter depuis votre fenêtre. Nous sommes plus de 25 volontaires à projeter à travers la France. Pour nous rejoindre, remplissez le formulaire et nous vous contacterons :
+Si vous avez un vidéoprojecteur, vous pouvez vous aussi projeter depuis votre fenêtre. Nous sommes plus de 30 volontaires à projeter à travers la France. Pour nous rejoindre, remplissez le formulaire et nous vous contacterons :
 
-# [Formulaire de participation](https://framaforms.org/dessineaveclesvoisins-drawfromthewindow-1585829622)
+- Le formulaire n'est plus disponible désormais.
 
 <br/>
 <br/>
 
-#### Rendez-vous Dimanche 10 mai à 21h
+#### 6 week-ends de projection en avril et mai
 
-Depuis le début du confinement nous avons fait ensemble plus de **8500 dessins** avec **560 participants cumulés** dans **30 lieux différents** à travers **10 villes**. Rendez-vous dimanche prochain pour une nouvelle session de dessin tous ensemble !
+Depuis le début du confinement nous avons fait ensemble plus de **9500 dessins** avec **560 participants cumulés** dans **30 lieux différents** à travers **10 villes**.
 
 <br/>
 <br/>
