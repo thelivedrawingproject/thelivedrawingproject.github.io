@@ -33,26 +33,19 @@ const stringBuilderEnFr = arrayOfStrings => {
 export const indexPageStrings = stringBuilderEnFr([
   StringEnFr(
     'announcementTitle',
-    'Draw From The Window',
-    'Dessine Avec Les Voisins'
+    "Let's Exhibit online!",
+    'Exposons en ligne !'
   ),
   StringEnFr(
     'announcemenSubtitle',
     <>
-      <strong>
-        To tackle solitude in this period of lockdowns
-        <br />
-      </strong>{' '}
-      We offer everyone with a videoprojector to project our live drawing
-      installation.
+      <strong>Gather your audience today</strong> <br />
+      with our online interactive installations adapted to social distancing.
     </>,
     <>
-      <strong>
-        Pour lutter contre l’isolement en cette période de confinement{' '}
-      </strong>{' '}
-      nous proposons à chaque personne munie d'un vidéoprojecteur de projeter
-      sur un mur extérieur les dessins qui seront faits par lui et ses voisins
-      via leurs téléphones.
+      <strong>Rassemblez votre public dès aujourd'hui </strong> <br />à l'aide
+      de nos installations interactives en ligne adaptées au contraintes
+      sanitaires.
     </>
   ),
   StringEnFr('announcementLinkName', 'Tell me more', `En savoir plus`),

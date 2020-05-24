@@ -26,6 +26,7 @@ $darkColor: black;
   //background-color: #6d8879;
   text-align: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  background-color: hsla(147, 14%, 11%, 0.25);
 
   .SpecialAnnouncementTitle {
     font-size: 3rem;
@@ -35,9 +36,9 @@ $darkColor: black;
     }
   }
   .SpecialAnnouncementSubtitle {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     @include breakpoint(small) {
-      font-size: 0.8rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -327,6 +328,7 @@ $darkColor: black;
       justify-content: center;
       @include breakpoint(normal) {
         min-width: 70%;
+        width: 100%;
       }
 
       @include breakpoint(small) {

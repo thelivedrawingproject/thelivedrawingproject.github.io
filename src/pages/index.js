@@ -18,6 +18,11 @@ export default function Index({ data, pageContext: { locale }, location }) {
     en: { path: '/stayhome', name: LOCAL.announcementLinkName },
     fr: { path: '/fr/stayhome', name: LOCAL.announcementLinkName },
   }
+
+  const onlineModeLink = {
+    en: { path: '/online-mode', name: LOCAL.announcementLinkName },
+    fr: { path: '/fr/online-mode', name: LOCAL.announcementLinkName },
+  }
   const postGrid = ({ node: post }) => {
     const localesOptions = { year: 'numeric', month: 'long' }
     return (
@@ -63,13 +68,13 @@ export default function Index({ data, pageContext: { locale }, location }) {
                   {LOCAL.announcementTitle}
                 </h2>
                 <p
-                  className={'SpecialAnnouncementSubTitle'}
+                  className={'SpecialAnnouncementSubtitle'}
                   style={{ color: 'white' }}
                 >
                   {LOCAL.announcemenSubtitle}
                 </p>
-                <Link to={stayHomeLink[locale].path}>
-                  {stayHomeLink[locale].name}
+                <Link to={onlineModeLink[locale].path}>
+                  {onlineModeLink[locale].name}
                 </Link>
               </div>
             </div>
