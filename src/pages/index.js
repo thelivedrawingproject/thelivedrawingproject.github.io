@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link, graphql, navigate } from 'gatsby'
+import { Link, graphql, navigate, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../bits/MetaTags/MetaTags'
 import './index.scss'
 import { indexPageStrings } from '../locales/strings'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
+import BackgroundSlider from 'gatsby-image-background-slider'
 
 const numberOfEventsToShow = 6
 
@@ -167,8 +168,8 @@ export default function Index({ data, pageContext: { locale }, location }) {
         <div className="home homePosts">
           <div className="postGrid">
             {posts
-              .filter(post => post.node.frontmatter.title.length > 0)
-              .filter(post => post.node.frontmatter.language === locale)
+              .filter((post) => post.node.frontmatter.title.length > 0)
+              .filter((post) => post.node.frontmatter.language === locale)
               .map((post, index) => {
                 if (index < numberOfEventsToShow) return postGrid(post)
               })}
@@ -194,8 +195,8 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
           <div className="postGrid" id="oldEvents" style={{ display: 'none' }}>
             {posts
-              .filter(post => post.node.frontmatter.title.length > 0)
-              .filter(post => post.node.frontmatter.language === locale)
+              .filter((post) => post.node.frontmatter.title.length > 0)
+              .filter((post) => post.node.frontmatter.language === locale)
               .map((post, index) => {
                 if (numberOfEventsToShow <= index) return postGrid(post)
               })}
