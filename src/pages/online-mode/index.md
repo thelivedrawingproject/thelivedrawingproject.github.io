@@ -9,7 +9,7 @@ title: Online Mode
 Open your virtual doors
 </h1>
 
-Our interactive instalaltion works through internet. It allows you to **engage remotely with your audience** in a collective creation process.
+Our interactive installation works through internet. It allows you to **engage remotely with your audience** in a collective creation process.
 
 ![Videoprojection during France lockdown - Lyon - May 2020](./../2020-04-01-stayhome/26v_3_webw.jpg)
 _Videoprojection during the French lockdown - Lyon - May 2020.  

@@ -9,6 +9,32 @@ import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 
 const numberOfEventsToShow = 6
 
+/*
+        <div className={'ResponsiveContainer SpecialAnnouncementBackground'}>
+          <div className={'Inside'}>
+            <div className="ShowcasePart Column">
+              <div className={'Text Centered SpecialAnnouncement'}>
+                <h2
+                  className={'SpecialAnnouncementTitle'}
+                  style={{ color: 'white' }}
+                >
+                  {LOCAL.announcementTitle}
+                </h2>
+                <p
+                  className={'SpecialAnnouncementSubtitle'}
+                  style={{ color: 'white' }}
+                >
+                  {LOCAL.announcemenSubtitle}
+                </p>
+                <Link to={onlineModeLink[locale].path}>
+                  {onlineModeLink[locale].name}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        */
 export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale]
   const { edges: posts } = data.allMarkdownRemark
@@ -57,30 +83,6 @@ export default function Index({ data, pageContext: { locale }, location }) {
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'Home'} />
       <div className={'ShowcasePage'}>
-        <div className={'ResponsiveContainer SpecialAnnouncementBackground'}>
-          <div className={'Inside'}>
-            <div className="ShowcasePart Column">
-              <div className={'Text Centered SpecialAnnouncement'}>
-                <h2
-                  className={'SpecialAnnouncementTitle'}
-                  style={{ color: 'white' }}
-                >
-                  {LOCAL.announcementTitle}
-                </h2>
-                <p
-                  className={'SpecialAnnouncementSubtitle'}
-                  style={{ color: 'white' }}
-                >
-                  {LOCAL.announcemenSubtitle}
-                </p>
-                <Link to={onlineModeLink[locale].path}>
-                  {onlineModeLink[locale].name}
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className={'RollbackBackground'}>
           <div
             className={'ResponsiveContainer WelcomerCoverPhoto'}
