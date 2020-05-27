@@ -11,11 +11,11 @@ const StringEnFr = (key, en, fr) => {
     },
   }
 }
-const stringBuilderEnFr = arrayOfStrings => {
-  const languageFilter = languageKey => {
+const stringBuilderEnFr = (arrayOfStrings) => {
+  const languageFilter = (languageKey) => {
     return {
       [languageKey]: arrayOfStrings
-        .map(element => {
+        .map((element) => {
           return element[languageKey]
         })
         .reduce((acc, x) => {
@@ -70,17 +70,9 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr(
     'mainDescription',
 
-    <>
-      The Live Drawing Project is a collaborative drawing installation where
-      everyone can draw <strong>together</strong> to create a{' '}
-      <strong>collaborative work of art</strong>.
-    </>,
+    <>Videoprojected collaborative drawing installation.</>,
 
-    <>
-      Le Live Drawing Project est une installation de dessin collaborative où
-      l'on peut dessiner <strong>tous ensemble</strong> pour créer{' '}
-      <strong>une oeuvre d'art collaborative</strong>.
-    </>
+    <>Installation de dessin collaboratif vidéoprojeté.</>
   ),
 
   StringEnFr(
