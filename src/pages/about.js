@@ -15,7 +15,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'About'} />
 
-      <div className={'ResponsiveContainer'}>
+      <div className={'ShowcasePage'}>
         <div className={'Inside'}>
           <div className="FullPageContainer" style={{ marginBottom: '2em' }}>
             <h1 style={{ opacity: 0 }}>About</h1>
@@ -69,14 +69,25 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
             <p className="Subtext">{LOCAL.moderationSubtext}</p>
           </div>
 
-          <div className={'FullPageContainer'}>
-            <h3 className="Punchline White Strong">{LOCAL.useCasesTitle}</h3>
-            <div className="WordsCloud">
-              <>
-                {LOCAL.useCases.map(wordCloud => {
-                  return <p key={wordCloud}>{wordCloud}</p>
-                })}
-              </>
+          <br />
+          <br />
+          <br />
+
+          <div className={'ResponsiveContainer ModernGreenBack'}>
+            <div className={'Inside'}>
+              <div className="ShowcasePart Column">
+                <h3 className="Punchline ClearColor Strong">
+                  {LOCAL.useCasesTitle}
+                </h3>
+                <p className="Subtext ClearColor">{LOCAL.useCasesSubtitle}</p>
+                <div className="WordsCloud">
+                  <>
+                    {LOCAL.useCases.map((wordCloud) => {
+                      return <p key={wordCloud}>{wordCloud}</p>
+                    })}
+                  </>
+                </div>
+              </div>
             </div>
           </div>
 

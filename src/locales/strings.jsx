@@ -77,8 +77,8 @@ export const indexPageStrings = stringBuilderEnFr([
 
   StringEnFr(
     'yourPhoneYourCanvasTitle',
-    'Your Phone, your Canvas',
-    'Ton téléphone, ta toile'
+    'Draw with your phone',
+    'Dessine sur ton téléphone'
   ),
 
   StringEnFr(
@@ -105,15 +105,15 @@ export const indexPageStrings = stringBuilderEnFr([
     'joinCollabDescription',
     <>
       When you're ready, send your drawing. It appears{' '}
-      <strong>instantly</strong> on the collaborative canvas. The artpiece keeps
-      evolving all the time. You can draw as much as you want.{' '}
-      <strong>Express yourself !</strong>
+      <strong>instantly</strong> on the videoprojection. The collaborative
+      canvas keeps evolving all the time. You can draw as much as you want.{' '}
+      <strong>Express yourself!</strong>
     </>,
 
     <>
       Quand tu es prêt, envoie ton dessin. Il apparait{' '}
-      <strong>instantanément</strong> sur le tableau collaboratif. L'oeuvre
-      d'art évolue en permanence. Dessine autant que tu veux.{' '}
+      <strong>instantanément</strong> sur la vidéoprojection. L'oeuvre
+      collaborative évolue en permanence. Dessine autant que tu veux.{' '}
       <strong>Exprime toi !</strong>
     </>
   ),
@@ -189,32 +189,100 @@ export const notFoundPage = {
 export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'useCasesTitle',
-    'One tool, many possibilities',
-    'Un outil, plein de possibilités'
+    'One tool, many possibilities!',
+    'Un outil, plein de possibilités !'
   ),
+  StringEnFr(
+    'useCasesSubtitle',
+    `We can conceive together an installation for your event.`,
+    `Concevons ensemble une installation pour votre événement.`
+  ),
+
   StringEnFr(
     'useCases',
     [
-      'Art exhibitions',
-      'Event Animations',
-      'Live Performances',
-      'Workshops for children and grown-ups',
-      'Collective Thinking',
-      'Light Festivals',
-      'Interactive Shop Windows',
-      'Team Video Games',
-      'And much more !',
+      <>
+        Lights
+        <br />
+        Festival
+      </>,
+      <>
+        Live
+        <br />
+        Performance
+      </>,
+      <>
+        Art
+        <br />
+        Exhibition
+      </>,
+      <>
+        Collaborative
+        <br />
+        Workshop
+      </>,
+      <>
+        Collective
+        <br />
+        Thinking
+      </>,
+      <>
+        Permanent
+        <br />
+        Insallation
+      </>,
+      <>
+        Team Video
+        <br />
+        Games
+      </>,
+      <>
+        Corporate
+        <br />
+        Event
+      </>,
     ],
     [
-      'Expositions Artistiques',
-      'Animations',
-      'Performances en Live',
-      'Ateliers pour petits et grands',
-      'Intelligence Collective',
-      'Festivals de Lumières',
-      'Vitrines interactives',
-      'Jeux vidéos en équipe',
-      'Et bien plus !',
+      <>
+        Festival
+        <br />
+        Lumières
+      </>,
+      <>
+        Performance
+        <br />
+        Live
+      </>,
+      <>
+        Exposition
+        <br />
+        Artistique
+      </>,
+      <>
+        Atelier
+        <br />
+        Participatif
+      </>,
+      <>
+        Intelligence
+        <br />
+        Collective
+      </>,
+      <>
+        Installation
+        <br />
+        Permanente
+      </>,
+      <>
+        Jeu vidéo
+        <br />
+        en équipe
+      </>,
+      <>
+        Événement
+        <br />
+        Entreprise
+      </>,
     ]
   ),
 
@@ -316,24 +384,20 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'bookingPunchline',
     <em>
-      Let's create something <strong>together !</strong>
+      Drawing is a way to <strong>express ourselves</strong> without barriers.
     </em>,
     <em>
-      Créons quelque chose <strong>ensemble !</strong>
+      Le dessin est un moyen de <strong>nous exprimer</strong> sans barrières.
     </em>
   ),
 
   StringEnFr(
     'bookingSubtext',
     <>
-      Drawing is a way to <strong>express ourselves</strong> without barriers.
-      <br />
-      We're a team of scenographers, engineers and artists willing to make
+      We are a team of scenographers, engineers and artists willing to make
       people <strong>draw together</strong>.
     </>,
     <>
-      Le dessin est un moyen de <strong>nous exprimer</strong> sans barrières.
-      <br />
       Nous sommes une équipe de scénographes, ingénieurs et artistes. Nous
       développons des outils pour <strong>dessiner ensemble</strong>.
     </>

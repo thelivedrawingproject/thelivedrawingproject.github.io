@@ -6,10 +6,24 @@ import LanguageSwitcher from '../bits/LanguageSwitcher/LanguageSwitcher'
 import { defaultLanguage, supportedLanguages } from '../locales/locales'
 import { languageAutoRedirect } from '../locales/localeUtils'
 import { NavbarData, FooterLinks } from './Data'
-import { NavbarSlim } from '../bits/NavbarSlim/NavbarSlim'
+import TldpNavbar from '../bits/TldpNavbar/Navbar'
+import MobileAppBar from '../bits/TldpNavbar/MobileAppBar'
 import { BottomBar } from '../components/wip/BottomBar/BottomBar'
 import { indexPageStrings } from '../locales/strings'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#6d8879',
+      /*
+      $accentColor: #85b94f; //#aac989; //#4d9933;
+$accentLight: #aac989;
+$accentColorIdle: #2b6b15;
+*/
+    },
+  },
+})
 // TODO: store a cookie to enable/disable splash screen
 
 const AreWeInPerformanceMode = false
@@ -19,16 +33,14 @@ const eventUrl = 'https://stayhome.thelivedrawingproject.com/'
 export default function MainLayout({ children, language, location }) {
   let showPerformanceOverlay = false
   const showPerformanceBottomBar = AreWeInPerformanceMode
-
+  const isItRootUrl =
+    location.pathname === '/' ||
+    location.pathname === '/fr' ||
+    location.pathname === '/fr/'
   // homepage: single slash
 
   // Bad because language dependant...
-  if (
-    AreWeInPerformanceMode &&
-    (location.pathname === '/' ||
-      location.pathname === '/fr' ||
-      location.pathname === '/fr/')
-  ) {
+  if (AreWeInPerformanceMode && isItRootUrl) {
     showPerformanceOverlay = true
   }
 
@@ -72,11 +84,16 @@ export default function MainLayout({ children, language, location }) {
   )
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       {showPerformanceOverlay && performanceSplashScreen()}
       <div className="CssGridNavContentFooter">
+        {!isItRootUrl && (
+          <div className="AppBar">
+            <MobileAppBar title={'The Live Drawing Project'} />
+          </div>
+        )}
         <nav className="gridNavBar">
-          <NavbarSlim links={NavbarData[language].links} />
+          <TldpNavbar links={NavbarData[language].links} />
         </nav>
         <div className="gridContent styleContent">{children}</div>
         <div className="gridFooter">
@@ -114,7 +131,7 @@ export default function MainLayout({ children, language, location }) {
           </div>
         )}
       </div>
-    </>
+    </ThemeProvider>
   )
 }
 

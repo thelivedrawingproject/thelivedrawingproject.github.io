@@ -99,9 +99,9 @@ export default function Index({ data, pageContext: { locale }, location }) {
         <div className={'RollbackBackground'}>
           <BackgroundSlider
             query={data}
-            initDelay={4} // delay before the first transition (if left at 0, the first image will be skipped initially)
+            initDelay={0} // delay before the first transition (if left at 0, the first image will be skipped initially)
             transition={1} // transition duration between images
-            duration={4} // how long an image is shown
+            duration={8} // how long an image is shown
             style={{
               backgroundColor: '#6d8879',
             }}
@@ -146,7 +146,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
         <div className={'ResponsiveContainer ModernGreenBack'}>
           <div className={'Inside'}>
             <div className="ShowcasePart">
-              <div className={'Text'}>
+              <div className={'Text Centered'}>
                 <h2 style={{ color: 'white' }}>
                   {LOCAL.yourPhoneYourCanvasTitle}
                 </h2>
@@ -178,6 +178,9 @@ export default function Index({ data, pageContext: { locale }, location }) {
                     data.gridD.childImageSharp.fluid.src,
                     data.gridE.childImageSharp.fluid.src,
                     data.gridF.childImageSharp.fluid.src,
+                    data.gridG.childImageSharp.fluid.src,
+                    data.gridH.childImageSharp.fluid.src,
+                    data.gridI.childImageSharp.fluid.src,
                   ]}
                   className={'PaddingForNormalSize'}
                 />
@@ -186,10 +189,10 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-        <div className={'ResponsiveContainer BasicWhiteBack'}>
+        <div className={'ResponsiveContainer'}>
           <div className={'Inside'}>
             <div className="ShowcasePart">
-              <div className={'Text'}>
+              <div className={'Text Centered'}>
                 <h2 style={{ color: 'rgb(40,40,40)' }}>
                   {LOCAL.permanentArtTitle}
                 </h2>
@@ -293,6 +296,17 @@ export const indexPageQuery = graphql`
       ...gatImage
     }
     gridF: file(relativePath: { eq: "gallery/showcase/chev.jpg" }) {
+      ...gatImage
+    }
+    gridG: file(relativePath: { eq: "2020-04-01-stayhome/26v_2_webw.jpg" }) {
+      ...gatImage
+    }
+    gridH: file(
+      relativePath: { eq: "2020-03-05-spraying-board/SprayingBoard_8.jpg" }
+    ) {
+      ...gatImage
+    }
+    gridI: file(relativePath: { eq: "2019-10-20-mur/CHRD-5.jpg" }) {
       ...gatImage
     }
     allMarkdownRemark(

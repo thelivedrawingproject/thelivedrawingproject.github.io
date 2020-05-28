@@ -14,21 +14,41 @@
     padding: 0;
     display: grid;
     grid-gap: 0;
-    grid-template-areas: 'nav nav' 'content content' 'content content' 'footer footer' 'bottom bottom';
+    grid-template-areas: 'nav nav' 'content content' 'content content' 'footer footer' 'navBottom navBottom';
+
     justify-items: stretch;
+
+    .AppBar {
+      justify-self: stretch;
+      grid-area: nav;
+      text-align: center;
+      z-index: 10;
+      background-color: $backgroundColor;
+      @include breakpoint(normal) {
+        display: none;
+        z-index: 0;
+      }
+    }
 
     .gridNavBar {
       justify-self: stretch;
       grid-area: nav;
       text-align: right;
-      background-color: $backgroundColor;
-
-      // STUFF for responsive navbar using an overlay
-
-      // Z-index tweak allows gridNavBar to be TRULY overlaying every other element if it wants to, even if they are in position absolute/relative
       position: sticky;
       top: 0;
       z-index: 1;
+      background-color: $backgroundColor;
+
+      // bottom nav menu
+      @include breakpoint(small) {
+        grid-area: navBottom;
+        padding: 0;
+        //position: sticky; TODO: use this and remove width when firefox mobile doesnt jump on scroll anymore (May 2020)
+        // position: fixed;
+        // width: 100vw;
+        bottom: 0;
+        z-index: 1;
+      }
     }
 
     .gridContent {
