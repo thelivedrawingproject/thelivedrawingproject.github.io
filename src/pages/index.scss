@@ -565,11 +565,11 @@ $darkColor: black;
 
     &:hover {
       color: $modernGreenAccent;
-      box-shadow: 1rem 1rem $shadowColor;
-      transform: translateY(-0.5rem) translateX(-0.5rem);
+      box-shadow: 10px 10px $shadowColor;
+      transform: translateY(-5px) translateX(-5px);
       @include breakpoint(small) {
         box-shadow: 0.2rem 0.2rem $shadowColor;
-        transform: translateY(-0.2rem) translateX(-0.2rem);
+        transform: translateY(-2px) translateX(-2px);
       }
 
       transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
