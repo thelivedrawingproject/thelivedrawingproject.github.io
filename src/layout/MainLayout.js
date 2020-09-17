@@ -26,9 +26,9 @@ $accentColorIdle: #2b6b15;
 })
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = false
-const eventName = 'Dessine Avec Les Voisins'
-const eventUrl = 'https://stayhome.thelivedrawingproject.com/'
+const AreWeInPerformanceMode = true
+const eventName = 'Culture Night'
+const eventUrl = 'https://ireland.thelivedrawingproject.com/'
 
 export default function MainLayout({ children, language, location }) {
   let showPerformanceOverlay = false
@@ -59,12 +59,12 @@ export default function MainLayout({ children, language, location }) {
       <div className={'PerformanceMode'} id={'performanceOverlay'}>
         <div className="Logo" />
         <div style={{ textAlign: 'center', fontSize: '1.2em' }}>
-          {LOCAL.currentlyHappening}
-          <br />
-          <br />
           <strong className={'DarkModeTextAccent'} style={{ fontSize: '2em' }}>
             {eventName}
           </strong>
+          <br />
+          <br />
+          {LOCAL.currentlyHappening}
         </div>
         <a href={eventUrl} onClick={() => {}}>
           {LOCAL.clickHereToDraw}

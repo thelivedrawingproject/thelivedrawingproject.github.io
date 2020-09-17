@@ -167,8 +167,8 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr('moreInfos', 'More about the project', "Plus d'informations"),
   StringEnFr(
     'currentlyHappening',
-    `Let's draw together during confinment!`,
-    'Pendant le confinement, Dessinons ensemble !'
+    `Let's draw together! Drawings appear in Dublin and in Paris!`,
+    'Dessinons ensemble, les dessins apparaissent à Paris et à Dublin !'
   ),
   StringEnFr('callUs', 'Call us', 'Appelez nous'),
   StringEnFr('events', 'Events', 'Évenements'),
