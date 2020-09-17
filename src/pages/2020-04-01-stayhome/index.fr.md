@@ -83,7 +83,7 @@ Merci à Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Auré
 
 #### Merci à nos partenaires et relais de communication
 
-- [L'AADN](https://aadn.org/) for their precious support
+- [L'AADN](https://aadn.org/) pour leur précieux soutien
 - [Fun Station](https://funstation.fr/) pour leur interview
 - Jean-Baptiste Wallers-Bulot, rédacteur web et influenceur Lumières. Retrouvez son travail sur [Scoop It](https://www.scoop.it/topic/lumieres-by-jbbulot) et [Light Zoom Lumiere](https://www.lightzoomlumiere.fr/auteur/jeanbaptiste497/)
 - [Pix314](http://pix314.com/)
@@ -94,7 +94,6 @@ Merci à Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Auré
 - [La Brouette Saint Etienne](https://www.facebook.com/la.brouette.de.ouf/)
 - [Eclairage Public](http://eclairagepublic.eu/site/confinement-the-live-drawing-project-pour-dessiner-en-lumiere-avec-ses-voisins/)
 - [Lyon Capitale](https://www.lyoncapitale.fr/actualite/confinement-participez-a-une-oeuvre-lumineuse-et-dessinee-depuis-chez-vous/)
-- [L'AADN](aadn.org/) pour leur précieux soutien
 - [Reporters D'espoir](http://www.reportersdespoirs.org/)
 - [Copenhagen Light Festival](https://www.facebook.com/cphlightfest/)
 - [Østerbro Lokaludvalg](https://www.facebook.com/oesterbro.lokaludvalg/)
