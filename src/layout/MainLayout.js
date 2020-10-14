@@ -26,9 +26,9 @@ $accentColorIdle: #2b6b15;
 })
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = true
-const eventName = 'Culture Night'
-const eventUrl = 'https://ireland.thelivedrawingproject.com/'
+const AreWeInPerformanceMode = false
+const eventName = 'Pixel Break'
+const eventUrl = 'https://pixel.thelivedrawingproject.com/'
 
 export default function MainLayout({ children, language, location }) {
   let showPerformanceOverlay = false

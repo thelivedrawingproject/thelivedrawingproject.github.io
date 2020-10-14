@@ -45,6 +45,11 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           </div>
 
           <div className="FullPageContainer">
+            <h3 className="Punchline White">{LOCAL.remoteTitle}</h3>
+            <p className="Subtext">{LOCAL.remoteSubtext}</p>
+          </div>
+
+          <div className="FullPageContainer">
             <h3 className="Punchline White">{LOCAL.customisableTitle}</h3>
             <p className="Subtext">{LOCAL.customisableText}</p>
           </div>
@@ -62,6 +67,11 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           <div className="FullPageContainer">
             <h3 className="Punchline White">{LOCAL.cellularNetworkTitle}</h3>
             <p className="Subtext">{LOCAL.cellularNetworkSubtext}</p>
+          </div>
+
+          <div className="FullPageContainer">
+            <h3 className="Punchline White">{LOCAL.multilocTitle}</h3>
+            <p className="Subtext">{LOCAL.multilocSubtext}</p>
           </div>
 
           <div className="FullPageContainer">

@@ -11,6 +11,17 @@ description: Photos and videos of the live drawing project events, installations
 
 [Instagram Page](//instagram.com/livedrawingproject)
 
+## Culture Night
+
+Cross-Country installation between Ireland and France. Drawings traveled accross locations. September 2020.  
+[More Infos](/culturenight)
+
+<photo-grid>
+<img src="../2020-09-18-culture-night/1.jpg"/>
+<img src="../2020-09-18-culture-night/2.jpg"/>
+<img src="../2020-09-18-culture-night/5.jpg"/>
+</photo-grid>
+
 ## Solidary Initiative Covid 19
 
 Decentralised installation across France (30 simultaneous locations) during the pandemic lockdown. April-May 2020.  

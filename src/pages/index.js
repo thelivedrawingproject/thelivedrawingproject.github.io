@@ -67,13 +67,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
         <div className="insideArea">
           <div className="textArea">
             <span className="postTitle">{post.frontmatter.title}</span>
-            <span className="postSubtitle">
-              {post.frontmatter.subtitle}{' '}
-              {new Date(post.frontmatter.date).toLocaleDateString(
-                locale,
-                localesOptions
-              )}
-            </span>
+            <span className="postSubtitle">{post.frontmatter.subtitle} </span>
           </div>
         </div>
       </div>

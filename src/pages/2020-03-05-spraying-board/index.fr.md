@@ -7,7 +7,7 @@ description: Installation The Live Drawing Project pour l'exposition Spraying Bo
 date: '2020-03-05'
 category: event
 language: fr
-image: 'cover.jpg'
+image: 'SprayingBoard_4.jpg'
 ---
 
 ![Cover](cover.jpg)

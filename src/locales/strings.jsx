@@ -70,9 +70,9 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr(
     'mainDescription',
 
-    <>Videoprojected collaborative drawing installation.</>,
+    <>Videoprojected collaborative drawing installations.</>,
 
-    <>Installation de dessin collaboratif vidéoprojeté.</>
+    <>installations de dessin collaboratif vidéoprojeté.</>
   ),
 
   StringEnFr(
@@ -167,8 +167,8 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr('moreInfos', 'More about the project', "Plus d'informations"),
   StringEnFr(
     'currentlyHappening',
-    `Let's draw together! Drawings appear in Dublin and in Paris!`,
-    'Dessinons ensemble, les dessins apparaissent à Paris et à Dublin !'
+    `Let's draw together!`,
+    'Dessinons ensemble !'
   ),
   StringEnFr('callUs', 'Call us', 'Appelez nous'),
   StringEnFr('events', 'Events', 'Évenements'),
@@ -309,40 +309,76 @@ export const bookingPageStrings = stringBuilderEnFr([
 
   StringEnFr(
     'usersTitle',
-    'Up to 100+ Users at the same time',
-    "Jusqu'à 100+ Utilisateurs en même temps"
+    'Up to 100+ participants at the same time',
+    "Jusqu'à 100+ participants en même temps"
   ),
   StringEnFr(
     'usersSubtext',
     <>
       With our <strong>cutting edge realtime technology</strong> we can handle
-      hundreds of drawers simultaneously with no lag of any sort.
+      hundreds of drawers simultaneously so everyone can participate without
+      waiting.
     </>,
     <>
       Avec notre <strong>technologie temps-réel dernier cri</strong> nous
-      pouvons gérer des centaines d'utilisateurs en même temps sans
-      ralentissements.
+      pouvons gérer des centaines de participants en même temps, pour que tout
+      le monde puisse participer sans attendre.
+    </>
+  ),
+
+  // TODO: add cross-location idea directly here
+
+  StringEnFr('multilocTitle', 'Multiple Locations', 'Lieux Multiples'),
+  StringEnFr(
+    'multilocSubtext',
+    <>
+      The videoprojection can happen{' '}
+      <strong>in multiple locations simultaneously</strong>. Drawings travel
+      between locations letting participants exhange through drawings.
+    </>,
+    <>
+      La vidéoprojection peut avoir lieu{' '}
+      <strong>dans plusieurs lieux simultanément</strong>.<br /> Les dessins
+      voyagent entre les lieux, permettant aux participants d'échanger par
+      l'intermédiaire des dessins.
+    </>
+  ),
+
+  StringEnFr('remoteTitle', 'Works Remotely', 'Fontionne à Distance'),
+  StringEnFr(
+    'remoteSubtext',
+    <>
+      The videoprojection can be installed and operated{' '}
+      <strong>entirely remotely without us coming on site</strong> and can be
+      livestreamed on social medias. <br />
+      An ideal solution in case of travel restrictions.
+    </>,
+    <>
+      La vidéoprojection peut-être faite{' '}
+      <strong>entièrement à distance sans que nous nous déplacions</strong>.{' '}
+      <br />
+      Une solution idéale en cas de restrictions de déplacement.
     </>
   ),
   StringEnFr('userFriendlyTitle', 'User Friendly', 'Simple à utiliser'),
   StringEnFr(
     'userFriendlySubtext',
     <>
-      Our tool has been designed with <strong>ease of use</strong> from the
-      start.
+      Our drawing tool has been designed with <strong>ease of use</strong> from
+      the start.
       <br />
       No need to install a dedicated app. It <strong>
         works for everyone
       </strong>{' '}
-      seamlessly, on every Android and Apple devices, through the web browser.
+      seamlessly, on every device, through the web browser.
     </>,
     <>
-      Notre outil est conçu avec <strong>la simplicité</strong> comme fer de
-      lance.
+      Notre outil de dessin est conçu avec <strong>la simplicité</strong> comme
+      fer de lance.
       <br />
       Pas besoin d'installer d'application. The Live Drawing Project{' '}
       <strong>marche pour tout le monde</strong> sans effort, sur tous les
-      appareils Android et Apple, via le navigateur internet.
+      appareils, via le navigateur internet.
     </>
   ),
   StringEnFr(
@@ -352,32 +388,21 @@ export const bookingPageStrings = stringBuilderEnFr([
   ),
   StringEnFr(
     'cellularNetworkSubtext',
-    <>
-      The Live Drawing Project can run online or offline, depending on your
-      needs.
-    </>,
-    <>
-      The Live Drawing Project peut fonctionner via Internet ou hors ligne, en
-      fonction de vos besoins.
-    </>
+    <>The Live Drawing Project can run online or offline.</>,
+    <>The Live Drawing Project peut fonctionner via internet ou hors ligne.</>
   ),
-  StringEnFr('moderationTitle', 'Keep control', 'Gardez le contrôle'),
+  StringEnFr('moderationTitle', 'Moderation', 'Modération'),
   StringEnFr(
     'moderationSubtext',
     <>
-      Collaborative creation can lead to inappropriate behaviours.
-      <br />
-      Our <strong>moderation tools</strong> gives us the capacity to remove any
-      inappropriate drawing instantly, and if needed to blacklist users
+      If needed, our <strong>moderation tools</strong> gives us the capacity to
+      remove any inappropriate drawing instantly and block participants
       entirely.
     </>,
     <>
-      La création collaborative peut pousser certains à des comportement
-      inappropriés.
-      <br />
-      Nos <strong>outils de modération</strong> nous permettent de supprimer
-      instantanément tout dessin inapproprié, et si nécessaire, de bloquer des
-      utilisateurs de façon permanente.
+      Si besoin, nos <strong>outils de modération</strong> nous permettent de
+      supprimer instantanément tout dessin inapproprié, et si nécessaire, de
+      bloquer des participants de façon permanente.
     </>
   ),
 
