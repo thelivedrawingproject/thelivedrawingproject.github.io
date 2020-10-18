@@ -385,8 +385,8 @@ export const bookingPageStrings = stringBuilderEnFr([
       <br />
       <br />
       <em>Restrictions de rassemblement ?</em>
-      <br /> Nous <strong>diffusions</strong> l'événement sur les réseaux
-      sociaux pour que votre public puisse aussi dessiner{' '}
+      <br /> Nous <strong>diffusons en direct</strong> l'événement sur les
+      réseaux sociaux pour que votre public puisse aussi dessiner{' '}
       <strong>depuis la maison.</strong>
       <br />
       <br />
