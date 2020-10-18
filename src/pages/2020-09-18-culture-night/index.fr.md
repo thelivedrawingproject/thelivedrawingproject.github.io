@@ -20,6 +20,8 @@ Pendant l'événement, 8 dessinateurs professionnels ont utilisé notre platefor
 
 Tout l'événement a été diffusé en direct sur les réseaux sociaux pour permettre une participation à distance.
 
+_Nous avons géré la partie irlandaise de cet événement entièrement à distance._
+
 #### Partenaires
 
 [Ambassade de France en Irlande](https://ie.ambafrance.org/)  

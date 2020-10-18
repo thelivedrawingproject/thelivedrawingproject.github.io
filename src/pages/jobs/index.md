@@ -7,7 +7,7 @@ title: Jobs
 
 # Join us
 
-![Pf Picture](b-2.jpg)
+![Picture](b-2.jpg)
 
 We are a team of scenographers, engineers and designers. We work on projects mixing art and new technologies.
 We are always interested to meet new people that are both passionate and talented.

@@ -188,12 +188,12 @@ export default function Index({ data, pageContext: { locale }, location }) {
             <div className="ShowcasePart">
               <div className={'Text Centered'}>
                 <h2 style={{ color: 'rgb(40,40,40)' }}>
-                  {LOCAL.permanentArtTitle}
+                  {LOCAL.covidProofTitle}
                 </h2>
-                <p>{LOCAL.permanentArtDescription}</p>
+                <p>{LOCAL.covidProofDescription}</p>
               </div>
               <div className={'ImageContainer'}>
-                <Img fluid={data.imageArt.childImageSharp.fluid} alt="" />
+                <Img fluid={data.imageRemote.childImageSharp.fluid} alt="" />
               </div>
             </div>
           </div>
@@ -274,10 +274,13 @@ export const indexPageQuery = graphql`
     imageArt: file(relativePath: { eq: "gallery/showcase/permanent.jpg" }) {
       ...gatImage
     }
-    gridA: file(relativePath: { eq: "gallery/showcase/fl0.jpg" }) {
+    imageRemote: file(relativePath: { eq: "gallery/showcase/remote.jpg" }) {
       ...gatImage
     }
-    gridB: file(relativePath: { eq: "gallery/showcase/fl1.jpg" }) {
+    gridA: file(relativePath: { eq: "gallery/showcase/cn.jpg" }) {
+      ...gatImage
+    }
+    gridB: file(relativePath: { eq: "gallery/showcase/b.jpg" }) {
       ...gatImage
     }
     gridC: file(relativePath: { eq: "gallery/showcase/glow1.jpg" }) {

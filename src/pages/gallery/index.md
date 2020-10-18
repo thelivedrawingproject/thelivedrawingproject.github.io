@@ -148,9 +148,9 @@ Lyon, France, February 2019
 <img src="lablab/6.jpg"/>
 </photo-grid>
 
-## Exhibition for la Fête des Lumières
+## Videoprojction for la Fête des Lumières
 
-Our first exhibition at the _Malting Pot_ pub. Lyon, France, 2018
+Our first videoprojection at the _Malting Pot_ pub. Lyon, France, 2018
 
 <iframe src="https://player.vimeo.com/video/311653956" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, Link, navigate } from 'gatsby'
+import Img from 'gatsby-image'
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../bits/MetaTags/MetaTags'
 import './index.scss'
@@ -15,11 +16,22 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
     <MainLayout language={locale} location={{ ...location }}>
       <MetaTags title={'About'} />
 
-      <div className={'ShowcasePage'}>
+      <div className={'ResponsiveContainer'}>
         <div className={'Inside'}>
-          <div className="FullPageContainer" style={{ marginBottom: '2em' }}>
+          <div className="ShowcasePart">
             <h1 style={{ opacity: 0 }}>About</h1>
             <h2 className="Quote">{LOCAL.bookingPunchline}</h2>
+            <div className={'Text Centered'}>
+              <h2 style={{ color: 'white' }}>
+                {LOCAL.yourPhoneYourCanvasTitle}
+              </h2>
+              <p style={{ color: 'white' }}>
+                {LOCAL.yourPhoneYourCanvasDescription}
+              </p>
+            </div>
+            <div className={'ImageContainer'}>
+              <Img fluid={data.image.childImageSharp.fluid} alt="" />
+            </div>
             <div
               style={{
                 textAlign: 'center',
@@ -39,7 +51,11 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
               </Link>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div className={'ShowcasePage'}>
+        <div className={'Inside'}>
           <div className="FullPageContainer">
             <h2 className="Punchline White Strong">{LOCAL.features}</h2>
           </div>
@@ -65,11 +81,6 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           </div>
 
           <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.cellularNetworkTitle}</h3>
-            <p className="Subtext">{LOCAL.cellularNetworkSubtext}</p>
-          </div>
-
-          <div className="FullPageContainer">
             <h3 className="Punchline White">{LOCAL.multilocTitle}</h3>
             <p className="Subtext">{LOCAL.multilocSubtext}</p>
           </div>
@@ -77,6 +88,11 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           <div className="FullPageContainer">
             <h3 className="Punchline White">{LOCAL.moderationTitle}</h3>
             <p className="Subtext">{LOCAL.moderationSubtext}</p>
+          </div>
+
+          <div className="FullPageContainer">
+            <h3 className="Punchline White">{LOCAL.cellularNetworkTitle}</h3>
+            <p className="Subtext">{LOCAL.cellularNetworkSubtext}</p>
           </div>
 
           <br />
@@ -112,6 +128,18 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                   </div>
                   <div className={'ImageContainer'}>
                     <div className={'ClientsLogo'}>
+                      <a
+                        className={'Embassy'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://ie.ambafrance.org/'}
+                      />
+                      <a
+                        className={'Cci'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://www.centreculturelirlandais.com/'}
+                      />
                       <a
                         className={'Chrd'}
                         target="_blank"
@@ -189,3 +217,13 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
     </MainLayout>
   )
 }
+
+export const aboutPageQuery = graphql`
+  query AboutQuery {
+    image: file(
+      relativePath: { eq: "2020-03-05-spraying-board/SprayingBoard_4.jpg" }
+    ) {
+      ...gatImage
+    }
+  }
+`

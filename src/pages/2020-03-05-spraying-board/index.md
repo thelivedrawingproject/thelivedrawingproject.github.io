@@ -2,7 +2,7 @@
 path: /sprayingboard
 layout: article
 title: Spraying Board
-subtitle: Exhibition
+subtitle: Art Exhibition
 description: Installation The Live Drawing Project for Spraying Board Exhibition at Place des Terreaux à Lyon
 date: '2020-03-05'
 category: event

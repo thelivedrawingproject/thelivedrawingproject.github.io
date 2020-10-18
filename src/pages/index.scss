@@ -9,6 +9,21 @@ $darkColor: black;
   background-color: $modernGreen;
 }
 
+.AboutPageImage {
+  max-width: 40rem;
+  .Inside {
+    @include breakpoint(normal) {
+      // margin: auto;
+
+      img {
+        // max-width: 30rem;
+      }
+
+      // font-size: 1rem;
+    }
+  }
+}
+
 .SpecialAnnouncementBackground {
   //background-color: $backgroundColorForText;
   background-image: url('../res/drawingCouv.svg');
@@ -90,7 +105,7 @@ $darkColor: black;
 
   .Inside {
     @include breakpoint(normal) {
-      min-width: 50rem;
+      min-width: 60rem;
       max-width: 90rem;
     }
     @include breakpoint(small) {
@@ -355,9 +370,6 @@ $darkColor: black;
         min-width: 90%;
       }
 
-      div {
-      }
-
       img {
         width: 100%;
         height: auto;
@@ -390,10 +402,12 @@ $darkColor: black;
       background-position: center;
       background-size: contain;
       opacity: 0.7;
+      filter: grayscale(100%);
       @include basicTransition();
       &:hover {
         @include basicTransition();
         cursor: pointer;
+        filter: none;
         opacity: 1;
       }
     }
@@ -430,6 +444,16 @@ $darkColor: black;
 
     .Chrd {
       background: url('gallery/clients/CHRD.png');
+      @include imageBackground();
+    }
+
+    .Embassy {
+      background: url('gallery/clients/ambfi.png');
+      @include imageBackground();
+    }
+
+    .Cci {
+      background: url('gallery/clients/cci.png');
       @include imageBackground();
     }
 
@@ -522,6 +546,10 @@ $darkColor: black;
   &.ClearColor {
     font-size: 1.3em;
     color: $backgroundColor;
+  }
+
+  a {
+    @include themedTagA();
   }
 }
 

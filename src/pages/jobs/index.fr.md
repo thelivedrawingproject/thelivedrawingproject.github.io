@@ -7,7 +7,7 @@ title: Jobs
 
 # Rejoignez nous !
 
-![Pf Picture](b-2.jpg)
+![Picture](b-2.jpg)
 
 Nous sommes une équipe de scénographes, ingénieurs et illustrateurs.
 Nous travaillons sur des projets liant art et nouvelles technologies.

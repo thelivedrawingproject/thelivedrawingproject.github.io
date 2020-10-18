@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
 const StringEnFr = (key, en, fr) => {
   return {
     en: {
@@ -85,14 +85,13 @@ export const indexPageStrings = stringBuilderEnFr([
     'yourPhoneYourCanvasDescription',
 
     <>
-      Load our web page to start drawing. There is nothing to install. It works
-      on <strong>all devices</strong> instantly, with or without internet.
+      Open our website to start drawing. There is nothing to download. It works
+      on <strong>all devices</strong> instantly.
     </>,
 
     <>
-      Charge notre page web pour dessiner. Il n'y a rien à installer. ça marche
-      sur <strong>tous les appareils</strong> instantanément, avec ou sans
-      internet.
+      Ouvre notre site web pour dessiner. Il n'y a rien à installer. Ca marche
+      sur <strong>tous les appareils</strong> instantanément.
     </>
   ),
 
@@ -135,6 +134,21 @@ export const indexPageStrings = stringBuilderEnFr([
       Nous créons des illustrations avec tous les dessins reçus. Rejoins une
       oeuvre graphique <strong>unique et collaborative</strong>. De la carte
       postale au collage mural.
+    </>
+  ),
+
+  StringEnFr('covidProofTitle', 'Draw From Home', 'Dessine depuis chez toi'),
+
+  StringEnFr(
+    'covidProofDescription',
+    <>
+      <em>Can't go out?</em>
+      <br /> Join the others on our livestream and send your drawings remotely!
+    </>,
+    <>
+      <em>Tu ne peux pas sortir?</em>
+      <br /> Rejoins les autres sur le livestream et envoie tes dessins à
+      distance!
     </>
   ),
 
@@ -348,18 +362,43 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'remoteSubtext',
     <>
-      The videoprojection can be installed and operated{' '}
-      <strong>entirely remotely without us coming on site</strong> and can be
-      livestreamed on social medias. <br />
-      An ideal solution in case of travel restrictions.
+      <em>Travel Restrictions? </em>
+      <br /> The videoprojection can be installed and operated{' '}
+      <strong>entirely remotely without us coming on site.</strong>
+      <br />
+      <br />
+      <em>Gathering restrictions?</em>
+      <br /> We <strong>livestream</strong> the event and people can also{' '}
+      <strong>draw from home.</strong>
+      <br />
+      <br />
+      <em>Lockdown?</em>
+      <br />
+      We can together <strong>decentralise</strong> the videoprojection accross
+      your community. <Link to="/stayhome">See our lockdown example</Link>
+      <br />
     </>,
     <>
-      La vidéoprojection peut-être faite{' '}
-      <strong>entièrement à distance sans que nous nous déplacions</strong>.{' '}
+      <em>Restrictions de voyage ? </em>
+      <br /> La videoprojection peut être installée et contrôlée
+      <strong>entièrement à distance sans que nous venions sur site.</strong>
       <br />
-      Une solution idéale en cas de restrictions de déplacement.
+      <br />
+      <em>Restrictions de rassemblement ?</em>
+      <br /> Nous <strong>diffusions</strong> l'événement sur les réseaux
+      sociaux pour que votre public puisse aussi dessiner
+      <strong>depuis la maison.</strong>
+      <br />
+      <br />
+      <em>Confinement ?</em>
+      <br />
+      Faisons ensemble une <strong>vidéoprojection décentralisée</strong> avec
+      votre communauté.{' '}
+      <Link to="/fr/stayhome">Voir notre événement du confinement</Link>
+      <br />
     </>
   ),
+
   StringEnFr('userFriendlyTitle', 'User Friendly', 'Simple à utiliser'),
   StringEnFr(
     'userFriendlySubtext',
@@ -419,12 +458,14 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'bookingSubtext',
     <>
-      We are a team of scenographers, engineers and artists willing to make
-      people <strong>draw together</strong>.
+      We are a team of scenographers, engineers and artists.
+      <br /> We're developping tools to make people{' '}
+      <strong>draw together</strong>.
     </>,
     <>
-      Nous sommes une équipe de scénographes, ingénieurs et artistes. Nous
-      développons des outils pour <strong>dessiner ensemble</strong>.
+      Nous sommes une équipe de scénographes, ingénieurs et artistes.
+      <br /> Nous développons des outils pour <strong>dessiner ensemble</strong>
+      .
     </>
   ),
 
