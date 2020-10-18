@@ -380,13 +380,13 @@ export const bookingPageStrings = stringBuilderEnFr([
     </>,
     <>
       <em>Restrictions de voyage ? </em>
-      <br /> La videoprojection peut être installée et contrôlée
+      <br /> La videoprojection peut être installée et contrôlée{' '}
       <strong>entièrement à distance sans que nous venions sur site.</strong>
       <br />
       <br />
       <em>Restrictions de rassemblement ?</em>
       <br /> Nous <strong>diffusions</strong> l'événement sur les réseaux
-      sociaux pour que votre public puisse aussi dessiner
+      sociaux pour que votre public puisse aussi dessiner{' '}
       <strong>depuis la maison.</strong>
       <br />
       <br />
