@@ -101,6 +101,4 @@ Merci à Gilles, David, Alain, Yannick, Livia, Josselin, Aurélie, Romain, Auré
 
 #### PRESSE
 
-Toutes les photos de ce site sont libres de droit.
-
-[Accès au dossier de presse](https://drive.google.com/drive/folders/1_20QXXgqa7MkBbxbbUQoomBd6ZTk-I1r)
+Toutes les photos de cette page sont libres de droit.

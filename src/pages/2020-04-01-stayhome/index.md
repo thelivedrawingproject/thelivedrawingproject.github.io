@@ -101,6 +101,4 @@ Thank you Gilles, David, Alain, Yannick, Livia, Josselin, Aur√©lie, Romain, Aur√
 
 #### PRESS
 
-All pictures on this website are royalty free.
-
-[Press Kit](https://drive.google.com/drive/folders/1OAtVA8CTudPPjQpv13f1FJJ6o-Of4Mwa)
+All pictures on this web page are royalty free.
