@@ -22,6 +22,10 @@ En alternative, nous lançons avec les **habitants** de la métropole et les **a
 Rendez-vous à votre fenêtre, au coucher du soleil, le 5 décembre 2020.
 </p>
 
+## Programmation
+
+Les détails de la programmation seront annoncés prochainement !
+
 ## Comment participer ?
 
 Vous habitez à Lyon ou dans la région Auvergne Rhône Alpes et disposez d'un vidéoprojecteur? **Rejoignez le mouvement** et vidéoprojetez depuis votre fenêtre ! Il vous suffit de remplir le court formulaire de participation :
@@ -48,9 +52,11 @@ C'est très facile :
 
 #### Je suis artiste, je souhaite proposer mes oeuvres
 
+Photographes, Peintres, vidéastes, street artistes, artistes numériques, proposez vos oeuvres et nous les diffuserons sur les façades de la ville.
+
 Le contenu doit répondre aux caractéristiques suivantes :
 
-- Image, vidéo ou tout contenu accessible depuis une page web (shadertoy, p5js, ...)
+- Image, vidéo, ou bien contenu accessible depuis une page web (shadertoy, p5js, ...)
 - Le contenu sera diffusé dans tous les lieux de vidéoprojection simultanément. Le parc de vidéoprojecteurs est varié, et le contenu sera projeté parfois en paysage parfois en portrait. Les surfaces de vidéoprojection peuvent comporter des fenêtres (parties du contenu masqué), votre contenu doit prendre ces aspects en compte
 - Nous ne pourrons pas diffuser de son
 
