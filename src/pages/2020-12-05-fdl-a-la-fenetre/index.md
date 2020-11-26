@@ -6,21 +6,31 @@ subtitle: Initiative Confinée
 description: Initiative pendant la Fête des Lumières de Lyon 2020 pour contrecarrer l'annulation de l'événement officiel
 date: '2020-12-05'
 category: event
-language: en
+language: fr
 image: '26v_5_webw.jpg'
 ---
 
-## Faisons la Fête des Lumières depuis chez nous, tous ensemble !
+## Faisons la Fête des Lumières à la Fenêtre, depuis chez nous, tous ensemble !
 
 ![Image d'illustration](mi.jpg)
 
 Les mesures de confinement ont entraîné une fois de plus l’annulation de l’ensemble des événements culturels dont la célèbre **Fête des Lumières de Lyon 2020**.
 
-En alternative, nous lançons avec les **habitants** de la métropole et les **artistes locaux** un **grand mouvement de vidéoprojection depuis chez soi**. Un spectacle vidéoprojeté sera diffusé simultanément dans toute la métropole, créant une grande soirée de partage entre voisins.
+En alternative, nous lançons avec les **habitants** de la métropole et les **artistes locaux** un **grand mouvement de vidéoprojection depuis chez soi**. Un spectacle vidéoprojeté sera diffusé simultanément dans toute la métropole, créant une grande soirée de partage entre voisins : La Fête des Lumières à la Fenêtre.
 
 <p style="text-align:center; font-weight:900; font-size:1.2rem; margin-top:3rem; margin-bottom:3rem;">
 Rendez-vous à votre fenêtre, au coucher du soleil, le 5 décembre 2020.
 </p>
+
+## [Evenement Facebook](https://www.facebook.com/events/372296650736821/)
+
+<br/>
+<br/>
+<br/>
+
+## Programmation
+
+Les détails de la programmation seront annoncés prochainement !
 
 ## Comment participer ?
 
@@ -48,9 +58,11 @@ C'est très facile :
 
 #### Je suis artiste, je souhaite proposer mes oeuvres
 
+Photographes, Peintres, vidéastes, street artistes, artistes numériques, proposez vos oeuvres et nous les diffuserons sur les façades de la ville.
+
 Le contenu doit répondre aux caractéristiques suivantes :
 
-- Image, vidéo ou tout contenu accessible depuis une page web (shadertoy, p5js, ...)
+- Image, vidéo, ou bien contenu accessible depuis une page web (shadertoy, p5js, ...)
 - Le contenu sera diffusé dans tous les lieux de vidéoprojection simultanément. Le parc de vidéoprojecteurs est varié, et le contenu sera projeté parfois en paysage parfois en portrait. Les surfaces de vidéoprojection peuvent comporter des fenêtres (parties du contenu masqué), votre contenu doit prendre ces aspects en compte
 - Nous ne pourrons pas diffuser de son
 
@@ -87,6 +99,8 @@ Lors du premier confinement en avril, nous avons déjà réuni 500 participants 
 </photo-grid>
 
 #### PRESSE
+
+[Communiqué de Presse](frama.link/fdl-fenetre-cp)
 
 [Photos de nos autres événements](/fr/gallery)
 
