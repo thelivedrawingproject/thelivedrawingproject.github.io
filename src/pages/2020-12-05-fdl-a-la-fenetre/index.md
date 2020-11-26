@@ -6,7 +6,7 @@ subtitle: Initiative Confinée
 description: Initiative pendant la Fête des Lumières de Lyon 2020 pour contrecarrer l'annulation de l'événement officiel
 date: '2020-12-05'
 category: event
-language: fr
+language: en
 image: '26v_5_webw.jpg'
 ---
 
