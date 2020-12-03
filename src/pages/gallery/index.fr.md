@@ -14,7 +14,7 @@ description: Photos et videos des évenements du Live Drawing Project, installat
 
 ## Culture Night
 
-Installation multi-pays entre l'Irlande et la France. Les dessins ont tranité entre les lieux. Septembre 2020.  
+Installation multi-pays entre l'Irlande et la France. Les dessins ont transité entre les lieux. Septembre 2020.  
 [Plus d'infos](/fr/culturenight)
 
 <photo-grid>
@@ -25,7 +25,7 @@ Installation multi-pays entre l'Irlande et la France. Les dessins ont tranité e
 
 ## Initiative Solidaire Covid 19
 
-Installation décentralisé à travers toute la France (30 lieux simultanés) pendant le confinement. Avril-Mai 2020.  
+Installation décentralisée à travers toute la France (30 lieux simultanés) pendant le confinement. Avril-Mai 2020.  
 [Plus d'infos](/stayhome)
 
 <photo-grid>

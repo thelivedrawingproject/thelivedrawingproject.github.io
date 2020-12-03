@@ -26,9 +26,9 @@ $accentColorIdle: #2b6b15;
 })
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = false
-const eventName = 'NovTec'
-const eventUrl = 'https://lima.thelivedrawingproject.com/'
+const AreWeInPerformanceMode = true
+const eventName = 'Fête des Lumières à la Fenêtre'
+const eventUrl = 'https://fenetre.thelivedrawingproject.com/'
 
 export default function MainLayout({ children, language, location }) {
   let showPerformanceOverlay = false

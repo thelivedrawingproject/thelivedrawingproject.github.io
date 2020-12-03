@@ -50,7 +50,9 @@ Aurora - [Gain Scenography](https://www.instagram.com/gain.scenography/)
 The Mouth - [Emilien](https://www.instagram.com/emilien.neilime/)  
 Bouquets - [Clarisse Garcia](https://www.instagram.com/clarisse_clg/)  
 Dessins de confinement - [Lucas Servoz](https://www.instagram.com/servoz.lucas/)  
-Peintures - [Maëlle Valantin](https://www.instagram.com/servoz.lucas/)
+Peintures - [Maëlle Valantin](https://maellevalantin.wixsite.com/monsite)  
+Illustrations - [EC Concept Design](https://www.instagram.com/ecdesign_studio_/)
+Planets - [VJ Paulicorne](https://www.instagram.com/paul_icorne/)
 
 #### 21h - Live Drawing
 
