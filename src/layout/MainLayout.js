@@ -27,8 +27,8 @@ $accentColorIdle: #2b6b15;
 // TODO: store a cookie to enable/disable splash screen
 
 const AreWeInPerformanceMode = false
-const eventName = 'Pixel Break'
-const eventUrl = 'https://pixel.thelivedrawingproject.com/'
+const eventName = 'NovTec'
+const eventUrl = 'https://lima.thelivedrawingproject.com/'
 
 export default function MainLayout({ children, language, location }) {
   let showPerformanceOverlay = false

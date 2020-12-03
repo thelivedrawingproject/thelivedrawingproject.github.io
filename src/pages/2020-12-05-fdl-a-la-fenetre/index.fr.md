@@ -30,7 +30,31 @@ Rendez-vous à votre fenêtre, au coucher du soleil, le 5 décembre 2020.
 
 ## Programmation
 
-Les détails de la programmation seront annoncés prochainement !
+#### 19h - Live Drawing
+
+Dessine avec ton téléphone !
+
+#### 20h - Les artistes lyonnais
+
+Déambulations - Janine Martin Prades  
+Intérieur Nuit - [Trouble Collectif](https://www.instagram.com/TroubleCollectif/)  
+Joyeuses Fêtes - Robin  
+Loopings - [Francis Malapris](http://malapris.com)  
+Shuffle Dance - [4cutprod](https://www.instagram.com/4cutprod/)  
+Lumen - [Julien Menzel](http://mrzl.fr/)  
+Burning Love - [Clémentine Breed](http://www.clementine-breed.fr/)  
+Montgolfières - [Eugénie Lichet](http://instagram.com/eugenie_jl)  
+Dessins au trait - [Esthelle Froid](https://www.instagram.com/est_h_elle/)  
+Créatures - [Marta Daeuble](http://www.martadaeuble.com/)  
+Aurora - [Gain Scenography](https://www.instagram.com/gain.scenography/)  
+The Mouth - [Emilien](https://www.instagram.com/emilien.neilime/)  
+Bouquets - [Clarisse Garcia](https://www.instagram.com/clarisse_clg/)  
+Dessins de confinement - [Lucas Servoz](https://www.instagram.com/servoz.lucas/)  
+Peintures - [Maëlle Valantin](https://www.instagram.com/servoz.lucas/)
+
+#### 21h - Live Drawing
+
+Dis nous ce que tu en as pensé !
 
 ## Comment participer ?
 
@@ -58,26 +82,7 @@ C'est très facile :
 
 #### Je suis artiste, je souhaite proposer mes oeuvres
 
-Photographes, Peintres, vidéastes, street artistes, artistes numériques, proposez vos oeuvres et nous les diffuserons sur les façades de la ville.
-
-Le contenu doit répondre aux caractéristiques suivantes :
-
-- Image, vidéo, ou bien contenu accessible depuis une page web (shadertoy, p5js, ...)
-- Le contenu sera diffusé dans tous les lieux de vidéoprojection simultanément. Le parc de vidéoprojecteurs est varié, et le contenu sera projeté parfois en paysage parfois en portrait. Les surfaces de vidéoprojection peuvent comporter des fenêtres (parties du contenu masqué), votre contenu doit prendre ces aspects en compte
-- Nous ne pourrons pas diffuser de son
-
-Toutes les oeuvres seront crédités sur les supports de communication, les réseaux sociaux, ainsi que directement sur la vidéoprojection.
-Vous pouvez proposer vos oeuvres via ce formulaire :
-
-### [Formulaire de Participation Artistique](https://forms.gle/3gAxqWfKNVQT9Sfq7)
-
-Pour toutes questions, vous pouvez envoyer un mail à [livedrawingproject@pm.me](mailto:livedrawingproject@pm.me)  
-<br/>
-<br/>
-
-![edit.jpg](edit.jpg)  
-<br/>
-<br/>
+- L'appel à projets et terminé
 
 ## Lors du premier confinement
 
