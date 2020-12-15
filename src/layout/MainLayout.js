@@ -26,8 +26,8 @@ $accentColorIdle: #2b6b15;
 })
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = true
-const eventName = 'Fête des Lumières à la Fenêtre'
+const AreWeInPerformanceMode = false
+const eventName = 'Dessin avec Nous à Nantes'
 const eventUrl = 'https://fenetre.thelivedrawingproject.com/'
 
 export default function MainLayout({ children, language, location }) {

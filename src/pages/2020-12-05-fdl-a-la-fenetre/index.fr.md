@@ -7,34 +7,38 @@ description: Initiative pendant la Fête des Lumières de Lyon 2020 pour contrec
 date: '2020-12-05'
 category: event
 language: fr
-image: '26v_5_webw.jpg'
+image: '4.jpg'
 ---
 
-## Faisons la Fête des Lumières à la Fenêtre, depuis chez nous, tous ensemble !
+## Une Fête des Lumières à la Fenêtre, depuis chez nous, tous ensemble
 
-![Image d'illustration](mi.jpg)
+![Image d'illustration](4.jpg)
 
-Les mesures de confinement ont entraîné une fois de plus l’annulation de l’ensemble des événements culturels dont la célèbre **Fête des Lumières de Lyon 2020**.
+Les mesures du deuxième confinement ont entrainé l’annulation de l’ensemble des événements culturels dont la célèbre **Fête des Lumières de Lyon 2020**.
 
-En alternative, nous lançons avec les **habitants** de la métropole et les **artistes locaux** un **grand mouvement de vidéoprojection depuis chez soi**. Un spectacle vidéoprojeté sera diffusé simultanément dans toute la métropole, créant une grande soirée de partage entre voisins : La Fête des Lumières à la Fenêtre.
-
-<p style="text-align:center; font-weight:900; font-size:1.2rem; margin-top:3rem; margin-bottom:3rem;">
-Rendez-vous à votre fenêtre, au coucher du soleil, le 5 décembre 2020.
-</p>
-
-## [Evenement Facebook](https://www.facebook.com/events/372296650736821/)
-
-<br/>
-<br/>
+En alternative, nous avons lancé avec les **habitants** de la métropole et les **artistes locaux** un **grand mouvement de vidéoprojection de quartier**. Un spectacle vidéoprojeté a été diffusé simultanément dans toute la métropole, sur 100 vidéoprojecteurs, créant une grande soirée de partage entre voisins. Au programme, notre installation de dessin participatif, et les créations de 18 artistes de la région.
 <br/>
 
-## Programmation
+<photo-grid>
+<img src="11.jpg"/>
+<img src="12.jpg"/>
+<img src="2.jpg"/>
+<img src="7.jpg"/>
+<img src="1.jpg"/>
+<img src="5.jpg"/>
+<img src="gil.jpg"/>
+<img src="6.jpg">
+<img src="9.jpg"/>
+<img src="14.jpg"/>
+<img src="0.jpg"/>
+<img src="map.jpg"/>
+</photo-grid>
 
-#### 19h - Live Drawing
+## Notre technologie
 
-Dessine avec ton téléphone !
+Cet événement a été rendu possible grâce à notre **technologie de vidéomapping décentralisée**. Confiné chez nous, nous avons pu prendre le contrôle de 100 vidéoprojecteurs en direct, nous permettant de diffuser le même contenu simultanément dans toute la ville. Notre outil a permis à chacun de vidéoprojeter depuis sa fenêtre, même sans connaissances techniques en vidéoprojection. Notre technologie vous intéresse ? [Contactez nous](/contact)
 
-#### 20h - Les artistes lyonnais
+#### Merci aux artistes de l'événement
 
 Déambulations - Janine Martin Prades  
 Intérieur Nuit - [Trouble Collectif](https://www.instagram.com/TroubleCollectif/)  
@@ -53,64 +57,19 @@ Dessins de confinement - [Lucas Servoz](https://www.instagram.com/servoz.lucas/)
 Peintures - [Maëlle Valantin](https://maellevalantin.wixsite.com/monsite)  
 Illustrations - [EC Concept Design](https://www.instagram.com/ecdesign_studio_/)
 Planets - [VJ Paulicorne](https://www.instagram.com/paul_icorne/)
+Humanlapse - [Maxime Touroute](https://maximetouroute.github.io)
 
-#### 21h - Live Drawing
+#### Merci à nos relais de communication
 
-Dis nous ce que tu en as pensé !
+- [L'AADN](https://aadn.org/)
+- [Le Progrès - Lyon Plus](https://www.lyonplus.com/actualite/2020/12/08/une-fete-des-lumieres-chez-soi-citoyenne-et-artistique)
+- [BFM TV Lyon](https://www.bfmtv.com/lyon/fete-des-lumieres-les-lyonnais-invites-illuminer-les-facades-grace-a-des-videoprojecteurs_AV-202012030181.html)
+- [Radio Espace](http://www.radioespace.com/news/locales/188872/une-fete-des-lumieres-aux-fenetres-cette-annee-a-lyon)
+- [Le Bonbon](https://www.lebonbon.fr/lyon/news/fete-des-lumieres-dessins-murs-projection/)
+- [Lyon Capitale](https://www.lyoncapitale.fr/actualite/confinement-participez-a-une-oeuvre-lumineuse-et-dessinee-depuis-chez-vous/)
+- [Lyon Mag](https://www.lyonmag.com/article/111665/lyon-un-projet-de-fete-des-lumieres-aux-fenetres-cette-annee)
+- [Lyon City Crunch](https://lyon.citycrunch.fr/une-fete-des-lumieres-aux-fenetres-le-5-decembre/2020/11/25/)
 
-## Comment participer ?
+#### Merci à tous les volontaires qui ont vidéoprojeté
 
-Vous habitez à Lyon ou dans la région Auvergne Rhône Alpes et disposez d'un vidéoprojecteur? **Rejoignez le mouvement** et vidéoprojetez depuis votre fenêtre ! Il vous suffit de remplir le court formulaire de participation :
-
-#### [Formulaire de participation](https://forms.gle/KfCrRYCfP6rSkJPA9)
-
-<br/>
-<br/>
-<br/>
-
-## Comment installer son vidéoprojecteur ?
-
-C'est très facile :
-
-1. Vous placez votre vidéoprojecteur à la fenêtre (posé sur une table ou un meuble juste derrière la fenêtre). Vous pouvez viser une façade ou le sol.
-2. Nous vous envoyons une page web à afficher en plein écran sur le vidéoprojecteur. tout ce qu'il vous faut c'est un navigateur internet.
-3. Nous effectuons quelques réglages ensemble depuis la page web : calage de l'image, caches pour ne pas vidéoprojeter dans les fenêtres et ne pas importuner les voisins d'en face. C'est très facile !
-4. C'est prêt ! Au cours de la soirée, nous contrôlons votre vidéoprojecteur à distance pour diffuser le spectacle vidéoprojeté.
-
-![vp.jpg](vp.jpg)
-
-<br/>
-<br/>
-
-#### Je suis artiste, je souhaite proposer mes oeuvres
-
-- L'appel à projets et terminé
-
-## Lors du premier confinement
-
-Lors du premier confinement en avril, nous avons déjà réuni 500 participants à travers toute la France avec notre installation de dessin collaboratif.
-[Plus d'informations sur l'événement d'avril](/stayhome)  
-<br/>
-<br/>
-
-<photo-grid>
-<img src="26v_2_webw.jpg"/>
-<img src="26v_1_web.jpg"/>
-<img src="26v_6_webw.jpg"/>
-<img src="webw-1.jpg"/>
-<img src="2020_6_webw.jpg"/>
-<img src="26v_5_webw.jpg">
-<img src="2020_7_web.jpg"/>
-<img src="4.jpg"/>
-<img src="2020_4_web.jpg"/>
-</photo-grid>
-
-#### PRESSE
-
-[Communiqué de Presse](frama.link/fdl-fenetre-cp)
-
-[Photos de nos autres événements](/fr/gallery)
-
-Toutes les photos de cette page sont libres de droit.
-
-Retrouvez nous sur les réseaux sociaux: [Instagram](https://instagram.com/livedrawingproject) [Facebook](https://facebook.com/TheLiveDrawingProject)
+Sandrine, Marion Delous, David Pauzon, Pauline, Elsa et Pierre, Roxane, Amélie, Léa, Jerome, Enzo, Thomas, Justine, Marieke, Léa, gaspard, Juliette, Ludovic, Marie, Lucas, olivier, Jacques, Clémence & Pierre-Nicolas, Lucie, Pierre et Anne-Charlène, Jean, Florent, Julien, Philippe, Jean-Philippe, Benjamin, Florent, Maria, Florian, Pierre, Mélanie, Eric, yann, Marion, Jérôme, Marion, Margot, Mat, Coralyne, Blanche, Esthelle, Sandrine, Marie-Alix, Olivier, Nadege, Arnaud, Cindy, Mélanie, Marie laure, Margot, Kim, Diane, lambert, Camille, Marion, Jean-Francois, Guillaume, Eddy, Fanny, Maëlle, Thomas, Irène, Audrey, Charlène, Andrew, Yên, Marielle, Anne-Sophie, Evy, Agathe, Colin, Fabienne, Sylvie, Mathias, Sébastien, Laurence, florent, Océane, Nabila, Laura, Faustine, Sébastien, Guillaume, Anouk, Elodie, Victoire, Damien, Antoine, Ariane, Raffaella, Jerome, Philippe, Maxime, Louis, Maxime.
