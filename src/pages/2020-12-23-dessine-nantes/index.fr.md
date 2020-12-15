@@ -18,7 +18,7 @@ A l'occasion des Fêtes de fin d'année, la mairie de Nantes vous propose un **g
 
 Cette animation entièrement gratuite aura lieu **le mardi 22 décembre et le mercerdi 23 décembre de 18h à 20h**. Pendant l'événement, vous pourrez dessiner en vous connectant à notre site internet [https://thelivedrawingproject.com](https://thelivedrawingproject.com)
 
-Vos dessins apparaitront vidéorojetés en temps-réel dans les quartiers suivents :
+Vos dessins apparaitront vidéorojetés en temps-réel dans les quartiers suivants :
 
 - Breil
 - Malakoff
@@ -29,8 +29,6 @@ Vous ne pouvez pas vous déplacer ? Rendez-vous sur notre page facebook pour voi
 
 ## [Notre page Facebook](https://www.facebook.com/TheLiveDrawingProject)
 
-<br/>
-<br/>
 <br/>
 
 #### Comment ça marche ?

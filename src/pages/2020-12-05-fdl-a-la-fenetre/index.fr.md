@@ -1,7 +1,7 @@
 ---
 path: /fdl-a-la-fenetre
 layout: article
-title: Fête des Lumières à la fenêtre
+title: Fête des Lumières à la Fenêtre
 subtitle: Initiative Confinée
 description: Initiative pendant la Fête des Lumières de Lyon 2020 pour contrecarrer l'annulation de l'événement officiel
 date: '2020-12-05'
