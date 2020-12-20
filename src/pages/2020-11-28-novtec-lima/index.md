@@ -33,6 +33,7 @@ _Photo credits: Alianza Francesa de Lima_
 
 ### Partners
 
+[French Alliance of Lima](https://www.alianzafrancesa.org.pe/)
 [French Institute](https://www.institutfrancais.com/)  
 [French Embassy of Peru](https://peru.ambafrance.org/)  
 [Miraflores TV](https://miraflorestv.pe/)

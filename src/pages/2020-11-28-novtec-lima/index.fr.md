@@ -32,6 +32,7 @@ _Credits photo : Alianza Francesa de Lima_
 
 ### Partenaires
 
+[Alliance Francaise de Lima](https://www.alianzafrancesa.org.pe/)
 [Institut Français](https://www.institutfrancais.com/)  
 [Ambassade de France au Pérou](https://pe.ambafrance.org/)  
 [Miraflores TV](https://miraflorestv.pe/)

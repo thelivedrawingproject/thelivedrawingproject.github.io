@@ -138,7 +138,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                         className={'Lima'}
                         target="_blank"
                         rel="noreferrer noopener"
-                        href={'https://ie.ambafrance.org/'}
+                        href={'https://www.alianzafrancesa.org.pe/'}
                       />
                       <a
                         className={'Embassy'}
