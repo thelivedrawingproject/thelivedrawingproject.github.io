@@ -5,7 +5,7 @@ title: Dessine En Lumières
 subtitle: Vidéoprojections de quartier
 description: Vidéoprojections de quartier à Nantes pendant la période des Fêtes de fin d'année
 date: '2020-12-23'
-category: event
+category: hidden
 language: fr
 image: '26v_6_webw.jpg'
 ---

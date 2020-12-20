@@ -417,6 +417,16 @@ $darkColor: black;
       @include imageBackground();
     }
 
+    .Lima {
+      background: url('gallery/clients/lima.jpg');
+      @include imageBackground();
+    }
+
+    .InstitutFrancais {
+      background: url('gallery/clients/institut-francais.png');
+      @include imageBackground();
+    }
+
     .Aadn {
       background: url('gallery/clients/aadn.svg');
       @include imageBackground();

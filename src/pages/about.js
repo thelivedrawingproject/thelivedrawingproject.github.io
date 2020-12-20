@@ -129,6 +129,18 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                   <div className={'ImageContainer'}>
                     <div className={'ClientsLogo'}>
                       <a
+                        className={'InstitutFrancais'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://www.institutfrancais.com'}
+                      />
+                      <a
+                        className={'Lima'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://ie.ambafrance.org/'}
+                      />
+                      <a
                         className={'Embassy'}
                         target="_blank"
                         rel="noreferrer noopener"
@@ -173,13 +185,6 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                         target="_blank"
                         rel="noreferrer noopener"
                         href={'https://aadn.org/'}
-                      />
-
-                      <a
-                        className={'MaltingPot'}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href={'https://www.facebook.com/LeMaltingPot/'}
                       />
                       <a
                         className={'Pf'}
