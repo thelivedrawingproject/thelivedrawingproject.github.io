@@ -7,7 +7,7 @@ import './index.scss'
 import { indexPageStrings } from '../locales/strings'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 import BackgroundSlider from 'gatsby-image-background-slider'
-import { SvgSlideshow } from './svgSlideshow';
+import { SvgSlideshow } from '../components/svgSlideshow';
 const numberOfEventsToShow = 6
 const icon = {
   hidden: {
