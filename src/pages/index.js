@@ -7,8 +7,24 @@ import './index.scss'
 import { indexPageStrings } from '../locales/strings'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 import BackgroundSlider from 'gatsby-image-background-slider'
-
+import { SvgSlideshow } from './svgSlideshow';
 const numberOfEventsToShow = 6
+const icon = {
+  hidden: {
+    opacity: 1,
+    pathLength: 0,
+    fill: "rgba(0,0,0,0",
+    stroke: "rgba(0,0,0,0)", 
+    strokeWidth: 2
+  },
+  visible: {
+    opacity: 1,
+    pathLength: 1,
+    fill: "rgba(0,0,0,0",
+    stroke: "white",
+    strokeWidth: 2
+  }
+};
 
 /*
         <div className={'ResponsiveContainer SpecialAnnouncementBackground'}>
@@ -137,9 +153,31 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
+
         <div className={'ResponsiveContainer ModernGreenBack'}>
           <div className={'Inside'}>
             <div className="ShowcasePart">
+
+
+
+            <div className={'PhoneMockupCSS'}>
+              <div className={"device device-Left"}>
+  <div className="screen">
+    <SvgSlideshow></SvgSlideshow>
+  
+  </div>
+  <div className="speaker"></div>
+  <div className="powerbutton"></div>
+  <div className="volumebutton"></div>
+ <div className="nav">
+    <div className="back" id="back"></div>
+    <div className="home"></div>
+    <div className="overview"></div>
+  </div>
+  </div>
+</div>
+
+
               <div className={'Text Centered'}>
                 <h2 style={{ color: 'white' }}>
                   {LOCAL.yourPhoneYourCanvasTitle}
@@ -148,12 +186,27 @@ export default function Index({ data, pageContext: { locale }, location }) {
                   {LOCAL.yourPhoneYourCanvasDescription}
                 </p>
               </div>
-              <div className={'ImageContainer'}>
-                <Img fluid={data.imagePhone.childImageSharp.fluid} alt="" />
+              <div className={'PhoneMockupCSS'}>
+              <div className="device">
+  <div className="screen">
+  <SvgSlideshow></SvgSlideshow>
+  </div>
+  <div className="speaker"></div>
+  <div className="powerbutton"></div>
+  <div className="volumebutton"></div>
+ <div className="nav">
+    <div className="back" id="back"></div>
+    <div className="home"></div>
+    <div className="overview"></div>
+  </div>
+  </div>
+</div>
+
+                
               </div>
             </div>
           </div>
-        </div>
+
 
         <div className={'ResponsiveContainer'}>
           <div className={'Inside'}>
