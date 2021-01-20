@@ -55,6 +55,26 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
       </div>
 
       <div className={'ShowcasePage'}>
+      <div className={'ResponsiveContainer'}>
+            <div className={'Inside'}>
+              <div className="ShowcasePart Column">
+                <h3 className="Punchline White Strong">
+                  {LOCAL.useCasesTitle}
+                </h3>
+                <p className="Subtext">{LOCAL.useCasesSubtitle}</p>
+                <div className="WordsCloud">
+                  <>
+                    {LOCAL.useCases.map((wordCloud) => {
+                      return <p key={wordCloud}>{wordCloud}</p>
+                    })}
+                  </>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+      <div className={'ShowcasePage'}>
         <div className={'Inside'}>
           <div className="FullPageContainer">
             <h2 className="Punchline White Strong">{LOCAL.features}</h2>
@@ -99,23 +119,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           <br />
           <br />
 
-          <div className={'ResponsiveContainer ModernGreenBack'}>
-            <div className={'Inside'}>
-              <div className="ShowcasePart Column">
-                <h3 className="Punchline ClearColor Strong">
-                  {LOCAL.useCasesTitle}
-                </h3>
-                <p className="Subtext ClearColor">{LOCAL.useCasesSubtitle}</p>
-                <div className="WordsCloud">
-                  <>
-                    {LOCAL.useCases.map((wordCloud) => {
-                      return <p key={wordCloud}>{wordCloud}</p>
-                    })}
-                  </>
-                </div>
-              </div>
-            </div>
-          </div>
+
 
           <div className={'ShowcasePage'}>
             <div className={'ResponsiveContainer'}>

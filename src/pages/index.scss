@@ -24,6 +24,69 @@ $darkColor: black;
   }
 }
 
+.DrawingCountBackground {
+  //background-color: $backgroundColorForText;
+  background-image: url('../res/drawingCouv.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $modernGreen;
+}
+
+.DrawingCountPart {
+   //background-color: #6d8879;
+   text-align: center;
+   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+   background-color: transparent;
+ 
+   .BCTitle {
+     font-size: 3rem;
+     color: 'white';
+     @include breakpoint(small) {
+       font-size: 1rem;
+     }
+   }
+   .BCSubtitle {
+     font-size: 1.6rem;
+     @include breakpoint(small) {
+       font-size: 1.4rem;
+     }
+   }
+ 
+   a {
+     text-align: center;
+     align-self: center;
+ 
+     margin: 1rem;
+     padding: 0.5rem;
+     font-size: 1.5rem;
+     $underlineColor: rgba(255, 255, 255, 0.5); //rgba(150,150,150, 0.5);
+     text-decoration: none;
+     // border: 4px solid transparent;
+     border-bottom: 4px solid $underlineColor;
+     color: white;
+     @include basicTransition();
+     &:hover {
+       // background-color: $underlineColor;
+       border-bottom: 4px solid white;
+       outline: 0;
+       @include basicTransition();
+     }
+ 
+     &:visited {
+       text-decoration: none;
+       color: white;
+     }
+ 
+     &:active,
+     &:focus {
+       outline: 0;
+       -moz-outline-style: none;
+       outline-style: none;
+     }
+   }
+ 
+}
 .SpecialAnnouncementBackground {
   //background-color: $backgroundColorForText;
   background-image: url('../res/drawingCouv.svg');
@@ -161,7 +224,7 @@ $darkColor: black;
   @include breakpoint(normal) {
     transform: rotate(2deg) translateY(2em);
     &-Left {
-      transform: rotate(-3deg) translateY(-1em);;
+      transform: rotate(-3deg) translateY(-1em);
 
     }
   }
@@ -457,8 +520,8 @@ $darkColor: black;
     @include breakpoint(small) {
       flex-direction: column;
       padding: 0rem;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
+      padding-top: 2em;
+      padding-bottom: 2em;
       align-items: center;
     }
 
@@ -755,14 +818,14 @@ $darkColor: black;
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+      box-shadow: 0 0 0px 2px $shadowColor;
     &:hover {
       color: $modernGreenAccent;
-      box-shadow: 10px 10px $shadowColor;
-      transform: translateY(-5px) translateX(-5px);
+      box-shadow: 0 0 0px 6px $shadowColor;
+      // transform: translateY(-5px) translateX(-5px);
       @include breakpoint(small) {
-        box-shadow: 0.2rem 0.2rem $shadowColor;
-        transform: translateY(-2px) translateX(-2px);
+        box-shadow: 0 0 0px 6px $shadowColor;
+        // transform: translateY(-2px) translateX(-2px);
       }
 
       transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1),

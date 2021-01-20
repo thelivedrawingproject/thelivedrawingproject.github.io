@@ -236,6 +236,27 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
+        <div className={'ResponsiveContainer DrawingCountBackground'}>
+          <div className={'Inside'}>
+            <div className="ShowcasePart DrawingCountPart Column">
+              <div className={'Text Centered'}>
+                <h2
+                  className={'BCTitle'}
+                  style={{ color: 'white' }}
+                >
+                  {LOCAL.drawingCountTitle}
+                </h2>
+                <p
+                  className={'BCSubtitle'}
+                  style={{ color: 'white' }}
+                >
+                  {LOCAL.drawingCountSubtext}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className={'ResponsiveContainer'}>
           <div className={'Inside'}>
             <div className="ShowcasePart">
@@ -251,6 +272,10 @@ export default function Index({ data, pageContext: { locale }, location }) {
             </div>
           </div>
         </div>
+
+
+
+
 
         <h2 className={'Punchline'}>{LOCAL.events}</h2>
         <div className="home homePosts">

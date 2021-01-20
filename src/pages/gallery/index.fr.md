@@ -12,6 +12,7 @@ description: Photos et videos des évenements du Live Drawing Project, installat
 
 [Page Instagram](//instagram.com/livedrawingproject)
 
+
 ## Culture Night
 
 Installation multi-pays entre l'Irlande et la France. Les dessins ont transité entre les lieux. Septembre 2020.  

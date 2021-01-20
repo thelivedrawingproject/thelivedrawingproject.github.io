@@ -6,13 +6,13 @@ module.exports = {
     authorMail: 'maxime.touroute@gmail.com',
     titleTemplate: '%s · The Live Drawing Project',
     description:
-      'The Live Drawing Project · Digital art project of Real-time collaborative drawing · Live performances, Events, Workshops & Interactive installations · Welcome to our website',
+      'Draw with us! Collaborative Drawing Videoprojections all around the world · Monumental Videomappings, Performances and Workshops',
     siteUrl: 'https://thelivedrawingproject.com', // for robots plugin
     url: 'https://thelivedrawingproject.com', // No trailing slash allowed!
     favicon: '/favicon.ico',
     thumbImage: '/favicon.ico', // Path to your image you placed in the 'res' folder
     keywords:
-      'live drawing, drawing, digital arts, the live drawing project, collaborative art, art, interactive, installation, festival', // separated by comas
+      'fresque, videoprojection, oeuvre participative, projection, videomapping, participatif, art numérique, interactif, interactive projection, live drawing, drawing, digital arts, the live drawing project, collaborative drawing, art, interactive, installation, festival', // separated by comas
 
     /* to hide the icon, put an empty string instead of a link */
     socialLinks: {

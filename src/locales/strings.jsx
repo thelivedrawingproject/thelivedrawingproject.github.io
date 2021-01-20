@@ -37,6 +37,16 @@ export const indexPageStrings = stringBuilderEnFr([
     'Exposons en ligne !'
   ),
   StringEnFr(
+    'drawingCountTitle',
+    "245,000 drawings from all over the world",
+    '245,000 dessins reçus du monde entier'
+  ),
+  StringEnFr(
+    'drawingCountSubtext',
+    <>We receive thousands of drawings at each event. More than 40,000 participants of all ages have already drawn with us.</>,
+    <>Nous recevons à chaque événement des milliers de dessins. Plus de 40,000 participants de tous les âges ont déjà dessiné avec nous.</>
+  ),
+  StringEnFr(
     'announcemenSubtitle',
     <>
       <strong>Gather your audience today</strong> <br />
@@ -52,7 +62,7 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr(
     'madeInLyon',
     'Proudly made in Lyon, France',
-    'Une installation conçue à Lyon'
+    'Une installation conçue à Lyon, France'
   ),
   StringEnFr(
     'noPersonalData',
@@ -63,16 +73,16 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr('showMoreEvents', `Show more events`, `Plus d'événements`),
   StringEnFr(
     'title',
-    'The Live Drawing Project - Realtime Collaborative Drawing',
-    'The Live Drawing Project - Dessin Collaboratif en Live'
+    'The Live Drawing Project - Interactive drawing projections.',
+    'The Live Drawing Project - Videoprojections participatives de dessin.'
   ),
 
   StringEnFr(
     'mainDescription',
 
-    <>Videoprojected collaborative drawing installations.</>,
+    <>Interactive Drawing Projections.</>,
 
-    <>installations de dessin collaboratif vidéoprojeté.</>
+    <>Vidéoprojections participatives de dessin .</>
   ),
 
   StringEnFr(
@@ -85,13 +95,11 @@ export const indexPageStrings = stringBuilderEnFr([
     'yourPhoneYourCanvasDescription',
 
     <>
-      Open our website to start drawing. There is nothing to download. It works
-      on <strong>all devices</strong> instantly.
+      Open our website and start drawing with your fingers.<br/> Everyone draw at the same time!
     </>,
 
     <>
-      Ouvre notre site web pour dessiner. Il n'y a rien à installer. Ca marche
-      sur <strong>tous les appareils</strong> instantanément.
+      Ouvre notre site web et dessine avec les doigts. <br/>Tout le monde dessine en même temps !
     </>
   ),
 
@@ -103,14 +111,14 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr(
     'joinCollabDescription',
     <>
-      When you're ready, send your drawing. It appears{' '}
+      Your drawing appears{' '}
       <strong>instantly</strong> on the videoprojection. The collaborative
       canvas keeps evolving all the time. You can draw as much as you want.{' '}
       <strong>Express yourself!</strong>
     </>,
 
     <>
-      Quand tu es prêt, envoie ton dessin. Il apparait{' '}
+      Ton dessin apparait{' '}
       <strong>instantanément</strong> sur la vidéoprojection. L'oeuvre
       collaborative évolue en permanence. Dessine autant que tu veux.{' '}
       <strong>Exprime toi !</strong>
@@ -203,13 +211,13 @@ export const notFoundPage = {
 export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'useCasesTitle',
-    'One tool, many possibilities!',
-    'Un outil, plein de possibilités !'
+    'Our offers ',
+    'Nos offres'
   ),
   StringEnFr(
     'useCasesSubtitle',
-    `We can conceive together an installation for your event.`,
-    `Concevons ensemble une installation pour votre événement.`
+    `Let's make your audience draw!`,
+    `Faisons dessiner votre public !`
   ),
 
   StringEnFr(
@@ -218,85 +226,86 @@ export const bookingPageStrings = stringBuilderEnFr([
       <>
         Lights
         <br />
-        Festival
+        Festivals
+      </>,
+            <>
+            Architectural
+            <br />
+            Mappings
+          </>,
+      <>
+        Permanent
+        <br />
+        Installations
       </>,
       <>
-        Live
+        Drawing
         <br />
-        Performance
+        Workshops
       </>,
-      <>
-        Art
-        <br />
-        Exhibition
-      </>,
-      <>
-        Collaborative
-        <br />
-        Workshop
-      </>,
+            <>
+            Mapping
+            <br />
+            Workshops 
+          </>,
       <>
         Collective
         <br />
         Thinking
       </>,
       <>
-        Permanent
-        <br />
-        Insallation
-      </>,
+      Drawing
+      <br />
+      Performances
+    </>,
       <>
-        Team Video
+        As a
         <br />
-        Games
-      </>,
-      <>
-        Corporate
-        <br />
-        Event
+        Service
       </>,
     ],
     [
       <>
-        Festival
+        Fêtes des
         <br />
         Lumières
       </>,
+            <>
+            Mapping
+            <br />
+            architectural
+          </>,
       <>
-        Performance
+        Installations
         <br />
-        Live
+        permanentes
       </>,
       <>
-        Exposition
+        Ateliers
         <br />
-        Artistique
+        de Dessin 
       </>,
-      <>
-        Atelier
-        <br />
-        Participatif
-      </>,
+            <>
+            Ateliers
+            <br />
+            Videomapping 
+          </>,
       <>
         Intelligence
         <br />
         Collective
       </>,
       <>
-        Installation
-        <br />
-        Permanente
-      </>,
+      Performances
+      <br />
+      de dessin
+    </>,
       <>
-        Jeu vidéo
+        Accès
         <br />
-        en équipe
+        Autonome
       </>,
-      <>
-        Événement
-        <br />
-        Entreprise
-      </>,
+
     ]
   ),
 
@@ -323,19 +332,19 @@ export const bookingPageStrings = stringBuilderEnFr([
 
   StringEnFr(
     'usersTitle',
-    'Up to 100+ participants at the same time',
-    "Jusqu'à 100+ participants en même temps"
+    'Up to 1000+ participants at the same time',
+    "Jusqu'à 1000+ participants en même temps"
   ),
   StringEnFr(
     'usersSubtext',
     <>
       With our <strong>cutting edge realtime technology</strong> we can handle
-      hundreds of drawers simultaneously so everyone can participate without
+      thousands of drawers simultaneously so everyone can participate without
       waiting.
     </>,
     <>
       Avec notre <strong>technologie temps-réel dernier cri</strong> nous
-      pouvons gérer des centaines de participants en même temps, pour que tout
+      pouvons gérer des milliers de participants en même temps, pour que tout
       le monde puisse participer sans attendre.
     </>
   ),
@@ -406,29 +415,28 @@ export const bookingPageStrings = stringBuilderEnFr([
       Our drawing tool has been designed with <strong>ease of use</strong> from
       the start.
       <br />
-      No need to install a dedicated app. It <strong>
-        works for everyone
-      </strong>{' '}
-      seamlessly, on every device, through the web browser.
+      No need to install a dedicated app. It  works seamlessly<strong>
+     on every phone 
+      </strong>
+      through the web browser.
     </>,
     <>
       Notre outil de dessin est conçu avec <strong>la simplicité</strong> comme
       fer de lance.
       <br />
-      Pas besoin d'installer d'application. The Live Drawing Project{' '}
-      <strong>marche pour tout le monde</strong> sans effort, sur tous les
-      appareils, via le navigateur internet.
+      Pas besoin d'installer d'application. L'outil marche 
+      <strong> sur tous les téléphones</strong> via le navigateur internet.
     </>
   ),
   StringEnFr(
     'cellularNetworkTitle',
-    'No cellular network ? No problem.',
+    'No network ? No problem.',
     'Pas de réseau ? Pas de problème.'
   ),
   StringEnFr(
     'cellularNetworkSubtext',
-    <>The Live Drawing Project can run online or offline.</>,
-    <>The Live Drawing Project peut fonctionner via internet ou hors ligne.</>
+    <>The Live Drawing Project can run online and also offline.</>,
+    <>The Live Drawing Project peut fonctionner via internet mais aussi hors ligne.</>
   ),
   StringEnFr('moderationTitle', 'Moderation', 'Modération'),
   StringEnFr(
