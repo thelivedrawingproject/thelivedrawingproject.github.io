@@ -14,7 +14,7 @@ image: '3.jpg'
 
 #### Description
 
-For Culture Night, an annual Irish event, we videoprojected on the National Gallery of Dublin and at the Irish Cultural Center in Paris simultaneously. Participants were able to see their drawings on both sides, creating exchanges between France and Ireland.
+For Culture Night, an annual Irish event, we videoprojected on the National Gallery of Dublin and at the Irish Cultural Center in Paris simultaneously. Participants were able to see their drawings on both sides, creating exchanges between France and Ireland. The drawings origin countries were displayed on the projection.
 
 During the event, 8 illustrators used our performance platform to draw on the walls from their home. Their drawings appeared in real time, stroke by stroke, in Dublin and in Paris.
 

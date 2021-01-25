@@ -236,6 +236,23 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
+        <div className={'ResponsiveContainer'}>
+          <div className={'Inside'}>
+            <div className="ShowcasePart">
+              <div className={'Text Centered'}>
+                <h2 style={{ color: 'rgb(40,40,40)' }}>
+                  {LOCAL.covidProofTitle}
+                </h2>
+                <p>{LOCAL.covidProofDescription}</p>
+              </div>
+              <div className={'ImageContainer'}>
+                <Img fluid={data.imageRemote.childImageSharp.fluid} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div className={'ResponsiveContainer DrawingCountBackground'}>
           <div className={'Inside'}>
             <div className="ShowcasePart DrawingCountPart Column">
@@ -256,24 +273,6 @@ export default function Index({ data, pageContext: { locale }, location }) {
             </div>
           </div>
         </div>
-
-        <div className={'ResponsiveContainer'}>
-          <div className={'Inside'}>
-            <div className="ShowcasePart">
-              <div className={'Text Centered'}>
-                <h2 style={{ color: 'rgb(40,40,40)' }}>
-                  {LOCAL.covidProofTitle}
-                </h2>
-                <p>{LOCAL.covidProofDescription}</p>
-              </div>
-              <div className={'ImageContainer'}>
-                <Img fluid={data.imageRemote.childImageSharp.fluid} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-
 
 
 

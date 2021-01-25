@@ -12,7 +12,7 @@ image: 'a.jpg'
 
 ![Images of the projection facade](cph.jpg)
 
-From our offices in France, we remotely controlled a monumental projection on the French Embassy of Danemark monumental facade. Participants were asked to draw on various thematics like climate Change, biodiversity and denmark culture.
+From our offices in France, we remotely controlled a monumental projection on the French Embassy of Danemark monumental facade. Participants were asked to draw on various thematics like climate change, biodiversity and denmark culture.
 
 ### Partners
 

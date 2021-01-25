@@ -3,16 +3,16 @@ module.exports = {
     siteName: `The Live Drawing Project`,
     title: `The Live Drawing Project`,
     author: 'The Live Drawing Project',
-    authorMail: 'maxime.touroute@gmail.com',
+    authorMail: 'livedrawingproject@pm.me',
     titleTemplate: '%s · The Live Drawing Project',
     description:
-      'Draw with us! Collaborative Drawing Videoprojections all around the world · Monumental Videomappings, Performances and Workshops',
-    siteUrl: 'https://thelivedrawingproject.com', // for robots plugin
+     'Draw with us ! We make interactive drawing projections where everyone can draw · Videoprojections, Performances, Workshops and more · All around the world · On location or remotely',
+        siteUrl: 'https://thelivedrawingproject.com', // for robots plugin
     url: 'https://thelivedrawingproject.com', // No trailing slash allowed!
     favicon: '/favicon.ico',
     thumbImage: '/favicon.ico', // Path to your image you placed in the 'res' folder
     keywords:
-      'fresque, videoprojection, oeuvre participative, projection, videomapping, participatif, art numérique, interactif, interactive projection, live drawing, drawing, digital arts, the live drawing project, collaborative drawing, art, interactive, installation, festival', // separated by comas
+      'videoprojection, projection, videomapping, oeuvre participative, participatif, interactif, interactive projection, dessin, dessin participatif, live drawing, drawing, collaborative drawing, the live drawing project, light festival, fête des lumières, art numérique, digital arts', // separated by comas
 
     /* to hide the icon, put an empty string instead of a link */
     socialLinks: {

@@ -43,8 +43,8 @@ export const indexPageStrings = stringBuilderEnFr([
   ),
   StringEnFr(
     'drawingCountSubtext',
-    <>We receive thousands of drawings at each event. More than 40,000 participants of all ages have already drawn with us.</>,
-    <>Nous recevons à chaque événement des milliers de dessins. Plus de 40,000 participants de tous les âges ont déjà dessiné avec nous.</>
+    <>We receive thousands of drawings at each event. More than 50,000 participants of all ages have already drawn with us.</>,
+    <>Nous recevons à chaque événement des milliers de dessins. Plus de 50,000 participants de tous les âges ont déjà dessiné avec nous.</>
   ),
   StringEnFr(
     'announcemenSubtitle',
@@ -82,7 +82,7 @@ export const indexPageStrings = stringBuilderEnFr([
 
     <>Interactive Drawing Projections.</>,
 
-    <>Vidéoprojections participatives de dessin .</>
+    <>Vidéoprojections participatives de dessin.</>
   ),
 
   StringEnFr(
@@ -211,13 +211,13 @@ export const notFoundPage = {
 export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'useCasesTitle',
-    'Our offers ',
-    'Nos offres'
+    'What we do',
+    'Ce que nous faisons'
   ),
   StringEnFr(
     'useCasesSubtitle',
-    `Let's make your audience draw!`,
-    `Faisons dessiner votre public !`
+    `Another idea? Let's talk about it!`,
+    `Une autre idée ? Parlons-en !`
   ),
 
   StringEnFr(
@@ -228,6 +228,16 @@ export const bookingPageStrings = stringBuilderEnFr([
         <br />
         Festivals
       </>,
+       <>
+       Art
+       <br />
+       Exhibitions
+     </>,
+           <>
+           Drawing
+           <br />
+           Performances
+         </>,
             <>
             Architectural
             <br />
@@ -254,14 +264,9 @@ export const bookingPageStrings = stringBuilderEnFr([
         Thinking
       </>,
       <>
-      Drawing
-      <br />
-      Performances
-    </>,
-      <>
-        As a
+        Rental
         <br />
-        Service
+        Offers
       </>,
     ],
     [
@@ -270,15 +275,25 @@ export const bookingPageStrings = stringBuilderEnFr([
         <br />
         Lumières
       </>,
+       <>
+       Expositions
+       <br />
+       Artistiques
+     </>,
+           <>
+           Performances
+           <br />
+           de dessin
+         </>,
             <>
             Mapping
             <br />
-            architectural
+            Architectural
           </>,
       <>
         Installations
         <br />
-        permanentes
+        Permanentes
       </>,
       <>
         Ateliers
@@ -295,33 +310,28 @@ export const bookingPageStrings = stringBuilderEnFr([
         <br />
         Collective
       </>,
+
       <>
-      Performances
-      <br />
-      de dessin
-    </>,
-      <>
-        Accès
+        Offres 
         <br />
-        Autonome
+        en location
       </>,
 
     ]
   ),
 
   StringEnFr('features', 'Features', 'Fonctionnalités'),
-  StringEnFr('customisableTitle', '100% Customisable', '100% Personnalisable'),
+  StringEnFr('customisableTitle', 'Tailor-made', 'Sur Mesure'),
   StringEnFr(
     'customisableText',
     <>
       From the physical installation to the visual style of the artpiece,
-      everything can be customised prior to the event to meet your needs.
+      we design together the best installation to engage your audience.
       <br />
-      <strong>We design custom experiences for every event we make.</strong>
+      <strong>We create custom experiences for every event we make.</strong>
     </>,
     <>
-      De l'installation physique au style visuel de l'oeuvre collaborative, tout
-      peut être personnalisé en amont pour répondre à vos besoins.
+      De l'installation physique au style visuel de l'oeuvre collaborative, nous concevons ensemble la meilleure installation pour engager votre audience.
       <br />
       <strong>
         Nous créons des expériences personnalisées pour chacun de nos
@@ -330,6 +340,18 @@ export const bookingPageStrings = stringBuilderEnFr([
     </>
   ),
 
+  StringEnFr('ourValues', 'Our Values', 'Nos Valeurs'),
+  StringEnFr('inclusiveValueTitle', 'Inclusive for all audiences', 'Inclure tous les publics'),
+  StringEnFr('inclusiveValueText', 'By designing installations in which participating is easy and accessible.', 'En concevant des installations où la participation est simple, accessible à tous.'),
+    StringEnFr('unlockValueTitle', 'Unlock talents', 'Libérer les talents'),
+    StringEnFr('unlockValueText', 'With an intuitive drawing interface where everyone takes pleasure to draw whatever the skills.', 'Avec une interface de dessin intuitive où chacun prend plaisir à dessiner, quel que soit son niveau.'),
+    StringEnFr('connectValueTitle', 'Connect people', 'Créer du lien'),
+    StringEnFr('connectValueText', `With a collective canvas where everyone react to others' drawings, creating surprise and the desire to surprise others.`,
+    `Avec une fresque collective où chacun réagit aux dessins des autres, créant la surprise et l'envie de surprendre les autres.`),
+    StringEnFr('tellValueTitle', 'Tell stories', 'Raconter des histoires'),
+    StringEnFr('tellValueText', 'By drawing on engaging, fun and meaningful thematics, questioning the world we live in.', 'En dessinant sur des thématiques engageantes, amusantes et riches de sens, questionnant notre monde.'),
+    StringEnFr('magicValueTitle', 'Create magical moments', 'Emerveiller'),
+    StringEnFr('magicValueText','With real-time interactions, compositions to make each drawing stand out, and professional illustrators performing alongside the audience.','Avec une interaction temps-réel, des compositions qui subliment chaque dessin, et la participation de dessinateurs professionnels.'),
   StringEnFr(
     'usersTitle',
     'Up to 1000+ participants at the same time',
@@ -360,7 +382,7 @@ export const bookingPageStrings = stringBuilderEnFr([
       between locations letting participants exhange through drawings.
     </>,
     <>
-      La vidéoprojection peut avoir lieu{' '}
+      La vidéoprojection peut être{' '}
       <strong>dans plusieurs lieux simultanément</strong>.<br /> Les dessins
       voyagent entre les lieux, permettant aux participants d'échanger par
       l'intermédiaire des dessins.
@@ -383,8 +405,7 @@ export const bookingPageStrings = stringBuilderEnFr([
       <br />
       <em>Lockdown?</em>
       <br />
-      We can together <strong>decentralise</strong> the videoprojection accross
-      your community. <Link to="/stayhome">See our lockdown example</Link>
+      Invite your community to <strong>videoproject from their window.</strong> <Link to="/stayhome">See our lockdown example</Link>
       <br />
     </>,
     <>
@@ -401,9 +422,8 @@ export const bookingPageStrings = stringBuilderEnFr([
       <br />
       <em>Confinement ?</em>
       <br />
-      Faisons ensemble une <strong>vidéoprojection décentralisée</strong> avec
-      votre communauté.{' '}
-      <Link to="/fr/stayhome">Voir notre événement du confinement</Link>
+      Invitez votre communauté à <strong>projeter depuis chez eux.</strong> {' '}
+      <Link to="/fr/stayhome">Voir notre événement du dernier confinement</Link>
       <br />
     </>
   ),
@@ -416,7 +436,7 @@ export const bookingPageStrings = stringBuilderEnFr([
       the start.
       <br />
       No need to install a dedicated app. It  works seamlessly<strong>
-     on every phone 
+     {' '}on every phone{' '}
       </strong>
       through the web browser.
     </>,
@@ -467,13 +487,15 @@ export const bookingPageStrings = stringBuilderEnFr([
     'bookingSubtext',
     <>
       We are a team of scenographers, engineers and artists.
-      <br /> We're developping tools to make people{' '}
-      <strong>draw together</strong>.
+      <br /> We're developping <strong>interactive</strong> installations with the audience at the core.
+      <br /> <br/> <br/>
+      Let's talk about your project!
     </>,
     <>
       Nous sommes une équipe de scénographes, ingénieurs et artistes.
-      <br /> Nous développons des outils pour <strong>dessiner ensemble</strong>
-      .
+      <br /> Nous développons des installations <strong>participatives</strong> où le public est au centre.
+      <br /> <br/> <br/>
+      Parlons ensemble de votre projet !
     </>
   ),
 

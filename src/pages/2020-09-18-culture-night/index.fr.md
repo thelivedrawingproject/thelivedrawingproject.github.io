@@ -14,7 +14,7 @@ image: '3.jpg'
 
 #### Description
 
-Pour Culture Night, un événement irlandais annuel, nous avons vidéoprojeté sur la facade de la National Gallery de Dublin et au Centre Culturel Irlandais à Paris simultanément. Les participants ont pu voir leur dessins apparaitre dans chaque pays, créant des échanges entre l'Irlande et la France.
+Pour Culture Night, un événement irlandais annuel, nous avons vidéoprojeté sur la facade de la National Gallery de Dublin et au Centre Culturel Irlandais à Paris simultanément. Les participants ont pu voir leur dessins apparaitre dans chaque pays, créant des échanges entre l'Irlande et la France. L'origine des dessins apparaissait sur la vidéoprojection.
 
 Pendant l'événement, 8 dessinateurs professionnels ont utilisé notre plateforme de performance pour dessiner sur les murs depuis chez eux. Leurs dessins sont apparus en temps réel, trait par trait, à Dublin et à Paris.
 
