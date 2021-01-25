@@ -4,7 +4,7 @@ export const NavbarData =
     "links": [
       {"path": "/", "name": "HOME"},
       {"path": "/gallery", "name": "GALLERY"},
-      {"path": "/about", "name": "ABOUT"},
+      {"path": "/booking", "name": "BOOKING"},
     ]
   },
 
@@ -12,7 +12,7 @@ export const NavbarData =
     "links": [
       {"path": "/fr", "name": "ACCUEIL"},
       {"path": "/fr/gallery", "name": "GALERIE"},
-      {"path": "/fr/about", "name": "A PROPOS"},
+      {"path": "/fr/booking", "name": "RESERVER"},
     ]
   }
 
@@ -24,7 +24,7 @@ export const FooterLinks =
     "links": [
       {"path": "/", "name": "HOME"},
       {"path": "/gallery", "name": "GALLERY"},
-      {"path": "/about", "name": "ABOUT"},
+      {"path": "/booking", "name": "BOOKING"},
       {"path": "/jobs", "name": "JOBS"},
     ]
   },
@@ -33,7 +33,7 @@ export const FooterLinks =
     "links": [
       {"path": "/fr", "name": "ACCUEIL"},
       {"path": "/fr/gallery", "name": "GALERIE"},
-      {"path": "/fr/about", "name": "A PROPOS"},
+      {"path": "/fr/booking", "name": "RESERVER"},
       {"path": "/fr/jobs", "name": "JOBS"},
     ]
   }

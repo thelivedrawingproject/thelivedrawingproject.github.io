@@ -164,7 +164,7 @@ Our first videoprojection at the _Malting Pot_ pub. Lyon, France, 2018
 
 ## Some drawings from the audience
 
-During our events, we gather thousands of drawings. We're closely reaching 100,000 drawings in our database. Here's a selection of a few drawings made by people between 4 and 90 years old.
+During our events, we gather thousands of drawings. We have more than 200,000 drawings in our gallery. Here's a selection of a few drawings made by people between 4 and 90 years old.
 
 <photo-grid>
 <img src="drawings/1.jpg"/>

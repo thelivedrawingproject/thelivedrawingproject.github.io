@@ -621,6 +621,7 @@ $darkColor: black;
       background-size: contain;
       opacity: 0.7;
       filter: grayscale(100%);
+
       @include basicTransition();
       &:hover {
         @include basicTransition();
@@ -952,46 +953,13 @@ $darkColor: black;
   a {
     text-align: center;
     margin: 1rem;
-    margin-top: 4rem;
+    // margin-top: 4rem;
     @include themedTagA();
   }
 }
 
 .homePosts {
   margin-top: 4rem;
-
-  button {
-    align-self: center;
-    font-size: 1.5em;
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-    $underlineColor: $accentColor;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    background-color: $modernGreen;
-    color: white;
-    @include basicTransition();
-    &:hover {
-      outline: 0;
-      @include basicTransition();
-      cursor: pointer;
-      background-color: $modernGreenAccent;
-      // background-color: $accentLight;
-    }
-
-    &:visited {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    &:active,
-    &:focus {
-      outline: 0;
-      -moz-outline-style: none;
-    }
-  }
 
   .postGrid {
     margin: auto;
@@ -1108,6 +1076,80 @@ $darkColor: black;
 
     .postContent {
       padding: 1em;
+    }
+  }
+}
+
+
+.greenButton {
+  align-self: center;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  $underlineColor: $accentColor;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  background-color: $modernGreen;
+  color: white;
+  @include basicTransition();
+  &:hover {
+    outline: 0;
+    @include basicTransition();
+    cursor: pointer;
+    background-color: $modernGreenAccent;
+    // background-color: $accentLight;
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:active,
+  &:focus {
+    outline: 0;
+    -moz-outline-style: none;
+  }
+}
+
+.greenLink {
+  font-size: 1.5rem;
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+
+  a {
+    align-self: center;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    $underlineColor: $accentColor;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    background-color: $modernGreen;
+    color: white;
+    @include basicTransition();
+    &:hover {
+      outline: 0;
+      @include basicTransition();
+      cursor: pointer;
+      background-color: $modernGreenAccent;
+      // background-color: $accentLight;
+    }
+  
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    &:active,
+    &:focus {
+      outline: 0;
+      -moz-outline-style: none;
     }
   }
 }

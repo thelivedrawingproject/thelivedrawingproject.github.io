@@ -166,7 +166,7 @@ Notre première exposition au bar _Le Malting Pot_ Lyon, France, 2018.
 
 ## Quelques dessins du public
 
-Pendant nos évenements, nous récupérons des milliers de dessins. Nous avons plus de 100 000 dessins dans notre base de données. Voici une selection de quelques dessins faits par des personnes du public entre 4 et 90 ans.
+Pendant nos évenements, nous récupérons des milliers de dessins. Nous avons plus de 200,000 dessins dans notre galerie. Voici une selection de quelques dessins faits par des personnes du public entre 4 et 90 ans.
 
 <photo-grid>
 <img src="drawings/1.jpg"/>

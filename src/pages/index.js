@@ -8,6 +8,9 @@ import { indexPageStrings } from '../locales/strings'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 import BackgroundSlider from 'gatsby-image-background-slider'
 import { SvgSlideshow } from '../components/svgSlideshow';
+import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
+import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
+
 const numberOfEventsToShow = 6
 const icon = {
   hidden: {
@@ -219,22 +222,30 @@ export default function Index({ data, pageContext: { locale }, location }) {
               <div className={'PhotogridContainer'}>
                 <PhotoGrid
                   gatsbyImages={[
-                    data.gridA.childImageSharp.fluid.src,
-                    data.gridB.childImageSharp.fluid.src,
-                    data.gridC.childImageSharp.fluid.src,
-                    data.gridD.childImageSharp.fluid.src,
-                    data.gridE.childImageSharp.fluid.src,
-                    data.gridF.childImageSharp.fluid.src,
                     data.gridG.childImageSharp.fluid.src,
+                    data.gridB.childImageSharp.fluid.src,
+                    data.gridE.childImageSharp.fluid.src, 
+                    data.gridC.childImageSharp.fluid.src,
+                    data.gridA.childImageSharp.fluid.src,
+                    data.gridF.childImageSharp.fluid.src,
+                    data.gridD.childImageSharp.fluid.src,
                     data.gridH.childImageSharp.fluid.src,
                     data.gridI.childImageSharp.fluid.src,
                   ]}
                   className={'PaddingForNormalSize'}
                 />
               </div>
+              <div className="moreProjects">
+              <Link to={'/gallery'}>{LOCAL.goToGallery}</Link>
             </div>
+            </div>
+
+          
+
           </div>
+
         </div>
+
 
         <div className={'ResponsiveContainer'}>
           <div className={'Inside'}>
@@ -251,6 +262,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
             </div>
           </div>
         </div>
+
 
 
         <div className={'ResponsiveContainer DrawingCountBackground'}>
@@ -276,6 +288,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
 
 
 
+
         <h2 className={'Punchline'}>{LOCAL.events}</h2>
         <div className="home homePosts">
           <div className="postGrid">
@@ -295,6 +308,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           >
             <button
               id="showAllEventsButton"
+              className={'greenButton'}
               onClick={() => {
                 let t = document.getElementById('oldEvents')
                 t.style.display = ''
@@ -315,6 +329,12 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
       </div>
+      <div className="home homePosts">
+            <div className="moreProjects">
+              <Link to={'/booking'}>{LOCAL.goToAbout}</Link>
+            </div>
+          </div>
+
     </MainLayout>
   )
 }

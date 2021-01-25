@@ -77,6 +77,8 @@ export const indexPageStrings = stringBuilderEnFr([
     'The Live Drawing Project - Videoprojections participatives de dessin.'
   ),
 
+  StringEnFr('goToAbout', 'Book a Live Drawing event', 'Organiser un événement Live Drawing' ),
+  StringEnFr('goToGallery', 'See more pictures', `Voir plus d'images` ),
   StringEnFr(
     'mainDescription',
 
@@ -105,23 +107,22 @@ export const indexPageStrings = stringBuilderEnFr([
 
   StringEnFr(
     'joinCollabTitle',
-    'Join a collaborative artwork',
-    'Rejoins une oeuvre collaborative'
+    'Your drawing is videoprojected',
+    `Ton dessin apparait vidéoprojeté`
   ),
   StringEnFr(
     'joinCollabDescription',
     <>
-      Your drawing appears{' '}
-      <strong>instantly</strong> on the videoprojection. The collaborative
-      canvas keeps evolving all the time. You can draw as much as you want.{' '}
+      Join a{' '}
+      <strong>a large collaborative canvas</strong> with everyone's drawings. The
+      canvas keeps evolving all the time. Draw as much as you want.{' '}
       <strong>Express yourself!</strong>
     </>,
 
     <>
-      Ton dessin apparait{' '}
-      <strong>instantanément</strong> sur la vidéoprojection. L'oeuvre
-      collaborative évolue en permanence. Dessine autant que tu veux.{' '}
-      <strong>Exprime toi !</strong>
+      Rejoins une <strong>grande fresque participative</strong> avec les dessins des autres participants.{' '}
+       La fresque évolue en permanence Dessine autant que tu veux.{' '}
+      <strong>Exprime-toi !</strong>
     </>
   ),
 
@@ -499,8 +500,8 @@ export const bookingPageStrings = stringBuilderEnFr([
     </>
   ),
 
-  StringEnFr('reachUs', 'Reach Us', 'Contactez Nous'),
-  StringEnFr('bookingContactUs', 'Contact Us', 'Nous contacter'),
+  StringEnFr('reachUs', 'Reach us', 'Nous contacter'),
+  StringEnFr('bookingContactUs', 'Contact us', 'Nous contacter'),
   StringEnFr(
     'downloadBrochure',
     'Download brochure (English)',

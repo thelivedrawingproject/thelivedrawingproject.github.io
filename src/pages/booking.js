@@ -14,12 +14,12 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
 
   return (
     <MainLayout language={locale} location={{ ...location }}>
-      <MetaTags title={'About'} />
+      <MetaTags title={'BOOKING'} />
 
       <div className={'ResponsiveContainer'}>
         <div className={'Inside'}>
           <div className="ShowcasePart">
-            <h1 style={{ opacity: 0 }}>About</h1>
+            <h1 style={{ opacity: 0 }}>Booking</h1>
             <h2 className="Quote">{LOCAL.bookingPunchline}</h2>
             <div className={'Text Centered'}>
               <h2 style={{ color: 'white' }}>
