@@ -488,7 +488,7 @@ export const bookingPageStrings = stringBuilderEnFr([
     'bookingSubtext',
     <>
       We are a team of scenographers, engineers and artists.
-      <br /> We're developping <strong>interactive</strong> installations with the audience at the core.
+      <br /> We're developing <strong>interactive</strong> installations with the audience at the core.
       <br /> <br/> <br/>
       Let's talk about your project!
     </>,
