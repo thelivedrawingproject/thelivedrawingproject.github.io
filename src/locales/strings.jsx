@@ -38,13 +38,19 @@ export const indexPageStrings = stringBuilderEnFr([
   ),
   StringEnFr(
     'drawingCountTitle',
-    "245,000 drawings from all over the world",
+    '245,000 drawings from all over the world',
     '245,000 dessins reçus du monde entier'
   ),
   StringEnFr(
     'drawingCountSubtext',
-    <>We receive thousands of drawings at each event. More than 50,000 participants of all ages have already drawn with us.</>,
-    <>Nous recevons à chaque événement des milliers de dessins. Plus de 50,000 participants de tous les âges ont déjà dessiné avec nous.</>
+    <>
+      We receive thousands of drawings at each event. More than 50,000
+      participants of all ages have already drawn with us.
+    </>,
+    <>
+      Nous recevons à chaque événement des milliers de dessins. Plus de 50,000
+      participants de tous les âges ont déjà dessiné avec nous.
+    </>
   ),
   StringEnFr(
     'announcemenSubtitle',
@@ -77,8 +83,12 @@ export const indexPageStrings = stringBuilderEnFr([
     'The Live Drawing Project - Videoprojections participatives de dessin.'
   ),
 
-  StringEnFr('goToAbout', 'Book a Live Drawing event', 'Organiser un événement Live Drawing' ),
-  StringEnFr('goToGallery', 'See more pictures', `Voir plus d'images` ),
+  StringEnFr(
+    'goToAbout',
+    'Book a Live Drawing event',
+    'Organiser un événement Live Drawing'
+  ),
+  StringEnFr('goToGallery', 'See more pictures', `Voir plus d'images`),
   StringEnFr(
     'mainDescription',
 
@@ -97,11 +107,13 @@ export const indexPageStrings = stringBuilderEnFr([
     'yourPhoneYourCanvasDescription',
 
     <>
-      Open our website and start drawing with your fingers.<br/> Everyone draw at the same time!
+      Open our website and start drawing with your fingers.
+      <br /> Everyone draw at the same time!
     </>,
 
     <>
-      Ouvre notre site web et dessine avec les doigts. <br/>Tout le monde dessine en même temps !
+      Ouvre notre site web et dessine avec les doigts. <br />
+      Tout le monde dessine en même temps !
     </>
   ),
 
@@ -113,16 +125,15 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr(
     'joinCollabDescription',
     <>
-      Join a{' '}
-      <strong>a large collaborative canvas</strong> with everyone's drawings. The
-      canvas keeps evolving all the time. Draw as much as you want.{' '}
-      <strong>Express yourself!</strong>
+      Join a <strong>a large collaborative canvas</strong> with everyone's
+      drawings. The canvas keeps evolving all the time. Draw as much as you
+      want. <strong>Express yourself!</strong>
     </>,
 
     <>
-      Rejoins une <strong>grande fresque participative</strong> avec les dessins des autres participants.{' '}
-       La fresque évolue en permanence Dessine autant que tu veux.{' '}
-      <strong>Exprime-toi !</strong>
+      Rejoins une <strong>grande fresque participative</strong> avec les dessins
+      des autres participants. La fresque évolue en permanence. Dessine autant
+      que tu veux. <strong>Exprime-toi !</strong>
     </>
   ),
 
@@ -210,11 +221,7 @@ export const notFoundPage = {
 }
 
 export const bookingPageStrings = stringBuilderEnFr([
-  StringEnFr(
-    'useCasesTitle',
-    'What we do',
-    'Ce que nous faisons'
-  ),
+  StringEnFr('useCasesTitle', 'What we do', 'Ce que nous faisons'),
   StringEnFr(
     'useCasesSubtitle',
     `Another idea? Let's talk about it!`,
@@ -229,21 +236,21 @@ export const bookingPageStrings = stringBuilderEnFr([
         <br />
         Festivals
       </>,
-       <>
-       Art
-       <br />
-       Exhibitions
-     </>,
-           <>
-           Drawing
-           <br />
-           Performances
-         </>,
-            <>
-            Architectural
-            <br />
-            Mappings
-          </>,
+      <>
+        Art
+        <br />
+        Exhibitions
+      </>,
+      <>
+        Drawing
+        <br />
+        Performances
+      </>,
+      <>
+        Architectural
+        <br />
+        Mappings
+      </>,
       <>
         Permanent
         <br />
@@ -254,11 +261,11 @@ export const bookingPageStrings = stringBuilderEnFr([
         <br />
         Workshops
       </>,
-            <>
-            Mapping
-            <br />
-            Workshops 
-          </>,
+      <>
+        Mapping
+        <br />
+        Workshops
+      </>,
       <>
         Collective
         <br />
@@ -276,21 +283,21 @@ export const bookingPageStrings = stringBuilderEnFr([
         <br />
         Lumières
       </>,
-       <>
-       Expositions
-       <br />
-       Artistiques
-     </>,
-           <>
-           Performances
-           <br />
-           de dessin
-         </>,
-            <>
-            Mapping
-            <br />
-            Architectural
-          </>,
+      <>
+        Expositions
+        <br />
+        Artistiques
+      </>,
+      <>
+        Performances
+        <br />
+        de dessin
+      </>,
+      <>
+        Mapping
+        <br />
+        Architectural
+      </>,
       <>
         Installations
         <br />
@@ -299,13 +306,13 @@ export const bookingPageStrings = stringBuilderEnFr([
       <>
         Ateliers
         <br />
-        de Dessin 
+        de Dessin
       </>,
-            <>
-            Ateliers
-            <br />
-            Videomapping 
-          </>,
+      <>
+        Ateliers
+        <br />
+        Videomapping
+      </>,
       <>
         Intelligence
         <br />
@@ -313,11 +320,10 @@ export const bookingPageStrings = stringBuilderEnFr([
       </>,
 
       <>
-        Offres 
+        Offres
         <br />
         en location
       </>,
-
     ]
   ),
 
@@ -326,13 +332,14 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'customisableText',
     <>
-      From the physical installation to the visual style of the artpiece,
-      we design together the best installation to engage your audience.
+      From the physical installation to the visual style of the artpiece, we
+      design together the best installation to engage your audience.
       <br />
       <strong>We create custom experiences for every event we make.</strong>
     </>,
     <>
-      De l'installation physique au style visuel de l'oeuvre collaborative, nous concevons ensemble la meilleure installation pour engager votre audience.
+      De l'installation physique au style visuel de l'oeuvre collaborative, nous
+      concevons ensemble la meilleure installation pour engager votre audience.
       <br />
       <strong>
         Nous créons des expériences personnalisées pour chacun de nos
@@ -342,17 +349,40 @@ export const bookingPageStrings = stringBuilderEnFr([
   ),
 
   StringEnFr('ourValues', 'Our Values', 'Nos Valeurs'),
-  StringEnFr('inclusiveValueTitle', 'Inclusive for all audiences', 'Inclure tous les publics'),
-  StringEnFr('inclusiveValueText', 'By designing installations in which participating is easy and accessible.', 'En concevant des installations où la participation est simple, accessible à tous.'),
-    StringEnFr('unlockValueTitle', 'Unlock talents', 'Libérer les talents'),
-    StringEnFr('unlockValueText', 'With an intuitive drawing interface where everyone takes pleasure to draw whatever the skills.', 'Avec une interface de dessin intuitive où chacun prend plaisir à dessiner, quel que soit son niveau.'),
-    StringEnFr('connectValueTitle', 'Connect people', 'Créer du lien'),
-    StringEnFr('connectValueText', `With a collective canvas where everyone react to others' drawings, creating surprise and the desire to surprise others.`,
-    `Avec une fresque collective où chacun réagit aux dessins des autres, créant la surprise et l'envie de surprendre les autres.`),
-    StringEnFr('tellValueTitle', 'Tell stories', 'Raconter des histoires'),
-    StringEnFr('tellValueText', 'By drawing on engaging, fun and meaningful thematics, questioning the world we live in.', 'En dessinant sur des thématiques engageantes, amusantes et riches de sens, questionnant notre monde.'),
-    StringEnFr('magicValueTitle', 'Create magical moments', 'Emerveiller'),
-    StringEnFr('magicValueText','With real-time interactions, compositions to make each drawing stand out, and professional illustrators performing alongside the audience.','Avec une interaction temps-réel, des compositions qui subliment chaque dessin, et la participation de dessinateurs professionnels.'),
+  StringEnFr(
+    'inclusiveValueTitle',
+    'Inclusive for all audiences',
+    'Inclure tous les publics'
+  ),
+  StringEnFr(
+    'inclusiveValueText',
+    'By designing installations in which participating is easy and accessible.',
+    'En concevant des installations où la participation est simple, accessible à tous.'
+  ),
+  StringEnFr('unlockValueTitle', 'Unlock talents', 'Libérer les talents'),
+  StringEnFr(
+    'unlockValueText',
+    'With an intuitive drawing interface where everyone takes pleasure to draw whatever the skills.',
+    'Avec une interface de dessin intuitive où chacun prend plaisir à dessiner, quel que soit son niveau.'
+  ),
+  StringEnFr('connectValueTitle', 'Connect people', 'Créer du lien'),
+  StringEnFr(
+    'connectValueText',
+    `With a collective canvas where everyone react to others' drawings, creating surprise and the desire to surprise others.`,
+    `Avec une fresque collective où chacun réagit aux dessins des autres, créant la surprise et l'envie de surprendre les autres.`
+  ),
+  StringEnFr('tellValueTitle', 'Tell stories', 'Raconter des histoires'),
+  StringEnFr(
+    'tellValueText',
+    'By drawing on engaging, fun and meaningful thematics, questioning the world we live in.',
+    'En dessinant sur des thématiques engageantes, amusantes et riches de sens, questionnant notre monde.'
+  ),
+  StringEnFr('magicValueTitle', 'Create magical moments', 'Emerveiller'),
+  StringEnFr(
+    'magicValueText',
+    'With real-time interactions, compositions to make each drawing stand out, and professional illustrators performing alongside the audience.',
+    'Avec une interaction temps-réel, des compositions qui subliment chaque dessin, et la participation de dessinateurs professionnels.'
+  ),
   StringEnFr(
     'usersTitle',
     'Up to 1000+ participants at the same time',
@@ -367,8 +397,8 @@ export const bookingPageStrings = stringBuilderEnFr([
     </>,
     <>
       Avec notre <strong>technologie temps-réel dernier cri</strong> nous
-      pouvons gérer des milliers de participants en même temps, pour que tout
-      le monde puisse participer sans attendre.
+      pouvons gérer des milliers de participants en même temps, pour que tout le
+      monde puisse participer sans attendre.
     </>
   ),
 
@@ -406,7 +436,10 @@ export const bookingPageStrings = stringBuilderEnFr([
       <br />
       <em>Lockdown?</em>
       <br />
-      Invite your community to <strong>videoproject from their window.</strong> <Link to="/stayhome">See our lockdown example</Link>
+      Invite your community to <strong>
+        videoproject from their window.
+      </strong>{' '}
+      <Link to="/stayhome">See our lockdown example</Link>
       <br />
     </>,
     <>
@@ -423,7 +456,7 @@ export const bookingPageStrings = stringBuilderEnFr([
       <br />
       <em>Confinement ?</em>
       <br />
-      Invitez votre communauté à <strong>projeter depuis chez eux.</strong> {' '}
+      Invitez votre communauté à <strong>projeter depuis chez eux.</strong>{' '}
       <Link to="/fr/stayhome">Voir notre événement du dernier confinement</Link>
       <br />
     </>
@@ -436,16 +469,15 @@ export const bookingPageStrings = stringBuilderEnFr([
       Our drawing tool has been designed with <strong>ease of use</strong> from
       the start.
       <br />
-      No need to install a dedicated app. It  works seamlessly<strong>
-     {' '}on every phone{' '}
-      </strong>
+      No need to install a dedicated app. It works seamlessly
+      <strong> on every phone </strong>
       through the web browser.
     </>,
     <>
       Notre outil de dessin est conçu avec <strong>la simplicité</strong> comme
       fer de lance.
       <br />
-      Pas besoin d'installer d'application. L'outil marche 
+      Pas besoin d'installer d'application. L'outil marche
       <strong> sur tous les téléphones</strong> via le navigateur internet.
     </>
   ),
@@ -457,7 +489,10 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'cellularNetworkSubtext',
     <>The Live Drawing Project can run online and also offline.</>,
-    <>The Live Drawing Project peut fonctionner via internet mais aussi hors ligne.</>
+    <>
+      The Live Drawing Project peut fonctionner via internet mais aussi hors
+      ligne.
+    </>
   ),
   StringEnFr('moderationTitle', 'Moderation', 'Modération'),
   StringEnFr(
@@ -488,14 +523,18 @@ export const bookingPageStrings = stringBuilderEnFr([
     'bookingSubtext',
     <>
       We are a team of scenographers, engineers and artists.
-      <br /> We're developing <strong>interactive</strong> installations with the audience at the core.
-      <br /> <br/> <br/>
+      <br /> We're developing <strong>interactive</strong> installations with
+      the audience at the core.
+      <br /> <br /> <br />
       Let's talk about your project!
     </>,
     <>
       Nous sommes une équipe de scénographes, ingénieurs et artistes.
-      <br /> Nous développons des installations <strong>participatives</strong> où le public est au centre.
-      <br /> <br/> <br/>
+      <br /> Nous développons des installations <strong>
+        participatives
+      </strong>{' '}
+      où le public est au centre.
+      <br /> <br /> <br />
       Parlons ensemble de votre projet !
     </>
   ),
