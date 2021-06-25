@@ -78,17 +78,18 @@ export default function Index({ data, pageContext: { locale }, location }) {
           navigate(post.frontmatter.path)
         }}
         key={post.id}
-        style={{
-          backgroundImage:
-            'url(' + post.frontmatter.image.childImageSharp.fluid.src + ')',
-        }}
+        
       >
-        <div className="insideArea">
-          <div className="textArea">
-            <span className="postTitle">{post.frontmatter.title}</span>
+        <div className={'postHead'}>
+        <span className="postTitle">{post.frontmatter.title}</span>
             <span className="postSubtitle">{post.frontmatter.subtitle} </span>
           </div>
-        </div>
+          <div className={'postPicture'} style={{
+          backgroundImage:
+            'url(' + post.frontmatter.image.childImageSharp.fluid.src + ')',
+        }}>
+
+            </div>
       </div>
     )
   }
