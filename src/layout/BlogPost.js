@@ -39,7 +39,7 @@ export default function Template({ data, location, pageContext }) {
       <MetaTags
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.frontmatter.subtitle}
-        image={post.frontmatter.image.childImageSharp.sizes.src}
+        image={post.frontmatter.image.childImageSharp.fixed.src}
         pathname={post.frontmatter.path}
         article
       />
@@ -102,9 +102,6 @@ export const pageQuery = graphql`
             fixed(width: 700) {
               # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
               ...GatsbyImageSharpFixed
-              src
-            }
-            sizes {
               src
             }
           }
