@@ -7,7 +7,7 @@ description: Atelier du Live Drawing Project dans le cadre de l'évenement La Ch
 date: '2020-01-12'
 category: event
 language: fr
-image: 'cover.jpg'
+image: 'CHRD-5.jpg'
 ---
 
 ![Cover](cover.jpg)

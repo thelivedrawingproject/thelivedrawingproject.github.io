@@ -7,7 +7,7 @@ description: Live Installations pour La Fête des Lumières de Lyon 2019
 date: "2019-12-08"
 category: event
 language: fr
-image: "cover.jpg"
+image: "b-1.jpg"
 ---
 
 

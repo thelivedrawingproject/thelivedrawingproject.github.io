@@ -7,7 +7,7 @@ description: Collaboration artistique du Live Drawing Project avec Shab, un Stre
 date: "2019-04-18"
 category: event
 language: fr
-image: "cover.jpg"
+image: "2.jpg"
 ---
 
 

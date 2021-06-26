@@ -5,7 +5,7 @@ title: Festival du Creusot
 subtitle: Installation & Atelier
 description: Installation et Workshops du Live Drawing Project pour le festival du jeu vidéo du creusot 2019, France
 date: "2019-11-10"
-category: event
+category: hidden
 language: fr
 image: "cover.jpg"
 ---

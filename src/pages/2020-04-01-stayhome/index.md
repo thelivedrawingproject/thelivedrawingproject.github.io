@@ -7,7 +7,7 @@ description: Decentralised Installation The Live Drawing Project during the 2020
 date: '2020-04-01'
 category: event
 language: en
-image: '3.jpg'
+image: '26v_5_webw.jpg'
 ---
 
 ## This event is now over. A big thank you to all the participants!

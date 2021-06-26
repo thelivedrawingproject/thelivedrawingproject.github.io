@@ -6,7 +6,7 @@ subtitle: Street Art & Workshop
 description: Workshop of the Live Drawing Project for the event "La Chute du Mur" at the resistance Museum in Lyon, France
 date: '2020-01-12'
 category: event
-image: 'cover.jpg'
+image: 'CHRD-5.jpg'
 ---
 
 ![Cover](cover.jpg)

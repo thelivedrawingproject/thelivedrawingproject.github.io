@@ -2,8 +2,8 @@
 path: /culturenight
 layout: article
 title: Culture Night
-subtitle: Installation Multi-Pays
-description: Installation à distance et Cross Country The Live Drawing Project pour Culture Night à Dublin et Paris
+subtitle: Vidéoprojection Multi-Pays
+description: Installation à distance et Cross Country The Live Drawing Project pour Culture Night à Dublin et Paris simultanément
 date: '2020-09-18'
 category: event
 language: fr
@@ -20,7 +20,7 @@ Pendant l'événement, 8 dessinateurs professionnels ont utilisé notre platefor
 
 Tout l'événement a été diffusé en direct sur les réseaux sociaux pour permettre une participation à distance.
 
-_Nous avons géré la partie irlandaise de cet événement entièrement à distance._
+_Nous avons géré la partie irlandaise de cet événement à distance._
 
 #### Partenaires
 

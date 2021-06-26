@@ -6,7 +6,7 @@ subtitle: Collaborative Artwork
 description: The Live Drawing Project installation for the Peinture Fraiche Festival 2019 in Lyon, collaborative artwork.
 date: "2019-05-03"
 category: event
-image: "cover.jpg"
+image: "b-22.jpg"
 ---
 
 

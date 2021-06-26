@@ -115,7 +115,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
             query={data}
             initDelay={0} // delay before the first transition (if left at 0, the first image will be skipped initially)
             transition={1} // transition duration between images
-            duration={8} // how long an image is shown
+            duration={6} // how long an image is shown
             style={{
               backgroundColor: '#6d8879',
             }}
@@ -310,6 +310,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
             <button
               id="showAllEventsButton"
               className={'greenButton'}
+              style={{marginTop: '2em'}}
               onClick={() => {
                 let t = document.getElementById('oldEvents')
                 t.style.display = ''

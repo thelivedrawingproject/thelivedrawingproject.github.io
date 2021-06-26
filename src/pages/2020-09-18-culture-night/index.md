@@ -2,8 +2,8 @@
 path: /culturenight
 layout: article
 title: Culture Night
-subtitle: Cross-Country Installation
-description: Cross Country and Remote Installation of The Live Drawing Project for Culture Night in Dublin and Paris
+subtitle: Cross-Country Projection Mapping
+description: Cross Country and Remote Installation of The Live Drawing Project for Culture Night in Dublin and Paris simultaneously
 date: '2020-09-18'
 category: event
 language: en
@@ -20,7 +20,7 @@ During the event, 8 illustrators used our performance platform to draw on the wa
 
 The whole event was livestreamed on social medias to let people participate from home.
 
-_We operated the Dublin part of this event entirely remotely._
+_We operated the Dublin part of this event remotely from France._
 
 #### Partners
 

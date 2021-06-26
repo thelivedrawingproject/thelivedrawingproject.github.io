@@ -7,7 +7,7 @@ description: Installation The Live Drawing Project pour l'AFterwork Mutants Disc
 date: "2019-11-28"
 category: event
 language: fr
-image: "b-13.jpg"
+image: "b-6.jpg"
 ---
 
 

@@ -7,7 +7,7 @@ description: Installation The Live Drawing Project pour le Glow Winter Festival 
 date: '2020-02-13'
 category: event
 language: fr
-image: 'web-2.jpg'
+image: 'web-12.jpg'
 ---
 
 #### Description

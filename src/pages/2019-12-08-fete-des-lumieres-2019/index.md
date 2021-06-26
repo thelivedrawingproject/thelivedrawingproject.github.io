@@ -6,7 +6,7 @@ subtitle: Live Installation
 description: Live Installations during the Light Festival of Lyon 21019
 date: "2019-12-08"
 category: event
-image: "cover.jpg"
+image: "b-1.jpg"
 ---
 
 

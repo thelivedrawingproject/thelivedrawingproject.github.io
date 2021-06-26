@@ -6,7 +6,7 @@ subtitle: Installation Live
 description: The Live Drawing Project installation for an afterwork at the Berthom Vieux Lyon
 date: "2019-11-28"
 category: event
-image: "b-13.jpg"
+image: "b-6.jpg"
 ---
 
 

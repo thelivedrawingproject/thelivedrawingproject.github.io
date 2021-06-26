@@ -6,7 +6,7 @@ subtitle: Performance
 description: Art Collaboration of the Live Drawing Project with Shab, a French street artist, at the Sitio by Superposition, Lyon, France
 date: "2019-04-18"
 category: event
-image: "cover.jpg"
+image: "2.jpg"
 ---
 
 

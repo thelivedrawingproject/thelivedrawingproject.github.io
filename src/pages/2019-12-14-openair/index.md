@@ -2,11 +2,11 @@
 path: /openair2019
 layout: article
 title: Open Air SoliBARités
-subtitle: Installation Live
+subtitle: Open Air
 description: The Live Drawing Project installation for SoliBARités Open Air
 date: "2019-12-14"
 category: event
-image: "covercrop.jpg"
+image: "b-3.jpg"
 ---
 
 

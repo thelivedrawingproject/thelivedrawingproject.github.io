@@ -7,7 +7,7 @@ description: Initiative Solidaire The Live Drawing Project pendant le confinemen
 date: '2020-04-01'
 category: event
 language: fr
-image: '3.jpg'
+image: '26v_5_webw.jpg'
 ---
 
 ## Cet événement est désormais terminé. Merci à tous les participants !

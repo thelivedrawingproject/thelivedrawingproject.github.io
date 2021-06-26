@@ -1,13 +1,13 @@
 ---
 path: /openair2019
 layout: article
-title: Open Air SoliBARités
-subtitle: Installation Live
+title: SoliBARités
+subtitle: Open Air
 description: Installation The Live Drawing Project pour l'Open Air de SoliBARités
 date: "2019-12-14"
 category: event
 language: fr
-image: "covercrop.jpg"
+image: "b-3.jpg"
 ---
 
 

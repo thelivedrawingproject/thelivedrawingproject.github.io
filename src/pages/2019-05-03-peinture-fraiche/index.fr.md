@@ -7,7 +7,7 @@ description: Installation du Live Drawing Project pour le festival Peinture Frai
 date: "2019-05-03"
 category: event
 language: fr
-image: "cover.jpg"
+image: "b-22.jpg"
 ---
 
 <iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
