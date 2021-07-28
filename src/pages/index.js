@@ -10,6 +10,7 @@ import BackgroundSlider from 'gatsby-image-background-slider'
 import { SvgSlideshow } from '../components/svgSlideshow';
 import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
+import PostGridFlat from './../bits/PostGridFlat/PostGridFlat'
 
 const numberOfEventsToShow = 6
 const icon = {
@@ -69,30 +70,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
     en: { path: '/online-mode', name: LOCAL.announcementLinkName },
     fr: { path: '/fr/online-mode', name: LOCAL.announcementLinkName },
   }
-  const postGrid = ({ node: post }) => {
-    const localesOptions = { year: 'numeric', month: 'long' }
-    return (
-      <div
-        className="post"
-        onClick={() => {
-          navigate(post.frontmatter.path)
-        }}
-        key={post.id}
-        
-      >
-        <div className={'postHead'}>
-        <span className="postTitle">{post.frontmatter.title}</span>
-            <span className="postSubtitle">{post.frontmatter.subtitle} </span>
-          </div>
-          <div className={'postPicture'} style={{
-          backgroundImage:
-            'url(' + post.frontmatter.image.childImageSharp.fluid.src + ')',
-        }}>
 
-            </div>
-      </div>
-    )
-  }
 
   /*
    <div
@@ -292,14 +270,14 @@ export default function Index({ data, pageContext: { locale }, location }) {
 
         <h2 className={'Punchline'}>{LOCAL.events}</h2>
         <div className="home homePosts">
-          <div className="postGrid">
-            {posts
+          {/* <div className="postGrid"> */}
+            <PostGridFlat posts={posts
               .filter((post) => post.node.frontmatter.title.length > 0)
               .filter((post) => post.node.frontmatter.language === locale)
-              .map((post, index) => {
-                if (index < numberOfEventsToShow) return postGrid(post)
-              })}
-          </div>
+              .filter((post, index) => {
+                return index < numberOfEventsToShow;
+              })}/>
+          {/* </div> */}
           <div
             style={{
               display: 'flex',
