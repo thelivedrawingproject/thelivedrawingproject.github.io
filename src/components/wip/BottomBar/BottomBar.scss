@@ -1,15 +1,13 @@
 @import '../../../bits/styles/styles';
 
-
 .BottomBar {
-
   background-color: #383838;
   color: $modernGreenDarkMode;
   font-weight: 600;
   text-align: left;
   align-items: center;
   padding: 1rem;
-  margin:0;
+  margin: 0;
   padding-left: 0;
   padding-right: 0;
 
@@ -18,7 +16,6 @@
   justify-content: space-between;
 
   .above {
-
     font-size: 1em;
     font-weight: 400;
   }
@@ -28,13 +25,11 @@
   }
 
   a {
-
     color: white;
     text-decoration: none;
     border: 1px solid white;
     padding: 0.5em;
   }
-
 
   a {
     margin-right: 1rem;
@@ -75,4 +70,3 @@
     animation: shadow-pulse2 1s infinite linear;
   }
 }
-

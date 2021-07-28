@@ -4,10 +4,10 @@ layout: article
 title: Festival Peinture Fraiche
 subtitle: Oeuvre collaborative
 description: Installation du Live Drawing Project pour le festival Peinture Fraiche 2019 à Lyon, oeuvre collaborative.
-date: "2019-05-03"
+date: '2019-05-03'
 category: event
 language: fr
-image: "b-22.jpg"
+image: 'b-22.jpg'
 ---
 
 <iframe src="https://player.vimeo.com/video/344490536" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
@@ -20,7 +20,6 @@ Nous avons exposé notre installation dans le cadre du [Festival Peinture Fraich
 
 Pendant les 10 jours d'exposition, nous avons reçu plus de 40 mille dessins de la part de milliers de participants de tous ages.
 Des Street Artistes du festival ont également utilisé nos outils pour performer entouré du public.
-  
 
 <photo-grid>
 <img src="1.jpg"/>

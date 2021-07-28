@@ -1,5 +1,4 @@
 module.exports = {
-
   defaultLanguage: 'en',
 
   supportedLanguages: {
@@ -11,7 +10,6 @@ module.exports = {
     fr: {
       urlPrefix: 'fr',
       name: 'Français',
-    }
-  }
-
-};
+    },
+  },
+}

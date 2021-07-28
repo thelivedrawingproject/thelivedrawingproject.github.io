@@ -6,8 +6,8 @@ module.exports = {
     authorMail: 'livedrawingproject@pm.me',
     titleTemplate: '%s · The Live Drawing Project',
     description:
-     'Draw with us ! We make interactive drawing projections where everyone can draw · Videoprojections, Performances, Workshops and more · All around the world · On location or remotely',
-        siteUrl: 'https://thelivedrawingproject.com', // for robots plugin
+      'Draw with us ! We make interactive drawing projections where everyone can draw · Videoprojections, Performances, Workshops and more · All around the world · On location or remotely',
+    siteUrl: 'https://thelivedrawingproject.com', // for robots plugin
     url: 'https://thelivedrawingproject.com', // No trailing slash allowed!
     favicon: '/favicon.ico',
     thumbImage: '/favicon.ico', // Path to your image you placed in the 'res' folder

@@ -14,7 +14,10 @@
     "format": "prettiegit str --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "upgrade-interactive": "npm-check --update"
+    "upgrade-interactive": "npm-check --update",
+    "pre-commit": "lint-staged",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -72,7 +75,7 @@
     "lint-staged": "^11.0.0",
     "lodash.template": "^4.4.0",
     "npm-check": "^5.9.2",
-    "prettier": "^2.3.1",
+    "prettier": "^2.3.2",
     "pretty-bytes": "^5.6.0",
     "stringify-object": "^3.3.0",
     "strip-comments": "^2.0.1",

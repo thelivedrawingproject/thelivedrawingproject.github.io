@@ -4,13 +4,11 @@ layout: article
 title: Nouvelles Passions Chevagny
 subtitle: Installation & Atelier
 description: Installation et Workshops du Live Drawing Project pour le festival Nouvelles Passions Chevagny 2019, France
-date: "2019-08-11"
+date: '2019-08-11'
 category: event
 language: fr
-image: "b-10.jpg"
+image: 'b-10.jpg'
 ---
-
-
 
 <photo-grid>
 <img src="./b-12.jpg"/>
@@ -22,7 +20,6 @@ image: "b-10.jpg"
 <img src="./cover.jpg"/>
 </photo-grid>
 
-
 #### Description
 
-Nous avons exposé notre installation dans une grange lors du festival _Nouvelles Passions_ de Chevagny. Nous avons animé un atelier de dessin pour petits la journée et pour les grands le soir. 
+Nous avons exposé notre installation dans une grange lors du festival _Nouvelles Passions_ de Chevagny. Nous avons animé un atelier de dessin pour petits la journée et pour les grands le soir.

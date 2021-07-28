@@ -16,7 +16,7 @@ export class ResponsiveNavbar extends Component {
 
   toggleOverlay() {
     console.log('click')
-    this.setState(state => ({ overlay: !state.overlay }))
+    this.setState((state) => ({ overlay: !state.overlay }))
   }
 
   iconClose() {
@@ -86,7 +86,7 @@ export class ResponsiveNavbar extends Component {
   menuItems() {
     return (
       <>
-        {this.props.links.map(link => {
+        {this.props.links.map((link) => {
           return (
             <Link key={link.name} activeClassName="active" to={link.path}>
               {link.name}

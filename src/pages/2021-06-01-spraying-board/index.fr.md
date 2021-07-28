@@ -14,11 +14,10 @@ image: '2021_1.jpg'
 
 #### Description
 
-Cette grande fresque est un hommage à la première édition de [Spraying Board](/sprayingboard) qui a eu lieu en mars 2020.  
+Cette grande fresque est un hommage à la première édition de [Spraying Board](/sprayingboard) qui a eu lieu en mars 2020.
 
-Nous avons collecté auprès des skaters les planches qu'ils ont cassées lors de leurs sessions de skate. Nous leur avons donné une seconde vie en les peignant en blanc pour composer cette grande fresque murale. Au centre, nous avons disposé 4 planches qui  donnent à voir tour à tour les œuvres exposées lors de l'édition précédente de Spraying Board.
-Chaque visiteur est invité à utiliser son téléphone pour dessiner librement sur une des planches de skate cassée de la sculpture. Pour cela, il se connecte à notre site internet et une planche lui est attribuée. Chaque trait qu'il fait sur son téléphone apparaît en temps réel sur la planche. Il peut laisser libre court à son imagination ou s'inspirer des œuvres des street artistes qui sont présentées en même temps devant lui !  
-
+Nous avons collecté auprès des skaters les planches qu'ils ont cassées lors de leurs sessions de skate. Nous leur avons donné une seconde vie en les peignant en blanc pour composer cette grande fresque murale. Au centre, nous avons disposé 4 planches qui donnent à voir tour à tour les œuvres exposées lors de l'édition précédente de Spraying Board.
+Chaque visiteur est invité à utiliser son téléphone pour dessiner librement sur une des planches de skate cassée de la sculpture. Pour cela, il se connecte à notre site internet et une planche lui est attribuée. Chaque trait qu'il fait sur son téléphone apparaît en temps réel sur la planche. Il peut laisser libre court à son imagination ou s'inspirer des œuvres des street artistes qui sont présentées en même temps devant lui !
 
 <photo-grid>
 <img src="2021_1_web.jpg"/>
@@ -30,6 +29,7 @@ Chaque visiteur est invité à utiliser son téléphone pour dessiner librement 
 Credits photo : [Maxime Touroute](maximetouroute.github.io)
 
 #### Partenaires
+
 [Superposition](//superposition-lyon.com)  
 [The Daily Board](//www.thedailyboard.co)  
-[Spraying Board](//www.sprayingboard.com)  
+[Spraying Board](//www.sprayingboard.com)

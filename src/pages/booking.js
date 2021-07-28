@@ -55,67 +55,60 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
       </div>
 
       <div className={'ShowcasePage'}>
-      <div className={'ResponsiveContainer'}>
-            <div className={'Inside'}>
-              <div className="ShowcasePart Column">
-                <h3 className="Punchline White Strong">
-                  {LOCAL.useCasesTitle}
-                </h3>
-                
-                <div className="WordsCloud">
-                  <>
-                    {LOCAL.useCases.map((wordCloud) => {
-                      return <p key={wordCloud}>{wordCloud}</p>
-                    })}
-                  </>
-                </div>
-                <p className="Subtext" style={{fontSize:'1.5em'}}><em>{LOCAL.useCasesSubtitle}</em></p>
+        <div className={'ResponsiveContainer'}>
+          <div className={'Inside'}>
+            <div className="ShowcasePart Column">
+              <h3 className="Punchline White Strong">{LOCAL.useCasesTitle}</h3>
+
+              <div className="WordsCloud">
+                <>
+                  {LOCAL.useCases.map((wordCloud) => {
+                    return <p key={wordCloud}>{wordCloud}</p>
+                  })}
+                </>
               </div>
+              <p className="Subtext" style={{ fontSize: '1.5em' }}>
+                <em>{LOCAL.useCasesSubtitle}</em>
+              </p>
             </div>
           </div>
-          </div>
+        </div>
+      </div>
 
       <div className={'ShowcasePage'}>
-      <div className={'ResponsiveContainer'}>
-            <div className={'Inside'}>
-              <div className="ShowcasePart Column">
-                <h3 className="Punchline White Strong">
-                 {LOCAL.ourValues}
-                </h3>
-                
-                <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.inclusiveValueTitle}</h3>
-            <p className="Subtext">{LOCAL.inclusiveValueText}</p>
-          </div>
+        <div className={'ResponsiveContainer'}>
+          <div className={'Inside'}>
+            <div className="ShowcasePart Column">
+              <h3 className="Punchline White Strong">{LOCAL.ourValues}</h3>
 
-          <div className="FullPageContainer">
-            <h3 className="Punchline White"> {LOCAL.unlockValueTitle}</h3>
-            <p className="Subtext">{LOCAL.unlockValueText}</p>
-          </div>
-
-          <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.connectValueTitle}</h3>
-            <p className="Subtext">{LOCAL.connectValueText}</p>
-          </div>
-
-          <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.tellValueTitle}</h3>
-            <p className="Subtext">{LOCAL.tellValueText}</p>
-
-          </div>
-                
-          <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.magicValueTitle}</h3>
-            <p className="Subtext">{LOCAL.magicValueText}</p>
+              <div className="FullPageContainer">
+                <h3 className="Punchline White">{LOCAL.inclusiveValueTitle}</h3>
+                <p className="Subtext">{LOCAL.inclusiveValueText}</p>
               </div>
 
+              <div className="FullPageContainer">
+                <h3 className="Punchline White"> {LOCAL.unlockValueTitle}</h3>
+                <p className="Subtext">{LOCAL.unlockValueText}</p>
+              </div>
+
+              <div className="FullPageContainer">
+                <h3 className="Punchline White">{LOCAL.connectValueTitle}</h3>
+                <p className="Subtext">{LOCAL.connectValueText}</p>
+              </div>
+
+              <div className="FullPageContainer">
+                <h3 className="Punchline White">{LOCAL.tellValueTitle}</h3>
+                <p className="Subtext">{LOCAL.tellValueText}</p>
+              </div>
+
+              <div className="FullPageContainer">
+                <h3 className="Punchline White">{LOCAL.magicValueTitle}</h3>
+                <p className="Subtext">{LOCAL.magicValueText}</p>
               </div>
             </div>
           </div>
-          </div>
-
-
-
+        </div>
+      </div>
 
       <div className={'ShowcasePage'}>
         <div className={'Inside'}>
@@ -161,8 +154,6 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           <br />
           <br />
           <br />
-
-
 
           <div className={'ShowcasePage'}>
             <div className={'ResponsiveContainer'}>

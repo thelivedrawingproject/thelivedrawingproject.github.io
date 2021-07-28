@@ -53,10 +53,10 @@ exports.onCreateNode = ({ node }) => {
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions
 
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     deletePage(page)
 
-    Object.keys(supportedLanguages).map(languageKey => {
+    Object.keys(supportedLanguages).map((languageKey) => {
       const localizedPath =
         languageKey === defaultLanguage
           ? page.path
@@ -100,7 +100,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
@@ -108,13 +108,13 @@ exports.createPages = ({ actions, graphql }) => {
     // Actually creating the page
     const allPages = result.data.allMarkdownRemark.edges
     const pages = allPages.filter(
-      edge => edge.node.frontmatter.layout === pageLayouts.page
+      (edge) => edge.node.frontmatter.layout === pageLayouts.page
     )
     const articles = allPages.filter(
-      edge => edge.node.frontmatter.layout === pageLayouts.article
+      (edge) => edge.node.frontmatter.layout === pageLayouts.article
     )
     const others = allPages.filter(
-      edge =>
+      (edge) =>
         edge.node.frontmatter.layout !== pageLayouts.article &&
         edge.node.frontmatter.layout !== pageLayouts.page
     )

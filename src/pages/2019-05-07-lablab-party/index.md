@@ -4,25 +4,23 @@ layout: article
 title: LabLab 2.0 Inauguration Party
 subtitle: Installation
 description: The Live Drawing Project - Inauguration Party of the LabLab 2.0 in partnership with AADN and LabLab
-date: "2019-05-07"
+date: '2019-05-07'
 category: hidden
-image: "cover.jpg"
+image: 'cover.jpg'
 ---
 
 ![Cover](cover.jpg)
 
-
 #### Description
 
-We exhibited our collaborative drawing installation next to concerts, VJing performances, and other art installations as part the inauguration of the __Lablab 2.0__ (a place dedicated to digital arts).
+We exhibited our collaborative drawing installation next to concerts, VJing performances, and other art installations as part the inauguration of the **Lablab 2.0** (a place dedicated to digital arts).
 During this special evening The Live Drawing Project was being exhibited in two different venues in the city.
 Audience from the two venues were able to communicate through drawings.
 
-
 ### Partners
 
-[AADN](//aadn.org/)  
-  
-[LabLab](//www.facebook.com/atelierlablab/)  
-  
+[AADN](//aadn.org/)
+
+[LabLab](//www.facebook.com/atelierlablab/)
+
 [Facebook Event](//www.facebook.com/events/621144131696513/)

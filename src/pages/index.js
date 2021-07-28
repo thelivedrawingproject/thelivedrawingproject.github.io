@@ -7,7 +7,7 @@ import './index.scss'
 import { indexPageStrings } from '../locales/strings'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 import BackgroundSlider from 'gatsby-image-background-slider'
-import { SvgSlideshow } from '../components/svgSlideshow';
+import { SvgSlideshow } from '../components/svgSlideshow'
 import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
 import PostGridFlat from './../bits/PostGridFlat/PostGridFlat'
@@ -17,18 +17,18 @@ const icon = {
   hidden: {
     opacity: 1,
     pathLength: 0,
-    fill: "rgba(0,0,0,0",
-    stroke: "rgba(0,0,0,0)", 
-    strokeWidth: 2
+    fill: 'rgba(0,0,0,0',
+    stroke: 'rgba(0,0,0,0)',
+    strokeWidth: 2,
   },
   visible: {
     opacity: 1,
     pathLength: 1,
-    fill: "rgba(0,0,0,0",
-    stroke: "white",
-    strokeWidth: 2
-  }
-};
+    fill: 'rgba(0,0,0,0',
+    stroke: 'white',
+    strokeWidth: 2,
+  },
+}
 
 /*
         <div className={'ResponsiveContainer SpecialAnnouncementBackground'}>
@@ -70,7 +70,6 @@ export default function Index({ data, pageContext: { locale }, location }) {
     en: { path: '/online-mode', name: LOCAL.announcementLinkName },
     fr: { path: '/fr/online-mode', name: LOCAL.announcementLinkName },
   }
-
 
   /*
    <div
@@ -135,30 +134,24 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-
         <div className={'ResponsiveContainer ModernGreenBack'}>
           <div className={'Inside'}>
             <div className="ShowcasePart">
-
-
-
-            <div className={'PhoneMockupCSS'}>
-              <div className={"device device-Left"}>
-  <div className="screen">
-    <SvgSlideshow></SvgSlideshow>
-  
-  </div>
-  <div className="speaker"></div>
-  <div className="powerbutton"></div>
-  <div className="volumebutton"></div>
- <div className="nav">
-    <div className="back" id="back"></div>
-    <div className="home"></div>
-    <div className="overview"></div>
-  </div>
-  </div>
-</div>
-
+              <div className={'PhoneMockupCSS'}>
+                <div className={'device device-Left'}>
+                  <div className="screen">
+                    <SvgSlideshow></SvgSlideshow>
+                  </div>
+                  <div className="speaker"></div>
+                  <div className="powerbutton"></div>
+                  <div className="volumebutton"></div>
+                  <div className="nav">
+                    <div className="back" id="back"></div>
+                    <div className="home"></div>
+                    <div className="overview"></div>
+                  </div>
+                </div>
+              </div>
 
               <div className={'Text Centered'}>
                 <h2 style={{ color: 'white' }}>
@@ -169,26 +162,23 @@ export default function Index({ data, pageContext: { locale }, location }) {
                 </p>
               </div>
               <div className={'PhoneMockupCSS'}>
-              <div className="device">
-  <div className="screen">
-  <SvgSlideshow></SvgSlideshow>
-  </div>
-  <div className="speaker"></div>
-  <div className="powerbutton"></div>
-  <div className="volumebutton"></div>
- <div className="nav">
-    <div className="back" id="back"></div>
-    <div className="home"></div>
-    <div className="overview"></div>
-  </div>
-  </div>
-</div>
-
-                
+                <div className="device">
+                  <div className="screen">
+                    <SvgSlideshow></SvgSlideshow>
+                  </div>
+                  <div className="speaker"></div>
+                  <div className="powerbutton"></div>
+                  <div className="volumebutton"></div>
+                  <div className="nav">
+                    <div className="back" id="back"></div>
+                    <div className="home"></div>
+                    <div className="overview"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
+        </div>
 
         <div className={'ResponsiveContainer'}>
           <div className={'Inside'}>
@@ -203,7 +193,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
                   gatsbyImages={[
                     data.gridG.childImageSharp.fluid.src,
                     data.gridB.childImageSharp.fluid.src,
-                    data.gridE.childImageSharp.fluid.src, 
+                    data.gridE.childImageSharp.fluid.src,
                     data.gridC.childImageSharp.fluid.src,
                     data.gridA.childImageSharp.fluid.src,
                     data.gridF.childImageSharp.fluid.src,
@@ -215,16 +205,11 @@ export default function Index({ data, pageContext: { locale }, location }) {
                 />
               </div>
               <div className="moreProjects">
-              <Link to={'/gallery'}>{LOCAL.goToGallery}</Link>
+                <Link to={'/gallery'}>{LOCAL.goToGallery}</Link>
+              </div>
             </div>
-            </div>
-
-          
-
           </div>
-
         </div>
-
 
         <div className={'ResponsiveContainer'}>
           <div className={'Inside'}>
@@ -242,22 +227,14 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-
-
         <div className={'ResponsiveContainer DrawingCountBackground'}>
           <div className={'Inside'}>
             <div className="ShowcasePart DrawingCountPart Column">
               <div className={'Text Centered'}>
-                <h2
-                  className={'BCTitle'}
-                  style={{ color: 'white' }}
-                >
+                <h2 className={'BCTitle'} style={{ color: 'white' }}>
                   {LOCAL.drawingCountTitle}
                 </h2>
-                <p
-                  className={'BCSubtitle'}
-                  style={{ color: 'white' }}
-                >
+                <p className={'BCSubtitle'} style={{ color: 'white' }}>
                   {LOCAL.drawingCountSubtext}
                 </p>
               </div>
@@ -265,18 +242,17 @@ export default function Index({ data, pageContext: { locale }, location }) {
           </div>
         </div>
 
-
-
-
         <h2 className={'Punchline'}>{LOCAL.events}</h2>
         <div className="home homePosts">
           {/* <div className="postGrid"> */}
-            <PostGridFlat posts={posts
+          <PostGridFlat
+            posts={posts
               .filter((post) => post.node.frontmatter.title.length > 0)
               .filter((post) => post.node.frontmatter.language === locale)
               .filter((post, index) => {
-                return index < numberOfEventsToShow;
-              })}/>
+                return index < numberOfEventsToShow
+              })}
+          />
           {/* </div> */}
           <div
             style={{
@@ -288,7 +264,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
             <button
               id="showAllEventsButton"
               className={'greenButton'}
-              style={{marginTop: '2em'}}
+              style={{ marginTop: '2em' }}
               onClick={() => {
                 let t = document.getElementById('oldEvents')
                 t.style.display = ''
@@ -310,11 +286,10 @@ export default function Index({ data, pageContext: { locale }, location }) {
         </div>
       </div>
       <div className="home homePosts">
-            <div className="moreProjects">
-              <Link to={'/booking'}>{LOCAL.goToAbout}</Link>
-            </div>
-          </div>
-
+        <div className="moreProjects">
+          <Link to={'/booking'}>{LOCAL.goToAbout}</Link>
+        </div>
+      </div>
     </MainLayout>
   )
 }

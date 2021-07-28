@@ -4,12 +4,11 @@ layout: article
 title: Festi Lumi Bonifacio
 subtitle: Installation live
 description: Installation du Live Drawing Project pour Festi Lumi, Fête des Lumières de Bonifacio, France
-date: "2019-07-04"
+date: '2019-07-04'
 category: event
 language: fr
-image: "b-4.jpg"
+image: 'b-4.jpg'
 ---
-
 
 <photo-grid>
 <img src="b-5.jpg"/>

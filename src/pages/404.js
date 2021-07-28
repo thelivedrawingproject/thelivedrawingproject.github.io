@@ -29,9 +29,7 @@ export default function NotFoundPage({ data, pageContext: { locale } }) {
             <p>{LOCAL.subtext}</p>
           </div>
         </div>
-        <div className="gridFooter">
-
-        </div>
+        <div className="gridFooter"></div>
       </div>
     </>
   )
