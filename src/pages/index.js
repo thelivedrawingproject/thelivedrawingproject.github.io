@@ -1,3 +1,4 @@
+import { CSSObject } from '@emotion/react';
 import React from 'react'
 import { Link, graphql, navigate } from 'gatsby'
 import Img from 'gatsby-image'
@@ -10,7 +11,7 @@ import BackgroundSlider from 'gatsby-image-background-slider'
 import { SvgSlideshow } from '../components/svgSlideshow'
 import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
-import PostGridFlat from './../bits/PostGridFlat/PostGridFlat'
+import PostGridFlat from '../bits/PostGridFlat/PostGridFlat'
 
 const numberOfEventsToShow = 6
 const icon = {
@@ -244,7 +245,6 @@ export default function Index({ data, pageContext: { locale }, location }) {
 
         <h2 className={'Punchline'}>{LOCAL.events}</h2>
         <div className="home homePosts">
-          {/* <div className="postGrid"> */}
           <PostGridFlat
             posts={posts
               .filter((post) => post.node.frontmatter.title.length > 0)
@@ -253,7 +253,6 @@ export default function Index({ data, pageContext: { locale }, location }) {
                 return index < numberOfEventsToShow
               })}
           />
-          {/* </div> */}
           <div
             style={{
               display: 'flex',
@@ -276,12 +275,14 @@ export default function Index({ data, pageContext: { locale }, location }) {
             </button>
           </div>
           <div className="postGrid" id="oldEvents" style={{ display: 'none' }}>
-            {posts
+          <PostGridFlat
+            posts={posts
               .filter((post) => post.node.frontmatter.title.length > 0)
               .filter((post) => post.node.frontmatter.language === locale)
-              .map((post, index) => {
-                if (numberOfEventsToShow <= index) return postGrid(post)
+              .filter((post, index) => {
+                return numberOfEventsToShow <= index;
               })}
+          />
           </div>
         </div>
       </div>

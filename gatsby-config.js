@@ -107,5 +107,7 @@ module.exports = {
         showSpinner: false,
       },
     },
+
+    `gatsby-plugin-emotion`
   ],
 }
