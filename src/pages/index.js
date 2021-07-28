@@ -1,4 +1,4 @@
-import { CSSObject } from '@emotion/react';
+import { CSSObject } from '@emotion/react'
 import React from 'react'
 import { Link, graphql, navigate } from 'gatsby'
 import Img from 'gatsby-image'
@@ -18,7 +18,6 @@ import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
 import PostGridFlat from '../bits/PostGridFlat/PostGridFlat'
 import TldpLogo from '../bits/TldpLogo/TldpLogo'
-
 
 const numberOfEventsToShow = 6
 const icon = {
@@ -109,7 +108,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
             <div className="WelcomeCover">
               <div className={'Inside'}>
                 <div className={'CoverLogo'}>
-                  <TldpLogo/>
+                  <TldpLogo />
                 </div>
                 <p>{LOCAL.mainDescription}</p>
               </div>
@@ -257,14 +256,14 @@ export default function Index({ data, pageContext: { locale }, location }) {
             </button>
           </div>
           <div className="postGrid" id="oldEvents" style={{ display: 'none' }}>
-          <PostGridFlat
-            posts={posts
-              .filter((post) => post.node.frontmatter.title.length > 0)
-              .filter((post) => post.node.frontmatter.language === locale)
-              .filter((post, index) => {
-                return numberOfEventsToShow <= index;
-              })}
-          />
+            <PostGridFlat
+              posts={posts
+                .filter((post) => post.node.frontmatter.title.length > 0)
+                .filter((post) => post.node.frontmatter.language === locale)
+                .filter((post, index) => {
+                  return numberOfEventsToShow <= index
+                })}
+            />
           </div>
         </div>
       </div>
