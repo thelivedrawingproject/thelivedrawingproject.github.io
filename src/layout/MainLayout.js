@@ -7,6 +7,7 @@ import { defaultLanguage, supportedLanguages } from '../locales/locales'
 import { languageAutoRedirect } from '../locales/localeUtils'
 import { NavbarData, FooterLinks } from './Data'
 import TldpNavbar from '../bits/TldpNavbar/Navbar'
+import TldpLogo from '../bits/TldpLogo/TldpLogo'
 import MobileAppBar from '../bits/TldpNavbar/MobileAppBar'
 import { BottomBar } from '../components/wip/BottomBar/BottomBar'
 import { indexPageStrings } from '../locales/strings'
@@ -26,7 +27,7 @@ $accentColorIdle: #2b6b15;
 })
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = false
+const AreWeInPerformanceMode = true
 const eventName = 'Dessin avec Nous à Nantes'
 const eventUrl = 'https://fenetre.thelivedrawingproject.com/'
 
@@ -57,7 +58,10 @@ export default function MainLayout({ children, language, location }) {
     <>
       <h1 style={{ display: 'none' }}>{LOCAL.title}</h1>
       <div className={'PerformanceMode'} id={'performanceOverlay'}>
-        <div className="Logo" />
+        <div className={'LogoContainer'}>
+        <TldpLogo/>
+        </div>
+
         <div style={{ textAlign: 'center', fontSize: '1.2em' }}>
           <strong className={'DarkModeTextAccent'} style={{ fontSize: '2em' }}>
             {eventName}
