@@ -1,15 +1,17 @@
-import React from 'react'
-import { graphql, Link, navigate } from 'gatsby'
-import Img from 'gatsby-image'
-import MainLayout from '../layout/MainLayout'
-import MetaTags from '../bits/MetaTags/MetaTags'
-import './index.scss'
-import './basics.scss'
-import './WordsCloud.scss'
-import { bookingPageStrings, indexPageStrings } from '../locales/strings'
-import { localLink } from '../locales/localeUtils'
-import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
-import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
+import React from 'react';
+import { graphql, Link, navigate } from 'gatsby';
+import Img from 'gatsby-image';
+import MainLayout from '../layout/MainLayout';
+import MetaTags from '../bits/MetaTags/MetaTags';
+import './index.scss';
+import './basics.scss';
+import './WordsCloud.scss';
+import './ShowcasePage.scss';
+import { bookingPageStrings, indexPageStrings } from '../locales/strings';
+import { localLink } from '../locales/localeUtils';
+import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf';
+import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf';
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function AboutPage({ data, pageContext: { locale }, location }) {
   const LOCAL = bookingPageStrings[locale]
@@ -31,8 +33,8 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                 {LOCAL.yourPhoneYourCanvasDescription}
               </p>
             </div>
-            <div className={'ImageContainer'}>
-              <Img fluid={data.image.childImageSharp.fluid} alt="" />
+            <div className={'GatsbyImageContainer'}>
+              <StaticImage src={"2020-03-05-spraying-board/SprayingBoard_4.jpg"}  alt="" layout={'constrained'} objectFit={'cover'} />
             </div>
             <div
               style={{
@@ -166,7 +168,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
                       {LOCAL.clientsTitle}
                     </h2>
                   </div>
-                  <div className={'ImageContainer'}>
+                  <div className={'GatsbyImageContainer'}>
                     <div className={'ClientsLogo'}>
                       <a
                         className={'InstitutFrancais'}
@@ -263,12 +265,4 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
   )
 }
 
-export const aboutPageQuery = graphql`
-  query AboutQuery {
-    image: file(
-      relativePath: { eq: "2020-03-05-spraying-board/SprayingBoard_4.jpg" }
-    ) {
-      ...gatImage
-    }
-  }
-`
+

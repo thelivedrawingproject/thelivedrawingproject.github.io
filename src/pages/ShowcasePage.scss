@@ -144,22 +144,18 @@
       }
     }
 
-    .ImageContainer {
+    .GatsbyImageContainer {
       display: flex;
       flex-direction: column;
       justify-content: center;
+    
       @include breakpoint(normal) {
-        min-width: 70%;
-        width: 100%;
+        min-width: 60%;
+        width: 60%;
       }
 
       @include breakpoint(small) {
         min-width: 90%;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
       }
     }
   }

@@ -27,9 +27,9 @@ $accentColorIdle: #2b6b15;
 })
 // TODO: store a cookie to enable/disable splash screen
 
-const AreWeInPerformanceMode = true
-const eventName = 'Dessin avec Nous à Nantes'
-const eventUrl = 'https://fenetre.thelivedrawingproject.com/'
+const AreWeInPerformanceMode = false;
+const eventName = 'Dessin avec Nous à Nantes';
+const eventUrl = 'https://fenetre.thelivedrawingproject.com/';
 
 export default function MainLayout({ children, language, location }) {
   let showPerformanceOverlay = false

@@ -1,7 +1,8 @@
 import { CSSObject } from '@emotion/react'
 import React from 'react'
 import { Link, graphql, navigate } from 'gatsby'
-import Img from 'gatsby-image'
+
+import { StaticImage, getImage } from "gatsby-plugin-image";
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../bits/MetaTags/MetaTags'
 import './index.scss'
@@ -18,6 +19,11 @@ import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
 import PostGridFlat from '../bits/PostGridFlat/PostGridFlat'
 import TldpLogo from '../bits/TldpLogo/TldpLogo'
+import Gallery from '@browniebroke/gatsby-image-gallery';
+
+
+
+
 
 const numberOfEventsToShow = 6
 const icon = {
@@ -173,16 +179,18 @@ export default function Index({ data, pageContext: { locale }, location }) {
               <div className={'PhotogridContainer'}>
                 <PhotoGrid
                   gatsbyImages={[
-                    data.gridG.childImageSharp.fluid.src,
-                    data.gridB.childImageSharp.fluid.src,
-                    data.gridE.childImageSharp.fluid.src,
-                    data.gridC.childImageSharp.fluid.src,
-                    data.gridA.childImageSharp.fluid.src,
-                    data.gridF.childImageSharp.fluid.src,
-                    data.gridD.childImageSharp.fluid.src,
-                    data.gridH.childImageSharp.fluid.src,
-                    data.gridI.childImageSharp.fluid.src,
+                    data.gridG.childImageSharp,
+                    data.gridB.childImageSharp,
+                    data.gridE.childImageSharp,
+                    data.gridC.childImageSharp,
+                    data.gridA.childImageSharp,
+                    data.gridF.childImageSharp,
+                    data.gridD.childImageSharp,
+                    data.gridH.childImageSharp,
+                    data.gridI.childImageSharp,
                   ]}
+                  colWidth={1/3}
+                  // mdColWidth={1/3}
                   className={'PaddingForNormalSize'}
                 />
               </div>
@@ -202,8 +210,8 @@ export default function Index({ data, pageContext: { locale }, location }) {
                 </h2>
                 <p>{LOCAL.covidProofDescription}</p>
               </div>
-              <div className={'ImageContainer'}>
-                <Img fluid={data.imageRemote.childImageSharp.fluid} alt="" />
+              <div className={'GatsbyImageContainer'}>
+                <StaticImage src={'gallery/showcase/remote.jpg'} alt="" layout={'constrained'} objectFit={'contain'} />
               </div>
             </div>
           </div>
@@ -300,45 +308,136 @@ export const indexPageQuery = graphql`
       }
     }
     imagePhone: file(relativePath: { eq: "gallery/showcase/phone.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     imageChevagny: file(relativePath: { eq: "gallery/showcase/chev.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     imageArt: file(relativePath: { eq: "gallery/showcase/permanent.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     imageRemote: file(relativePath: { eq: "gallery/showcase/remote.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     gridA: file(relativePath: { eq: "gallery/showcase/cn.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     gridB: file(relativePath: { eq: "gallery/showcase/b.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     gridC: file(relativePath: { eq: "gallery/showcase/glow1.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     gridD: file(relativePath: { eq: "gallery/showcase/glow2.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     gridE: file(relativePath: { eq: "gallery/showcase/chev0.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     gridF: file(relativePath: { eq: "gallery/showcase/chev.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     gridG: file(relativePath: { eq: "2020-04-01-stayhome/26v_2_webw.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     gridH: file(
       relativePath: { eq: "2020-03-05-spraying-board/SprayingBoard_8.jpg" }
     ) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     gridI: file(relativePath: { eq: "2019-10-20-mur/CHRD-5.jpg" }) {
-      ...gatImage
+      childImageSharp {
+        thumb: gatsbyImageData(
+          width: 270
+          height: 270
+          placeholder: BLURRED
+        )
+        full: gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
