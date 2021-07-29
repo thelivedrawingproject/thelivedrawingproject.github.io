@@ -178,18 +178,30 @@ export default function Index({ data, pageContext: { locale }, location }) {
 
               <div className={'PhotogridContainer'}>
                 <PhotoGrid
-                  gatsbyImages={[
-                    data.gridG.childImageSharp,
-                    data.gridB.childImageSharp,
-                    data.gridE.childImageSharp,
-                    data.gridC.childImageSharp,
-                    data.gridA.childImageSharp,
-                    data.gridF.childImageSharp,
-                    data.gridD.childImageSharp,
-                    data.gridH.childImageSharp,
-                    data.gridI.childImageSharp,
+                  imageUrls={[
+                    data.gridG.childImageSharp?.full?.images?.fallback?.src,
+                    data.gridB.childImageSharp?.full?.images?.fallback?.src,
+                    data.gridE.childImageSharp?.full?.images?.fallback?.src,
+                    data.gridC.childImageSharp?.full?.images?.fallback?.src,
+                    data.gridA.childImageSharp?.full?.images?.fallback?.src,
+                    data.gridF.childImageSharp?.full?.images?.fallback?.src,
+                    data.gridD.childImageSharp?.full?.images?.fallback?.src,
+                    data.gridH.childImageSharp?.full?.images?.fallback?.src,
+                    data.gridI.childImageSharp?.full?.images?.fallback?.src,
                   ]}
-                  colWidth={1/3}
+                  gatsbyThumbs={[
+                    data.gridG.childImageSharp?.thumb,
+                    data.gridB.childImageSharp?.thumb,
+                    data.gridE.childImageSharp?.thumb,
+                    data.gridC.childImageSharp?.thumb,
+                    data.gridA.childImageSharp?.thumb,
+                    data.gridF.childImageSharp?.thumb,
+                    data.gridD.childImageSharp?.thumb,
+                    data.gridH.childImageSharp?.thumb,
+                    data.gridI.childImageSharp?.thumb,
+                  ]}
+                  useGatsbyThumbs={true}
+                  // colWidth={1/3}
                   // mdColWidth={1/3}
                   className={'PaddingForNormalSize'}
                 />
