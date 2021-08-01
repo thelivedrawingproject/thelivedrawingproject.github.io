@@ -1,25 +1,20 @@
-import { CSSObject } from '@emotion/react'
-import React from 'react'
-import { Link, graphql, navigate } from 'gatsby'
-
-import { StaticImage, getImage } from 'gatsby-plugin-image'
-import MainLayout from '../layout/MainLayout'
-import MetaTags from '../bits/MetaTags/MetaTags'
-import './index.scss'
-import './PhoneMockup.scss'
-import './basics.scss'
-import './SpecialAnnouncement.scss'
-import './DrawingCount.scss'
-import './ShowcasePage.scss'
-import { indexPageStrings } from '../locales/strings'
-import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
-import BackgroundSlider from 'gatsby-image-background-slider'
-import { SvgSlideshow } from '../components/svgSlideshow'
-import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
-import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
-import PostGridFlat from '../bits/PostGridFlat/PostGridFlat'
-import TldpLogo from '../bits/TldpLogo/TldpLogo'
-import Gallery from '@browniebroke/gatsby-image-gallery'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import MainLayout from '../layout/MainLayout';
+import MetaTags from '../bits/MetaTags/MetaTags';
+import { indexPageStrings } from '../locales/strings';
+import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid';
+import BackgroundSlider from 'gatsby-image-background-slider';
+import { SvgSlideshow } from '../components/svgSlideshow';
+import PostGridFlat from '../bits/PostGridFlat/PostGridFlat';
+import TldpLogo from '../bits/TldpLogo/TldpLogo';
+import './index.scss';
+import './PhoneMockup.scss';
+import './basics.scss';
+import './SpecialAnnouncement.scss';
+import './DrawingCount.scss';
+import './ShowcasePage.scss';
 
 const numberOfEventsToShow = 6
 const icon = {

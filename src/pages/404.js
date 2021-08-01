@@ -1,8 +1,7 @@
-import React from 'react'
-import { notFoundPage } from '../locales/strings'
-import { NavbarSlim } from '../bits/NavbarSlim/NavbarSlim'
-import { NavbarData } from '../layout/Data'
-import Footer from '../bits/TldpFooter/Footer'
+import React from 'react';
+import { notFoundPage } from '../locales/strings';
+import { NavbarSlim } from '../bits/NavbarSlim/NavbarSlim';
+import { NavbarData } from '../layout/Data';
 
 // TODO: dirty copy paste of MainLayout content to avoid crazy language switcher (because URL doesnt exist)
 
