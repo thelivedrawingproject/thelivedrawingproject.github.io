@@ -11,19 +11,14 @@ const supportedLanguages = require('./src/locales/locales').supportedLanguages;
 const defaultLanguage = require('./src/locales/locales').defaultLanguage;
 const { createRemoteFileNode } = require('gatsby-source-filesystem');
 
-const pageLayouts = {
-  article: 'article',
+const LAYOUTS = {
   page: 'page',
-  mdxPage: 'mdxPage',
-  mdxArticle: 'mdxArticle'
+  article: 'article'
 };
-
 
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes, printTypeDefinitions } = actions;
-
-
 
   createTypes(`
     type Mdx implements Node {
@@ -59,7 +54,7 @@ exports.onCreateNode = ({ node,
   // For markdown/Mdx files, check for language field and change url accordingly
   // No URL change for default language
   // Other languages get a /langCode/ prefix on their URLs
-  if (node.internal.type === `MarkdownRemark` || node.internal.type === "Mdx") {
+  if (node.internal.type === "Mdx") {
     const initialLanguage = node.frontmatter.language;
     let languageUrlPrefix = '';
     // Default language if not defined
@@ -97,7 +92,6 @@ exports.onCreateNode = ({ node,
     node.frontmatter &&
     node.frontmatter.embeddedImagesRemote
   ) {
-    console.log('go fetch')
     return Promise.all(
       node.frontmatter.embeddedImagesRemote.map((url) => {
         try {
@@ -158,35 +152,12 @@ exports.onCreatePage = ({ page, actions }) => {
 
 /// ---------------- Custom page generation for markdown files
 exports.createPages = ({ actions, graphql }) => {
-
   const { createPage } = actions;
+  const layoutPage = path.resolve(`src/layout/MdxPage.js`);
+  const layoutArticle = path.resolve(`src/layout/MdxArticle.js`);
 
-  const articleLayoutTemplate = path.resolve(`src/layout/BlogPost.js`);
-  const pageLayoutTemplate = path.resolve(`src/layout/BasicPage.js`);
-  const mdxPageTemplate = path.resolve(`src/layout/MdxPage.js`);
-  const mdxArticleTemplate = path.resolve(`src/layout/MdxArticle.js`);
-
-  /*
-  allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-        filter: { frontmatter: { category: { ne: "hidden" } } }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              path
-              layout
-              title
-              language
-            }
-          }
-        }
-      }
-  */
   return graphql(`
     {
-      
       allMdx(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
@@ -210,38 +181,26 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     // Actually creating the page
-    const allPages = [ /*...result.data.allMarkdownRemark.edges,*/ ...result.data.allMdx.edges];
-
-    console.log(allPages);
-    const pages = allPages.filter(
-      (edge) => edge.node.frontmatter.layout === pageLayouts.page
-    );
-    const articles = allPages.filter(
-      (edge) => edge.node.frontmatter.layout === pageLayouts.article
-    );
+    const allPages = result.data.allMdx.edges;
 
     const mdxPages = allPages.filter(
-    (edge) => edge.node.frontmatter.layout === pageLayouts.mdxPage
+    (edge) => edge.node.frontmatter.layout === LAYOUTS.page
     );
 
     const mdxArticles = allPages.filter(
-      (edge) => edge.node.frontmatter.layout === pageLayouts.mdxArticle
+      (edge) => edge.node.frontmatter.layout === LAYOUTS.article
       );
 
     const others = allPages.filter(
       (edge) =>
-        edge.node.frontmatter.layout !== pageLayouts.article &&
-        edge.node.frontmatter.layout !== pageLayouts.page &&
-        edge.node.frontmatter.layout !== pageLayouts.mdxPage &&
-        edge.node.frontmatter.layout !== pageLayouts.mdxArticle 
+        Object.values(LAYOUTS).indexOf(edge.node.frontmatter.layout) !== -1
     );
 
     if (0 < others.length) {
       console.warn('found pages with unhandled layouts. Will ignore them:');
-      console.log(others);
+      console.warn(others);
     }
 
-    console.log('article', mdxArticles);
     mdxArticles.forEach(({ node }, index) => {
       // false if no previous or no next
       const previousPostLooker = () => {
@@ -277,10 +236,9 @@ exports.createPages = ({ actions, graphql }) => {
       const previousPost = previousPostLooker();
       const nextPost = nextPostLooker();
 
-
       createPage({
         path: node.frontmatter.path,
-        component: mdxArticleTemplate,
+        component: layoutArticle,
         context: {
           previousPost,
           nextPost,
@@ -292,28 +250,16 @@ exports.createPages = ({ actions, graphql }) => {
     mdxPages.forEach(({node}) => {
       createPage({
         path: node.frontmatter.path,
-        component: mdxPageTemplate,
+        component: layoutPage,
         context: {locale: node.frontmatter.language
         }, // additional data can be passed via context
       })
     });
 
-    // pages.forEach(({ node }) => {
-    //   createPage({
-    //     path: node.frontmatter.path,
-    //     component: pageLayoutTemplate,
-    //     context: {locale: node.frontmatter.language
-    //     }, // additional data can be passed via context
-    //   })
-    // });
-    
   });
 
 }
 
-// exports.createPagesStatefully = () => {
-//   console.log('override for stateful');
-// };
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === 'build-html') {
