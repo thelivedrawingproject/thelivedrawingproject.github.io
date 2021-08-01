@@ -22,9 +22,6 @@ import TldpLogo from '../bits/TldpLogo/TldpLogo'
 import Gallery from '@browniebroke/gatsby-image-gallery';
 
 
-
-
-
 const numberOfEventsToShow = 6
 const icon = {
   hidden: {

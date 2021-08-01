@@ -30,6 +30,17 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        options: {
+          extensions: [`.mdx`],
+        },
+      },
+    },
+   
+    
     {
       resolve: 'gatsby-plugin-react-helmet',
 
