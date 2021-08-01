@@ -73,10 +73,6 @@ module.exports = {
 
     {
       resolve: 'gatsby-plugin-react-helmet',
-
-      options: {
-        icon: true,
-      },
     },
     'gatsby-plugin-offline',
     `gatsby-plugin-catch-links`,
