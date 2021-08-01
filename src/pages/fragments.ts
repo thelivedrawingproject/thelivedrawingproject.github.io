@@ -12,10 +12,15 @@ export const gatImage = graphql`
 `
 
 export const modernGatImage = graphql`
-fragment modernGatImage on File {
-  childImageSharp {
-    thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED, transformOptions: {cropFocus: CENTER} )
-    full: gatsbyImageData(layout: FULL_WIDTH)
+  fragment modernGatImage on File {
+    childImageSharp {
+      thumb: gatsbyImageData(
+        width: 270
+        height: 270
+        placeholder: BLURRED
+        transformOptions: { cropFocus: CENTER }
+      )
+      full: gatsbyImageData(layout: FULL_WIDTH)
+    }
   }
-}
 `

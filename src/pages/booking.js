@@ -1,15 +1,15 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import MainLayout from '../layout/MainLayout';
-import MetaTags from '../bits/MetaTags/MetaTags';
-import './index.scss';
-import './basics.scss';
-import './WordsCloud.scss';;
+import React from 'react'
+import { Link } from 'gatsby'
+import MainLayout from '../layout/MainLayout'
+import MetaTags from '../bits/MetaTags/MetaTags'
+import './index.scss'
+import './basics.scss'
+import './WordsCloud.scss'
 import './ShowcasePage.scss'
-import { bookingPageStrings } from '../locales/strings';
-import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf';
-import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf';
-import { StaticImage } from 'gatsby-plugin-image';
+import { bookingPageStrings } from '../locales/strings'
+import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
+import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function AboutPage({ data, pageContext: { locale }, location }) {
   const LOCAL = bookingPageStrings[locale]
@@ -34,7 +34,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
             <div className={'GatsbyImageContainer'}>
               <StaticImage
                 src={'2020-03-05-spraying-board/SprayingBoard_4.jpg'}
-                alt=""
+                alt="Deux personnes dessinent sur leur téléphone"
                 layout={'constrained'}
                 objectFit={'cover'}
                 placeholder={'blurred'}

@@ -145,3 +145,16 @@
     border: 0;
   }
 }
+
+.GatsbyImageContainer {
+  margin: auto;
+
+  @include breakpoint(normal) {
+    min-width: 60%;
+    width: 60%;
+  }
+
+  @include breakpoint(small) {
+    min-width: 90%;
+  }
+}

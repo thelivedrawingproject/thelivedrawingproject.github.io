@@ -1,20 +1,20 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
-import MainLayout from '../layout/MainLayout';
-import MetaTags from '../bits/MetaTags/MetaTags';
-import { indexPageStrings } from '../locales/strings';
-import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid';
-import BackgroundSlider from 'gatsby-image-background-slider';
-import { SvgSlideshow } from '../components/svgSlideshow';
-import PostGridFlat from '../bits/PostGridFlat/PostGridFlat';
-import TldpLogo from '../bits/TldpLogo/TldpLogo';
-import './index.scss';
-import './PhoneMockup.scss';
-import './basics.scss';
-import './SpecialAnnouncement.scss';
-import './DrawingCount.scss';
-import './ShowcasePage.scss';
+import React from 'react'
+import { Link, graphql } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
+import MainLayout from '../layout/MainLayout'
+import MetaTags from '../bits/MetaTags/MetaTags'
+import { indexPageStrings } from '../locales/strings'
+import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
+import BackgroundSlider from 'gatsby-image-background-slider'
+import { SvgSlideshow } from '../components/svgSlideshow'
+import PostGridFlat from '../bits/PostGridFlat/PostGridFlat'
+import TldpLogo from '../bits/TldpLogo/TldpLogo'
+import './index.scss'
+import './PhoneMockup.scss'
+import './basics.scss'
+import './SpecialAnnouncement.scss'
+import './DrawingCount.scss'
+import './ShowcasePage.scss'
 
 const numberOfEventsToShow = 6
 const icon = {
@@ -204,7 +204,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
               <div className={'GatsbyImageContainer'}>
                 <StaticImage
                   src={'gallery/showcase/remote.jpg'}
-                  alt=""
+                  alt="Projection visible en Livestream sur les réseaux sociaux"
                   layout={'constrained'}
                   objectFit={'contain'}
                   placeholder={'blurred'}
@@ -280,8 +280,6 @@ export default function Index({ data, pageContext: { locale }, location }) {
     </MainLayout>
   )
 }
-
-
 
 export const indexPageQuery = graphql`
   query IndexQuery {
