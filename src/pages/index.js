@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import MainLayout from '../layout/MainLayout'
-import MetaTags from '../bits/MetaTags/MetaTags'
+import SEO from '../bits/SEO/SEO'
 import { indexPageStrings } from '../locales/strings'
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
 import BackgroundSlider from 'gatsby-image-background-slider'
@@ -90,7 +90,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           */
   return (
     <MainLayout language={locale} location={{ ...location }}>
-      <MetaTags title={'Home'} />
+      <SEO title={'Home'} />
 
       <div className={'ShowcasePage'}>
         <div className={'RollbackBackground'}>

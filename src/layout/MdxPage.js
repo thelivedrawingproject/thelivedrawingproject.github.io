@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import MainLayout from './MainLayout'
 import './BasicPage.scss'
 import 'moment'
-import MetaTags from '../bits/MetaTags/MetaTags'
+import SEO from '../bits/SEO/SEO'
 import { SHORTCODES } from './MdxBits'
 
 export const pageQuery = graphql`
@@ -31,13 +31,13 @@ export const pageQuery = graphql`
 export default function Template({ data: { mdx }, location }) {
   return (
     <MainLayout language={mdx.frontmatter.language} location={{ ...location }}>
-      <MetaTags
+      <SEO
         title={mdx.frontmatter.title}
         description={
           mdx.frontmatter.description || mdx.frontmatter.subtitle || null
         }
         pathname={mdx.frontmatter.path}
-        article
+        article={true}
       />
       <div className="Page">
         <article className="card article" id="content">

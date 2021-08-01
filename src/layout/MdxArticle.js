@@ -4,7 +4,7 @@ import './BasicPage.scss'
 import 'moment'
 import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import MetaTags from '../bits/MetaTags/MetaTags'
+import SEO from '../bits/SEO/SEO'
 import { graphql, Link } from 'gatsby'
 import { SHORTCODES } from './MdxBits'
 
@@ -29,12 +29,12 @@ export default function Template({ data: { mdx }, location, pageContext }) {
 
   return (
     <MainLayout language={mdx.frontmatter.language} location={{ ...location }}>
-      <MetaTags
+      <SEO
         title={mdx.frontmatter.title}
         description={mdx.frontmatter.description || mdx.frontmatter.subtitle}
         image={mdx.frontmatter.image.childImageSharp.fixed.src}
         pathname={mdx.frontmatter.path}
-        article
+        article={true}
       />
       <div className="coverBand" id="content">
         <div className="overlay">

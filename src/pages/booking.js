@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
-import MetaTags from '../bits/MetaTags/MetaTags'
+import SEO from '../bits/SEO/SEO'
 import './index.scss'
 import './basics.scss'
 import './WordsCloud.scss'
@@ -16,7 +16,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
 
   return (
     <MainLayout language={locale} location={{ ...location }}>
-      <MetaTags title={'BOOKING'} />
+      <SEO title={'BOOKING'} />
 
       <div className={'ResponsiveContainer'}>
         <div className={'Inside'}>
