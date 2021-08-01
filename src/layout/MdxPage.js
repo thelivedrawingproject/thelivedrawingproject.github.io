@@ -18,24 +18,10 @@ export const pageQuery = graphql`
         language
         description
         embeddedImagesRemote {
-          childImageSharp {
-            thumb: gatsbyImageData(
-              width: 270
-              height: 270
-              placeholder: BLURRED
-            )
-            full: gatsbyImageData(layout: FULL_WIDTH)
-          }
+          ...modernGatImage
         }
         embeddedImagesLocal {
-          childImageSharp {
-            thumb: gatsbyImageData(
-              width: 270
-              height: 270
-              placeholder: BLURRED
-            )
-            full: gatsbyImageData(layout: FULL_WIDTH)
-          }
+          ...modernGatImage
         }
       }
     }
