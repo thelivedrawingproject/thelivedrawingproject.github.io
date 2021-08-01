@@ -68,7 +68,9 @@ const icon = {
         */
 export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale]
-  const { edges: posts } = data.allMarkdownRemark
+  console.log(data)
+  const posts = data.allMdx.edges;
+  console.log(posts)
   const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' }
 
   const stayHomeLink = {
@@ -175,31 +177,17 @@ export default function Index({ data, pageContext: { locale }, location }) {
 
               <div className={'PhotogridContainer'}>
                 <PhotoGrid
-                  imageUrls={[
-                    data.gridG.childImageSharp?.full?.images?.fallback?.src,
-                    data.gridB.childImageSharp?.full?.images?.fallback?.src,
-                    data.gridE.childImageSharp?.full?.images?.fallback?.src,
-                    data.gridC.childImageSharp?.full?.images?.fallback?.src,
-                    data.gridA.childImageSharp?.full?.images?.fallback?.src,
-                    data.gridF.childImageSharp?.full?.images?.fallback?.src,
-                    data.gridD.childImageSharp?.full?.images?.fallback?.src,
-                    data.gridH.childImageSharp?.full?.images?.fallback?.src,
-                    data.gridI.childImageSharp?.full?.images?.fallback?.src,
+                  gatsbyImagesWithThumbs={[
+                    data.gridG.childImageSharp,
+                    data.gridB.childImageSharp,
+                    data.gridE.childImageSharp,
+                    data.gridC.childImageSharp,
+                    data.gridA.childImageSharp,
+                    data.gridF.childImageSharp,
+                    data.gridD.childImageSharp,
+                    data.gridH.childImageSharp,
+                    data.gridI.childImageSharp,
                   ]}
-                  gatsbyThumbs={[
-                    data.gridG.childImageSharp?.thumb,
-                    data.gridB.childImageSharp?.thumb,
-                    data.gridE.childImageSharp?.thumb,
-                    data.gridC.childImageSharp?.thumb,
-                    data.gridA.childImageSharp?.thumb,
-                    data.gridF.childImageSharp?.thumb,
-                    data.gridD.childImageSharp?.thumb,
-                    data.gridH.childImageSharp?.thumb,
-                    data.gridI.childImageSharp?.thumb,
-                  ]}
-                  useGatsbyThumbs={true}
-                  // colWidth={1/3}
-                  // mdColWidth={1/3}
                   className={'PaddingForNormalSize'}
                 />
               </div>
@@ -448,7 +436,7 @@ export const indexPageQuery = graphql`
         full: gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-    allMarkdownRemark(
+    allMdx(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { category: { eq: "event" } } }
     ) {
@@ -465,13 +453,10 @@ export const indexPageQuery = graphql`
             language
             image {
               childImageSharp {
-                # Other options include height (set both width and height to crop),
-                # grayscale, duotone, rotate, etc.
-                fluid(maxHeight: 500) {
-                  # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-                  ...GatsbyImageSharpFluid
-                  src
-                }
+                gatsbyImageData(
+                  height: 500
+                  placeholder: BLURRED
+                )
               }
             }
           }

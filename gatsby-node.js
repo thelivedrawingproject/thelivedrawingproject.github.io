@@ -9,14 +9,52 @@
 const path = require('path');
 const supportedLanguages = require('./src/locales/locales').supportedLanguages;
 const defaultLanguage = require('./src/locales/locales').defaultLanguage;
+const { createRemoteFileNode } = require('gatsby-source-filesystem');
 
 const pageLayouts = {
   article: 'article',
   page: 'page',
-  mdxBasic: 'mdxBasic'
+  mdxPage: 'mdxPage',
+  mdxArticle: 'mdxArticle'
 };
 
-exports.onCreateNode = ({ node }) => {
+
+
+exports.createSchemaCustomization = ({ actions, schema }) => {
+  const { createTypes, printTypeDefinitions } = actions;
+
+
+
+  createTypes(`
+    type Mdx implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter @dontInfer {
+      title: String!
+      path: String!
+      layout: String!
+      description: String!
+      language: String!
+      subtitle: String
+      date: Date @dateformat
+      category: String,
+      image: File @fileByRelativePath
+      embeddedImagesRemote: [File] @link(by: "url")
+      embeddedImagesLocal: [File] @fileByRelativePath
+    }
+    `);
+
+  // Keep track of types ? What for?
+  printTypeDefinitions({ path: './typeDefs.txt' });
+};
+
+
+exports.onCreateNode = ({ node,
+  createNodeId,
+  actions: { createNode },
+  cache,
+  store
+ }) => {
 
   // For markdown/Mdx files, check for language field and change url accordingly
   // No URL change for default language
@@ -47,10 +85,38 @@ exports.onCreateNode = ({ node }) => {
         console.warn(
           `Unhandled language for markdown: ${node.frontmatter.language}. No path change (could conflict with default)`
         )
-        return;
+        // return;
       }
       node.frontmatter.path = `${languageUrlPrefix}${node.frontmatter.path}`
     }
+
+
+  // Fetch remote images if any
+  if (
+    node.internal.type === 'Mdx' &&
+    node.frontmatter &&
+    node.frontmatter.embeddedImagesRemote
+  ) {
+    console.log('go fetch')
+    return Promise.all(
+      node.frontmatter.embeddedImagesRemote.map((url) => {
+        try {
+          return createRemoteFileNode({
+            url,
+            parentNodeId: node.id,
+            createNode,
+            createNodeId,
+            cache,
+            store
+          });
+        } catch (error) {
+          console.error(error);
+        }
+      })
+    );
+  }
+
+
 }
 
 // Fired after page creation
@@ -58,9 +124,16 @@ exports.onCreateNode = ({ node }) => {
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
 
+  // If the component path is .mdx, it means the gatsby-plugin-mdx used its default layout.
+  // We don't want any default pages to avoid dirty duplicates
+  // So remove it !
+  if(page.componentPath.includes('.mdx')) {
+    deletePage(page);
+    return;
+  }
   if(page.context.locale === void 0)
   {
-    console.log('got a root page with no lang context. dalate Create one for each language');
+  console.info('got a root page with no lang context. Delete page and Create one for each language');
  return new Promise((resolve) => {
     deletePage(page);
 
@@ -83,18 +156,18 @@ exports.onCreatePage = ({ page, actions }) => {
   }
 }
 
-/// ---------------- Custom âge generation for markdown files
+/// ---------------- Custom page generation for markdown files
 exports.createPages = ({ actions, graphql }) => {
 
   const { createPage } = actions;
 
   const articleLayoutTemplate = path.resolve(`src/layout/BlogPost.js`);
   const pageLayoutTemplate = path.resolve(`src/layout/BasicPage.js`);
-  const mdxLayoutTemplate = path.resolve(`src/layout/MdxBasic.js`);
+  const mdxPageTemplate = path.resolve(`src/layout/MdxPage.js`);
+  const mdxArticleTemplate = path.resolve(`src/layout/MdxArticle.js`);
 
-  return graphql(`
-    {
-      allMarkdownRemark(
+  /*
+  allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
         filter: { frontmatter: { category: { ne: "hidden" } } }
@@ -110,8 +183,14 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+  */
+  return graphql(`
+    {
+      
       allMdx(
+        sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
+        filter: { frontmatter: { category: { ne: "hidden" } } }
       ) {
         edges {
           node {
@@ -131,8 +210,9 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     // Actually creating the page
-    const allPages = [...result.data.allMarkdownRemark.edges, ...result.data.allMdx.edges];
+    const allPages = [ /*...result.data.allMarkdownRemark.edges,*/ ...result.data.allMdx.edges];
 
+    console.log(allPages);
     const pages = allPages.filter(
       (edge) => edge.node.frontmatter.layout === pageLayouts.page
     );
@@ -140,15 +220,20 @@ exports.createPages = ({ actions, graphql }) => {
       (edge) => edge.node.frontmatter.layout === pageLayouts.article
     );
 
-    const mdxBasics = allPages.filter(
-    (edge) => edge.node.frontmatter.layout === pageLayouts.mdxBasic
+    const mdxPages = allPages.filter(
+    (edge) => edge.node.frontmatter.layout === pageLayouts.mdxPage
     );
+
+    const mdxArticles = allPages.filter(
+      (edge) => edge.node.frontmatter.layout === pageLayouts.mdxArticle
+      );
 
     const others = allPages.filter(
       (edge) =>
         edge.node.frontmatter.layout !== pageLayouts.article &&
         edge.node.frontmatter.layout !== pageLayouts.page &&
-        edge.node.frontmatter.layout !== pageLayouts.mdxBasic
+        edge.node.frontmatter.layout !== pageLayouts.mdxPage &&
+        edge.node.frontmatter.layout !== pageLayouts.mdxArticle 
     );
 
     if (0 < others.length) {
@@ -156,17 +241,18 @@ exports.createPages = ({ actions, graphql }) => {
       console.log(others);
     }
 
-    articles.forEach(({ node }, index) => {
+    console.log('article', mdxArticles);
+    mdxArticles.forEach(({ node }, index) => {
       // false if no previous or no next
       const previousPostLooker = () => {
         let indexToLook = index - 1;
         while (0 <= indexToLook) {
           // Only lists articles in same language
           if (
-            articles[indexToLook].node.frontmatter.language ==
+            mdxArticles[indexToLook].node.frontmatter.language ==
             node.frontmatter.language
           ) {
-            return articles[indexToLook].node;
+            return mdxArticles[indexToLook].node;
           }
           indexToLook--;
         }
@@ -175,13 +261,13 @@ exports.createPages = ({ actions, graphql }) => {
 
       const nextPostLooker = () => {
         let indexToLook = index + 1;
-        while (indexToLook <= articles.length - 1) {
+        while (indexToLook <= mdxArticles.length - 1) {
           // Only lists articles in same language
           if (
-            articles[indexToLook].node.frontmatter.language ==
+            mdxArticles[indexToLook].node.frontmatter.language ==
             node.frontmatter.language
           ) {
-            return articles[indexToLook].node;
+            return mdxArticles[indexToLook].node;
           }
           indexToLook++;
         }
@@ -194,7 +280,7 @@ exports.createPages = ({ actions, graphql }) => {
 
       createPage({
         path: node.frontmatter.path,
-        component: articleLayoutTemplate,
+        component: mdxArticleTemplate,
         context: {
           previousPost,
           nextPost,
@@ -203,23 +289,23 @@ exports.createPages = ({ actions, graphql }) => {
       });
     }); // foreach article
 
-    mdxBasics.forEach(({node}) => {
+    mdxPages.forEach(({node}) => {
       createPage({
         path: node.frontmatter.path,
-        component: mdxLayoutTemplate,
+        component: mdxPageTemplate,
         context: {locale: node.frontmatter.language
         }, // additional data can be passed via context
       })
     });
 
-    pages.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: pageLayoutTemplate,
-        context: {locale: node.frontmatter.language
-        }, // additional data can be passed via context
-      })
-    });
+    // pages.forEach(({ node }) => {
+    //   createPage({
+    //     path: node.frontmatter.path,
+    //     component: pageLayoutTemplate,
+    //     context: {locale: node.frontmatter.language
+    //     }, // additional data can be passed via context
+    //   })
+    // });
     
   });
 

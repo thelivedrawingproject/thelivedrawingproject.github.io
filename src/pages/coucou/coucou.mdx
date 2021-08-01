@@ -1,18 +1,44 @@
 ---
-path: /coucou
-layout: mdxBasic
-title: coucou
+path: /somePath
+layout: mdxPage
+title: myTitle
 description: Photos and videos of the live drawing project events, installations and workshops.
+language: en
+image: a2.jpg
+embeddedImagesRemote:
+  - https://res.cloudinary.com/www-paulie-dev/image/upload/v1616158207/Gatsby%20Demos/gatsby-mdx-embedded-images/image3_gw0ifz.jpg
+  - https://res.cloudinary.com/www-paulie-dev/image/upload/v1616158207/Gatsby%20Demos/gatsby-mdx-embedded-images/image4_lwx4w1.jpg
+embeddedImagesLocal:
+  - a2.jpg
 ---
-import { Link } from "gatsby"
 
+
+<!-- import a2 from './a2.jpg';
+import { getImage, GatsbyImage } from 'gatsby-plugin-image'; -->
 
 # My MDX
 
-some content
+some content IN ENGLISH
+<!-- 
+<PhotoGridForMdx>
+
+![image](./a2.jpg)
+![image](./a2.jpg)
+![image](./a2.jpg)
+
+</PhotoGridForMdx>
+
+<div>{a2}</div> -->
+
+<!-- <Link to="/">This is a link to /</Link> -->
+
+<!-- <img src={a2}/> -->
+
+<!-- <StaticImage src={a2} alt={''}/> -->
 
 
-<Link to="/"/>
 
-<!-- <PhotoGrid imageUrls={['@', 'b', 'c', 'd']}>
-</PhotoGrid> -->
+<!-- <GatsbyImage image={getImage(a2)} alt={''}/> -->
+
+<!-- <PhotoGrid imageUrls={[a2]} useGatsbyThumbs={false}> -->
+<!-- </PhotoGrid> -->

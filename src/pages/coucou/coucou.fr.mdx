@@ -1,0 +1,70 @@
+---
+path: /somePath
+layout: mdxPage
+title: myTitle
+description: Photos and videos of the live drawing project events, installations and workshops.
+language: fr
+image: a2.jpg
+embeddedImagesRemote:
+  - https://res.cloudinary.com/www-paulie-dev/image/upload/v1616158207/Gatsby%20Demos/gatsby-mdx-embedded-images/image3_gw0ifz.jpg
+  - https://res.cloudinary.com/www-paulie-dev/image/upload/v1616158207/Gatsby%20Demos/gatsby-mdx-embedded-images/image4_lwx4w1.jpg
+embeddedImagesLocal:
+  - a2.jpg
+  - a2.jpg
+---
+
+FRANCAIS 
+
+import { getImage } from 'gatsby-plugin-image';
+
+
+
+## Post Body
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend iaculis nunc ut posuere. Integer mollis interdum nisi eu pellentesque. Quisque euismod ipsum mi, in rutrum nisl malesuada quis. In hac habitasse platea dictumst. Nullam tempor iaculis varius. Vestibulum sit amet feugiat sem, vitae venenatis urna. Proin scelerisque tellus vel nunc ultrices, sit amet mattis neque eleifend. Pellentesque est nisi, sodales nec dui et, elementum gravida sem. Duis scelerisque ex eget sapien gravida, at laoreet augue pharetra. Sed purus eros, commodo vel viverra sit amet, cursus et est. Nullam magna est, eleifend quis vehicula vitae, consectetur quis orci. Vestibulum feugiat dapibus ligula eget vestibulum. Phasellus accumsan dolor quis congue auctor. Suspendisse potenti. Suspendisse efficitur eros viverra ligula dignissim ullamcorper a quis augue. Cras accumsan sagittis neque at suscipit.
+
+
+
+## Photo Grid
+
+<PhotoGrid gatsbyImagesWithThumbs={[props.remoteImages[0]]}/>
+
+
+## Remote Images
+
+
+<MdxImg image={props.remoteImages[0].childImageSharp} />
+
+<GatsbyImage alt="orange doggo" image={getImage(props.remoteImages[1].childImageSharp.full)} />
+
+
+## LOCAL Images
+
+![a2.jpg](a2.jpg)
+
+
+<img src={props.localImages[0]}/>
+
+
+## haha
+
+
+<GatsbyImage alt="green doggo" image={getImage(props.localImages[0].childImageSharp.full)} />
+<GatsbyImage alt="orange doggo" image={getImage(props.localImages[0].childImageSharp.full)} />
+
+
+
+Photo Credit: [Karsten Winegeart](https://unsplash.com/@karsten116)
+## Local Images
+
+
+
+<GatsbyImage alt="green doggo" image={getImage(props.localImages[0].childImageSharp.thumb)} />
+<GatsbyImage alt="orange doggo" image={getImage(props.localImages[0].childImageSharp.full)} />
+
+
+
+Photo Credit: [Karsten Winegeart](https://unsplash.com/@karsten116)
+
+## Props
+
