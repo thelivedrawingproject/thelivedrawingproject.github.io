@@ -34,7 +34,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
               </p>
             </div>
             <div className={'GatsbyImageContainer'}>
-              <StaticImage src={"2020-03-05-spraying-board/SprayingBoard_4.jpg"}  alt="" layout={'constrained'} objectFit={'cover'} />
+              <StaticImage src={"2020-03-05-spraying-board/SprayingBoard_4.jpg"}  alt="" layout={'constrained'} objectFit={'cover'} placeholder={'blurred'}/>
             </div>
             <div
               style={{

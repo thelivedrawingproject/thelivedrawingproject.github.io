@@ -223,7 +223,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
                 <p>{LOCAL.covidProofDescription}</p>
               </div>
               <div className={'GatsbyImageContainer'}>
-                <StaticImage src={'gallery/showcase/remote.jpg'} alt="" layout={'constrained'} objectFit={'contain'} />
+                <StaticImage src={'gallery/showcase/remote.jpg'} alt="" layout={'constrained'} objectFit={'contain'}  placeholder={'blurred'} />
               </div>
             </div>
           </div>
