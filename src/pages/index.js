@@ -297,6 +297,15 @@ export const gatImage = graphql`
   }
 `
 
+export const modernGatImage = graphql`
+fragment modernGatImage on File {
+  childImageSharp {
+    thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED, transformOptions: {cropFocus: CENTER} )
+    full: gatsbyImageData(layout: FULL_WIDTH)
+  }
+}
+`
+
 export const indexPageQuery = graphql`
   query IndexQuery {
     backgrounds: allFile(filter: { absolutePath: { regex: "/backgrounds/" } }) {
@@ -310,84 +319,45 @@ export const indexPageQuery = graphql`
       }
     }
     imagePhone: file(relativePath: { eq: "gallery/showcase/phone.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     imageChevagny: file(relativePath: { eq: "gallery/showcase/chev.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     imageArt: file(relativePath: { eq: "gallery/showcase/permanent.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     imageRemote: file(relativePath: { eq: "gallery/showcase/remote.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     gridA: file(relativePath: { eq: "gallery/showcase/cn.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     gridB: file(relativePath: { eq: "gallery/showcase/b.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     gridC: file(relativePath: { eq: "gallery/showcase/glow1.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     gridD: file(relativePath: { eq: "gallery/showcase/glow2.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     gridE: file(relativePath: { eq: "gallery/showcase/chev0.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     gridF: file(relativePath: { eq: "gallery/showcase/chev.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     gridG: file(relativePath: { eq: "2020-04-01-stayhome/26v_2_webw.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     gridH: file(
       relativePath: { eq: "2020-03-05-spraying-board/SprayingBoard_8.jpg" }
     ) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     gridI: file(relativePath: { eq: "2019-10-20-mur/CHRD-5.jpg" }) {
-      childImageSharp {
-        thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
-        full: gatsbyImageData(layout: FULL_WIDTH)
-      }
+      ...modernGatImage
     }
     allMdx(
       sort: { order: DESC, fields: [frontmatter___date] }
