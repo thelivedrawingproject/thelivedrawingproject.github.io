@@ -2,14 +2,13 @@ import React from 'react'
 import MainLayout from './MainLayout'
 import './BasicPage.scss'
 import 'moment'
-import { MDXProvider } from "@mdx-js/react";
-import { MDXRenderer } from "gatsby-plugin-mdx";
+import { MDXProvider } from '@mdx-js/react'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import MetaTags from '../bits/MetaTags/MetaTags'
 import { graphql, Link } from 'gatsby'
-import { SHORTCODES } from "./MdxBits";
+import { SHORTCODES } from './MdxBits'
 
-
-export default function Template({ data: {mdx}, location, pageContext }) {
+export default function Template({ data: { mdx }, location, pageContext }) {
   const { previousPost, nextPost } = pageContext
 
   // content is at false is no previous or next
@@ -65,8 +64,12 @@ export default function Template({ data: {mdx}, location, pageContext }) {
             <br />
             <br />
             <MDXProvider components={SHORTCODES}>
-            <MDXRenderer    remoteImages={mdx.frontmatter.embeddedImagesRemote}
-          localImages={mdx.frontmatter.embeddedImagesLocal}>{mdx.body}</MDXRenderer>
+              <MDXRenderer
+                remoteImages={mdx.frontmatter.embeddedImagesRemote}
+                localImages={mdx.frontmatter.embeddedImagesLocal}
+              >
+                {mdx.body}
+              </MDXRenderer>
             </MDXProvider>
             <div className="prevNextLinks">
               {previousPostHtml}

@@ -1,17 +1,17 @@
-import React from 'react';
-import { graphql, Link, navigate } from 'gatsby';
-import Img from 'gatsby-image';
-import MainLayout from '../layout/MainLayout';
-import MetaTags from '../bits/MetaTags/MetaTags';
-import './index.scss';
-import './basics.scss';
-import './WordsCloud.scss';
-import './ShowcasePage.scss';
-import { bookingPageStrings, indexPageStrings } from '../locales/strings';
-import { localLink } from '../locales/localeUtils';
-import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf';
-import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf';
-import { StaticImage } from "gatsby-plugin-image";
+import React from 'react'
+import { graphql, Link, navigate } from 'gatsby'
+import Img from 'gatsby-image'
+import MainLayout from '../layout/MainLayout'
+import MetaTags from '../bits/MetaTags/MetaTags'
+import './index.scss'
+import './basics.scss'
+import './WordsCloud.scss'
+import './ShowcasePage.scss'
+import { bookingPageStrings, indexPageStrings } from '../locales/strings'
+import { localLink } from '../locales/localeUtils'
+import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
+import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function AboutPage({ data, pageContext: { locale }, location }) {
   const LOCAL = bookingPageStrings[locale]
@@ -34,7 +34,13 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
               </p>
             </div>
             <div className={'GatsbyImageContainer'}>
-              <StaticImage src={"2020-03-05-spraying-board/SprayingBoard_4.jpg"}  alt="" layout={'constrained'} objectFit={'cover'} placeholder={'blurred'}/>
+              <StaticImage
+                src={'2020-03-05-spraying-board/SprayingBoard_4.jpg'}
+                alt=""
+                layout={'constrained'}
+                objectFit={'cover'}
+                placeholder={'blurred'}
+              />
             </div>
             <div
               style={{
@@ -264,5 +270,3 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
     </MainLayout>
   )
 }
-
-

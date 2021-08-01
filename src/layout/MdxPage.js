@@ -1,12 +1,12 @@
-import React from "react";
-import { MDXProvider } from "@mdx-js/react";
-import { MDXRenderer } from "gatsby-plugin-mdx";
-import { graphql } from "gatsby";
-import MainLayout from './MainLayout';
-import './BasicPage.scss';
-import 'moment';
-import MetaTags from '../bits/MetaTags/MetaTags';
-import { SHORTCODES } from "./MdxBits";
+import React from 'react'
+import { MDXProvider } from '@mdx-js/react'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { graphql } from 'gatsby'
+import MainLayout from './MainLayout'
+import './BasicPage.scss'
+import 'moment'
+import MetaTags from '../bits/MetaTags/MetaTags'
+import { SHORTCODES } from './MdxBits'
 
 export const pageQuery = graphql`
   query MdxPageByPath($path: String!) {
@@ -40,10 +40,9 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
 
-
-export default function Template({ data: {mdx}, location }) {
+export default function Template({ data: { mdx }, location }) {
   return (
     <MainLayout language={mdx.frontmatter.language} location={{ ...location }}>
       <MetaTags
@@ -61,9 +60,13 @@ export default function Template({ data: {mdx}, location }) {
             style={{ paddingTop: '1em', paddingBottom: '2em' }}
           ></header>
           <div className="content" itemProp="articleBody">
-        <MDXProvider components={SHORTCODES}>
-            <MDXRenderer    remoteImages={mdx.frontmatter.embeddedImagesRemote}
-          localImages={mdx.frontmatter.embeddedImagesLocal}>{mdx.body}</MDXRenderer>
+            <MDXProvider components={SHORTCODES}>
+              <MDXRenderer
+                remoteImages={mdx.frontmatter.embeddedImagesRemote}
+                localImages={mdx.frontmatter.embeddedImagesLocal}
+              >
+                {mdx.body}
+              </MDXRenderer>
             </MDXProvider>
           </div>
         </article>
@@ -71,4 +74,3 @@ export default function Template({ data: {mdx}, location }) {
     </MainLayout>
   )
 }
-
