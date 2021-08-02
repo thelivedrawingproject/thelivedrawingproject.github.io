@@ -1,28 +1,27 @@
+const siteManifest = require('./siteManifest');
+
 module.exports = {
   siteMetadata: {
-    siteName: `The Live Drawing Project`,
-    title: `The Live Drawing Project`,
-    author: 'The Live Drawing Project',
-    authorMail: 'livedrawingproject@pm.me',
-    titleTemplate: '%s · The Live Drawing Project',
-    description:
-      'Draw with us ! We make interactive drawing projections where everyone can draw · Videoprojections, Performances, Workshops and more · All around the world · On location or remotely',
-    siteUrl: 'https://thelivedrawingproject.com', // for robots plugin
-    url: 'https://thelivedrawingproject.com', // No trailing slash allowed!
+    siteName: siteManifest.name,
+    title: siteManifest.title,
+    author: siteManifest.author,
+    authorMail: siteManifest.authorMail,
+    titleTemplate: siteManifest.titleTemplate,
+    description: siteManifest.description,
+    siteUrl: siteManifest.url,
+    url: siteManifest.url,
     favicon: '/favicon.ico',
-    thumbImage: '/favicon.ico', // Path to your image you placed in the 'res' folder
-    keywords:
-      'videoprojection, projection, videomapping, oeuvre participative, participatif, interactif, interactive projection, dessin, dessin participatif, live drawing, drawing, collaborative drawing, the live drawing project, light festival, fête des lumières, art numérique, digital arts', // separated by comas
-
+    image: '/image.jpg', // Path to your image you placed in the 'static' folder
+    keywords: siteManifest.keywords,
     /* to hide the icon, put an empty string instead of a link */
     socialLinks: {
-      twitter: '',
-      facebook: '//facebook.com/TheLiveDrawingProject',
-      github: '',
-      instagram: '//instagram.com/livedrawingproject',
-      vimeo: '',
-      youtube: '',
-      soundcloud: '',
+      twitter: siteManifest.socialLinks.twitter,
+      facebook: siteManifest.socialLinks.facebook,
+      github: siteManifest.socialLinks.github,
+      instagram: siteManifest.socialLinks.instagram,
+      vimeo: siteManifest.socialLinks.vimeo,
+      youtube: siteManifest.socialLinks.youtube,
+      soundcloud: siteManifest.socialLinks.soundcloud,
     },
   },
 
