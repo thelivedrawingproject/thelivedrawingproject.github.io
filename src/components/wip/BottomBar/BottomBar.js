@@ -8,7 +8,13 @@ export class BottomBar extends Component {
     return (
       <div className="BottomBar">
         <div className={'under'}>{this.props.eventName}</div>
-        <a href={this.props.url} target="_blank" rel="noopener nofollow noreferrer">{this.props.buttonMessage}</a>
+        <a
+          href={this.props.url}
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          {this.props.buttonMessage}
+        </a>
       </div>
     )
   }

@@ -16,7 +16,7 @@ interface MoreOwnProps {
   indices: number[]
 }
 export function ImageGrid({ props, indices = [] }: MoreOwnProps) {
-  console.log(props, indices)
+  // console.log(props, indices)
   // No indices = show all
   // @ts-ignore
   const localImages =

@@ -24,7 +24,6 @@ module.exports = {
     soundcloud: '',
   },
 
-
   pwa: {
     name: `The Live Drawing Project`,
     short_name: `Live Drawing`,
@@ -35,12 +34,9 @@ module.exports = {
   spin: {
     color: `#85b94f`,
   },
-  
 
   robots: {
     host: 'https://thelivedrawingproject.com',
-    sitemap: 'https://thelivedrawingproject.com/sitemap.xml'
+    sitemap: 'https://thelivedrawingproject.com/sitemap.xml',
   },
-
-
 }

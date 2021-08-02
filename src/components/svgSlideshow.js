@@ -96,7 +96,6 @@ export const SvgSlideshow = () => {
           },
         }}
         onAnimationComplete={() => {
-          console.log('end')
           if (!isOpen) {
             setIsOpen(!isOpen)
           } else {

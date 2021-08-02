@@ -62,9 +62,7 @@ const icon = {
         */
 export default function Index({ data, pageContext: { locale }, location }) {
   const LOCAL = indexPageStrings[locale]
-  console.log(data)
   const posts = data.allMdx.edges
-  console.log(posts)
   const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' }
 
   const stayHomeLink = {
@@ -93,7 +91,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
       <SEO title={'Home'} />
 
       <div className={'ShowcasePage'}>
-        <div className={'RollbackBackground'}>
+        <div>
           <BackgroundSlider
             query={data}
             initDelay={0} // delay before the first transition (if left at 0, the first image will be skipped initially)
@@ -104,7 +102,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
             }}
           />
           <div className={'Inside'}>
-            <div className="WelcomeCover">
+            <div className={'WelcomeCover'}>
               <div className={'Inside'}>
                 <div className={'CoverLogo'}>
                   <TldpLogo />

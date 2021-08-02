@@ -141,7 +141,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: siteMafinest.loadingColor,
+        color: siteManifest.loadingColor,
         // Disable the loading spinner.
         showSpinner: false,
       },

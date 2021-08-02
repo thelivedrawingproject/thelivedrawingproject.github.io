@@ -15,7 +15,6 @@ export class ResponsiveNavbar extends Component {
   }
 
   toggleOverlay() {
-    console.log('click')
     this.setState((state) => ({ overlay: !state.overlay }))
   }
 
