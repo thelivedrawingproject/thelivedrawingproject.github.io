@@ -1,4 +1,4 @@
-const siteManifest = require('./siteManifest');
+const siteManifest = require('./siteManifest')
 
 module.exports = {
   siteMetadata: {
