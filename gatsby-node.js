@@ -245,6 +245,7 @@ exports.createPages = ({ actions, graphql }) => {
     }); // foreach article
 
     mdxPages.forEach(({ node }) => {
+      console.log('hello creating');
       createPage({
         path: node.frontmatter.path,
         component: layoutPage,
