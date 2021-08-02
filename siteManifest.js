@@ -39,4 +39,4 @@ module.exports = {
     host: 'https://thelivedrawingproject.com',
     sitemap: 'https://thelivedrawingproject.com/sitemap.xml',
   },
-}
+};

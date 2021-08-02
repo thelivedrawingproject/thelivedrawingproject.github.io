@@ -1,12 +1,12 @@
-import React from 'react'
-import { notFoundPage } from '../locales/strings'
-import { NavbarSlim } from '../bits/NavbarSlim/NavbarSlim'
-import { NavbarData } from '../layout/Data'
+import React from 'react';
+import { notFoundPage } from '../locales/strings';
+import { NavbarSlim } from '../bits/NavbarSlim/NavbarSlim';
+import { NavbarData } from '../layout/Data';
 
 // TODO: dirty copy paste of MainLayout content to avoid crazy language switcher (because URL doesnt exist)
 
 export default function NotFoundPage({ data, pageContext: { locale } }) {
-  const LOCAL = notFoundPage[locale]
+  const LOCAL = notFoundPage[locale];
 
   return (
     <>
@@ -31,5 +31,5 @@ export default function NotFoundPage({ data, pageContext: { locale } }) {
         <div className="gridFooter"></div>
       </div>
     </>
-  )
+  );
 }

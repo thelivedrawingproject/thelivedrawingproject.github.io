@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 
 export const gatImage = graphql`
   fragment gatImage on File {
@@ -9,7 +9,7 @@ export const gatImage = graphql`
       }
     }
   }
-`
+`;
 
 export const modernGatImage = graphql`
   fragment modernGatImage on File {
@@ -23,4 +23,4 @@ export const modernGatImage = graphql`
       full: gatsbyImageData(layout: FULL_WIDTH)
     }
   }
-`
+`;

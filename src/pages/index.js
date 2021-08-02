@@ -1,22 +1,22 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
-import MainLayout from '../layout/MainLayout'
-import SEO from '../bits/SEO/SEO'
-import { indexPageStrings } from '../locales/strings'
-import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid'
-import BackgroundSlider from 'gatsby-image-background-slider'
-import { SvgSlideshow } from '../components/svgSlideshow'
-import PostGridFlat from '../bits/PostGridFlat/PostGridFlat'
-import TldpLogo from '../bits/TldpLogo/TldpLogo'
-import './index.scss'
-import './PhoneMockup.scss'
-import './basics.scss'
-import './SpecialAnnouncement.scss'
-import './DrawingCount.scss'
-import './ShowcasePage.scss'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import MainLayout from '../layout/MainLayout';
+import SEO from '../bits/SEO/SEO';
+import { indexPageStrings } from '../locales/strings';
+import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid';
+import BackgroundSlider from 'gatsby-image-background-slider';
+import { SvgSlideshow } from '../components/svgSlideshow';
+import PostGridFlat from '../bits/PostGridFlat/PostGridFlat';
+import TldpLogo from '../bits/TldpLogo/TldpLogo';
+import './index.scss';
+import './PhoneMockup.scss';
+import './basics.scss';
+import './SpecialAnnouncement.scss';
+import './DrawingCount.scss';
+import './ShowcasePage.scss';
 
-const numberOfEventsToShow = 6
+const numberOfEventsToShow = 6;
 const icon = {
   hidden: {
     opacity: 1,
@@ -32,7 +32,7 @@ const icon = {
     stroke: 'white',
     strokeWidth: 2,
   },
-}
+};
 
 /*
         <div className={'ResponsiveContainer SpecialAnnouncementBackground'}>
@@ -61,19 +61,19 @@ const icon = {
 
         */
 export default function Index({ data, pageContext: { locale }, location }) {
-  const LOCAL = indexPageStrings[locale]
-  const posts = data.allMdx.edges
-  const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+  const LOCAL = indexPageStrings[locale];
+  const posts = data.allMdx.edges;
+  const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' };
 
   const stayHomeLink = {
     en: { path: '/stayhome', name: LOCAL.announcementLinkName },
     fr: { path: '/fr/stayhome', name: LOCAL.announcementLinkName },
-  }
+  };
 
   const onlineModeLink = {
     en: { path: '/online-mode', name: LOCAL.announcementLinkName },
     fr: { path: '/fr/online-mode', name: LOCAL.announcementLinkName },
-  }
+  };
 
   /*
    <div
@@ -235,7 +235,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
               .filter((post) => post.node.frontmatter.title.length > 0)
               .filter((post) => post.node.frontmatter.language === locale)
               .filter((post, index) => {
-                return index < numberOfEventsToShow
+                return index < numberOfEventsToShow;
               })}
           />
           <div
@@ -250,10 +250,10 @@ export default function Index({ data, pageContext: { locale }, location }) {
               className={'greenButton'}
               style={{ marginTop: '2em' }}
               onClick={() => {
-                let t = document.getElementById('oldEvents')
-                t.style.display = ''
-                let d = document.getElementById('showAllEventsButton')
-                d.style.display = 'none'
+                let t = document.getElementById('oldEvents');
+                t.style.display = '';
+                let d = document.getElementById('showAllEventsButton');
+                d.style.display = 'none';
               }}
             >
               {LOCAL.showMoreEvents}
@@ -265,7 +265,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
                 .filter((post) => post.node.frontmatter.title.length > 0)
                 .filter((post) => post.node.frontmatter.language === locale)
                 .filter((post, index) => {
-                  return numberOfEventsToShow <= index
+                  return numberOfEventsToShow <= index;
                 })}
             />
           </div>
@@ -277,7 +277,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
         </div>
       </div>
     </MainLayout>
-  )
+  );
 }
 
 export const indexPageQuery = graphql`
@@ -358,4 +358,4 @@ export const indexPageQuery = graphql`
       }
     }
   }
-`
+`;

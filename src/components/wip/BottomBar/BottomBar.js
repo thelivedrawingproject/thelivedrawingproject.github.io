@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import './BottomBar.scss'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
+import './BottomBar.scss';
+import PropTypes from 'prop-types';
 
 export class BottomBar extends Component {
   render() {
@@ -16,7 +16,7 @@ export class BottomBar extends Component {
           {this.props.buttonMessage}
         </a>
       </div>
-    )
+    );
   }
 }
 
@@ -24,8 +24,8 @@ BottomBar.propTypes = {
   eventName: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   buttonMessage: PropTypes.string,
-}
+};
 
 BottomBar.defaultProps = {
   buttonMessage: 'Click to draw',
-}
+};

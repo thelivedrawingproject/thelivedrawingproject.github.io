@@ -1,18 +1,18 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import MainLayout from '../layout/MainLayout'
-import SEO from '../bits/SEO/SEO'
-import './index.scss'
-import './basics.scss'
-import './WordsCloud.scss'
-import './ShowcasePage.scss'
-import { bookingPageStrings } from '../locales/strings'
-import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf'
-import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf'
-import { StaticImage } from 'gatsby-plugin-image'
+import React from 'react';
+import { Link } from 'gatsby';
+import MainLayout from '../layout/MainLayout';
+import SEO from '../bits/SEO/SEO';
+import './index.scss';
+import './basics.scss';
+import './WordsCloud.scss';
+import './ShowcasePage.scss';
+import { bookingPageStrings } from '../locales/strings';
+import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf';
+import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf';
+import { StaticImage } from 'gatsby-plugin-image';
 
 export default function AboutPage({ data, pageContext: { locale }, location }) {
-  const LOCAL = bookingPageStrings[locale]
+  const LOCAL = bookingPageStrings[locale];
 
   return (
     <MainLayout language={locale} location={{ ...location }}>
@@ -71,7 +71,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
               <div className="WordsCloud">
                 <>
                   {LOCAL.useCases.map((wordCloud) => {
-                    return <p key={wordCloud}>{wordCloud}</p>
+                    return <p key={wordCloud}>{wordCloud}</p>;
                   })}
                 </>
               </div>
@@ -266,5 +266,5 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
         </div>
       </div>
     </MainLayout>
-  )
+  );
 }

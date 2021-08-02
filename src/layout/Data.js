@@ -14,7 +14,7 @@ export const NavbarData = {
       { path: '/fr/booking', name: 'RESERVER' },
     ],
   },
-}
+};
 
 export const FooterLinks = {
   en: {
@@ -34,4 +34,4 @@ export const FooterLinks = {
       { path: '/fr/jobs', name: 'JOBS' },
     ],
   },
-}
+};

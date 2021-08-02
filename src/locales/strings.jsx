@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 const StringEnFr = (key, en, fr) => {
   return {
     en: {
@@ -9,26 +9,26 @@ const StringEnFr = (key, en, fr) => {
     fr: {
       [key]: fr,
     },
-  }
-}
+  };
+};
 const stringBuilderEnFr = (arrayOfStrings) => {
   const languageFilter = (languageKey) => {
     return {
       [languageKey]: arrayOfStrings
         .map((element) => {
-          return element[languageKey]
+          return element[languageKey];
         })
         .reduce((acc, x) => {
-          for (let key in x) acc[key] = x[key]
-          return acc
+          for (let key in x) acc[key] = x[key];
+          return acc;
         }, {}),
-    }
-  }
-  const en = languageFilter('en')
-  const fr = languageFilter('fr')
+    };
+  };
+  const en = languageFilter('en');
+  const fr = languageFilter('fr');
 
-  return { ...en, ...fr }
-}
+  return { ...en, ...fr };
+};
 
 export const indexPageStrings = stringBuilderEnFr([
   StringEnFr(
@@ -206,7 +206,7 @@ export const indexPageStrings = stringBuilderEnFr([
   ),
   StringEnFr('callUs', 'Call us', 'Appelez nous'),
   StringEnFr('events', 'Events', 'Évenements'),
-])
+]);
 
 export const notFoundPage = {
   en: {
@@ -218,7 +218,7 @@ export const notFoundPage = {
     title: `PAGE NON TROUVÉE`,
     subtext: `Il n'y a rien ici !`,
   },
-}
+};
 
 export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr('useCasesTitle', 'What we do', 'Ce que nous faisons'),
@@ -553,4 +553,4 @@ export const bookingPageStrings = stringBuilderEnFr([
   ),
   StringEnFr('bookingCallUs', 'Call us', 'Appelez nous'),
   StringEnFr('clientsTitle', 'They trust us', 'Ils nous font confiance'),
-])
+]);

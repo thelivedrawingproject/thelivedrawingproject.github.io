@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import './ResponsiveNavbar.scss'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
+import './ResponsiveNavbar.scss';
+import PropTypes from 'prop-types';
 
 // Warn : this is just a dump of a code never used in production atm
 export class ResponsiveNavbar extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       overlay: false,
-    }
-    this.toggleOverlay = this.toggleOverlay.bind(this)
+    };
+    this.toggleOverlay = this.toggleOverlay.bind(this);
   }
 
   toggleOverlay() {
-    this.setState((state) => ({ overlay: !state.overlay }))
+    this.setState((state) => ({ overlay: !state.overlay }));
   }
 
   iconClose() {
@@ -32,7 +32,7 @@ export class ResponsiveNavbar extends Component {
         />
         <path d="M0 0h24v24H0z" fill="none" />
       </svg>
-    )
+    );
   }
 
   iconMenu() {
@@ -46,11 +46,11 @@ export class ResponsiveNavbar extends Component {
         <path d="M0 0h24v24H0z" fill="none" />
         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="white" />
       </svg>
-    )
+    );
   }
 
   topbarIcon() {
-    return this.state.overlay ? this.iconClose() : this.iconMenu()
+    return this.state.overlay ? this.iconClose() : this.iconMenu();
   }
 
   smallTopBar() {
@@ -67,18 +67,18 @@ export class ResponsiveNavbar extends Component {
           </div>
         </div>
       </>
-    )
+    );
   }
 
   // Dirty workaround to show title
   pageTitle() {
     if (this.state.overlay) {
-      return ''
+      return '';
     }
     if (this.props.pageTitle === '/') {
-      return 'HOME'
+      return 'HOME';
     } else {
-      return this.props.pageTitle.replace(/\//g, '').toUpperCase()
+      return this.props.pageTitle.replace(/\//g, '').toUpperCase();
     }
   }
 
@@ -90,10 +90,10 @@ export class ResponsiveNavbar extends Component {
             <Link key={link.name} activeClassName="active" to={link.path}>
               {link.name}
             </Link>
-          )
+          );
         })}
       </>
-    )
+    );
   }
 
   render() {
@@ -110,10 +110,10 @@ export class ResponsiveNavbar extends Component {
           </div>
         )}
       </div>
-    )
+    );
   }
 }
 
 ResponsiveNavbar.propTypes = {
   links: PropTypes.array.isRequired,
-}
+};
