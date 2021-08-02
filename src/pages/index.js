@@ -195,19 +195,20 @@ export default function Index({ data, pageContext: { locale }, location }) {
         <div className={'ResponsiveContainer'}>
           <div className={'Inside'}>
             <div className="ShowcasePart">
-              <div className={'Text Centered'}>
+              <div className={'Text Centered NarrowText'}>
                 <h2 style={{ color: 'rgb(40,40,40)' }}>
                   {LOCAL.covidProofTitle}
                 </h2>
                 <p>{LOCAL.covidProofDescription}</p>
               </div>
-              <div className={'GatsbyImageContainer'}>
+              <div className={'GatsbyImageContainerSmall'}>
                 <StaticImage
                   src={'gallery/showcase/remote.jpg'}
                   alt="Projection visible en Livestream sur les réseaux sociaux"
                   layout={'constrained'}
                   objectFit={'contain'}
                   placeholder={'blurred'}
+                  width={1400}
                 />
               </div>
             </div>

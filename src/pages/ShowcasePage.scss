@@ -78,7 +78,7 @@
   .ShowcasePart {
     $almostBlack: #111111;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
 
     @include breakpoint(normal) {
@@ -245,5 +245,12 @@
       background: url('gallery/clients/cpl.png');
       @include imageBackground();
     }
+  }
+}
+
+
+.NarrowText {
+  @include breakpoint(normal) {
+    width: 14rem;
   }
 }

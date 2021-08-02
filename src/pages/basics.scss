@@ -158,3 +158,18 @@
     min-width: 90%;
   }
 }
+
+
+.GatsbyImageContainerSmall {
+ 
+
+  @include breakpoint(normal) {
+    // min-width: 60%;
+    width: 50%;
+    // height: 60vh;
+  }
+
+  @include breakpoint(small) {
+    min-width: 90%;
+  }
+}
