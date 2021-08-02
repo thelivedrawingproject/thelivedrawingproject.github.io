@@ -5,6 +5,7 @@ module.exports = {
   authorMail: 'livedrawingproject@pm.me',
   // %s for pageName
   titleTemplate: '%s · Live Drawing Project',
+  // Not too long for google snippet !
   description:
     'Draw with us ! We make interactive drawing projections where everyone can draw · Videoprojections, Performances, Workshops and more · All around the world · On location or remotely',
   // for robots plugin, No trailing slash allowed!
@@ -22,4 +23,24 @@ module.exports = {
     youtube: '',
     soundcloud: '',
   },
+
+
+  pwa: {
+    name: `The Live Drawing Project`,
+    short_name: `Live Drawing`,
+    background_color: `#d6d0cd`,
+    theme_color: `#363636`,
+  },
+
+  spin: {
+    color: `#85b94f`,
+  },
+  
+
+  robots: {
+    host: 'https://thelivedrawingproject.com',
+    sitemap: 'https://thelivedrawingproject.com/sitemap.xml'
+  },
+
+
 }

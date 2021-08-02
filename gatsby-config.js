@@ -116,11 +116,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `The Live Drawing Project`,
-        short_name: `Live Drawing`,
+        name: siteManifest.pwa.name,
+        short_name: siteManifest.pwa.short_name,
         start_url: `/`,
-        background_color: `#d6d0cd`,
-        theme_color: `#363636`,
+        background_color: siteManifest.pwa.background_color,
+        theme_color: siteManifest.pwa.theme_color,
         display: `minimal-ui`,
         icon: `src/res/favicon.png`, // This path is relative to the root of the site.
       },
@@ -129,8 +129,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://thelivedrawingproject.com',
-        sitemap: 'https://thelivedrawingproject.com/sitemap.xml',
+        host: siteManifest.robots.host,
+        sitemap: siteManifest.robots.sitemap,
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
@@ -141,7 +141,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#85b94f`,
+        color: siteMafinest.loadingColor,
         // Disable the loading spinner.
         showSpinner: false,
       },

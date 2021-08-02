@@ -70,7 +70,7 @@ export default function MainLayout({ children, language, location }) {
           <br />
           {LOCAL.currentlyHappening}
         </div>
-        <a href={eventUrl} onClick={() => {}}>
+        <a href={eventUrl} target="_blank" rel="noopener nofollow noreferrer" onClick={() => {}}>
           {LOCAL.clickHereToDraw}
         </a>
         <button
