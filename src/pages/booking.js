@@ -11,13 +11,17 @@ import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf';
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf';
 import { StaticImage } from 'gatsby-plugin-image';
 
-export default function AboutPage({ data, pageContext: { langCode }, location }) {
+export default function AboutPage({
+  data,
+  pageContext: { langCode },
+  location,
+}) {
   const LOCAL = bookingPageStrings[langCode];
   const LOCAL_USE_CASES = bookingPageUseCases[langCode]['useCases'];
 
   return (
     <MainLayout language={langCode} location={{ ...location }}>
-      <SEO title={'BOOKING'} language={langCode}/>
+      <SEO title={'BOOKING'} language={langCode} />
 
       <div className={'ResponsiveContainer'}>
         <div className={'Inside'}>

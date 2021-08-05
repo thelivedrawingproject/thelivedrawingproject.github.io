@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import { LangCode } from './locales';
 
@@ -8,8 +8,11 @@ type TitleToStringArray = Record<string, ReactString[]>;
 type MultilangString = Record<LangCode, TitleToString>;
 type MultilangStringArray = Record<LangCode, TitleToStringArray>;
 
-
-const StringEnFr = (key: string, en: ReactString, fr: ReactString): MultilangString => {
+const StringEnFr = (
+  key: string,
+  en: ReactString,
+  fr: ReactString
+): MultilangString => {
   return {
     ['en']: {
       [key]: en,
@@ -21,7 +24,11 @@ const StringEnFr = (key: string, en: ReactString, fr: ReactString): MultilangStr
   };
 };
 
-const stringEnFrArray = (key: string, en: ReactString[], fr: ReactString[]): MultilangStringArray => {
+const stringEnFrArray = (
+  key: string,
+  en: ReactString[],
+  fr: ReactString[]
+): MultilangStringArray => {
   return {
     ['en']: {
       [key]: en,
@@ -33,7 +40,10 @@ const stringEnFrArray = (key: string, en: ReactString[], fr: ReactString[]): Mul
   };
 };
 
-const languageFilter = (languageKey: LangCode, arrayOfStrings: MultilangString[]) => {
+const languageFilter = (
+  languageKey: LangCode,
+  arrayOfStrings: MultilangString[]
+) => {
   return {
     [languageKey]: arrayOfStrings
       .map((element) => {

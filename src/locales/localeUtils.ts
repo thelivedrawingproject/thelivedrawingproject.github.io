@@ -7,7 +7,9 @@ export const localLink = (langCode: LangCode, bareboneLink: string): string => {
 };
 
 export const languageAutoRedirect = (language, pathname: string) => {
-  const supportedLangCodes: LangCode[] = Object.keys(supportedLangs) as LangCode[];
+  const supportedLangCodes: LangCode[] = Object.keys(
+    supportedLangs
+  ) as LangCode[];
 
   // Skip build, Browsers only
   if (typeof window !== 'undefined') {

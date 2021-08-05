@@ -9,7 +9,7 @@
 const path = require('path');
 const { createRemoteFileNode } = require('gatsby-source-filesystem');
 // BIG WORKAROUND : cannot import lang codes directly from typescript code in src because here we use node without es6-etc support.
-// So re-recrate data here 
+// So re-recrate data here
 // TODO
 const supportedLangs = {
   ['en']: {
@@ -22,7 +22,6 @@ const supportedLangs = {
   },
 };
 const defaultLangCode = 'en';
-
 
 const LAYOUTS = {
   page: 'page',
@@ -143,7 +142,7 @@ exports.onCreatePage = ({ page, actions }) => {
 
       Object.keys(supportedLangs).map((langCode) => {
         const localizedPath =
-        langCode === defaultLangCode
+          langCode === defaultLangCode
             ? page.path
             : supportedLangs[langCode].urlPrefix + page.path;
 
