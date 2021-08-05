@@ -9,7 +9,7 @@ import { graphql, Link } from 'gatsby';
 import { SHORTCODES } from './MdxBits';
 
 export default function Template({ data: { mdx }, location, pageContext }) {
-  const { previousPost, nextPost } = pageContext;
+  const { previousPost, nextPost, langCode } = pageContext;
 
   // content is at false is no previous or next
   const previousPostHtml = previousPost ? (
@@ -35,6 +35,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         image={mdx.frontmatter.image.childImageSharp.fixed.src}
         pathname={mdx.frontmatter.path}
         article={true}
+        language={langCode}
       />
       <div className="coverBand" id="content">
         <div className="overlay">

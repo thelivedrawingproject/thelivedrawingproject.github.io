@@ -5,11 +5,24 @@
  */
 
 // You can delete this file if you're not using it
-
+// import { supportedLangs, defaultLang } from './src/locales/locales';
 const path = require('path');
-const supportedLanguages = require('./src/locales/locales').supportedLanguages;
-const defaultLanguage = require('./src/locales/locales').defaultLanguage;
 const { createRemoteFileNode } = require('gatsby-source-filesystem');
+// BIG WORKAROUND : cannot import lang codes directly from typescript code in src because here we use node without es6-etc support.
+// So re-recrate data here 
+// TODO
+const supportedLangs = {
+  ['en']: {
+    urlPrefix: '',
+    humanName: 'English',
+  },
+  ['fr']: {
+    urlPrefix: 'fr',
+    humanName: 'Français',
+  },
+};
+const defaultLangCode = 'en';
+
 
 const LAYOUTS = {
   page: 'page',
@@ -59,22 +72,22 @@ exports.onCreateNode = ({
     if (initialLanguage === void 0 || initialLanguage === null) {
       console.info(
         'No language field in markdown, select default language:' +
-          defaultLanguage
+          defaultLangCode
       );
-      node.frontmatter.language = defaultLanguage;
+      node.frontmatter.language = defaultLangCode;
     }
 
     let foundALanguageOtherThanDefault = false;
     const language = node.frontmatter.language;
-    for (let key of Object.keys(supportedLanguages)) {
-      if (language === key && language !== defaultLanguage) {
-        languageUrlPrefix = `/${supportedLanguages[key].urlPrefix}`;
+    for (let key of Object.keys(supportedLangs)) {
+      if (language === key && language !== defaultLangCode) {
+        languageUrlPrefix = `/${supportedLangs[key].urlPrefix}`;
         foundALanguageOtherThanDefault = true;
         break;
       }
     }
 
-    if (!foundALanguageOtherThanDefault && language !== defaultLanguage) {
+    if (!foundALanguageOtherThanDefault && language !== defaultLangCode) {
       console.warn(
         `Unhandled language for markdown: ${node.frontmatter.language}. No path change (could conflict with default)`
       );
@@ -121,24 +134,24 @@ exports.onCreatePage = ({ page, actions }) => {
     deletePage(page);
     return;
   }
-  if (page.context.locale === void 0) {
+  if (page.context.langCode === void 0) {
     console.info(
       `got a root page with no lang context. ${page.path} Delete page and Create one for each language`
     );
     return new Promise((resolve) => {
       deletePage(page);
 
-      Object.keys(supportedLanguages).map((languageKey) => {
+      Object.keys(supportedLangs).map((langCode) => {
         const localizedPath =
-          languageKey === defaultLanguage
+        langCode === defaultLangCode
             ? page.path
-            : supportedLanguages[languageKey].urlPrefix + page.path;
+            : supportedLangs[langCode].urlPrefix + page.path;
 
         return createPage({
           component: page.component,
           path: localizedPath,
           context: {
-            locale: languageKey,
+            langCode: langCode,
           },
         });
       });
@@ -239,7 +252,7 @@ exports.createPages = ({ actions, graphql }) => {
         context: {
           previousPost,
           nextPost,
-          locale: node.frontmatter.language,
+          langCode: node.frontmatter.language,
         }, // additional data can be passed via context
       });
     }); // foreach article
@@ -249,7 +262,7 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: layoutPage,
-        context: { locale: node.frontmatter.language }, // additional data can be passed via context
+        context: { langCode: node.frontmatter.language }, // additional data can be passed via context
       });
     });
   });

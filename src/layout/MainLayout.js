@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Footer from '../bits/TldpFooter/Footer';
 import './MainLayout.scss';
 import LanguageSwitcher from '../bits/LanguageSwitcher/LanguageSwitcher';
-import { defaultLanguage, supportedLanguages } from '../locales/locales';
+import { defaultLang, supportedLangs } from '../locales/locales';
 import { languageAutoRedirect } from '../locales/localeUtils';
 import { NavbarData, FooterLinks } from './Data';
 import TldpNavbar from '../bits/TldpNavbar/Navbar';
@@ -46,7 +46,7 @@ export default function MainLayout({ children, language, location }) {
   }
 
   if (language !== 'fr' && language !== 'en') {
-    language = defaultLanguage;
+    language = defaultLang;
   }
   const LOCAL = indexPageStrings[language];
   // Skip build, Browsers only
@@ -109,8 +109,8 @@ export default function MainLayout({ children, language, location }) {
           <Footer links={FooterLinks[language].links} lang={language} />
           {location && (
             <LanguageSwitcher
-              currentLanguage={language}
-              availableLanguages={Object.keys(supportedLanguages)}
+              currentLangCode={language}
+              supportedLangs={Object.keys(supportedLangs)}
               currentUrl={location.pathname}
             />
           )}

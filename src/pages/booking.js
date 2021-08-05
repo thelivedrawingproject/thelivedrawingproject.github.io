@@ -6,17 +6,18 @@ import './index.scss';
 import './basics.scss';
 import './WordsCloud.scss';
 import './ShowcasePage.scss';
-import { bookingPageStrings } from '../locales/strings';
+import { bookingPageStrings, bookingPageUseCases } from '../locales/strings';
 import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf';
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf';
 import { StaticImage } from 'gatsby-plugin-image';
 
-export default function AboutPage({ data, pageContext: { locale }, location }) {
-  const LOCAL = bookingPageStrings[locale];
+export default function AboutPage({ data, pageContext: { langCode }, location }) {
+  const LOCAL = bookingPageStrings[langCode];
+  const LOCAL_USE_CASES = bookingPageUseCases[langCode]['useCases'];
 
   return (
-    <MainLayout language={locale} location={{ ...location }}>
-      <SEO title={'BOOKING'} />
+    <MainLayout language={langCode} location={{ ...location }}>
+      <SEO title={'BOOKING'} language={langCode}/>
 
       <div className={'ResponsiveContainer'}>
         <div className={'Inside'}>
@@ -70,7 +71,7 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
 
               <div className="WordsCloud">
                 <>
-                  {LOCAL.useCases.map((wordCloud) => {
+                  {LOCAL_USE_CASES.map((wordCloud) => {
                     return <p key={wordCloud}>{wordCloud}</p>;
                   })}
                 </>
@@ -255,10 +256,10 @@ export default function AboutPage({ data, pageContext: { locale }, location }) {
           <div className="home homePosts">
             <div className="moreProjects">
               <Link to={'/contact'}>{LOCAL.bookingContactUs}</Link>
-              <a href={locale === 'fr' ? flyerFR : flyerEN}>
+              <a href={langCode === 'fr' ? flyerFR : flyerEN}>
                 {LOCAL.downloadBrochure}
               </a>
-              <a href={locale === 'fr' ? flyerEN : flyerFR}>
+              <a href={langCode === 'fr' ? flyerEN : flyerFR}>
                 {LOCAL.downloadBrochureOtherLanguage}
               </a>
             </div>

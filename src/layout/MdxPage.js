@@ -28,7 +28,8 @@ export const pageQuery = graphql`
   }
 `;
 
-export default function Template({ data: { mdx }, location }) {
+export default function Template({ data: { mdx }, location, pageContext }) {
+  const { langCode } = pageContext;
   return (
     <MainLayout language={mdx.frontmatter.language} location={{ ...location }}>
       <SEO
@@ -38,6 +39,7 @@ export default function Template({ data: { mdx }, location }) {
         }
         pathname={mdx.frontmatter.path}
         article={true}
+        language={langCode}
       />
       <div className="Page">
         <article className="card article" id="content">

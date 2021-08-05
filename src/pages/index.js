@@ -51,8 +51,8 @@ const icon = {
                 >
                   {LOCAL.announcemenSubtitle}
                 </p>
-                <Link to={onlineModeLink[locale].path}>
-                  {onlineModeLink[locale].name}
+                <Link to={onlineModeLink[langCode].path}>
+                  {onlineModeLink[langCode].name}
                 </Link>
               </div>
             </div>
@@ -60,8 +60,8 @@ const icon = {
         </div>
 
         */
-export default function Index({ data, pageContext: { locale }, location }) {
-  const LOCAL = indexPageStrings[locale];
+export default function Index({ data, pageContext: { langCode }, location }) {
+  const LOCAL = indexPageStrings[langCode];
   const posts = data.allMdx.edges;
   const localesOptions = { year: 'numeric', month: 'long', day: 'numeric' };
 
@@ -87,8 +87,8 @@ export default function Index({ data, pageContext: { locale }, location }) {
           >
           */
   return (
-    <MainLayout language={locale} location={{ ...location }}>
-      <SEO title={'Home'} />
+    <MainLayout language={langCode} location={{ ...location }}>
+      <SEO title={'Home'} language={langCode}/>
 
       <div className={'ShowcasePage'}>
         <div>
@@ -233,7 +233,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
           <PostGridFlat
             posts={posts
               .filter((post) => post.node.frontmatter.title.length > 0)
-              .filter((post) => post.node.frontmatter.language === locale)
+              .filter((post) => post.node.frontmatter.language === langCode)
               .filter((post, index) => {
                 return index < numberOfEventsToShow;
               })}
@@ -263,7 +263,7 @@ export default function Index({ data, pageContext: { locale }, location }) {
             <PostGridFlat
               posts={posts
                 .filter((post) => post.node.frontmatter.title.length > 0)
-                .filter((post) => post.node.frontmatter.language === locale)
+                .filter((post) => post.node.frontmatter.language === langCode)
                 .filter((post, index) => {
                   return numberOfEventsToShow <= index;
                 })}

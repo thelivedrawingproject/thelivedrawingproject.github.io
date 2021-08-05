@@ -1,32 +1,54 @@
-import React from 'react';
+import React  from 'react';
 import { Link } from 'gatsby';
-const StringEnFr = (key, en, fr) => {
+import { LangCode } from './locales';
+
+type ReactString = string | JSX.Element;
+type TitleToString = Record<string, ReactString>;
+type TitleToStringArray = Record<string, ReactString[]>;
+type MultilangString = Record<LangCode, TitleToString>;
+type MultilangStringArray = Record<LangCode, TitleToStringArray>;
+
+
+const StringEnFr = (key: string, en: ReactString, fr: ReactString): MultilangString => {
   return {
-    en: {
+    ['en']: {
       [key]: en,
     },
 
-    fr: {
+    ['fr']: {
       [key]: fr,
     },
   };
 };
-const stringBuilderEnFr = (arrayOfStrings) => {
-  const languageFilter = (languageKey) => {
-    return {
-      [languageKey]: arrayOfStrings
-        .map((element) => {
-          return element[languageKey];
-        })
-        .reduce((acc, x) => {
-          for (let key in x) acc[key] = x[key];
-          return acc;
-        }, {}),
-    };
-  };
-  const en = languageFilter('en');
-  const fr = languageFilter('fr');
 
+const stringEnFrArray = (key: string, en: ReactString[], fr: ReactString[]): MultilangStringArray => {
+  return {
+    ['en']: {
+      [key]: en,
+    },
+
+    ['fr']: {
+      [key]: fr,
+    },
+  };
+};
+
+const languageFilter = (languageKey: LangCode, arrayOfStrings: MultilangString[]) => {
+  return {
+    [languageKey]: arrayOfStrings
+      .map((element) => {
+        return element[languageKey];
+      })
+      .reduce((acc, x) => {
+        for (let key in x) acc[key] = x[key];
+        return acc;
+      }, {}),
+  };
+};
+
+const stringBuilderEnFr = (arrayOfStrings: MultilangString[]) => {
+  const en = languageFilter('en', arrayOfStrings);
+  const fr = languageFilter('fr', arrayOfStrings);
   return { ...en, ...fr };
 };
 
@@ -208,18 +230,6 @@ export const indexPageStrings = stringBuilderEnFr([
   StringEnFr('events', 'Events', 'Évenements'),
 ]);
 
-export const notFoundPage = {
-  en: {
-    title: `NOT FOUND`,
-    subtext: `There is nothing here !`,
-  },
-
-  fr: {
-    title: `PAGE NON TROUVÉE`,
-    subtext: `Il n'y a rien ici !`,
-  },
-};
-
 export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr('useCasesTitle', 'What we do', 'Ce que nous faisons'),
   StringEnFr(
@@ -227,106 +237,6 @@ export const bookingPageStrings = stringBuilderEnFr([
     `Another idea? Let's talk about it!`,
     `Une autre idée ? Parlons-en !`
   ),
-
-  StringEnFr(
-    'useCases',
-    [
-      <>
-        Lights
-        <br />
-        Festivals
-      </>,
-      <>
-        Art
-        <br />
-        Exhibitions
-      </>,
-      <>
-        Drawing
-        <br />
-        Performances
-      </>,
-      <>
-        Architectural
-        <br />
-        Mappings
-      </>,
-      <>
-        Permanent
-        <br />
-        Installations
-      </>,
-      <>
-        Drawing
-        <br />
-        Workshops
-      </>,
-      <>
-        Mapping
-        <br />
-        Workshops
-      </>,
-      <>
-        Collective
-        <br />
-        Thinking
-      </>,
-      <>
-        Rental
-        <br />
-        Offers
-      </>,
-    ],
-    [
-      <>
-        Fêtes des
-        <br />
-        Lumières
-      </>,
-      <>
-        Expositions
-        <br />
-        Artistiques
-      </>,
-      <>
-        Performances
-        <br />
-        de dessin
-      </>,
-      <>
-        Mapping
-        <br />
-        Architectural
-      </>,
-      <>
-        Installations
-        <br />
-        Permanentes
-      </>,
-      <>
-        Ateliers
-        <br />
-        de Dessin
-      </>,
-      <>
-        Ateliers
-        <br />
-        Videomapping
-      </>,
-      <>
-        Intelligence
-        <br />
-        Collective
-      </>,
-
-      <>
-        Offres
-        <br />
-        en location
-      </>,
-    ]
-  ),
-
   StringEnFr('features', 'Features', 'Fonctionnalités'),
   StringEnFr('customisableTitle', 'Tailor-made', 'Sur Mesure'),
   StringEnFr(
@@ -401,8 +311,6 @@ export const bookingPageStrings = stringBuilderEnFr([
       monde puisse participer sans attendre.
     </>
   ),
-
-  // TODO: add cross-location idea directly here
 
   StringEnFr('multilocTitle', 'Multiple Locations', 'Lieux Multiples'),
   StringEnFr(
@@ -554,3 +462,115 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr('bookingCallUs', 'Call us', 'Appelez nous'),
   StringEnFr('clientsTitle', 'They trust us', 'Ils nous font confiance'),
 ]);
+
+// @ts-ignore
+export const bookingPageUseCases = stringEnFrArray(
+  'useCases',
+  [
+    <>
+      Lights
+      <br />
+      Festivals
+    </>,
+    <>
+      Art
+      <br />
+      Exhibitions
+    </>,
+    <>
+      Drawing
+      <br />
+      Performances
+    </>,
+    <>
+      Architectural
+      <br />
+      Mappings
+    </>,
+    <>
+      Permanent
+      <br />
+      Installations
+    </>,
+    <>
+      Drawing
+      <br />
+      Workshops
+    </>,
+    <>
+      Mapping
+      <br />
+      Workshops
+    </>,
+    <>
+      Collective
+      <br />
+      Thinking
+    </>,
+    <>
+      Rental
+      <br />
+      Offers
+    </>,
+  ],
+  [
+    <>
+      Fêtes des
+      <br />
+      Lumières
+    </>,
+    <>
+      Expositions
+      <br />
+      Artistiques
+    </>,
+    <>
+      Performances
+      <br />
+      de dessin
+    </>,
+    <>
+      Mapping
+      <br />
+      Architectural
+    </>,
+    <>
+      Installations
+      <br />
+      Permanentes
+    </>,
+    <>
+      Ateliers
+      <br />
+      de Dessin
+    </>,
+    <>
+      Ateliers
+      <br />
+      Videomapping
+    </>,
+    <>
+      Intelligence
+      <br />
+      Collective
+    </>,
+
+    <>
+      Offres
+      <br />
+      en location
+    </>,
+  ]
+);
+
+export const notFoundPage = {
+  en: {
+    title: `NOT FOUND`,
+    subtext: `There is nothing here !`,
+  },
+
+  fr: {
+    title: `PAGE NON TROUVÉE`,
+    subtext: `Il n'y a rien ici !`,
+  },
+};
