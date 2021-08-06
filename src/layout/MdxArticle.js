@@ -35,7 +35,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         image={mdx.frontmatter.image.childImageSharp.fixed.src}
         pathname={mdx.frontmatter.path}
         article={true}
-        language={langCode}
+        langCode={langCode}
       />
       <div className="coverBand" id="content">
         <div className="overlay">

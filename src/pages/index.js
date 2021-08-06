@@ -88,7 +88,7 @@ export default function Index({ data, pageContext: { langCode }, location }) {
           */
   return (
     <MainLayout language={langCode} location={{ ...location }}>
-      <SEO title={'Home'} language={langCode} />
+      <SEO title={'Home'} langCode={langCode} />
 
       <div className={'ShowcasePage'}>
         <div>

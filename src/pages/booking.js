@@ -21,7 +21,7 @@ export default function AboutPage({
 
   return (
     <MainLayout language={langCode} location={{ ...location }}>
-      <SEO title={'BOOKING'} language={langCode} />
+      <SEO title={'BOOKING'} langCode={langCode} />
 
       <div className={'ResponsiveContainer'}>
         <div className={'Inside'}>

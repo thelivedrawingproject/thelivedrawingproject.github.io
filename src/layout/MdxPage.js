@@ -39,7 +39,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         }
         pathname={mdx.frontmatter.path}
         article={true}
-        language={langCode}
+        langCode={langCode}
       />
       <div className="Page">
         <article className="card article" id="content">
