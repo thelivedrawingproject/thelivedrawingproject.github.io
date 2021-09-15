@@ -13,23 +13,40 @@ import { BottomBar } from '../components/wip/BottomBar/BottomBar';
 import { indexPageStrings } from '../locales/strings';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
+
+// TODO: store a cookie to enable/disable splash screen
 const theme = createMuiTheme({
   palette: {
+    type: 'light',
     primary: {
+      // light: will be calculated from palette.primary.main,
       main: '#6d8879',
-      /*
-      $accentColor: #85b94f; //#aac989; //#4d9933;
-$accentLight: #aac989;
-$accentColorIdle: #2b6b15;
-*/
+      // dark: will be calculated from palette.primary.main,
+      // contrastText: will be calculated to contrast with palette.primary.main
     },
+    secondary: {
+      main: '#516e93',
+    },
+    background: {
+      default: '#282c34',
+      paper: '#19191d',
+    },
+    action: {
+      hover: 'rgba(0,0,0,0.56)',
+    },
+    // Used by `getContrastText()` to maximize the contrast between
+    // the background and the text.
+    contrastThreshold: 3,
+    // Used by the functions below to shift a color's luminance by approximately
+    // two indexes within its tonal palette.
+    // E.g., shift from Red 500 to Red 300 or Red 700.
+    tonalOffset: 0.2,
   },
 });
-// TODO: store a cookie to enable/disable splash screen
 
 const AreWeInPerformanceMode = false;
-const eventName = 'Dessin avec Nous à Nantes';
-const eventUrl = 'https://fenetre.thelivedrawingproject.com/';
+const eventName = 'Culture Night';
+const eventUrl = 'https://night.thelivedrawingproject.com/';
 
 export default function MainLayout({ children, language, location }) {
   let showPerformanceOverlay = false;
