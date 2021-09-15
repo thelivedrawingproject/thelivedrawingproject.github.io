@@ -49,16 +49,24 @@ const eventName = 'Culture Night';
 const eventUrl = 'https://night.thelivedrawingproject.com/';
 
 export default function MainLayout({ children, language, location }) {
+
+  let debugTestSplash = false;
+
+  if (typeof window !== 'undefined') { 
+    debugTestSplash = (window.location.href.indexOf("?testSplash") !== -1);
+  }
+
   let showPerformanceOverlay = false;
-  const showPerformanceBottomBar = AreWeInPerformanceMode;
+  const showPerformanceBottomBar = AreWeInPerformanceMode || debugTestSplash;
   const isItRootUrl =
     location.pathname === '/' ||
     location.pathname === '/fr' ||
     location.pathname === '/fr/';
   // homepage: single slash
 
+
   // Bad because language dependant...
-  if (AreWeInPerformanceMode && isItRootUrl) {
+  if ((AreWeInPerformanceMode && isItRootUrl) || debugTestSplash) {
     showPerformanceOverlay = true;
   }
 
