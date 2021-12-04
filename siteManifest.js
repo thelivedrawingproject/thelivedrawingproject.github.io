@@ -4,10 +4,10 @@ module.exports = {
   author: 'The Live Drawing Project',
   authorMail: 'livedrawingproject@pm.me',
   // %s for pageName
-  titleTemplate: '%s · Live Drawing Project',
+  titleTemplate: '%s · Live Drawing',
   // Not too long for google snippet !
   description:
-    'Draw with us ! We make interactive drawing projections where everyone can draw · Videoprojections, Performances, Workshops and more · All around the world · On location or remotely',
+    'Draw with us! We make interactive drawing projections where everyone can draw · Videoprojections, Performances, Workshops · All around the world · On location or remotely',
   // for robots plugin, No trailing slash allowed!
   url: 'https://thelivedrawingproject.com',
   // separated by comas
