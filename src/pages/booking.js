@@ -10,7 +10,17 @@ import { bookingPageStrings, bookingPageUseCases } from '../locales/strings';
 import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf';
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf';
 import { StaticImage } from 'gatsby-plugin-image';
-
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import DiamondOutlinedIcon from '@mui/icons-material/DiamondOutlined';
+import AllInclusiveOutlinedIcon from '@mui/icons-material/AllInclusiveOutlined';
+import TouchAppOutlinedIcon from '@mui/icons-material/TouchAppOutlined';
+import AddLocationAltOutlinedIcon from '@mui/icons-material/AddLocationAltOutlined';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import SignalCellularOffOutlinedIcon from '@mui/icons-material/SignalCellularOffOutlined';
+import BuildOutlinedIcon from '@mui/icons-material/BuildOutlined';
+import AutoFixHighOutlinedIcon from '@mui/icons-material/AutoFixHighOutlined';
+import EmojiPeopleOutlinedIcon from '@mui/icons-material/EmojiPeopleOutlined';
+const iconContainerStyle = {display: 'flex', flexDirection: 'column', flexAlign: 'center', justifyContent: 'center', alignItems: "center" };
 export default function AboutPage({
   data,
   pageContext: { langCode },
@@ -38,8 +48,8 @@ export default function AboutPage({
             </div>
             <div className={'GatsbyImageContainer'}>
               <StaticImage
-                src={'2020-03-05-spraying-board/SprayingBoard_4.jpg'}
-                alt="Deux personnes dessinent sur leur téléphone"
+                src={'gallery/cag/web-12.jpg'}
+                alt="L'équipe Live Drawing qui contrôle une projection"
                 layout={'constrained'}
                 objectFit={'cover'}
                 placeholder={'blurred'}
@@ -61,6 +71,7 @@ export default function AboutPage({
                 style={{ fontSize: '1.5em' }}
               >
                 {LOCAL.reachUs}
+
               </Link>
             </div>
           </div>
@@ -80,89 +91,85 @@ export default function AboutPage({
                   })}
                 </>
               </div>
-              <p className="Subtext" style={{ fontSize: '1.5em' }}>
-                <em>{LOCAL.useCasesSubtitle}</em>
+              <p className="Subtext">
+              <Link to={'/contact'} className={'Quote'}
+                style={{ fontSize: '1.5em' }}>
+              <em >{LOCAL.useCasesSubtitle}</em>
+              </Link>
               </p>
+             
+
             </div>
           </div>
         </div>
       </div>
 
-      <div className={'ShowcasePage'}>
-        <div className={'ResponsiveContainer'}>
-          <div className={'Inside'}>
-            <div className="ShowcasePart Column">
-              <h3 className="Punchline White Strong">{LOCAL.ourValues}</h3>
 
-              <div className="FullPageContainer">
-                <h3 className="Punchline White">{LOCAL.inclusiveValueTitle}</h3>
-                <p className="Subtext">{LOCAL.inclusiveValueText}</p>
-              </div>
-
-              <div className="FullPageContainer">
-                <h3 className="Punchline White"> {LOCAL.unlockValueTitle}</h3>
-                <p className="Subtext">{LOCAL.unlockValueText}</p>
-              </div>
-
-              <div className="FullPageContainer">
-                <h3 className="Punchline White">{LOCAL.connectValueTitle}</h3>
-                <p className="Subtext">{LOCAL.connectValueText}</p>
-              </div>
-
-              <div className="FullPageContainer">
-                <h3 className="Punchline White">{LOCAL.tellValueTitle}</h3>
-                <p className="Subtext">{LOCAL.tellValueText}</p>
-              </div>
-
-              <div className="FullPageContainer">
-                <h3 className="Punchline White">{LOCAL.magicValueTitle}</h3>
-                <p className="Subtext">{LOCAL.magicValueText}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={'ShowcasePage'}>
+      <div className={'ShowcasePage'} style={{flexDirection: "row"}}>
         <div className={'Inside'}>
           <div className="FullPageContainer">
             <h2 className="Punchline White Strong">{LOCAL.features}</h2>
           </div>
 
-          <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.remoteTitle}</h3>
+
+          <div className="FullPageContainer" >
+            <h3 className="Punchline White" style={iconContainerStyle}>     
+            <LanguageOutlinedIcon fontSize="large"/>
+            <span style={{marginTop: '1em'}}>{LOCAL.remoteTitle}</span>
+            </h3>
             <p className="Subtext">{LOCAL.remoteSubtext}</p>
           </div>
 
-          <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.customisableTitle}</h3>
-            <p className="Subtext">{LOCAL.customisableText}</p>
-          </div>
+
 
           <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.usersTitle}</h3>
+            <h3 className="Punchline White" style={iconContainerStyle}><AllInclusiveOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.usersTitle}</span></h3>
             <p className="Subtext">{LOCAL.usersSubtext}</p>
           </div>
 
+                    
           <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.userFriendlyTitle}</h3>
-            <p className="Subtext">{LOCAL.userFriendlySubtext}</p>
+            <h3 className="Punchline White" style={iconContainerStyle}><EmojiPeopleOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.mediationTitle}</span></h3>
+            <p className="Subtext">{LOCAL.mediationSubtext}</p>
+          </div>
+          
+          <div className="FullPageContainer">
+            <h3 className="Punchline White" style={iconContainerStyle}><AutoFixHighOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.performerTitle}</span></h3>
+            <p className="Subtext">{LOCAL.performerSubtext}</p>
           </div>
 
           <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.multilocTitle}</h3>
+            <h3 className="Punchline White" style={iconContainerStyle}><TouchAppOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.userFriendlyTitle}</span></h3>
+            <p className="Subtext">{LOCAL.userFriendlySubtext}</p>
+          </div>
+          <div className="FullPageContainer">
+            <h3 className="Punchline White" style={iconContainerStyle}><BuildOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.techFriendlyTitle}</span></h3>
+            <p className="Subtext">{LOCAL.techFriendlySubtext}</p>
+          </div>
+
+          <div className="FullPageContainer">
+            <h3 className="Punchline White" style={iconContainerStyle}><AddLocationAltOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.multilocTitle}</span></h3>
             <p className="Subtext">{LOCAL.multilocSubtext}</p>
           </div>
 
           <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.moderationTitle}</h3>
+            <h3 className="Punchline White" style={iconContainerStyle}><LockOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.moderationTitle}</span></h3>
             <p className="Subtext">{LOCAL.moderationSubtext}</p>
           </div>
 
           <div className="FullPageContainer">
-            <h3 className="Punchline White">{LOCAL.cellularNetworkTitle}</h3>
+         
+         <h3 className="Punchline White" style={iconContainerStyle}>
+         <DiamondOutlinedIcon fontSize="large"/>
+         <span style={{marginTop: '1em'}}>{LOCAL.customisableTitle} </span></h3>
+         <p className="Subtext">{LOCAL.customisableText}</p>
+       </div>
+
+          <div className="FullPageContainer">
+            <h3 className="Punchline White" style={iconContainerStyle}><SignalCellularOffOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.cellularNetworkTitle}</span></h3>
             <p className="Subtext">{LOCAL.cellularNetworkSubtext}</p>
           </div>
+
 
           <br />
           <br />
@@ -256,6 +263,41 @@ export default function AboutPage({
               </div>
             </div>
           </div>
+
+          <div className={'ShowcasePage'}>
+        <div className={'ResponsiveContainer'}>
+          <div className={'Inside'}>
+            <div className="ShowcasePart Column">
+              <h3 className="Punchline White Strong">{LOCAL.ourValues}</h3>
+
+              <div className="FullPageContainer">
+                <h3 className="Punchline White">{LOCAL.inclusiveValueTitle}</h3>
+                <p className="Subtext">{LOCAL.inclusiveValueText}</p>
+              </div>
+
+              <div className="FullPageContainer">
+                <h3 className="Punchline White"> {LOCAL.unlockValueTitle}</h3>
+                <p className="Subtext">{LOCAL.unlockValueText}</p>
+              </div>
+
+              <div className="FullPageContainer">
+                <h3 className="Punchline White">{LOCAL.connectValueTitle}</h3>
+                <p className="Subtext">{LOCAL.connectValueText}</p>
+              </div>
+
+              <div className="FullPageContainer">
+                <h3 className="Punchline White">{LOCAL.tellValueTitle}</h3>
+                <p className="Subtext">{LOCAL.tellValueText}</p>
+              </div>
+
+              <div className="FullPageContainer">
+                <h3 className="Punchline White">{LOCAL.magicValueTitle}</h3>
+                <p className="Subtext">{LOCAL.magicValueText}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
           <div className="home homePosts">
             <div className="moreProjects">

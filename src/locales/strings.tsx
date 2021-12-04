@@ -70,17 +70,17 @@ export const indexPageStrings = stringBuilderEnFr([
   ),
   StringEnFr(
     'drawingCountTitle',
-    '245,000 drawings from all over the world',
-    '245,000 dessins reçus du monde entier'
+    '300,000 drawings from all over the world',
+    '300,000 dessins reçus du monde entier'
   ),
   StringEnFr(
     'drawingCountSubtext',
     <>
-      We receive thousands of drawings at each event. More than 50,000
+      We receive thousands of drawings at each event. More than 60,000
       participants of all ages have already drawn with us.
     </>,
     <>
-      Nous recevons à chaque événement des milliers de dessins. Plus de 50,000
+      Nous recevons à chaque événement des milliers de dessins. Plus de 60,000
       participants de tous les âges ont déjà dessiné avec nous.
     </>
   ),
@@ -203,7 +203,16 @@ export const indexPageStrings = stringBuilderEnFr([
       distance!
     </>
   ),
-
+  StringEnFr('performerTitle', 'Get inspired by the bests', 'Inspire toi des meilleurs'),
+  StringEnFr(
+    'performerDescription',
+    <>
+      <br />We invite your favorite artists to perform in live. <br/> <em>Draw alongside them!</em>
+    </>,
+    <>
+      <br />Nous invitons tes artistes favoris à dessiner en direct.<br/> <em>Dessine avec eux !</em>
+    </>
+  ),
   StringEnFr('goToWebsite', '> Home', '> Accueil'),
   StringEnFr(
     'clickHereToDraw',
@@ -252,19 +261,17 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'customisableText',
     <>
-      From the physical installation to the visual style of the artpiece, we
-      design together the best installation to engage your audience.
+       <strong>We choose together drawing themes, drawing colors, and the best set design</strong> to engage your audience fully.
       <br />
-      <strong>We create custom experiences for every event we make.</strong>
+     We create custom experiences for every event we make.
     </>,
     <>
-      De l'installation physique au style visuel de l'oeuvre collaborative, nous
-      concevons ensemble la meilleure installation pour engager votre audience.
+    <strong>Nous choisissons ensemble les thématiques de dessins, les couleurs, et la meilleure scénographie</strong> pour engager votre audience.
       <br />
-      <strong>
+      
         Nous créons des expériences personnalisées pour chacun de nos
         événements.
-      </strong>
+      
     </>
   ),
 
@@ -305,8 +312,8 @@ export const bookingPageStrings = stringBuilderEnFr([
   ),
   StringEnFr(
     'usersTitle',
-    'Up to 1000+ participants at the same time',
-    "Jusqu'à 1000+ participants en même temps"
+    'No participants limit',
+    "Pas de limite de participants"
   ),
   StringEnFr(
     'usersSubtext',
@@ -326,15 +333,15 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'multilocSubtext',
     <>
-      The videoprojection can happen{' '}
+      We made a technology to project{' '}
       <strong>in multiple locations simultaneously</strong>. Drawings travel
-      between locations letting participants exhange through drawings.
+      between locations letting participants exhange through drawings. <strong>Our record : 100 simultaneous projections</strong>
     </>,
     <>
-      La vidéoprojection peut être{' '}
+      Nous avons développé une technologie pour projeter{' '}
       <strong>dans plusieurs lieux simultanément</strong>.<br /> Les dessins
       voyagent entre les lieux, permettant aux participants d'échanger par
-      l'intermédiaire des dessins.
+      l'intermédiaire des dessins. <strong>Notre record : 100 projections en simultané.</strong>
     </>
   ),
 
@@ -375,12 +382,12 @@ export const bookingPageStrings = stringBuilderEnFr([
       <em>Confinement ?</em>
       <br />
       Invitez votre communauté à <strong>projeter depuis chez eux.</strong>{' '}
-      <Link to="/fr/stayhome">Voir notre événement du dernier confinement</Link>
+      <Link to="/fr/stayhome">Voir notre événement du confinement</Link>
       <br />
     </>
   ),
 
-  StringEnFr('userFriendlyTitle', 'User Friendly', 'Simple à utiliser'),
+  StringEnFr('userFriendlyTitle', 'Super User Friendly', 'Ultra Accessible'),
   StringEnFr(
     'userFriendlySubtext',
     <>
@@ -389,14 +396,48 @@ export const bookingPageStrings = stringBuilderEnFr([
       <br />
       No need to install a dedicated app. It works seamlessly
       <strong> on every phone </strong>
-      through the web browser.
+      through the web browser. Drawings appear instantly on the projection.
     </>,
     <>
       Notre outil de dessin est conçu avec <strong>la simplicité</strong> comme
       fer de lance.
       <br />
       Pas besoin d'installer d'application. L'outil marche
-      <strong> sur tous les téléphones</strong> via le navigateur internet.
+      <strong> sur tous les téléphones</strong> via le navigateur internet. Les dessins apparaissent instantanément sur la projection.
+    </>
+  ),
+
+  StringEnFr('mediationTitle', 'We come on site', 'Nous venons sur place' ),
+  StringEnFr(
+    'mediationSubtext',
+    <>
+      As an artistic team, we come <strong>to meet the audience and animate the projection ourselves.</strong>
+    </>,
+    <>
+     En tant qu'équipe artistique, nous venons <strong>rencontrer le public, animer la projection et faire la médiation nous-mêmes.</strong>
+    </>
+  ),
+
+  StringEnFr('performerTitle', 'Performances', 'Performances'),
+  StringEnFr(
+    'performerSubtext',
+    <>
+      We invite professional illustrators to draw and meet with the audience.
+    </>,
+    <>
+     Nous invitons des artistes professionnels pour dessiner et rencontrer le public.
+    </>
+  ),
+
+
+  StringEnFr('techFriendlyTitle', 'Easy to set-up', 'Installation simple'),
+  StringEnFr(
+    'techFriendlySubtext',
+    <>
+      Our technical sheet is minimal : a projector, and an electric socket. That's it!
+    </>,
+    <>
+      Notre fiche technique est très simple : un projecteur, et une prise electrique. C'est tout !
     </>
   ),
   StringEnFr(
@@ -416,14 +457,14 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'moderationSubtext',
     <>
-      If needed, our <strong>moderation tools</strong> gives us the capacity to
+      Our <strong>moderation tools</strong> gives us the capacity to
       remove any inappropriate drawing instantly and block participants
       entirely.
     </>,
     <>
-      Si besoin, nos <strong>outils de modération</strong> nous permettent de
-      supprimer instantanément tout dessin inapproprié, et si nécessaire, de
-      bloquer des participants de façon permanente.
+      Nos <strong>outils de modération</strong> nous permettent de
+      supprimer instantanément tout dessin inapproprié, et de
+      bloquer des participants.
     </>
   ),
 
@@ -482,46 +523,27 @@ export const bookingPageUseCases = stringEnFrArray(
       <br />
       Festivals
     </>,
-    <>
-      Art
-      <br />
-      Exhibitions
-    </>,
-    <>
-      Drawing
-      <br />
-      Performances
-    </>,
-    <>
-      Architectural
-      <br />
-      Mappings
-    </>,
+  
     <>
       Permanent
       <br />
       Installations
     </>,
+
     <>
-      Drawing
+      Drawing - Mapping
       <br />
       Workshops
     </>,
-    <>
-      Mapping
-      <br />
-      Workshops
-    </>,
-    <>
-      Collective
-      <br />
-      Thinking
-    </>,
-    <>
-      Rental
-      <br />
-      Offers
-    </>,
+
+        <>
+        Corporate
+        <br />
+        Events
+      </>,
+          <>
+          Weddings
+        </>,
   ],
   [
     <>
@@ -529,21 +551,8 @@ export const bookingPageUseCases = stringEnFrArray(
       <br />
       Lumières
     </>,
-    <>
-      Expositions
-      <br />
-      Artistiques
-    </>,
-    <>
-      Performances
-      <br />
-      de dessin
-    </>,
-    <>
-      Mapping
-      <br />
-      Architectural
-    </>,
+  
+  
     <>
       Installations
       <br />
@@ -552,24 +561,18 @@ export const bookingPageUseCases = stringEnFrArray(
     <>
       Ateliers
       <br />
-      de Dessin
-    </>,
-    <>
-      Ateliers
-      <br />
-      Videomapping
-    </>,
-    <>
-      Intelligence
-      <br />
-      Collective
+      de Dessin - Mapping
     </>,
 
+
     <>
-      Offres
+      Événements
       <br />
-      en location
+      d'entreprise
     </>,
+        <>
+        Mariages
+      </>,
   ]
 );
 

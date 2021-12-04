@@ -43,6 +43,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       language: String!
       subtitle: String
       date: Date @dateformat
+      endDate: Date @dateformat
       category: String,
       image: File @fileByRelativePath
       embeddedImagesRemote: [File] @link(by: "url")
@@ -163,7 +164,7 @@ exports.onCreatePage = ({ page, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
   const layoutPage = path.resolve(`src/layout/MdxPage.js`);
-  const layoutArticle = path.resolve(`src/layout/MdxArticle.js`);
+  const layoutArticle = path.resolve(`src/layout/MdxArticle.tsx`);
 
   return graphql(`
     {

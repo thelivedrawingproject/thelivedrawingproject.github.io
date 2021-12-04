@@ -164,7 +164,7 @@
   }
 
   a {
-    @include themedTagA();
+    @include themedTagAObsoleteTldp();
   }
 }
 
@@ -250,7 +250,7 @@
     text-align: center;
     margin: 1rem;
     // margin-top: 4rem;
-    @include themedTagA();
+    @include themedTagAObsoleteTldp();
   }
 }
 

@@ -80,7 +80,7 @@ $smallTopbarHeight: 4.5em;
       border: none;
       background-color: transparent;
 
-      @include themedTagA();
+      @include themedTagAObsoleteTldp();
       color: rgb(220, 220, 220);
       font-size: 1.3em;
       margin-bottom: 1em;

@@ -15,13 +15,14 @@ module.exports = {
     'videoprojection, projection, videomapping, oeuvre participative, participatif, interactif, interactive projection, dessin, dessin participatif, live drawing, drawing, collaborative drawing, the live drawing project, light festival, fête des lumières, art numérique, digital arts',
 
   socialLinks: {
-    twitter: '',
+    twitter: '//twitter.com/LiveDrawingTeam',
     facebook: '//facebook.com/TheLiveDrawingProject',
     github: '',
     instagram: '//instagram.com/livedrawingproject',
     vimeo: '',
     youtube: '',
     soundcloud: '',
+    linkedin: '//www.linkedin.com/company/live-drawing/',
   },
 
   pwa: {

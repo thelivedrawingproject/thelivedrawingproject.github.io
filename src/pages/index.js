@@ -7,7 +7,7 @@ import { indexPageStrings } from '../locales/strings';
 import { PhotoGrid } from './../bits/PhotoGrid/PhotoGrid';
 import BackgroundSlider from 'gatsby-image-background-slider';
 import { SvgSlideshow } from '../components/svgSlideshow';
-import PostGridFlat from '../bits/PostGridFlat/PostGridFlat';
+import PostGridFlat from '../bits/PostGridFlatTLDP/PostGridFlat';
 import TldpLogo from '../bits/TldpLogo/TldpLogo';
 import './index.scss';
 import './PhoneMockup.scss';
@@ -190,6 +190,30 @@ export default function Index({ data, pageContext: { langCode }, location }) {
           </div>
         </div>
 
+        <div className={'ResponsiveContainer ModernGreenBack'}>
+          <div className={'Inside'}>
+            <div className="ShowcasePart">
+              
+              <div className={'GatsbyImageContainerSmall'}>
+                <StaticImage
+                  src={'gallery/showcase/performers.jpg'}
+                  alt="Projection visible en Livestream sur les réseaux sociaux"
+                  layout={'constrained'}
+                  objectFit={'contain'}
+                  placeholder={'blurred'}
+                  width={1400}
+                />
+              </div>
+              <div className={'Text Centered NarrowText'}>
+                <h2 style={{ color: 'white' }}>
+                  {LOCAL.performerTitle}
+                </h2>
+                <p style={{ color: 'white' }}>{LOCAL.performerDescription}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className={'ResponsiveContainer'}>
           <div className={'Inside'}>
             <div className="ShowcasePart">
@@ -344,6 +368,7 @@ export const indexPageQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            endDate(formatString: "MMMM DD, YYYY")
             path
             category
             subtitle

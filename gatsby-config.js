@@ -22,6 +22,7 @@ module.exports = {
       vimeo: siteManifest.socialLinks.vimeo,
       youtube: siteManifest.socialLinks.youtube,
       soundcloud: siteManifest.socialLinks.soundcloud,
+      linkedin: siteManifest.socialLinks.linkedin
     },
   },
 

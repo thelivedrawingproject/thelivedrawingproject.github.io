@@ -14,7 +14,7 @@
 
 .Page {
   a {
-    @include themedTagA();
+    @include themedTagAObsoleteTldp();
   }
 
   .gatsby-resp-image-link {
@@ -245,9 +245,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
+  background-color: $modernGreen;
   .overlay {
-    background-color: $modernGreen;
+   
     @include breakpoint(normal) {
       padding: 4rem;
     }
