@@ -11,16 +11,20 @@ import TldpLogo from '../bits/TldpLogo/TldpLogo';
 import MobileAppBar from '../bits/TldpNavbar/MobileAppBar';
 import { BottomBar } from '../components/wip/BottomBar/BottomBar';
 import { indexPageStrings } from '../locales/strings';
-import { CSSObject, Theme, ThemeProvider, Global } from '@emotion/react'
-import {
-  createTheme,
-  ThemeProvider as MaterialThemeProvider,
-} from '@material-ui/core/styles'
+import { CSSObject, Theme, ThemeProvider, StyledEngineProvider, Global } from '@emotion/react';
+import { createTheme, adaptV4Theme } from '@mui/material/styles';
+import {  ThemeProvider as MaterialThemeProvider, } from '@mui/material/styles';
+
+// declare module '@mui/styles/defaultTheme' {
+//   // eslint-disable-next-line @typescript-eslint/no-empty-interface
+//   interface DefaultTheme extends Theme {}
+// }
+
 
 // TODO: store a cookie to enable/disable splash screen
 // const theme = createMuiTheme({
 //   palette: {
-//     type: 'light',
+//     mode: 'light',
 //     primary: {
 //       // light: will be calculated from palette.primary.main,
 //       main: '#6d8879',
@@ -47,9 +51,9 @@ import {
 //   },
 // });
 
-const theme = createTheme({
+const theme = createTheme(adaptV4Theme({
   palette: {
-    type: 'light',
+    mode: 'light',
     primary: {
       // light: will be calculated from palette.primary.main,
       main: '#6d8879',
@@ -74,7 +78,7 @@ const theme = createTheme({
     // E.g., shift from Red 500 to Red 300 or Red 700.
     tonalOffset: 0.2,
   },
-})
+}))
 
 const AreWeInPerformanceMode = false;
 const eventName = 'Festival Pleiades';
@@ -151,54 +155,56 @@ export default function MainLayout({ children, language, location }) {
 
   return (
     <MaterialThemeProvider theme={theme}>
-    <ThemeProvider theme={theme}>
-      {showPerformanceOverlay && performanceSplashScreen()}
-      <div className="CssGridNavContentFooter">
-        {!isItRootUrl && (
-          <div className="AppBar">
-            <MobileAppBar title={'The Live Drawing Project'} />
-          </div>
-        )}
-        <nav className="gridNavBar">
-          <TldpNavbar links={NavbarData[language].links} />
-        </nav>
-        <div className="gridContent styleContent">{children}</div>
-        <div className="gridFooter">
-          <Footer links={FooterLinks[language].links} lang={language} />
-          {location && (
-            <LanguageSwitcher
-              currentLangCode={language}
-              currentUrl={location.pathname}
-            />
-          )}
 
-          <div
-            style={{
-              paddingBottom: '3rem',
-              paddingTop: '2rem',
-              color: 'dimgray',
-              textAlign: 'center',
-              lineHeight: 1.4,
-            }}
-          >
-            {LOCAL.noPersonalData}
-            <br />
-            <br />
-            {LOCAL.madeInLyon}
+      <ThemeProvider theme={theme}>
+        {showPerformanceOverlay && performanceSplashScreen()}
+        <div className="CssGridNavContentFooter">
+          {!isItRootUrl && (
+            <div className="AppBar">
+              <MobileAppBar title={'The Live Drawing Project'} />
+            </div>
+          )}
+          <nav className="gridNavBar">
+            <TldpNavbar links={NavbarData[language].links} />
+          </nav>
+          <div className="gridContent styleContent">{children}</div>
+          <div className="gridFooter">
+            <Footer links={FooterLinks[language].links} lang={language} />
+            {location && (
+              <LanguageSwitcher
+                currentLangCode={language}
+                currentUrl={location.pathname}
+              />
+            )}
+
+            <div
+              style={{
+                paddingBottom: '3rem',
+                paddingTop: '2rem',
+                color: 'dimgray',
+                textAlign: 'center',
+                lineHeight: 1.4,
+              }}
+            >
+              {LOCAL.noPersonalData}
+              <br />
+              <br />
+              {LOCAL.madeInLyon}
+            </div>
           </div>
+          {showPerformanceBottomBar && (
+            <div className={'gridBottomBar'}>
+              <BottomBar
+                url={eventUrl}
+                eventName={eventName}
+                buttonMessage={LOCAL.clickToDraw}
+              />
+            </div>
+          )}
         </div>
-        {showPerformanceBottomBar && (
-          <div className={'gridBottomBar'}>
-            <BottomBar
-              url={eventUrl}
-              eventName={eventName}
-              buttonMessage={LOCAL.clickToDraw}
-            />
-          </div>
-        )}
-      </div>
-      </ThemeProvider>
-    </MaterialThemeProvider>
+        </ThemeProvider>
+   
+  </MaterialThemeProvider>
   );
 }
 
