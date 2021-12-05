@@ -1,5 +1,25 @@
 @import './../components/styles';
 
+.FeaturesBloc {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.TechSheetLinks {
+  margin: auto;
+  text-align: center;
+  a {
+    text-align: center;
+    
+    // margin-top: 4rem;
+    @include themedTagAObsoleteTldp();
+    margin: 1rem;
+  }
+}
+
+
 .ShowcasePage {
   .WelcomerCoverPhoto {
     background-repeat: no-repeat;
@@ -157,7 +177,7 @@
       @include breakpoint(normal) {
         min-width: 12em;
         min-height: 12em;
-        margin: 3em;
+        margin: 2em;
       }
     }
 
@@ -174,6 +194,7 @@
         cursor: pointer;
         filter: none;
         opacity: 1;
+        transform: scale(1.05);
       }
     }
 
@@ -241,6 +262,29 @@
       background: url('gallery/clients/cpl.png');
       @include imageBackground();
     }
+
+
+
+    .Ste {
+      background: url('gallery/clients/ste.png');
+      @include imageBackground();
+    }
+    .Troyes {
+
+      background: url('gallery/clients/troyes.png');
+      @include imageBackground();
+    }
+
+    .DesBlocs {
+      background: url('gallery/clients/desblocs.png');
+      @include imageBackground();
+    } 
+
+    .LaMotte {
+      background: url('gallery/clients/lamotte.png');
+      @include imageBackground();
+    }
+
   }
 }
 

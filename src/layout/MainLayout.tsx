@@ -61,7 +61,7 @@ const theme = createTheme(adaptV4Theme({
       // contrastText: will be calculated to contrast with palette.primary.main
     },
     secondary: {
-      main: '#516e93',
+      main: '#506b5c',
     },
     background: {
       default: '#282c34',

@@ -345,7 +345,7 @@ export const bookingPageStrings = stringBuilderEnFr([
     </>
   ),
 
-  StringEnFr('remoteTitle', 'Works Remotely', 'Fontionne à Distance'),
+  StringEnFr('remoteTitle', 'Covid Proof', 'Covid Proof'),
   StringEnFr(
     'remoteSubtext',
     <>

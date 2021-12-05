@@ -116,6 +116,22 @@
   flex-direction: column;
 }
 
+.ThirdPageContainer {
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  @include breakpoint(normal) {
+    min-width: 26%;
+    width: 26%;
+  }
+
+  @include breakpoint(small) {
+    min-width: 90%;
+  }
+
+  // border: solid 2px green;
+}
+
 .HighlightEvent {
   border: solid 10px $accentColor;
   min-height: 80vh;

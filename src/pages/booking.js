@@ -9,6 +9,9 @@ import './ShowcasePage.scss';
 import { bookingPageStrings, bookingPageUseCases } from '../locales/strings';
 import flyerFR from './gallery/TheLiveDrawingProject_Brochure_FR.pdf';
 import flyerEN from './gallery/TheLiveDrawingProject_Brochure_EN.pdf';
+
+import techSheetEN from './gallery/LiveDrawingProject_TechnicalSheet.pdf';
+import techSheetFR from './gallery/LiveDrawingProject_FicheTechnique.pdf';
 import { StaticImage } from 'gatsby-plugin-image';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import DiamondOutlinedIcon from '@mui/icons-material/DiamondOutlined';
@@ -20,6 +23,8 @@ import SignalCellularOffOutlinedIcon from '@mui/icons-material/SignalCellularOff
 import BuildOutlinedIcon from '@mui/icons-material/BuildOutlined';
 import AutoFixHighOutlinedIcon from '@mui/icons-material/AutoFixHighOutlined';
 import EmojiPeopleOutlinedIcon from '@mui/icons-material/EmojiPeopleOutlined';
+
+
 const iconContainerStyle = {display: 'flex', flexDirection: 'column', flexAlign: 'center', justifyContent: 'center', alignItems: "center" };
 export default function AboutPage({
   data,
@@ -105,14 +110,26 @@ export default function AboutPage({
       </div>
 
 
-      <div className={'ShowcasePage'} style={{flexDirection: "row"}}>
-        <div className={'Inside'}>
-          <div className="FullPageContainer">
+      <div className={'ShowcasePage'}>
+      <div className="FullPageContainer">
             <h2 className="Punchline White Strong">{LOCAL.features}</h2>
           </div>
 
+        <div className={'Inside'} style={{
+          display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'flex-start'
+    }}>
+         
 
-          <div className="FullPageContainer" >
+         <div className="ThirdPageContainer">
+            <h3 className="Punchline White" style={iconContainerStyle}><AllInclusiveOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.usersTitle}</span></h3>
+            <p className="Subtext">{LOCAL.usersSubtext}</p>
+          </div>
+
+          <div className="ThirdPageContainer" >
             <h3 className="Punchline White" style={iconContainerStyle}>     
             <LanguageOutlinedIcon fontSize="large"/>
             <span style={{marginTop: '1em'}}>{LOCAL.remoteTitle}</span>
@@ -122,42 +139,48 @@ export default function AboutPage({
 
 
 
-          <div className="FullPageContainer">
-            <h3 className="Punchline White" style={iconContainerStyle}><AllInclusiveOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.usersTitle}</span></h3>
-            <p className="Subtext">{LOCAL.usersSubtext}</p>
-          </div>
+ 
 
                     
-          <div className="FullPageContainer">
+          <div className="ThirdPageContainer">
             <h3 className="Punchline White" style={iconContainerStyle}><EmojiPeopleOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.mediationTitle}</span></h3>
             <p className="Subtext">{LOCAL.mediationSubtext}</p>
           </div>
           
-          <div className="FullPageContainer">
+          <div className="ThirdPageContainer">
             <h3 className="Punchline White" style={iconContainerStyle}><AutoFixHighOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.performerTitle}</span></h3>
             <p className="Subtext">{LOCAL.performerSubtext}</p>
           </div>
 
-          <div className="FullPageContainer">
+          <div className="ThirdPageContainer">
             <h3 className="Punchline White" style={iconContainerStyle}><TouchAppOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.userFriendlyTitle}</span></h3>
             <p className="Subtext">{LOCAL.userFriendlySubtext}</p>
           </div>
-          <div className="FullPageContainer">
+          <div className="ThirdPageContainer">
             <h3 className="Punchline White" style={iconContainerStyle}><BuildOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.techFriendlyTitle}</span></h3>
             <p className="Subtext">{LOCAL.techFriendlySubtext}</p>
+            <div className="TechSheetLinks">
+            <a href={techSheetEN}>
+                {'Fiche Technique (FR)'}
+              </a>
+              <br/>
+              <a href={techSheetEN}>
+                {'Technical Sheet (EN)'}
+              </a>
+              </div>
           </div>
 
-          <div className="FullPageContainer">
+          <div className="ThirdPageContainer">
             <h3 className="Punchline White" style={iconContainerStyle}><AddLocationAltOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.multilocTitle}</span></h3>
             <p className="Subtext">{LOCAL.multilocSubtext}</p>
           </div>
 
-          <div className="FullPageContainer">
+          <div className="ThirdPageContainer">
             <h3 className="Punchline White" style={iconContainerStyle}><LockOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.moderationTitle}</span></h3>
             <p className="Subtext">{LOCAL.moderationSubtext}</p>
           </div>
 
-          <div className="FullPageContainer">
+          <div className="ThirdPageContainer">
          
          <h3 className="Punchline White" style={iconContainerStyle}>
          <DiamondOutlinedIcon fontSize="large"/>
@@ -165,12 +188,12 @@ export default function AboutPage({
          <p className="Subtext">{LOCAL.customisableText}</p>
        </div>
 
-          <div className="FullPageContainer">
+          <div className="ThirdPageContainer">
             <h3 className="Punchline White" style={iconContainerStyle}><SignalCellularOffOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.cellularNetworkTitle}</span></h3>
             <p className="Subtext">{LOCAL.cellularNetworkSubtext}</p>
           </div>
 
-
+</div>
           <br />
           <br />
           <br />
@@ -184,7 +207,7 @@ export default function AboutPage({
                       {LOCAL.clientsTitle}
                     </h2>
                   </div>
-                  <div className={'GatsbyImageContainer'}>
+                  <div className={''}>
                     <div className={'ClientsLogo'}>
                       <a
                         className={'InstitutFrancais'}
@@ -210,6 +233,34 @@ export default function AboutPage({
                         rel="noreferrer noopener"
                         href={'https://www.centreculturelirlandais.com/'}
                       />
+
+                       <a
+                        className={'Ste'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://www.saint-etienne.fr/'}
+                      />
+                       <a
+                        className={'Troyes'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://www.ville-troyes.fr/'}
+                      />
+                       <a
+                        className={'DesBlocs'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://www.desblocs.be/'}
+                      />
+
+<a
+                        className={'LaMotte'}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={'https://www.mairie-lamotteservolex.fr/'}
+                      />
+
+
                       <a
                         className={'Chrd'}
                         target="_blank"
@@ -311,7 +362,7 @@ export default function AboutPage({
             </div>
           </div>
         </div>
-      </div>
+
     </MainLayout>
   );
 }
