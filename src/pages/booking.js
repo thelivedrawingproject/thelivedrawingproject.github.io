@@ -160,7 +160,7 @@ export default function AboutPage({
             <h3 className="Punchline White" style={iconContainerStyle}><BuildOutlinedIcon fontSize="large"/><span style={{marginTop: '1em'}}>{LOCAL.techFriendlyTitle}</span></h3>
             <p className="Subtext">{LOCAL.techFriendlySubtext}</p>
             <div className="TechSheetLinks">
-            <a href={techSheetEN}>
+            <a href={techSheetFR}>
                 {'Fiche Technique (FR)'}
               </a>
               <br/>
