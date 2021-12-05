@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-booking-js","path":"/fr/booking/","result":{"pageContext":{"langCode":"fr"}},"staticQueryHashes":["512815058","598293725"]}
+{
+    "componentChunkName": "component---src-pages-booking-js",
+    "path": "/fr/booking/",
+    "result": {"pageContext":{"langCode":"fr"}},
+    "staticQueryHashes": ["1023610176","598293725"]}
