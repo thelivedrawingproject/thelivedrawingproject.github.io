@@ -11,7 +11,6 @@ import TldpLogo from '../bits/TldpLogo/TldpLogo';
 import MobileAppBar from '../bits/TldpNavbar/MobileAppBar';
 import { BottomBar } from '../components/wip/BottomBar/BottomBar';
 import { indexPageStrings } from '../locales/strings';
-import { CSSObject, Theme, ThemeProvider, StyledEngineProvider, Global } from '@emotion/react';
 import { createTheme, adaptV4Theme } from '@mui/material/styles';
 import {  ThemeProvider as MaterialThemeProvider, } from '@mui/material/styles';
 
@@ -154,9 +153,10 @@ export default function MainLayout({ children, language, location }) {
   );
 
   return (
+
     <MaterialThemeProvider theme={theme}>
 
-      <ThemeProvider theme={theme}>
+
         {showPerformanceOverlay && performanceSplashScreen()}
         <div className="CssGridNavContentFooter">
           {!isItRootUrl && (
@@ -202,9 +202,10 @@ export default function MainLayout({ children, language, location }) {
             </div>
           )}
         </div>
-        </ThemeProvider>
+
    
   </MaterialThemeProvider>
+
   );
 }
 
