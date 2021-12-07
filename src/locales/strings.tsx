@@ -335,7 +335,7 @@ export const bookingPageStrings = stringBuilderEnFr([
     <>
       We made a technology to project{' '}
       <strong>in multiple locations simultaneously</strong>. Drawings travel
-      between locations letting participants exhange through drawings. <strong>Our record : 100 simultaneous projections</strong>
+      between locations letting participants exhange through drawings. <strong>Our record : 100 simultaneous projections.</strong>
     </>,
     <>
       Nous avons développé une technologie pour projeter{' '}
@@ -434,7 +434,7 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'techFriendlySubtext',
     <>
-      Our technical sheet is minimal : a projector, and an electric socket. That's it!
+      Our technical sheet is minimal: a projector, and an electric socket. That's it!
     </>,
     <>
       Notre fiche technique est très simple : un projecteur, et une prise electrique. C'est tout !
