@@ -80,8 +80,8 @@ const theme = createTheme(adaptV4Theme({
 }))
 
 const AreWeInPerformanceMode = false;
-const eventName = 'Festival Pleiades';
-const eventUrl = 'https://pleiades.thelivedrawingproject.com/';
+const eventName = 'FDL de Bron';
+const eventUrl = 'https://bron.thelivedrawingproject.com/';
 
 export default function MainLayout({ children, language, location }) {
 

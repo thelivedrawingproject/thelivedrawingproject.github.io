@@ -246,7 +246,7 @@ export const indexPageStrings = stringBuilderEnFr([
     'Dessinons ensemble !'
   ),
   StringEnFr('callUs', 'Call us', 'Appelez nous'),
-  StringEnFr('events', 'Events', 'Évenements'),
+  StringEnFr('events', 'Events', 'Événements'),
 ]);
 
 export const bookingPageStrings = stringBuilderEnFr([
