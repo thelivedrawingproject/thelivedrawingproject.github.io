@@ -2,7 +2,7 @@ export const NavbarData = {
   en: {
     links: [
       { path: '/', name: 'HOME' },
-      { path: '/events', name: 'EVENTS' },
+      // { path: '/events', name: 'EVENTS' },
       { path: '/gallery', name: 'GALLERY' },
       { path: '/booking', name: 'BOOKING' },
    
@@ -12,7 +12,7 @@ export const NavbarData = {
   fr: {
     links: [
       { path: '/fr', name: 'ACCUEIL' },
-      { path: '/fr/events', name: 'ÉVÉNEMENTS' },
+      // { path: '/fr/events', name: 'ÉVÉNEMENTS' },
       { path: '/fr/gallery', name: 'GALERIE' },
       { path: '/fr/booking', name: 'RESERVER' },
     ],

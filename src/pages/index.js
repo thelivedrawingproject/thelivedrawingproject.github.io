@@ -260,14 +260,14 @@ export default function Index({ data, pageContext: { langCode }, location }) {
 
 
         
-        <div style={{display: 'flex', flexDirection: 'column', alignItems:'center', justifyContent: 'center', marginBottom: '2rem', marginTop: '2rem'}}>
+        {/* <div style={{display: 'flex', flexDirection: 'column', alignItems:'center', justifyContent: 'center', marginBottom: '2rem', marginTop: '2rem'}}>
               <p style={{color: 'black', textAlign: 'center'}}>{LOCAL.subscribeToNewsletter}</p>
               <MailForm uniqueId={'footerForm'}
                mailchimpURL= {'https://thelivedrawingproject.us5.list-manage.com/subscribe/post?u=5b0e34052f1872162c7edee23&amp;id=e801ed722a'}
               uniqueAntiSpamId={'b_5b0e34052f1872162c7edee23_e801ed722a'}
              />
              
-        </div>
+        </div> */}
 
           <PostGridFlat
             posts={posts
