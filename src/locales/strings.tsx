@@ -63,6 +63,11 @@ const stringBuilderEnFr = (arrayOfStrings: MultilangString[]) => {
 };
 
 export const indexPageStrings = stringBuilderEnFr([
+
+  StringEnFr('subscribeToNewsletter',
+    'Join our newsletter for upcoming events',
+    'Rejoins notre newsletter pour connaître les prochaines dates',
+  ),
   StringEnFr(
     'announcementTitle',
     "Let's Exhibit online!",
@@ -394,16 +399,14 @@ export const bookingPageStrings = stringBuilderEnFr([
       Our drawing tool has been designed with <strong>ease of use</strong> from
       the start.
       <br />
-      No need to install a dedicated app. It works seamlessly
-      <strong> on every phone </strong>
-      through the web browser. Drawings appear instantly on the projection.
+     <strong>No need to install a dedicated app</strong>. People draw on their mobile web browser. Drawings appear instantly on the projection.
     </>,
     <>
       Notre outil de dessin est conçu avec <strong>la simplicité</strong> comme
       fer de lance.
       <br />
-      Pas besoin d'installer d'application. L'outil marche
-      <strong> sur tous les téléphones</strong> via le navigateur internet. Les dessins apparaissent instantanément sur la projection.
+      <strong>Pas besoin d'installer d'application</strong>. Le public dessine sur leur navigateur internet mobile.
+       Les dessins apparaissent instantanément sur la projection.
     </>
   ),
 
@@ -481,14 +484,14 @@ export const bookingPageStrings = stringBuilderEnFr([
   StringEnFr(
     'bookingSubtext',
     <>
-      We are a team of scenographers, engineers and artists.
+      We are a team of scenographers, engineers and artists from Lyon, France.
       <br /> We're developing <strong>interactive</strong> installations with
       the audience at the core.
       <br /> <br /> <br />
       Let's talk about your project!
     </>,
     <>
-      Nous sommes une équipe de scénographes, ingénieurs et artistes.
+      Nous sommes une équipe de scénographes, ingénieurs et artistes installés à Lyon.
       <br /> Nous développons des installations <strong>
         participatives
       </strong>{' '}
@@ -568,11 +571,8 @@ export const bookingPageUseCases = stringEnFrArray(
     <>
       Événements
       <br />
-      d'entreprise
-    </>,
-        <>
-        Mariages
-      </>,
+      privés
+      </>
   ]
 );
 

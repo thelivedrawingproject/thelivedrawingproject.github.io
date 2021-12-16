@@ -9,6 +9,7 @@ import BackgroundSlider from 'gatsby-image-background-slider';
 import { SvgSlideshow } from '../components/svgSlideshow';
 import PostGridFlat from '../bits/PostGridFlatTLDP/PostGridFlat';
 import TldpLogo from '../bits/TldpLogo/TldpLogo';
+import MailForm from '../bits/mailchimpForm/mailchimpFormPrivacyFriendly';
 import './index.scss';
 import './PhoneMockup.scss';
 import './basics.scss';
@@ -251,9 +252,23 @@ export default function Index({ data, pageContext: { langCode }, location }) {
             </div>
           </div>
         </div>
+        
+
 
         <h2 className={'Punchline'}>{LOCAL.events}</h2>
         <div className="home homePosts">
+
+
+        
+        <div style={{display: 'flex', flexDirection: 'column', alignItems:'center', justifyContent: 'center', marginBottom: '2rem', marginTop: '2rem'}}>
+              <p style={{color: 'black', textAlign: 'center'}}>{LOCAL.subscribeToNewsletter}</p>
+              <MailForm uniqueId={'footerForm'}
+               mailchimpURL= {'https://thelivedrawingproject.us5.list-manage.com/subscribe/post?u=5b0e34052f1872162c7edee23&amp;id=e801ed722a'}
+              uniqueAntiSpamId={'b_5b0e34052f1872162c7edee23_e801ed722a'}
+             />
+             
+        </div>
+
           <PostGridFlat
             posts={posts
               .filter((post) => post.node.frontmatter.title.length > 0)
