@@ -80,8 +80,8 @@ const theme = createTheme(adaptV4Theme({
 }))
 
 const AreWeInPerformanceMode = false;
-const eventName = 'FDL de Bron';
-const eventUrl = 'https://bron.thelivedrawingproject.com/';
+const eventName = `Nuit des idées à L'Institut Français`;
+const eventUrl = 'https://tunis.thelivedrawingproject.com/';
 
 export default function MainLayout({ children, language, location }) {
 
@@ -96,6 +96,10 @@ export default function MainLayout({ children, language, location }) {
   const isItRootUrl =
     location.pathname === '/' ||
     location.pathname === '/fr' ||
+    location.pathname === '/fr/dessine-en-lumieres-nantes' ||
+    location.pathname === '/dessine-en-lumieres-nantes' ||
+    location.pathname === '/fr/dessine-en-lumieres-nantes/' ||
+    location.pathname === '/dessine-en-lumieres-nantes/' ||
     location.pathname === '/fr/';
   // homepage: single slash
 
