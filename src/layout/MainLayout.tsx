@@ -80,8 +80,8 @@ const theme = createTheme(adaptV4Theme({
 }))
 
 const AreWeInPerformanceMode = false;
-const eventName = `Nuit des idées à L'Institut Français`;
-const eventUrl = 'https://tunis.thelivedrawingproject.com/';
+const eventName = `Festi Lumi`;
+const eventUrl = 'https://bonifacio.thelivedrawingproject.com/';
 
 export default function MainLayout({ children, language, location }) {
 
