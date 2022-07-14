@@ -27,6 +27,7 @@ export const FooterLinks = {
       { path: '/booking', name: 'BOOKING' },
       { path: '/events', name: 'EVENTS' },
       { path: '/jobs', name: 'JOBS' },
+      { path: '/press-kit', name: 'PRESS KIT' },
     ],
   },
 
@@ -37,6 +38,7 @@ export const FooterLinks = {
       { path: '/fr/booking', name: 'RESERVER' },
       { path: '/fr/events', name: 'ÉVÉNEMENTS' },
       { path: '/fr/jobs', name: 'JOBS' },
+      { path: '/fr/press-kit', name: 'KIT PRESSE' },
     ],
   },
 };
