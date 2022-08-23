@@ -80,8 +80,8 @@ const theme = createTheme(adaptV4Theme({
 }))
 
 const AreWeInPerformanceMode = false;
-const eventName = `Festi Lumi`;
-const eventUrl = 'https://bonifacio.thelivedrawingproject.com/';
+const eventName = `Les 60 ans du Radôme`;
+const eventUrl = 'https://radome.thelivedrawingproject.com/';
 
 export default function MainLayout({ children, language, location }) {
 
