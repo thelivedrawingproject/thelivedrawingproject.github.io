@@ -30,7 +30,7 @@
       margin: 0.5em;
     }
 
-    @include notSelectable();
+    //@include notSelectable();
 
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
       transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
